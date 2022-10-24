@@ -11,4 +11,8 @@ Docente: Diana Bernabei
 6. Ludovico Pio Gnerre
 7. Danilo Carretta
 8. Giuseppe Rignanese
-9. Marco Enea
+9. Andrea Popescu
+10. Rosa Cristina Coddura
+11. Veronica Raspa
+12. Giulia Volpi
+13. Marco Enea
