@@ -7,3 +7,4 @@
 3. Domenico Provenzano
 4. Gianvito Bernardi
 5. Martina Cosentino
+6. Giovanni Fiore
