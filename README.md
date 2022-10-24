@@ -10,4 +10,4 @@ Docente: Diana Bernabei
 5. Martina Cosentino
 6. Ludovico Pio Gnerre
 7. Danilo Carretta
-
+8. Giuseppe Rignanese
