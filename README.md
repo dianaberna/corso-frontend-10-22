@@ -15,3 +15,4 @@ Docente: Diana Bernabei
 10. Rosa Cristina Coddura
 11. Veronica Raspa
 12. Giulia Volpi
+13. Alice Di Vita
