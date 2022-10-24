@@ -1,7 +1,10 @@
 # Titolo repo
-## elenco studenti
 
-Docente: Diana Bernabei
+## Docente:
+
+Diana Bernabei 🏆
+
+## elenco studenti del corso front-end:
 
 1. Oleksandr Oleksyuk
 2. Daniel Terracina
