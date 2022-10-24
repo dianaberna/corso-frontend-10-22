@@ -13,4 +13,5 @@ Docente: Diana Bernabei
 8. Giuseppe Rignanese
 9. Andrea Popescu
 10. Rosa Cristina Coddura
+11. Veronica Raspa
 
