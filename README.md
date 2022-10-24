@@ -20,3 +20,4 @@ Docente: Diana Bernabei
 15. Silvana Mazzaglia
 16. Davide Bonadies
 17. Giovanni Fiore
+18. Luca Pennini
