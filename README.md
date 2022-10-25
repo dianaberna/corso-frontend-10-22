@@ -10,7 +10,7 @@ Diana Bernabei 🏆
 
 ## elenco studenti del corso front-end:
 
-1. Oleksandr Oleksyuk
+1. Oleksandr Oleksyuk - ecco qui una prova dal tuo branch (Claudia)
 2. Daniel Terracina
 3. Domenico Provenzano
 4. Gianvito Bernardi
