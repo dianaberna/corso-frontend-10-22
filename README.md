@@ -16,7 +16,6 @@ Diana Bernabei 🏆
 4. Gianvito Bernardi
 5. Martina Cosentino
 6. Ludovico Pio Gnerre
-
 7. Danilo Carretta
 8. Giuseppe Rignanese
 9. Andrea Popescu
@@ -27,3 +26,4 @@ Diana Bernabei 🏆
 14. Marco Enea
 15. Silvana Mazzaglia
 16. Mario Ametrano
+17. Ylenia Chiappori
