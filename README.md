@@ -33,3 +33,4 @@ Diana Bernabei 🏆
 21. Roxana Mihai
 22. Anna Maria Kallajxhiu
 23. Mario Ametrano
+24. Claudia Piccioni
