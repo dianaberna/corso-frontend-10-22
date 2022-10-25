@@ -25,5 +25,7 @@ Diana Bernabei 🏆
 13. Alice Di Vita
 14. Marco Enea
 15. Silvana Mazzaglia
-16. Mario Ametrano
-17. Ylenia Chiappori
+16. Davide Bonadies
+17. Giovanni Fiore
+18. Luca Pennini
+19. Luca De Magistris
