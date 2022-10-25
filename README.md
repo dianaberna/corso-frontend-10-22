@@ -25,5 +25,15 @@ Diana Bernabei 🏆
 17. Giovanni Fiore
 18. Luca Pennini
 19. Luca De Magistris
+20. Daniela Matei
+21. Roxana Mihai
+22. Anna Maria Kallajxhiu
+23. Mario Ametrano
+24. Claudia Piccioni
+25. Elisabetta Penna
+26. Martina Pelizzari
+27. Emanuela Madeccia
+28. Ylenia Chiappori
+29. Fabio Billeri
 
 Modifica Branch Gianvito
