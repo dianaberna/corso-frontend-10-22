@@ -32,4 +32,6 @@ Diana Bernabei 🏆
 20. Daniela Matei
 21. Roxana Mihai
 22. Anna Maria Kallajxhiu
-24. Elisabetta Penna
+23. Mario Ametrano
+24. Claudia Piccioni
+25. Elisabetta Penna
