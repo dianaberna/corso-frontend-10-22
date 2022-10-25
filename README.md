@@ -36,3 +36,4 @@ Diana Bernabei 🏆
 24. Claudia Piccioni
 25. Elisabetta Penna
 26. Martina Pelizzari
+27. Emanuela Madeccia
