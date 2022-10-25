@@ -5,11 +5,9 @@
 # Progetto Corso Frontend Developer Tree_Opinno
 
 ## Docente:
-
 Diana Bernabei 🏆
 
 ## elenco studenti del corso front-end:
-
 1. Oleksandr Oleksyuk
 2. Daniel Terracina
 3. Domenico Provenzano
@@ -39,5 +37,3 @@ Diana Bernabei 🏆
 27. Emanuela Madeccia
 28. Ylenia Chiappori
 29. Fabio Billeri
-
-Prova 2
