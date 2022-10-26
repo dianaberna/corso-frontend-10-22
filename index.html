@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Progetto Pennini Luca</title>
+    <link rel="stylesheet" type="text/css" href="./stili/style.css">
   </head>
   <body>
     Dopo questo testo metto un tag &#60;br&#62; <br />
@@ -12,6 +13,7 @@
     Dopo questo testo metto un tag &#60;hr&#62;
     <hr />
     <p>&#60;p&#62; Qui c'è un paragrafo &#60;/p&#62;</p>
+    <p class="p_bellino">&#60;p&#62; Qui c'è un paragrafo bellino in CSS&#60;/p&#62;</p>
     <!-- semantica -->
     <h1>&#60;h1&#62;Titolo &#60;/h1&#62;</h1>
     <h2>&#60;h2&#62;Titolo &#60;/h2&#62;</h2>
@@ -35,14 +37,10 @@
     <hr />
     <h3>Links</h3>
     <p>
-      <a href="#">
-        Link interno al sito
-      </a>
+      <a href="#"> Link interno al sito </a>
     </p>
     <p>
-      <a href="https://www.google.com" target="_blank">
-        Link google
-      </a>
+      <a href="https://www.google.com" target="_blank"> Link google </a>
     </p>
     <p>
       <button>questo è un bottone</button>
@@ -59,10 +57,8 @@
     <hr />
     <h3>Immagini</h3>
     <p>
-      <img 
-        src="./immagini/gatto.jpg" 
-        alt="immgaine in locale" 
-      />&#60;img&#62; tag img con immagine locale 
+      <img src="./immagini/gatto.jpg" alt="immgaine in locale" />&#60;img&#62;
+      tag img con immagine locale
     </p>
     <p>
       <img
@@ -88,5 +84,41 @@
     <h3>Altri tag importanti</h3>
     <div>&#60;div&#62; tag div &#60;/div&#62;</div>
     <span>&#60;span&#62; tag span &#60;/span&#62;</span>
+    <hr />
+    <h3>Tipi di input</h3>
+    <form action="" method="get"> <!-- con il method get i dati inseriti vengono visualizzati nella barra dell'indirizzo, col metodo post invice no-->
+      <p>
+        <label for="nome">nome </label>
+        <input type="text" title="Nome" id="nome" name="nome" placeholder="inserisci il nome"/>
+      </p>
+      <p>
+        <label for="cognome">cognome </label>
+        <input type="text" title="Cognome" id="cognome" name="cognome" placeholder="inserisci il cognome"/>
+      </p>
+      <p>
+        <label for="ind-email">email </label>
+        <input type="email" title="Indirizzo e-mail" id="ind-email" name="ind-email" required/>
+      </p>
+      <p><input type="button" title="Pulsante" /></p>
+      <p><input type="number" title="numero" id="numero" min="0" max="1000"></p>
+      <p><input type="search" title="Ricerca" id="research"></p>
+      <p><input type="password" title="Password" id="password"></p>
+      <p><input type="color" title="colore" /></p>
+      <p><input type="date" title="Data" /></p>
+      <p><input type="time" title="Ora"></p>
+      <p><input type="hidden" title="nascosto" /></p>
+      <p><input type="radio" name="sel1" id="selezione" checked>
+        <input type="radio" name="sel1" id="selezione">
+        <input type="radio" name="sel1" id="selezione">
+      </p>
+      <p><input type="checkbox" name="sel2" id="" checked>
+        <input type="checkbox" name="sel2" id="" >
+        <input type="checkbox" name="sel2" id="" ></p>
+      <p>
+        <input type="submit" title="Invia"/>
+        <input type="reset" title="reset" id="reset" disabled/>
+        <button type="submit">Invia dati</button>
+      </p>
+    </form>
   </body>
 </html>
