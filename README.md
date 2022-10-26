@@ -35,16 +35,5 @@ Diana Bernabei 🏆
 27. Emanuela Madeccia
 28. Ylenia Chiappori
 29. Fabio Billeri
-<<<<<<< HEAD
-Ciao
-=======
 
-<<<<<<< HEAD
 prova modifica branch
-=======
-prova di branch Domenico
-modifica
-
-
-aaa
->>>>>>> main
