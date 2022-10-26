@@ -1,6 +1,6 @@
 /* commenti */
 
-/* tutti i bottoni */
+/* selettori semplici */
 button{
     background-color: yellow;
 }
@@ -11,5 +11,27 @@ button{
 }
 
 #sezionex {
-    color: blue;
+    background-color: blue;
+}
+
+/* selettori combinari */
+
+div p{
+    background-color: purple;
+}
+
+div > p{
+    background-color: green;
+}
+
+div ~ p{
+    background-color: aquamarine;
+}
+
+div + p{
+    background-color: pink;
+}
+
+.rosso + p{
+    background-color: greenyellow;
 }
