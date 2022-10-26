@@ -1,0 +1,15 @@
+/* commenti */
+
+/* tutti i bottoni */
+button{
+    background-color: yellow;
+}
+
+.rosso {
+    background-color: red;
+    font-size: 30px;
+}
+
+#sezionex {
+    color: blue;
+}
