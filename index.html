@@ -15,7 +15,7 @@
                         <a href="/">home</a>
                     </li>
                     <li>about</li>
-                    <li>contatti</li>
+                    <li><a href="contatti.html" target="_blank">contatti</a></li>
                 </ul>
             </nav>
         </header>
@@ -62,7 +62,8 @@
                     alt=""
                 />
                 <img src="./assets/GattoCucciolo.jpeg" alt="" />
-                 --><table>
+                 -->
+                <table>
                     <tr>
                         <td>1</td>
                         <td>2</td>
@@ -74,25 +75,55 @@
                 </table>
             </div>
             <div>prova</div>
-            <br>
-            <form method="get">
+            <br />
+            <form method="get" name="form-contatti">
                 <label for="name">nome</label>
-                <input type="text" id="name" name="name">
-                <br>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Mario"
+                    required
+                />
+                <br />
                 <label for="surname">cognome</label>
-                <input type="text" id="surname" name="surname">
-                <br>
-                <label for="email">email</label>
-                <input type="email" id="email" name="email">
-                <br>
+                <input
+                    type="text"
+                    id="surname"
+                    name="surname"
+                    placeholder="Rossi"
+                    required
+                />
+                <br />
+                <label for="emailPersona">email</label>
+                <input type="email" id="emailPersona" name="emailmia" />
+                <br />
+                <label for="emailPersona2">email2</label>
+                <input
+                    type="email"
+                    id="emailPersona2"
+                    name="emailmia2"
+                    disabled
+                />
+                <br />
                 qui
-                <input type="hidden">
+                <input type="hidden" />
                 qui
-                <input type="submit" value="invia">
-                <input type="reset" >
-
+                <br />
+                <input type="radio" name="prova" id="" />
+                <input type="radio" name="prova" id="" />
+                <input type="radio" name="prova" id="" />
+                <br />
+                <br />
+                <input type="checkbox" name="prova" id="" />
+                <input type="checkbox" name="prova2" id="" checked />
+                <input type="checkbox" name="prova3" id="" />
+                <br />
+                <input type="submit" value="invia" />
+                <button type="submit">clicca qui</button>
+                <input type="reset" disabled />
             </form>
-            <br>
+            <br />
         </main>
         <footer>footer</footer>
     </body>
