@@ -1,7 +1,3 @@
-# Titolo repo
-
-## elenco studenti
-
 # Progetto Corso Frontend Developer Tree_Opinno
 
 ## Docente:
