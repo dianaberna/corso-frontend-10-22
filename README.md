@@ -1,7 +1,3 @@
-# Titolo repo
-
-## elenco studenti
-
 # Progetto Corso Frontend Developer Tree_Opinno
 
 ## Docente:
@@ -40,4 +36,12 @@ Diana Bernabei 🏆
 28. Ylenia Chiappori
 29. Fabio Billeri
 
+<<<<<<< HEAD
 prova modifica branch
+=======
+prova di branch Domenico
+modifica
+
+
+aaa
+>>>>>>> main
