@@ -1,0 +1,91 @@
+/*button {
+  background-color: #2f2105;
+  border: 0px;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 20px;
+  margin: 20px;
+  font-weight: bold;
+}
+button > span{
+  background-color: #FF912B;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}*/
+*{
+  margin: 0;
+}
+.main-frame{
+ height: 385px;
+ width: 356px; 
+ font-family: poppins, Arial;
+ box-shadow: 0 0 10px rgba(0,0,0,0.15);
+ border-radius: 12px;
+ position: relative;
+ color: #2F2105;
+ margin: 10px;
+}
+img{
+  /*padding-top: 148px*/
+  height: 226px;
+  border-radius: 12px;
+  padding-right: 6px;
+  margin: 0px 24.07px;
+  margin-top: 24px;
+}
+.under-coffe-picture{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+  align-items: center;
+  margin-top: 19px;
+  margin-bottom: -9px;
+}
+.coffe-type{
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.coffe-like{
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.coffe-description{
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #7E7D7A;
+  width: 170px;
+}
+button{
+  display: flex;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #FF912B;
+  border: 0px;
+}
+.chart{
+  width: 18px;
+}
+.coffe-rating{
+  background-color: white;
+  position: absolute;
+  top: 32px;
+  left: 35px;
+  border-radius: 20px;
+  padding: 2px 10px;
+  border: 5px solid lightgray;
+  font-weight: 700;
+  font-size: 14px;
+}
+.star{
+  height: 12px;
+  padding-left: 4px;
+  align-items: center;
+}
