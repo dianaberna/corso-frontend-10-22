@@ -1,0 +1,31 @@
+body {
+    background: black;
+}
+/* TECH-WORLD */
+
+nav {
+    display: inline;
+    float: left;
+    background-color: white;
+    width: 0.7rem;
+    padding-left: 4rem;
+    height: 0.1rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none; 
+    color: rgb(240, 56, 117);
+    font-size: 1.1rem;
+    font-size: 1.85rem;
+    font-family: Lato;
+    font-style: bold;
+    font-weight: 5.625rem;
+        font-size: 1.875rem;
+}
