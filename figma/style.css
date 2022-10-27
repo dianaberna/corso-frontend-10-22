@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+
+.card {
+    width: 343.97px;
+    height: 373px;
+    left: 152.02px;
+    top: 2610px;    
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+.sandwich {
+    padding: 10px 10px 0 17px;
+    border-radius: 20px;
+}
+
+span {
+    background: #FF912B;
+    border-radius: 64px;
+    padding: 5px;
+    align: right;
+}
+
+.card h2 {
+    margin-left: 17px;
+}
+
+.card p {
+    margin-left: 17px;
+}

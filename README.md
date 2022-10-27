@@ -37,6 +37,3 @@ Diana Bernabei 🏆
 27. Emanuela Madeccia
 28. Ylenia Chiappori
 29. Fabio Billeri
-
-
-prova branch 2
