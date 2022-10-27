@@ -1,29 +1,26 @@
-body {
-    background-color: black;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+        body {
+            background-color: black;
+        }
+    div {
+            background-color: white;
+            width: 343px;
+            height: 373px;
+            padding: 20px;
+            border-radius: 10px;
+        }
 
+        span{
+            padding: 5px;
+            margin-right: 10px;
+            border: 2px solid orange;
+            border-radius: 10px;
+            color: orange;
+        }
 
-
-
-div {
-    background-color: white;
-    width: 343px;
-    height: 373px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-span{
-    padding: 5px;
-    margin-right: 10px;
-    border: 2px solid orange;
-    border-radius: 10px;
-    color: orange;
-}
-
-button {
-    background-color: orange;
-    border-radius: 50%;
-    border: 0px;
-    padding: 10px;
-}
+        button {
+            background-color: orange;
+            border-radius: 50%;
+            border: 0px;
+            padding: 10px;
+        }
