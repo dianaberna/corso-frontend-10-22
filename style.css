@@ -5,17 +5,79 @@
     padding: 0;
     box-sizing: border-box;
 }
-section{
-    height: 500px;
-    background-color: #fff;
-}
-/* CONTENT HERO */
-#content-hero{
+
+
+
+/*HERO*/
+#hero{
     background-color: #F6EBDA;
     height: 970px;
     font-family: 'Poppins', sans-serif;
 }
-#content-hero .container{
+/* Navbar */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 36px;
+}
+.navbar .logo{
+    margin-right: 269px;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+.navbar ul li:nth-of-type(1) a{
+    color: #FF912B;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    width: 222px;
+    height: 40px;
+    background-color: #fff;
+    margin-right: 24px;
+    margin-left: 142px;
+}
+.search-bar svg{
+    margin-left: 14px;
+    margin-right: 19px;
+}
+
+.search-container input{
+    border: none;
+    outline:none;
+    font-weight: 400;
+    font-size: 12px;
+}
+.search-container input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: #929292;
+
+}
+
+/* CONTENT HERO */
+#hero .container{
     display: flex;
     flex-direction: column;
     padding-left: 135px;
@@ -90,7 +152,7 @@ footer{
     width: 80%;
     padding-top: 99px;
 }
-.logo{
+footer .logo{
     margin-bottom: 21px;
 }
 .col .text{
@@ -104,7 +166,6 @@ footer{
     gap: 24px;
     margin-top: 32px;
 }
-
 .social .circle-social{
     background-color: #fff;
     border-radius: 50%;
@@ -118,7 +179,6 @@ footer{
 .circle-social:nth-of-type(2){
     background-color: #FFCB45;
 }
-
 .col h5{
     color: #1D1D1D;
     font-size: 20px;
@@ -140,9 +200,6 @@ footer{
     text-decoration: none;
 
 }
-
-
-
     /* copyright */
 .copyright{
     margin-top: 91px;
