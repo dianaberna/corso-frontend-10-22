@@ -23,6 +23,7 @@ div {
 
 nav {
     margin-left: 30px;
+    justify-self: space-evenlyn;
 }
 
 a {
@@ -41,7 +42,7 @@ ul {
 .logo {
     position: absolute;
 width: 150px;
-height: 30px;
+height: 34px;
 left: 135px;
 top: 41px;
 
@@ -63,17 +64,21 @@ nav > ul > li > a {
     
 }
 
+
 div.searchbar {
-    flex-direction: row;
+    flex-direction: row-reverse;
     display: flex;
 color: #f2f2f2;
 text-decoration: none;
-padding: 0px 10px;
+padding: 0px 210px;
+width: 69%;
+border: none;
 }
 
 svg.carrello {
+    flex-direction: row;
     display: flex;
-    padding: 10px 0px;
+    padding: 0px 1390px;
 }
 
 
