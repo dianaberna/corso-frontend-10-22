@@ -2,12 +2,12 @@ body{
     margin:0;
     font-family: poppins;
     src: url(Poppins-Black.woff);
-  
 }
 
 /*------container----*/
+
 .container{
-    margin-top:100px;
+    margin-top:100px;/*momentaneo*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,15 +16,20 @@ body{
 }
 
 /*------text div----*/
+
 .text{
     display: flex;  
     flex-direction: column;
     width: 30%;
+    column-gap: 100px;
+
 }
 .text u{
     text-decoration-color: #FF912B;
 }
+
 /*------text elements----*/
+
 .text span{
     padding:10px;
     }
@@ -42,9 +47,11 @@ body{
 #text-3{
     width: auto;
     font-weight: 400;
-    
+    color: #7E7D7A;
     }
+
 /*------image div----*/
+
 .image{
     position: relative;
     bottom: 60px;
@@ -62,8 +69,7 @@ body{
                5px -5px 2px #fff,
               -5px  5px 2px #fff;
   
-    border-radius: 4%;
-  
+    border-radius: 4%; 
 }
 
 /*------button style----*/
@@ -72,9 +78,9 @@ body{
     font-family: poppins;
     background-color: #2f2105; ;
     border-radius: 40px;
-    padding: 10px 2px;
+    padding: 10px 0px;
     border:none;
     color:#F4AE26;
-    font-size: 15px;
-    width: 150px;
+    font-size: 1rem;
+    width: 180px;
 }
