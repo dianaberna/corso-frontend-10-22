@@ -5,6 +5,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/* CONTENT HERO */
 #content-hero{
     background-color: #F6EBDA;
     height: 970px;
@@ -66,14 +68,3 @@
     height: 12px;
 }
 
-
-/* Button hover effect */
-.btn-order:hover{
-    transform: translateY(-10px);
-    padding-left: 10px;
-    letter-spacing: 1px;
-}
-.btn-order:hover .circle{
-    transform: scale(1.4) translateX(10px);
-
-}
