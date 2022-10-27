@@ -20,9 +20,7 @@ body{
 .text{
     display: flex;  
     flex-direction: column;
-    width: 30%;
-    
-
+    width: 30%;  
 }
 .text u{
     text-decoration-color: #FF912B;
@@ -83,4 +81,37 @@ body{
     color:#F4AE26;
     font-size: 1rem;
     width: 180px;
+}
+
+/*------review component style----*/
+.review-container{
+    background-color: #F1F1F1;
+    width:452px;
+    min-height: 210px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding-left:20px;
+    gap: 10px;
+}
+.review-internal-container{
+    display: flex;
+    align-items: center;
+    margin-top: 28px; 
+}
+
+.namestar{
+    display: flex;
+    flex-direction: column; 
+    width: 80%;
+}
+.image-review{
+    width: 20%;
+}
+.review-text{
+    font-size: 1.125rem;
+}
+.star-container{
+    display:inline;
 }
