@@ -1,0 +1,25 @@
+.image div {
+    margin-bottom: -30px;
+
+}
+
+#img3 {
+    margin-left: -30px;
+}
+
+.slide h3 {
+    color:#FFCB45;
+}
+
+.feed {
+    width: 452px;
+    height: 210px;
+    left: 0px;
+    top: 0px;
+    background: #F1F1F1;
+    border-radius: 10px;
+}
+
+.feed > img {
+    background-color: red;
+}
