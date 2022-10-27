@@ -1,1 +1,67 @@
+body {
+  background-color: #000;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+#main-container {
+  position: relative;
+  background-color: #fff;
+  border: 6px solid rgb(218, 218, 218);
+  width: 355px;
+  height: 385px;
+  border-radius: 12px;
+}
 
+img.hazelnut_latte {
+  float: inherit;
+  position: absolute;
+  width: 307px;
+  height: 228px;
+  margin: 28px 24px 0px 24px;
+  border-radius: 10px;
+}
+
+.name-drink {
+  position: absolute;
+  font-size: 24px;
+  margin-left: 35px;
+  margin-top: 275px;
+  width: 187px;
+  height: 36px;
+  margin-bottom: 10px;
+}
+span.hot {
+  margin-left: 35px;
+}
+span.cold {
+  margin-left: 130px;
+}
+span.cold,
+span.hot {
+  width: 30px;
+  height: 24px;
+  border: 1px solid orange;
+  color: orange;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-top: 321px;
+}
+span {
+  position: absolute;
+}
+button.svg-shop {
+  background-color: orange;
+  margin-left: 270px;
+  margin-top: 317px;
+  border-radius: 64px;
+  padding: 10px;
+  border: 0px;
+  width: 43px;
+  height: 43px;
+}
+span.feedback {
+  position: absolute;
+  background-color: red;
+  margin-left: 37px;
+  margin-top: 0px;
+}
