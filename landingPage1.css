@@ -37,3 +37,7 @@ button{
     margin: 0px 0px 0px 110px;
     border: 0ch;
 }
+
+.flex{
+    display: flex;
+}
