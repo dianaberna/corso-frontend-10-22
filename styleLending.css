@@ -1,5 +1,13 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+</style>
+
+
+
 body { 
     background-color: black;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .bevande {
@@ -10,7 +18,7 @@ body {
    border-radius: 10px;
    border-color: grey;
    border-style: solid;
-   
+  
    
 
 }
@@ -37,12 +45,32 @@ p {
 
 .icona {
     background-color: orange;
-    
+    margin-left: 150px;
+    border-radius: 50%;
+    padding: 10px;
 }
   
 
 svg {
     background-color: orange;
     background-size: 100px;
-    margin-left: 150px;
+    
+}
+
+
+#titolo {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.score {
+    position: absolute;
+    left: 0;
+    margin-top: 40px;
+    margin-left: 70px;
+    background-color: white;
+    border: 1px solid red ;
+    border-radius: 15px;
+    padding: 5px 10px;
 }
