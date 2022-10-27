@@ -1,3 +1,5 @@
+/* SELETTORI SEMPLICI */
+/* Quando nulla precede il nomme, recuperiamo quei tag */
 body{
   background-color: azure;
 }
@@ -5,4 +7,33 @@ body{
   background-color: aquamarine;
   color: blue;
   font-family: cursive;
+}
+/* il # serve per recuperare gli id*/
+#rosso{
+  background-color: red;
+  display: inline;
+}
+/* Il . serve per recuperare le classi*/
+.blu{
+  background-color: blue;
+  color: white;
+  display: inline;
+}
+/*----------------------------------------------------------------*/
+/* SELETTORI COMBINATORI */
+/* Qui abbiamo il discendente (seleziona tutti i discendenti) */
+div p{
+  background-color: bisque;
+}
+/* vado a selezionare tutti i paragrafi figli di un div */
+div > p{
+  background-color: cadetblue;
+}
+/* vado a selezionare il p fratello (sullo stesso livello) immediatamente successivi al div */
+div + p{
+  font-size: 30px;
+}
+/* vado a selezionare tutti i p fratelli (sullo stesso livello) successivi ai div */
+div ~ p{
+  font-size: 10px;
 }
