@@ -1,11 +1,11 @@
 body{
-    background-color: black;
+    background-color: #F9D9AA;
 
 }
 
 
 div {
-    background-color:white;
+    background-color: white;
     width: 343px;
     height: 373px;
     padding: 20px;
@@ -15,15 +15,32 @@ div {
 span{
     padding: 5px;
     margin-right: 10px;
+}
+
+.hot{
     border: 2px solid orange;
     border-radius: 10px;
     color: orange;
+}
 
+.cold{
+    border: 2px solid #FFD28F;
+    border-radius: 10px;
+    color: #FFD28F;
+
+}
+
+.punteggio{
+    background-color: white;
+    border: 2px solid #FFD28F;
+    border-radius: 10px;
+    color: #FFD28F;    
 }
 
 button {
     background-color: orange;
     border-radius: 50%;
+    margin-left: 150px;
     border:  0px;
     padding: 10px;
 }
