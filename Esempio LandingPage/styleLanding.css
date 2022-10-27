@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Lato:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: beige;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score{
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 1px solid red;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+}
+
+.card > div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card > div > div{
+    display: flex;
+    gap: 2rem;
+}
+
+.card div span{
+    border: 2px solid orange;
+    color: orange;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* ul{
+    display: flex;
+    flex-direction: row;
+} */
+
+/* 
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+div{
+    font-size: 2rem;
+} 
+button {
+    font-family: inherit;
+    background-color: #2F2105;
+    border: 0px;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px; 
+    padding: 10px 10px 10px 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+    padding: 10px 40px;
+    margin: 20px 20px;
+}
+button > div{
+    background-color: orange;
+    border-radius: 20px;
+    padding: 4px;
+} */
