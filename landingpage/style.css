@@ -1,0 +1,26 @@
+.tazzamail{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tazzamail #email{
+    height: 38px;
+    width: 340px;
+    border-radius: 20px;
+    border:0px;
+    position:absolute;
+    outline:none;
+    
+ }
+.bottonecaffe{
+    margin-left: 250px;
+    position:absolute;
+    border-radius: 20px;
+    border: 0px;
+    background-color: rgb(65, 45, 45);
+    color:white;
+    padding: 10px;
+    font-weight: bold;
+    block-size: 40px;
+}

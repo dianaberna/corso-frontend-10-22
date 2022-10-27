@@ -1,0 +1,26 @@
+header{
+    background-color: brown;
+
+}
+.verde{
+    color: green;
+}
+#arancione{
+    background-color: orange;
+    color: white;
+}
+div p{
+    background-color: aqua;
+}
+#rotondo{
+    block-size: 50px;
+    border-radius:20px ;
+    border:0px;
+    background-color: rgb(87, 49, 49);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin:10px
+    
+
+}
