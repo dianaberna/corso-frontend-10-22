@@ -1,13 +1,15 @@
-<style>
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-</style>
+
+
+
 
 
 
 body { 
     background-color: black;
-    font-family: 'Roboto', sans-serif;
-
+    display: flex;
+    gap: 10px;
 }
 
 .bevande {
@@ -30,17 +32,22 @@ body {
 
 h3 {
    margin-left:35px;
+   font-family: 'Roboto', sans-serif;
+
    
 
 }
 
 p {
     margin-left: 35px;
-    
+
+
 }
 
 #scritta {
     margin-left: 35px;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .icona {
@@ -48,6 +55,7 @@ p {
     margin-left: 150px;
     border-radius: 50%;
     padding: 10px;
+
 }
   
 
@@ -60,7 +68,6 @@ svg {
 
 #titolo {
     display: flex;
-    justify-content: space-between;
     gap: 2rem;
 }
 
@@ -73,4 +80,8 @@ svg {
     border: 1px solid red ;
     border-radius: 15px;
     padding: 5px 10px;
+}
+
+#k {
+    margin-left: 140px;
 }
