@@ -1,9 +1,32 @@
-img { 
-    width: 80%;
-    display:inline;
+div { 
+    background-image:url(immagini/caffè.png);
+    background-repeat:no-repeat;
+    background-size: 80%;
+    background-position-x:center;
+    height: 400px;
+    
 }
 
 p{
-    color:#000000;
-    display: inline;
+    color:#ffffff;
+    text-align:center;
+    padding-top: 200px;
+    font-size:32px;
+
+}
+
+input{
+    background-color:#ffffff;
+    border:none;
+    padding: 15px 37px;
+    border-radius:42px;
+    margin-left: 590px;
+}
+
+button{
+    background-color: #2F2105;
+    border:none;
+    color:#ffffff;
+    border-radius:42px;
+    padding:12px 32px;
 }
