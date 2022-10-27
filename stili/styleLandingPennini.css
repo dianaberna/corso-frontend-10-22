@@ -74,16 +74,22 @@ button{
 .chart{
   width: 18px;
 }
-.coffe-rating{
+.rating-background{
   background-color: white;
+  background:rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  display: flex;
   position: absolute;
   top: 32px;
   left: 35px;
+}
+.coffe-rating{
+  background-color: white;
   border-radius: 20px;
   padding: 2px 10px;
-  border: 5px solid lightgray;
   font-weight: 700;
   font-size: 14px;
+  margin: 5px;
 }
 .star{
   height: 12px;

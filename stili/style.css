@@ -1,8 +1,17 @@
 /* SELETTORI SEMPLICI */
 /* Quando nulla precede il nomme, recuperiamo quei tag */
-body{
-  background-color: azure;
+@media screen and (min-width: 480px) and (max-width:768px) {
+  body{
+    background-color: coral;
+  }
 }
+
+@media screen and (min-width: 768px) {
+  body{
+    background-color: gray;
+  }
+}
+
 .p_bellino{
   background-color: aquamarine;
   color: blue;
@@ -29,11 +38,11 @@ div p{
 div > p{
   background-color: cadetblue;
 }
-/* vado a selezionare il p fratello (sullo stesso livello) immediatamente successivi al div */
-div + p{
-  font-size: 30px;
-}
 /* vado a selezionare tutti i p fratelli (sullo stesso livello) successivi ai div */
 div ~ p{
-  font-size: 10px;
+  font-size: 2rem;
+}
+/* vado a selezionare il p fratello (sullo stesso livello) immediatamente successivi al div */
+div + p{
+  font-size: 3rem;
 }
