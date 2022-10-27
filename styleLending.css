@@ -1,0 +1,48 @@
+body { 
+    background-color: black;
+}
+
+.bevande {
+
+   background-color: white;
+   width: 380px;
+   height: 380px;
+   border-radius: 10px;
+   border-color: grey;
+   border-style: solid;
+   
+   
+
+}
+#mocaccino {
+    margin-top: 20px;
+    margin-left: 35px;
+    border-radius: 10px;
+}
+
+h3 {
+   margin-left:35px;
+   
+
+}
+
+p {
+    margin-left: 35px;
+    
+}
+
+#scritta {
+    margin-left: 35px;
+}
+
+.icona {
+    background-color: orange;
+    
+}
+  
+
+svg {
+    background-color: orange;
+    background-size: 100px;
+    margin-left: 150px;
+}
