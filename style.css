@@ -3,13 +3,13 @@ body{
 }
 @font-face {
     font-family: readex;
-    src: url(ReadexPro-Regular.woff);
+    src: url(font/ReadexPro-Regular.woff);
 }
 /*------container----*/
 
 .container{
     font-family: poppins;
-    src: url(Poppins-Black.woff);
+    src: url(font/Poppins-Black.woff);
     margin-top:100px;/*momentaneo*/
     display: flex;
     align-items: center;
@@ -69,7 +69,6 @@ body{
               -5px -5px 2px #fff,
                5px -5px 2px #fff,
               -5px  5px 2px #fff;
-  
     border-radius: 4%; 
 }
 
@@ -116,10 +115,6 @@ body{
     display:flex; 
     flex-direction: column;
     gap:5px;
-}
-.image-review{
-    width: 20%;
-    height: auto;
 }
 .review-text{
     font-size: 1.07rem;
