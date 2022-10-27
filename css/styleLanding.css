@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Lato:wght@300;400;700&display=swap');
 
 body{
+    font-family: 'Lato', sans-serif;
     background-color: beige;
 }
 
@@ -8,6 +9,19 @@ body{
     background-color: white;
     width: 300px;
     padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score{
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 1px solid red;
 }
 
 .card img{
@@ -15,9 +29,22 @@ body{
     height: 200px;
 }
 
-.card div{
+.card > div{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
+
+.card > div > div{
+    display: flex;
+    gap: 2rem;
+}
+
+.card div span{
+    border: 2px solid orange;
+    color: orange;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 /* ul{
