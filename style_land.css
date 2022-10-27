@@ -3,6 +3,11 @@
 
 }
 
+.image {
+    display: flex;
+    flex-direction: column;
+}
+
 #img3 {
     margin-left: -30px;
 }
