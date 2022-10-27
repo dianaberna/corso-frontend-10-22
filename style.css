@@ -44,6 +44,7 @@ section{
     width: 170px;
     height: 46px;
     border-radius: 33px;
+    transition: all 0.5s;
 }
 .circle{
     display: flex;
@@ -54,8 +55,19 @@ section{
     height: 22px;
     border-radius: 50%;
     margin-left: 10px;
+    transition: 0.5s;
 }
 .circle img{
     width: 12px;
     height: 12px;
+}
+
+.btn-order:hover{
+    transform: translateY(-10px);
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+.btn-order:hover .circle{
+    transform: scale(1.2) translateX(10px);
+
 }
