@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+header{background: #F6EBDA; height: 100vh; padding: 20px;}
+a{text-decoration: none; color: black;}
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    /* border: 1px solid red; */
+    width: 155px;
+    padding: 20px;
+}
+nav{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 90px;
+
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+li a:hover{
+    color: #FF912B;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.svg{
+    width: 25px;
+    position: relative;
+    top: 9px;
+    left: 40px;
+    display: inline-block;
+    z-index: 9;
+}
+input{
+    border-radius: 30px;
+    /* border: 2px solid rgb(185, 182, 182); */
+    border: 0px;
+    text-align: center;
+    height: 35px;
+    width: 217px;
+    padding-left: 10px;
+    filter: drop-shadow(6px 2px 24px rgba(0, 0, 0, 0.13));
+    outline:none;
+}
+
+#searc{
+    position: relative;
+    left: 95px;
+    /* border: 2px solid red; */
+}
+.shop{
+    position: relative;
+    right: -140px;
+}
+.bg_hero{
+    position: absolute;
+    width: 490px;
+    height: 385px;
+    left: 783px;
+    top: -23px;
+    background: url('../img/bg_hero.png');
+    
+}
+.hero{
+
+    /* border: 1px solid red; */
+    width: 372px;
+    height: 345px;
+    background-color: #3c0707;
+    border-radius: 49%;
+    position: absolute;
+    right: 127px;
+    top: 140px;
+}
+.img_cap{
+    height: 285px;
+    padding-left: 53px;
+}
+.intro{
+    /* border: 1px solid red; */
+    height: 261px;
+    width: 404px;
+    position: relative;
+    left: 28px;
+    top: 91px;
+}
+.intro h1{
+    font-size: 48px;
+}
+h1 span{color: #FF912B;}
+.btn{
+    position: absolute;
+    bottom: 5px;
+    width: 160px;
+    height: 40px;
+    border-radius: 30px;
+    background: #2F2105;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn_img{
+    position: relative;
+    left: 128px;
+    top: 42px;
+}
+.btn__hero{
+    
+    width: 198px;
+    height: 40px;
+    border-radius: 30px;
+    border: 0px;
+    filter: drop-shadow(-2px 19px 32px rgba(48, 45, 38, 0.19));
+    cursor: pointer;
+    
+}
+.bor_der{
+    position: relative;
+    width: 59%;
+    top: -281px;
+    left: -23px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 31px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+}
