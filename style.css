@@ -5,16 +5,18 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-section{
+#content-hero{
     background-color: #F6EBDA;
     height: 970px;
 }
-.container{
+#content-hero .container{
     display: flex;
     flex-direction: column;
     padding-left: 135px;
     padding-top: 216px;
 }
+
+/* titolo */
 .container .titolo{
     font-weight: 600;
     font-size: 48px;
@@ -24,6 +26,8 @@ section{
 .titolo span{
     color: #FF902A;
 }
+
+/* descrizione */
 .container .desc-titolo{
     font-weight: 400;
     color: #7E7D7A;
@@ -31,7 +35,7 @@ section{
     margin-top: 24px;
     margin-bottom: 32px;
 }
-
+/* button order now */
 .btn-order{
     display: flex;
     justify-content: center;
@@ -57,17 +61,19 @@ section{
     margin-left: 10px;
     transition: 0.5s;
 }
-.circle img{
+.circle svg{
     width: 12px;
     height: 12px;
 }
 
+
+/* Button hover effect */
 .btn-order:hover{
     transform: translateY(-10px);
     padding-left: 10px;
     letter-spacing: 1px;
 }
 .btn-order:hover .circle{
-    transform: scale(1.2) translateX(10px);
+    transform: scale(1.4) translateX(10px);
 
 }
