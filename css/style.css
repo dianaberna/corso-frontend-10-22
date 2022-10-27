@@ -1,0 +1,34 @@
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: #F6EBDA;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contenuto-footer {
+    margin: 0 auto;
+    padding: 100px 0 0 0;
+    width: 80%;
+    height: 300px;
+}
+
+.colonna-footer {
+    display: inline-block;
+    margin: 0 auto;
+    width: 20%;
+    padding: 0 2%;
+}
+
+hr {
+    width: 90%;
+    text-align: center;
+    background-color: #1d1d1d;
+}
+
+.icone {
+    width: 2.8125rem;
+}
+#copy {
+    font-size: smaller;
+    text-align: center;
+}
