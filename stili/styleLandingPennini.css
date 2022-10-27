@@ -17,7 +17,7 @@ button > span{
 *{
   margin: 0;
 }
-.main-frame{
+.coffe-box{
  height: 385px;
  width: 356px; 
  font-family: poppins, Arial;
@@ -69,6 +69,7 @@ button{
   border-radius: 50%;
   background-color: #FF912B;
   border: 0px;
+  cursor: pointer;
 }
 .chart{
   width: 18px;
