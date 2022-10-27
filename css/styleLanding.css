@@ -1,25 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Lato:wght@300;400;700&display=swap');
+
+body{
+    background-color: beige;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    padding: 10px 10px;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+}
+
+.card div{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ul{
+    display: flex;
+    flex-direction: row;
+} */
+
+/* 
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+div{
+    font-size: 2rem;
+} 
+
 button {
+    font-family: inherit;
     background-color: #2F2105;
     border: 0px;
     border-radius: 20px;
     color: #ffffff;
-    /* alto destra basso sinistra*/
-    /*
     padding: 10px; 
 
     padding: 10px 10px 10px 10px;
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    padding-left: 10px; */
+    padding-left: 10px; 
 
     padding: 10px 40px;
 
     margin: 20px 20px;
 }
 
-button > span{
+button > div{
     background-color: orange;
     border-radius: 20px;
     padding: 4px;
-}
+} */
