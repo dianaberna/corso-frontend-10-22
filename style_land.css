@@ -12,7 +12,7 @@
 }
 
 .feed {
-    width: 452px;
+    width: 450px;
     height: 210px;
     left: 0px;
     top: 0px;
@@ -20,6 +20,43 @@
     border-radius: 10px;
 }
 
-.feed > img {
-    background-color: red;
+.slide{
+    display: flex;
+    flex-direction:column;
+}
+
+.feedback{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titlefeed {
+    display: flex;
+    flex-direction:column;
+}
+
+.feed {
+    display: flex;
+    flex-direction:column;
+}
+
+.imgfeed{
+    margin: 1.25rem;
+}
+
+.imgname{
+    display: flex;
+    flex-direction:row;
+}
+
+.textfeed {
+    width: 80%;
+    padding-left:20px;
+}
+
+span >h4 {
+    margin-bottom: 5px;
+    margin-left: 2px;
 }
