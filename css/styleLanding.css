@@ -1,0 +1,25 @@
+button {
+    background-color: #2F2105;
+    border: 0px;
+    border-radius: 20px;
+    color: #ffffff;
+    /* alto destra basso sinistra*/
+    /*
+    padding: 10px; 
+
+    padding: 10px 10px 10px 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; */
+
+    padding: 10px 40px;
+
+    margin: 20px 20px;
+}
+
+button > span{
+    background-color: orange;
+    border-radius: 20px;
+    padding: 4px;
+}
