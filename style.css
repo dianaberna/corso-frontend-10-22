@@ -1,0 +1,8 @@
+button{
+    background-color:#2f2105;
+    border: 2px solid;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 10px 20px 12px 4px; /*top, right, bottom, left*/
+    margin: 20px;
+}
