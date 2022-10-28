@@ -1,3 +1,12 @@
+.feedback{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
 .image div {
     margin-bottom: -30px;
 
@@ -6,12 +15,16 @@
 .image {
     display: flex;
     flex-direction: column;
+    
 }
 
 #img3 {
     margin-left: -30px;
 }
-
+.slide{
+    display: flex;
+    flex-direction:column;
+}
 .slide h3 {
     color:#FFCB45;
 }
@@ -23,29 +36,16 @@
     top: 0px;
     background: #F1F1F1;
     border-radius: 10px;
-}
-
-.slide{
     display: flex;
     flex-direction:column;
 }
 
-.feedback{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: space-around;
-}
 
 .titlefeed {
     display: flex;
     flex-direction:column;
 }
 
-.feed {
-    display: flex;
-    flex-direction:column;
-}
 
 .imgfeed{
     margin: 1.25rem;
