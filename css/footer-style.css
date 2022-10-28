@@ -46,6 +46,7 @@ hr {
 #copy {
     font-size: .9375rem;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 750px) {
