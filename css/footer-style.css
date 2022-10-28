@@ -49,13 +49,13 @@ hr {
     padding-bottom: 10px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     #contenuto-footer {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
     .contenuto-footer {
         padding: 2% 0;
     }
@@ -66,5 +66,8 @@ hr {
     }
     .icone {
         width: 2.1875rem;
+    }
+    .colonna-footer p, .colonna-footer h4 {
+        text-align: center;
     }
 }
