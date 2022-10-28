@@ -1,3 +1,122 @@
-header{
-    background-color: aquamarine;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html, body{
+    font-family: 'Poppins';
+}
+h1{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    color: black;
+    margin: 100px 50px 50px;
+}
+h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    color: #2F2105;
+}
+/*div .section2{
+    margin: 0px 100px;
+}*/
+.all_card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F9D9AA;
+    border-radius: 12px;
+}
+.all_service{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.card{
+    background-color: white;
+    width: 343px;
+    padding: 19px;
+    margin: 19px;
+    border-radius: 12px;
+}
+div .service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.score{
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 12px;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 14px;
+    left: 3.5rem;
+    top: 3.5rem;
+    width: fit-content;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+/*.card > span{
+    align-content: space-between;
+}*/
+.service > h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+.service > p{
+    font-size: 18px;
+    margin-top: -10px;
+}
+.service > img{
+    width: 159px;
+    height: 159px;
+}
+.card > img{
+    width: 100%;
+    border-radius: 12px;
+}
+.card div{
+    display: flex;
+    justify-content: space-between;
+}
+.card > div > div{
+    gap: 2rem;
+    display: flex;
+}
+.temperature{
+    display: flex;
+    align-items: center;
+}
+.orange, .yellow{
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 2px 10px;
+}
+.orange{
+    border: 2px solid #FF912B;
+    color: #FF912B;
+}
+.yellow{
+    border: 2px solid #FFD28F;
+    color: #FFD28F;
+}
+button{
+    background: #FF912B;
+    border: 43px;
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
