@@ -18,7 +18,7 @@ div.under-nav {
   margin-right: 5rem;
 }
 div.under-nav {
-  margin-top: 2rem;
+  margin-top: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -133,14 +133,19 @@ div.eclipse > span.price-eclipse {
 }
 
 /* IMG bg-imh-hero*/
-div.img-header {
+div.img-header-down-left {
   position: relative;
   margin-left: 1rem;
 }
-div.img-header > span {
+div.img-header-down-left > span {
   position: absolute;
   font-weight: 600;
   font-size: 2.5rem;
   left: 4rem;
   top: 5rem;
+}
+div.img-header-up-right {
+  position: absolute;
+  right: 0;
+  top: -2rem;
 }
