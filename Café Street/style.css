@@ -6,12 +6,21 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+body {
+  width: 100%;
+}
 header {
   background-color: #f6ebda;
 }
+nav,
+section.content-hero {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+/* NAV BAR */
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1.25rem;
 }
 nav > ul {
@@ -36,4 +45,33 @@ div.nav-reserch {
   position: absolute;
   margin-left: 10px;
   margin-top: 5px;
+}
+/* CONTENT HERO */
+section.content-hero {
+  width: 500px;
+  margin-top: 12.5rem;
+}
+h1.title,
+p.subtitle,
+button.order-now {
+  margin-top: 20px;
+}
+h1.title,
+h1.title > span {
+  font-size: 3rem;
+  font-weight: 600;
+}
+h1.title > span {
+  color: orange;
+}
+p.subtitle {
+  font-weight: 400;
+  width: 400px;
+  color: #7e7d7a;
+}
+button.order-now {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border-radius: 1rem;
+  background-color: #2f2105;
+  color: white;
 }
