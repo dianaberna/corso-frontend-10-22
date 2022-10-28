@@ -10,9 +10,10 @@ body {
 .chicchi {
     position: absolute;
     width: 599px;
-    height: 394px;
-    left: 700px;
+    height: 200px;
+    left: 600px;
     top: -34px;
+    z-index: -0.0625rem ;
 }
 
 nav {
