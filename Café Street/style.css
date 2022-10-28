@@ -149,3 +149,36 @@ div.img-header-up-right {
   right: 0;
   top: -2rem;
 }
+
+main > section {
+  position: absolute;
+  width: 79rem;
+  height: 22.9375rem;
+  background-color: #f9d9aa;
+  border-radius: 5rem;
+  margin-top: -8rem;
+  left: 13rem;
+}
+#container {
+  position: absolute;
+  left: 5.5rem;
+  top: -8rem;
+}
+#container-drink {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+div.card {
+  background-color: #fff;
+  border: 6px solid #505050;
+  width: 22.25rem;
+  height: 23.125rem;
+  border-radius: 0.75rem;
+}
+div.card > img {
+  width: 18.75rem;
+  height: 13.75rem;
+  border-radius: 0.625rem;
+  margin: 1.4rem 1.4rem 0rem 1.4rem;
+}
