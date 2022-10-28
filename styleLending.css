@@ -14,12 +14,12 @@ body {
 
 .bevande {
 
-
+   position: relative;
    background-color: white;
    width: 343.97px;
    height: 373px;
-   left: 548.02px;
-   top: 3035px;
+   
+   
    border-radius: 10px;
    
    box-shadow: 0px 0px 24px 19px rgba(0,0,0,0.1);
