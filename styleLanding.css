@@ -7,63 +7,69 @@
 } */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-p,
-h3,
-button {
+body {
     font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+@media screen and (min-width: 480) and (max-width: 778) {
+    body {
+        color: red;
+    }
+}
+
+@media screen and (max-width: 1024) {
+    body {
+        color: blue;
+    }
 }
 
 section {
+    background-color: #fff;
     width: 370px;
-    height: 450px;
-    border: 4px solid #faf3e9;
+    padding: 10px 10px;
+    border: 0.25rem solid #faf3e9;
     border-radius: 20px;
-}
-
-.section_image {
-    background-image: url("assets/espresso.png");
-    border-radius: 20px;
-    width: 300px;
-    height: 225px;
-    padding: 20px;
-    margin: 12px;
-}
-
-.section_image span {
-    border: 4px solid #bfb0a9;
-    background-color: #ffff;
-    /* font-family: "Poppins", sans-serif; */
-    font-weight: 700;
-    font-size: 14px;
-    border-radius: 15px;
-    color: #2f2105;
-    padding: 4px;
-}
-
-.section_image button img {
-    padding-left: 2px;
-}
-
-#section_align {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
-.section_dx p {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 13px;
+.score {
+    position: absolute;
+    left: 0;
+    margin-left: 60px;
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 5px 10px;
 }
 
-.section_text h3 {
-    font-size: 24px;
-    /* font-family: "Poppins", sans-serif; */
-    color: #2f2105;
+
+/* section img {
+    width: 200px;
+    height: 200px;
+} */
+
+section>div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.section_text span {
+section>div>div {
+    display: flex;
+    gap: 2 rem;
+}
+
+section div span {
+    border: 2px solid #ffd28f;
+    color: #ffd28f;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.primariga span {
     color: #ffd28f;
     border: 2px solid #ffd28f;
     background-color: #fff;
@@ -74,7 +80,7 @@ section {
     margin-right: 10px;
 }
 
-.section_dx {
+.secondariga {
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -91,4 +97,8 @@ section {
     background-color: #ff912b;
     padding: 10px;
     border-radius: 50%;
+}
+
+.prova {
+    display: flex;
 }

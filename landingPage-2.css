@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@500&display=swap");
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10rem;
+    background-color: black;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header h2 {
+    color: #f03a76;
+    text-transform: uppercase;
+    padding: 0.25rem 1rem;
+    margin: 1rem 7rem;
+}
+
+header p {
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.025rem;
+}
+
+.container {
+    margin: 0, auto;
+}
+
+main {
+    background: rgb(0, 0, 0);
+    background: linear-gradient( 19deg, rgba(0, 0, 0, 1) 67%, rgba(105, 101, 101, 1) 100%);
+    opacity: 0, 09;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem;
+}
+
+main h1,
+p,
+button {
+    color: #f03a76;
+}
+
+.title {
+    width: 32rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.title h1 {
+    font-size: 3.5rem;
+    color: #deecf9;
+    margin-bottom: 0;
+}
+
+.color_rose {
+    color: #f03a76;
+}
+
+.title p {
+    color: #c7e0fa;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem;
+    background-color: #f03a76;
+    color: #fff;
+    border: 0;
+    border-radius: 3rem;
+}
+
+.image {
+    position: relative;
+    padding: 1rem;
+}
+
+.phone_img {
+    position: relative;
+}
+
+.ellipse {
+    position: absolute;
+    right: -4.9rem;
+    bottom: 5rem;
+}
+
+.star_1 {
+    position: absolute;
+    top: 5rem;
+    right: 14rem;
+}
+
+.ellipse_25 {
+    position: absolute;
+    right: 34rem;
+    top: 23rem;
+}
+
+.polygon {
+    position: absolute;
+    right: 34rem;
+    top: 36rem;
+}
+
+.ellipse_29 {
+    position: absolute;
+    right: 5rem;
+    top: 35rem;
+}
+
+.background {
+    position: relative;
+}
+
+.ellipse_big {
+    position: absolute;
+    top: -10rem;
+    left: 48rem;
+}
+
+.ellipse_28 {
+    position: absolute;
+    bottom: 50rem;
+    right: 7rem;
+}
+
+.azzura {
+    position: absolute;
+    top: -28rem;
+    right: 19rem;
+}
+
+.star_2 {
+    position: absolute;
+    top: -22.5rem;
+    right: 2rem;
+}
+
+section {
+    background-color: #181823;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_bottom {
+    width: 70%;
+}
+
+.title {
+    color: #deecf9;
+    font-size: 2.3rem;
+    margin-top: 6rem;
+    align-items: center;
+}
+
+.subtitle {
+    width: 50%;
+    margin: 0 auto;
+    color: #deecf9;
+    line-height: 2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin: 2rem;
+    padding: 2rem;
+    width: 30%;
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.card img {
+    width: 70%;
+}
+
+.card p {
+    color: #deecf9;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+article {
+    background-color: #181823;
+}
+
+.sub_article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 6rem;
+}
+
+.title_article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.title_article h2 {
+    color: #deecf9;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: start;
+}
+
+.title_article p {
+    color: #deecf9;
+    line-height: 2rem;
+    font: 1, 1rem;
+}
+
+.article_1 {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    gap: 4rem;
+}
+
+.article_1 h2 {
+    color: #deecf9;
+    font-size: 2rem;
+    line-height: 4rem;
+    margin-right: 12rem;
+}
+
+.article_1 p {
+    color: #deecf9;
+    line-height: 2rem;
+    font-size: 1, 1rem;
+}
+
+.margin-right {
+    margin-right: 30rem;
+}
+
+.background_grey {
+    padding: 4rem;
+    background-color: #181823;
+}
+
+.background_grey h2 {
+    color: #deecf9;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+}
+
+label,
+input {
+    padding: 1rem 2rem;
+    margin: 2rem;
+    color: #deecf9;
+}
