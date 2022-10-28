@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {
-  background-color: #000;
+  background-color: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 div.card {
@@ -25,8 +27,9 @@ img {
   justify-content: space-around;
   font-size: 1.5rem;
   align-content: center;
-  padding: 0px 10px;
+  width: 100%;
 }
+
 p {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
