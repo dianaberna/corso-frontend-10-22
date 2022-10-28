@@ -1,38 +1,44 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
 
 
 body { 
-    background-color: black;
+    background-color: white;
     display: flex;
     gap: 10px;
+    font-family: 'Poppins', sans-serif, ;
 }
 
 .bevande {
 
+
    background-color: white;
-   width: 380px;
-   height: 380px;
+   width: 343.97px;
+   height: 373px;
+   left: 548.02px;
+   top: 3035px;
    border-radius: 10px;
-   border-color: grey;
-   border-style: solid;
+   
+   box-shadow: 0px 0px 24px 19px rgba(0,0,0,0.1);
+
+   
   
    
 
 }
 #mocaccino {
     margin-top: 20px;
-    margin-left: 35px;
+    margin-left: 20px;
+    
     border-radius: 10px;
 }
 
 h3 {
    margin-left:35px;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Poppins', sans-serif;
 
    
 
@@ -46,13 +52,13 @@ p {
 
 #scritta {
     margin-left: 35px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
 .icona {
     background-color: orange;
-    margin-left: 150px;
+    margin-left: 110px;
     border-radius: 50%;
     padding: 10px;
 
@@ -72,16 +78,22 @@ svg {
 }
 
 .score {
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     left: 0;
     margin-top: 40px;
-    margin-left: 70px;
+    margin-left: 50px;
     background-color: white;
-    border: 1px solid red ;
     border-radius: 15px;
     padding: 5px 10px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1);
 }
 
 #k {
-    margin-left: 140px;
+    margin-left: 110px;
+}
+
+#star {
+    margin-left: 5px;
 }
