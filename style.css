@@ -21,6 +21,24 @@ div {
 
     }
 
+.bg-img-hero {
+position: absolute;
+right: 0%;
+top: 0%;
+z-index: -1;
+}
+
+.foto-caffè {
+    position: absolute;
+    right: 11.5rem;
+    margin-top: 4.9rem
+}
+
+.cerchio1 {
+    position: absolute;
+    right: 10rem;
+    z-index: -1;
+}
 
 ul {
     list-style-type: none;
@@ -85,7 +103,7 @@ nav > ul > li > a {
     margin-right: 1rem;
 
     }
-    
+
 
 @media screen and (max-width:760px){
     ul{display: none;}
