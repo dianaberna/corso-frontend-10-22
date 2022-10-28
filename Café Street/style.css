@@ -8,11 +8,11 @@
 }
 header {
   background-color: #f6ebda;
-  padding-top: 2.5rem;
 }
 nav {
   display: flex;
   justify-content: space-around;
+  padding: 1.25rem;
 }
 nav > ul {
   display: flex;
@@ -23,6 +23,8 @@ nav > ul {
 div.nav-reserch {
   display: flex;
 }
-#reserch-drink {
+#reserchbar {
   border-radius: 20px;
+  border: none;
+  padding-left: 10px;
 }
