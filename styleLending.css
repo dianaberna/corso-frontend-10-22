@@ -53,6 +53,7 @@ p {
 #scritta {
     margin-left: 35px;
     font-family: 'Poppins', sans-serif;
+    color: #7E7D7A;
 
 }
 
@@ -80,9 +81,8 @@ svg {
 .score {
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    left: 0;
-    margin-top: 40px;
-    margin-left: 50px;
+    top: 50px;
+    left: 50px;
     background-color: white;
     border-radius: 15px;
     padding: 5px 10px;
