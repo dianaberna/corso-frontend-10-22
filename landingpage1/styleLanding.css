@@ -1,32 +1,65 @@
-div { 
+body{
+    font-family: Poppins;
+
+}
+.flex{
     background-image:url(immagini/caffè.png);
     background-repeat:no-repeat;
-    background-size: 80%;
+    background-size: 81,25%;
     background-position-x:center;
-    height: 400px;
-    
 }
+
+.email{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:8%;
+
+}
+
 
 p{
     color:#ffffff;
-    text-align:center;
-    padding-top: 200px;
-    font-size:32px;
-
+    font-size:2rem;
+    font-weight:600;
 }
 
-input{
+form{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+input {
+    border:none;
+    border-radius: 2.625rem;
+    font-family:Poppins;
+}
+
+#email{
     background-color:#ffffff;
-    border:none;
-    padding: 15px 37px;
-    border-radius:42px;
-    margin-left: 590px;
+    width: 30.375rem;
+    height:3.375rem;
+    font-size:1rem;
+    padding-left:1.25rem;
+    font-weight:600;
 }
 
-button{
-    background-color: #2F2105;
-    border:none;
+#bottone{
+    background-color:#2F2105;
     color:#ffffff;
-    border-radius:42px;
-    padding:12px 32px;
+    width:8.625rem;
+    height:2.75rem;
+    font-weight:600;
+    font-size:0.875rem;
+    position:absolute;
+    margin-right:0.3125rem;
+    box-shadow: 0px 4px 32px rgba(223, 195, 124, 0.25);
 }
+
+#bottone:hover{
+    cursor:pointer;
+}
+   
