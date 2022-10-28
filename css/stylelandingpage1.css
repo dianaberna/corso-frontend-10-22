@@ -31,7 +31,6 @@ body {
 }
 
 .card > div {
-    
 }
 
 .card .score {
@@ -63,7 +62,8 @@ body {
     border-radius: 10px;
 }
 
-.card-title, .card-footer{
+.card-title,
+.card-footer {
     padding: 0px 1rem;
     display: flex;
     justify-content: space-between;
@@ -80,12 +80,12 @@ body {
     gap: 2rem;
 }
 
-.card-footer .temperature{
+.card-footer .temperature {
     display: flex;
     align-items: center;
 }
 
-.card-footer .temperature span{
+.card-footer .temperature span {
     border-radius: 10px;
     padding: 5px 10px;
 }
