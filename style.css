@@ -1,0 +1,24 @@
+body {
+    background-color: #F6EBDA;   
+}
+
+.mainmenu {
+    background-color: rgb(124, 108, 108);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+div.searchbar {
+    background-color: blueviolet;
+    display:flex;
+    align-items: center;
+}
