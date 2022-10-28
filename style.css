@@ -31,11 +31,7 @@ z-index: -1;
 }
 
 .rating-star {
-    position: absolute;
-    right: 10.5%;
-    margin-top: 9.7rem;
-    z-index: 1;
-
+    padding-left: 0.3rem;
 }
 
 .foto-caffe {
@@ -160,6 +156,7 @@ nav > ul > li > a {
  .chicchi-caffe2 {
     position: absolute;
     margin-left: -135px;
+    z-index: -1;
     
 
 
@@ -181,9 +178,73 @@ nav > ul > li > a {
 
  .cart-icon {
     display: flex;
-    padding: 0rem 9.4rem;
+    padding: 0rem 9.1rem;
     margin-top: -1.1rem;
  }
+
+ .testo-popolari-ora {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 6rem;
+ }
+
+ .cards {
+display: flex;
+justify-content: space-between;
+
+ }
+
+ .cards > #card1 {
+    background: white;
+    position: absolute;
+    width: 343px;
+    height: 373px;
+    left: 155px;
+    top: 751px;
+    margin-left: 0;
+    border-radius: 14px;
+    z-index: -1;
+
+
+ }
+
+ .cards > #card2 {
+    background: white;
+    position: absolute;
+    width: 343px;
+    height: 373px;
+    left: 548px;
+    top: 751px;
+    margin-left: 15rem;
+    border-radius: 14px;
+ }
+
+ .cards > #card3 {
+    background: white;
+    position: absolute;
+    width: 343px;
+    height: 373px;
+    left: 941px;
+    top: 751px;
+    margin-left: 30rem;
+    border-radius: 14px;
+    
+ }
+
+ .vanilla-latte {
+    margin-top: 20.5rem;
+    margin-left: 2.2rem;
+    font-weight: bold;
+
+ }
+
+ .acquistati-card1 {
+    position: absolute;
+    margin-left: 16rem;
+    top: 62rem;
+    font-weight: bold;
+ }
+
 
 @media screen and (max-width:760px){
     ul{display: none;}
