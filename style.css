@@ -242,21 +242,25 @@ justify-content: space-between;
     position: absolute;
     top: 1rem;
     left: 1rem;
+    border-radius: 1rem;
  }
 
  .espresso {
     margin-top: 1rem;
     margin-left: 1rem;
+    border-radius: 1rem;
  }
+
  .vanilla-latte {
     margin-top: 20.5rem;
     margin-left: 2.2rem;
     font-weight: bold;
-
  }
+
  .latte-cacao {
     margin-top: 1rem;
     margin-left: 1rem;
+    border-radius: 1rem;
  }
 
  .espresso-testo {
