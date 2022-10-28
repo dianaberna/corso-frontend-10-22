@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;500;700&display=swap');
 body {
 font-family: 'Lato', sans-serif;
 }
@@ -12,13 +12,15 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     background-color:#F6EBDA;
+    padding-left: 135px;
+    padding-right: 135px;
 
     }
 
 div {
     font-family: "Lato", sans-serif;
     font-size: 2rem;
-
+    
     }
 
 .bg-img-hero {
@@ -28,10 +30,18 @@ top: 0%;
 z-index: -1;
 }
 
-.foto-caffè {
+.rating-star {
+    position: absolute;
+    right: 10.5%;
+    margin-top: 9.7rem;
+    z-index: 1;
+
+}
+
+.foto-caffe {
     position: absolute;
     right: 11.5rem;
-    margin-top: 4.9rem
+    margin-top: 2.4rem
 }
 
 .cerchio1 {
@@ -57,7 +67,7 @@ ul a:hover {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     
     }
@@ -107,7 +117,9 @@ nav > ul > li > a {
  div span{
     font-weight: 300;
     background-color: white;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
+    padding: 0.5rem 2.9rem;
+    font-size: 24px;
  }
 
  span.testo-nome {
@@ -115,6 +127,62 @@ nav > ul > li > a {
     right: 28rem;
     margin-top: 3rem;
 
+ }
+
+ span.punteggio {
+    position: absolute;
+    right: 11.5rem;
+    margin-top: 9rem;
+ }
+
+ span.numero {
+    position: absolute;
+    right: 28rem;
+    margin-top: 21.5rem;
+ }
+
+ div.regola-testo {
+    width: 25%;
+ }
+
+ .testo-caffe {
+    margin-top: 6.8rem;
+    font-size: 48px;
+ }
+
+ .testo2-caffe {
+    margin-top: 2rem;
+    font-size: 18px;
+    width: 80%;
+    border-left: 4rem;
+ }
+
+ .chicchi-caffe2 {
+    position: absolute;
+    margin-left: -135px;
+    
+
+
+ }
+
+ #bottone-testo-caffe {
+    background-color: #2F2105;
+    color: white;
+    border: 0;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+ }
+
+ .icon-botton {
+    display: flex;
+    padding: 0rem 9rem;
+    margin-top: -2.1rem;
+ }
+
+ .cart-icon {
+    display: flex;
+    padding: 0rem 9.4rem;
+    margin-top: -1.1rem;
  }
 
 @media screen and (max-width:760px){
