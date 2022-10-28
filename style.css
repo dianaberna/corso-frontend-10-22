@@ -245,6 +245,43 @@ justify-content: space-between;
     font-weight: bold;
  }
 
+ .tazza-marrone {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+ }
+
+ .espresso {
+    margin-top: 1rem;
+    margin-left: 1rem;
+ }
+
+ .latte-cacao {
+    margin-top: 1rem;
+    margin-left: 1rem;
+ }
+
+ .espresso-testo {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+ }
+
+ .latte-cacao-testo {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+ }
+
+ .rating3 {
+    margin-left: 16.1rem;
+    margin-top: -3.3rem;
+    font-weight: bold;
+ }
+ .rating2 {
+    margin-left: 16.1rem;
+    margin-top: -3.3rem;
+    font-weight: bold;
 
 @media screen and (max-width:760px){
     ul{display: none;}
