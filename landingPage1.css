@@ -2,7 +2,7 @@
 
 
 body{
-    background-color: black;
+    background-color:rgba(43,43,43,1);
     font-family: 'Mulish', sans-serif;
 }
 
@@ -48,7 +48,7 @@ body{
 
 .cartshop{
     margin-right: 30px;
-    padding: 15px;
+    padding: 13px;
     border-radius: 50%;
     border: 0px;
     background-color: orange;
