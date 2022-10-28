@@ -19,3 +19,22 @@ ul#menu {
     gap: 32px;
     list-style-type: none;
 }
+
+.searchbar{
+    display: flex;
+   
+}
+
+input {
+    padding-left: 30px;
+    border-radius: 4rem;
+    border: 0px;
+}
+
+.lente {
+     position: absolute;
+     gap: 20px;
+     margin-top: 5px;
+     margin-left: 5px;
+           }
+    
