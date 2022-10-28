@@ -20,7 +20,8 @@ span {
     background: #FF912B;
     border-radius: 64px;
     padding: 5px;
-    align: right;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card h2 {
