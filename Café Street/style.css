@@ -7,10 +7,6 @@ body {
   width: 100%;
   height: auto;
 }
-nav > ul {
-  display: flex;
-  justify-content: center;
-}
-li {
-  padding: 20px, 30px, 20px, 30px;
+header {
+  background-color: #f6ebda;
 }
