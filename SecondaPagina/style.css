@@ -37,4 +37,13 @@ nav ul a {
     font-weight: 5.625rem;
         font-size: 1.875rem;
 }
-
+.lista{
+    font-family: 'Lato', sans-serif;
+        background: black;
+        padding: 0;
+        margin: 0%;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+}
