@@ -1,11 +1,12 @@
-
 main {
     width: 100%;
+    height: 500px;
 }
 
-.subscribe {    
-    height: 500px;  
+.subscribe-form {
+    height: 390px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -18,10 +19,24 @@ main {
     z-index: -1;
 }
 
+.subscribe-form input {
+    border: none;
+    border-radius: 2.625rem;
+    font-size: .875rem;
+}
+
 .subscribe h2 {
-    color: white
+    color: white;
+    font-weight: 900;
+}
+
+.subscribe-form input[type="submit"] {
+    background-color: #2F2105;
+    padding: .75rem 2rem;
+    color: white;
+    z-index: 3;
 }
 
 #subscribe-email {
-    
+    padding: 13px 150px 13px 5px;
 }
