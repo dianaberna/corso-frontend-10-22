@@ -13,7 +13,7 @@ img {
 /* utilieties */
 
 .main-container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin-inline: auto;
     padding-inline: 1.5rem;
 
@@ -98,6 +98,34 @@ h2 span {
     }
 
 
+    /* HEADER */
+    /* ALTO E BASSO ---------------------- */
+
+    #alto, #basso {
+        display: block;
+    }
+
+    #alto {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+    }
+
+    #basso {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30%;
+
+    }
+
+    .hero-section {
+        height: 700px;
+        position: relative;
+    }
+    /* fine -------------------------------- */
+
     /* media della sezione ABOUT */
 
     .about-us {
@@ -123,7 +151,11 @@ h2 span {
         /* min-width: 33%; */
         flex-wrap: wrap;
     }
-    
+
+    /* SEZIONE CTA */
+    .bg-cta {
+        border-radius: 1.5rem;
+    }
 }
 
 
@@ -192,3 +224,54 @@ h2 span {
 .p-rel img {
     border-radius: 1rem;
 }
+
+
+
+
+
+/* ALTO E BASSO ------------------- */
+#alto, #basso {
+ display: none;
+}
+/* fine --------------------- */
+
+
+/* CTA SECTION */
+
+.bg-cta {
+    background-image: url(./images/background-cta.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+.bg-cta h2 {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+input {
+    border: none;
+    max-width: 700px;
+    min-width: 200px;
+}
+
+form {
+    display: flex;
+    background-color: white;
+    padding: .2rem .5rem;
+    border-radius: 1rem;
+}
+
+.no-margin {
+    margin: 0 0 0 50px;
+}
+
