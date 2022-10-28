@@ -74,4 +74,17 @@ button.order-now {
   border-radius: 1rem;
   background-color: #2f2105;
   color: white;
+  align-content: center;
+  display: flex;
+  gap: 0.3125rem;
+  align-content: center;
+}
+
+.svg-shop {
+  background-color: #ff912b;
+  border: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  padding: 5px;
 }
