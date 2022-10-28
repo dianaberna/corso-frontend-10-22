@@ -13,9 +13,15 @@ header {
   background-color: #f6ebda;
 }
 nav,
-section.content-hero {
+div.under-nav {
   margin-left: 5rem;
   margin-right: 5rem;
+}
+div.under-nav {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 /* NAV BAR */
 nav {
@@ -49,7 +55,7 @@ div.nav-reserch {
 /* CONTENT HERO */
 section.content-hero {
   width: 500px;
-  margin-top: 12.5rem;
+  margin-top: 5rem;
 }
 h1.title,
 p.subtitle,
@@ -87,4 +93,37 @@ button.order-now {
   height: 22px;
   border-radius: 50%;
   padding: 5px;
+}
+
+/* IMG-HER*/
+div.eclipse {
+  position: relative;
+  text-align: center;
+  background-color: #2f2105;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+}
+div.eclipse span {
+  background-color: #fff;
+  padding: 0.5rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  border: 4px solid #7e7d7a39;
+  font-weight: 600;
+}
+div.eclipse > span.capuccino-eclipse {
+  position: absolute;
+  left: -5rem;
+  top: 2rem;
+}
+div.eclipse > div.score-div-eclipse > span.score-eclipse {
+  position: absolute;
+  right: -2rem;
+  top: 6rem;
+}
+div.eclipse > span.price-eclipse {
+  position: absolute;
+  left: 0rem;
+  bottom: 2rem;
 }
