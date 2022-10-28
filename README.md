@@ -1,7 +1,5 @@
 # Progetto Corso Frontend Developer Tree_Opinno
 
-Questa è la repository per il Progetto Corso Frontend Developer Tree_Opinno.
-
 ## Docente:
 
 Diana Bernabei 🏆
@@ -36,4 +34,14 @@ Diana Bernabei 🏆
 26. Martina Pelizzari
 27. Emanuela Madeccia
 28. Ylenia Chiappori
+<<<<<<< HEAD
 29. Fabio Billeri
+=======
+29. Fabio Billeri
+
+prova di branch Domenico
+modifica
+
+
+aaa
+>>>>>>> main
