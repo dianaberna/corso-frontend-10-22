@@ -4,7 +4,7 @@ main {
 }
 
 .subscribe-form {
-    height: 390px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,10 +13,11 @@ main {
 
 .subscribe img {
     position: absolute;
-    height: 390px;
     width: 80%;
     left: 10%;
+    right: 10%;
     z-index: -1;
+    padding-top: 1.25rem;
 }
 
 .subscribe-form input {
@@ -32,9 +33,10 @@ main {
 
 .subscribe-form input[type="submit"] {
     background-color: #2F2105;
-    padding: .75rem 2rem;
+    padding: .625rem 2rem;
     color: white;
     z-index: 3;
+    position:absolute;
 }
 
 #subscribe-email {
