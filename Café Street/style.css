@@ -117,7 +117,7 @@ div.eclipse > span.capuccino-eclipse {
   left: -5rem;
   top: 2rem;
 }
-div.eclipse > div.score-div-eclipse > span.score-eclipse {
+div.eclipse > div.score-div-eclipse {
   position: absolute;
   right: -2rem;
   top: 6rem;
@@ -126,4 +126,8 @@ div.eclipse > span.price-eclipse {
   position: absolute;
   left: 0rem;
   bottom: 2rem;
+}
+.svg-star {
+  width: 30px;
+  height: 30px;
 }
