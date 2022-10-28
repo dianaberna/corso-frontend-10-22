@@ -9,12 +9,13 @@ body{
 .card{
     width: 356px;
     height: 385px;
-    background-color: white;
-    border-radius: 20px;
+    background-color:rgba(255,250,233,1);
+    border-radius: 12px;
+    box-shadow: 6px 6px 5px rgba(220,220,220,0.5);
 }
 
 .imgcap{
-    margin:13px 0px 0px 22px;
+    margin:13px 0px 0px 24px;
     border-radius: 15px; 
 }
 
@@ -24,9 +25,9 @@ body{
 }
 
 .card-name{
-    font-weight: 800;
+    font-weight: 700;
     font-size: 28px;
-    margin-left: 22px;
+    margin-left: 30px;
     margin-top: 10px;
 }
 
@@ -37,12 +38,36 @@ body{
     margin-top: 10px;
 }
 
-.card-descr{
-    font-weight: 800;
+.card-description{
+    font-weight: 700;
     color: rgba(144,144,144,1);
-    margin-left: 22px;
+    margin-left: 30px;
+    margin-top: 28px;
+    font-size: 20px;
 }
 
 .cartshop{
-    
+    margin-right: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: orange;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.rating-conteiner{
+    background: rgba(220,220,220,0.5);
+    border-radius: 25px;
+    position: absolute;
+    top: 35px;
+    left: 48px;
+}
+.product-rating{
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 900;
+    margin: 5px;
+    padding: 2px 7px;
 }
