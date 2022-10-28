@@ -41,9 +41,19 @@ hr {
 }
 
 .icone {
-    width: 2.8125rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    margin: 2%;
+    box-shadow: 0px 4px 24px 0px #1D1D1D40;
+
 }
 
+.icone.facebook {
+    background-color: #FFCB45;
+}
 
 #copy {
     font-size: .9375rem;
@@ -51,13 +61,13 @@ hr {
     padding-bottom: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 917px) {
     #contenuto-footer {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 740px) {
     .contenuto-footer {
         padding: 2% 0;
     }
