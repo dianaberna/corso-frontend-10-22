@@ -104,6 +104,18 @@ nav > ul > li > a {
 
     }
 
+ div span{
+    font-weight: 300;
+    background-color: white;
+    border-radius: 1.5rem;
+ }
+
+ span.testo-nome {
+    position: absolute;
+    right: 28rem;
+    margin-top: 3rem;
+
+ }
 
 @media screen and (max-width:760px){
     ul{display: none;}
