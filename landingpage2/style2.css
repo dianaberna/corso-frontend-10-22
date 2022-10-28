@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+}
+.background{
+    background-color: #F6EBDA;
+    display:flex;
+    justify-content:end;
+    height: 100vh;
+}
+.background #circle{
+    position:relative;
+    background-color: #2F2105;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+}
+#tazza{
+    position: absolute;
+}
+.conteinerCappuccino{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 10px solid rgba(0, 0, 0, 0.2);
+    height: 50px;
+    width: 200px;
+    border-radius: 25px; 
+}
+.conteinerCappuccino .testoCap{
+    position: absolute;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.conteinerNumero1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    margin-right: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid rgba(0, 0, 0, 0.2);
+    height: 50px;
+    width: 150px;
+    border-radius: 25px; 
+}
+.conteinerNumero1 .numero1{
+    position: absolute;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
