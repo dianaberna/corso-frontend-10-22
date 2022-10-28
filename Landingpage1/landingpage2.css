@@ -7,6 +7,15 @@ body {
     background-color:#F6EBDA ;
 }
 
-ul#menu li {
-    display: inline;
+nav {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul#menu {
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
 }
