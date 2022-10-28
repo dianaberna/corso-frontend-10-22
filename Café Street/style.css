@@ -131,3 +131,16 @@ div.eclipse > span.price-eclipse {
   width: 30px;
   height: 30px;
 }
+
+/* IMG bg-imh-hero*/
+div.img-header {
+  position: relative;
+  margin-left: 1rem;
+}
+div.img-header > span {
+  position: absolute;
+  font-weight: 600;
+  font-size: 2.5rem;
+  left: 4rem;
+  top: 5rem;
+}
