@@ -182,3 +182,15 @@ div.card > img {
   border-radius: 0.625rem;
   margin: 1.4rem 1.4rem 0rem 1.4rem;
 }
+.name-drink {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.name-drink > p {
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+.price-drink {
+  font-weight: 600;
+}
