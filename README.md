@@ -1,7 +1,3 @@
-# Titolo repo
-
-## elenco studenti
-
 # Progetto Corso Frontend Developer Tree_Opinno
 
 ## Docente:
@@ -43,3 +39,8 @@ Diana Bernabei 🏆
 prova branch
 
 ## Oleksandr é dentro il branch di Ludovico
+prova di branch Domenico
+modifica
+
+
+aaa
