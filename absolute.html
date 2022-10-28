@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent, .parent-absolute{
+            border: 1px solid blue;
+        }
+        .child, .child-absolute{
+            border: 1px solid red;
+            background-color: antiquewhite;
+        }
+        .parent-absolute{
+             position: relative; 
+        }
+        .child-absolute{
+            position: absolute;
+            background-color: yellow;
+            margin-left: 200px;
+            top: 0px;
+        }
+        header{
+            background-color: #F6EBDA;
+            /* position: relative; */
+        }
+        #alto{
+            position: absolute;
+            top:0px;
+            right: 0px;
+            z-index: -1;
+        }
+        #basso{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img id="alto" src="bg_img_hero.png" alt="caffè">
+        <img id="basso" src="bg_img_hero.png" alt="caffè">
+        
+    </header>
+
+    <div class="parent">
+        <p class="child">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto obcaecati facilis veniam, amet ratione maxime et blanditiis tempora in reprehenderit! Soluta eaque doloribus maxime rerum sapiente ut exercitationem iusto! Earum?</p>
+        <p class="child">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto obcaecati facilis veniam, amet ratione maxime et blanditiis tempora in reprehenderit! Soluta eaque doloribus maxime rerum sapiente ut exercitationem iusto! Earum?</p>    </div>
+    <br/>
+    <div class="parent-absolute">
+        <p class="child">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto obcaecati facilis veniam, amet ratione maxime et blanditiis tempora in reprehenderit! Soluta eaque doloribus maxime rerum sapiente ut exercitationem iusto! Earum?</p>
+        <p class="child-absolute">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto obcaecati facilis veniam, amet ratione maxime et blanditiis tempora in reprehenderit! Soluta eaque doloribus maxime rerum sapiente ut exercitationem iusto! Earum?</p>
+        <p class="child">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto obcaecati facilis veniam, amet ratione maxime et blanditiis tempora in reprehenderit! Soluta eaque doloribus maxime rerum sapiente ut exercitationem iusto! Earum?</p>
+    </div>
+</body>
+</html>
