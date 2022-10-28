@@ -61,7 +61,7 @@ input{
 }
 
 #searc{ z-index: 9; display: flex; margin: 0px 27px 0px 0px;}
-.shop{ display: flex;}
+.shop{ display: flex; z-index: 999;}
 .bg_hero{
     position: absolute;
     width: 490px;
@@ -219,4 +219,39 @@ h1 span{color: #FF912B;}
     position: absolute;
     top: 16px;
     right: 19px;
+}
+.container_caffe{
+    background: #F6EBDA;
+}
+.container{
+    width: 520px;
+    height: 376px;
+    display: flex;
+    /* border: 1px solid red; */
+    background-image: url('../img/bg_hero.png');
+    align-content: center;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.container h2 span{
+    border-bottom:3px solid #FF912B;
+    border-radius: 1px;
+}
+.container__card{
+    display: flex;
+    width: 100%;
+    border: 1px solid red;
+}
+.background-card{
+    /* background: #F9D9AA;  */
+    border-radius: 38px;
+    width: 90%;
+    height: 285px;
+    margin: 0px 55px;
+    background-image: url('../img/linea.png');
+}
+.wrap{
+    display: flex;
+    margin: 0% 10%;
 }
