@@ -1,73 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-
-body{
-    background-color:rgba(43,43,43,1);
-    font-family: 'Mulish', sans-serif;
+body {
+  background-color: peachpuff;
+  font-family: 'Poppins', sans-serif;
 }
 
-.card{
-    width: 356px;
-    height: 385px;
-    background-color:rgba(255,250,233,1);
-    border-radius: 12px;
-    box-shadow: 6px 6px 5px rgba(220,220,220,0.5);
-}
-
-.imgcap{
-    margin:13px 0px 0px 24px;
-    border-radius: 15px; 
-}
-
-.conteiner{
-    display: flex;
+.header{
+    display:flex;
     justify-content: space-between;
+    margin: 20px 50px;
 }
 
-.card-name{
-    font-weight: 700;
-    font-size: 28px;
-    margin-left: 30px;
-    margin-top: 10px;
+/* come faccio a distaccare tra di loro gli elementi della navbar? 
+    come faccio ad allineare tutto l'header?*/
+.navbar a{
+  display: flex;
+  justify-content:space-evenly;
+  text-decoration: none;
+  color: black;
 }
 
-.card-like{
-    font-weight: 800;
-    font-size: 28px;
-    margin-right: 28px;
-    margin-top: 10px;
+/* .topnav a:hover {
+  color: orange;
+} */
+
+/* è giusto usare un elenco puntato in una navbar? 
+    se si, perchè?*/
+.ul-p{
+    list-style-type:none;
+    display:flex;
 }
 
-.card-description{
-    font-weight: 700;
-    color: rgba(144,144,144,1);
-    margin-left: 30px;
-    margin-top: 28px;
-    font-size: 20px;
+/* perchè ho bisogno di rispecificare la font-family per un input-text, dopo averlo  specificato per tutto il body?
+    come inserisco la lente d'ingrandimento nella searchbar?*/
+.searchbar{
+    border-radius: 35px;
+    font-weight: 500;
+    padding: 10px 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.cartshop{
-    margin-right: 30px;
-    padding: 13px;
-    border-radius: 50%;
-    border: 0px;
-    background-color: orange;
-    align-items: center;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-.rating-conteiner{
-    background: rgba(220,220,220,0.5);
-    border-radius: 25px;
+/* è giusto allineare il carrello alla saerchbar in questa maniera (con position ecc)?*/
+.header-shopcart{
+    margin-left: 10px;
     position: absolute;
-    top: 35px;
-    left: 48px;
+    top: 27px;
+    cursor:pointer;
 }
-.product-rating{
-    background-color: white;
-    border-radius: 20px;
-    font-weight: 900;
-    margin: 5px;
-    padding: 2px 7px;
+
+.card {
+  position: relative;
+  width: 356px;
+  height: 385px;
+  background-color: rgba(255, 250, 233, 1);
+  border-radius: 12px;
+  box-shadow: 6px 6px 5px rgba(220, 220, 220, 0.5);
+}
+
+.imgcap {
+  margin: 13px 0px 0px 24px;
+  border-radius: 15px;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-name {
+  font-weight: 700;
+  font-size: 28px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.card-like {
+  font-weight: 800;
+  font-size: 28px;
+  margin-right: 28px;
+  margin-top: 10px;
+}
+
+.card-description {
+  font-weight: 700;
+  color: rgba(144, 144, 144, 1);
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.cartshop-button {
+  margin-right: 30px;
+  padding: 13px;
+  border-radius: 50%;
+  border: 0px;
+  background-color: orange;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.rating-conteiner {
+  background: rgba(220, 220, 220, 0.5);
+  border-radius: 25px;
+  position: absolute;
+  top: 25px;
+  left: 38px;
+}
+.product-rating {
+  background-color: white;
+  border-radius: 20px;
+  font-weight: 900;
+  margin: 5px;
+  padding: 2px 9px;
+  
 }
