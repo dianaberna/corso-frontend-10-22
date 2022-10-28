@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Lato:wght@300;400;700&display=swap");
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-wrap {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0.7) 100%
+    );
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px;
+    margin: 5px;
+    background-color: white;
+    width: 343px;
+
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .score {
+    width: fit-content;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 12px;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card .img-mask {
+    position: relative;
+    width: 100%;
+    height: 226px;
+}
+
+.card .img-mask img {
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-title, .card-footer{
+    padding: 0px 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.card > .card-title > p {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card > div > div {
+    display: flex;
+    gap: 2rem;
+}
+
+.card-footer .temperature{
+    display: flex;
+    align-items: center;
+}
+
+.card-footer .temperature span{
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.card .card-footer .hot {
+    border: 3px solid #ff912b;
+    color: #ff912b;
+}
+
+.card .card-footer .cold {
+    border: 3px solid #ffd28f;
+    color: #ffd28f;
+}
+
+.card-footer button {
+    border: 0px;
+    background-color: #ff912b;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        background-color: orange;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+}
