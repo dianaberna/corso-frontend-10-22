@@ -1,33 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 body {
-    background-color: black;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 5px;
     width: 343.97px;
-    height: 373px;
-    left: 152.02px;
-    top: 2610px;    
+    height: 373px; 
     background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 24px 19px rgba(0,0,0,0.1);
+}
+
+.card .score {
+    font-family: 'Poppins', sans-serif;
+    width: fit-content;
+    position: absolute;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: rgba(255, 255, 255, 0.541);
+    left: 30px;
+    top: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    padding: 2px 10px;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .sandwich-img {
+    position: relative;
+
+    width: 100%;
+    height: 200px;
+}
+
+.card .sandwich-img img {
+    position: absolute;
+    display: flex;
+    left: 20px;
+    top: -10px;
+    width: 88%;
     border-radius: 12px;
 }
 
-.sandwich {
-    padding: 10px 10px 0 17px;
-    border-radius: 20px;
-}
-
-span {
-    background: #FF912B;
-    border-radius: 64px;
-    padding: 5px;
+.titolo, .descrizione {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
+    width: 80%;
 }
 
-.card h2 {
-    margin-left: 17px;
+.card button{
+    background: #FF912B;
+    border: 0px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
 }
 
-.card p {
-    margin-left: 17px;
+.paragraph{
+    font-family: 'Poppins', sans-serif;
+    color: #7E7D7A;
 }
