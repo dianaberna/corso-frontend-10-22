@@ -7,6 +7,14 @@ body {
     background-color:#F6EBDA ;
 }
 
+.chicchi {
+    position: absolute;
+    width: 599px;
+    height: 394px;
+    left: 700px;
+    top: -34px;
+}
+
 nav {
     display: flex;
     border: 1px solid black;
