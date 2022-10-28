@@ -1,10 +1,12 @@
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
 }
+
 * {
     font-family: 'Readex Pro', sans-serif;
-  }
+}
 
 footer {
     width: 100%;
@@ -27,7 +29,7 @@ footer {
     vertical-align: top;
 }
 
-.colonna-footer > h4 {
+.colonna-footer>h4 {
     margin-top: 0;
 }
 
@@ -59,15 +61,18 @@ hr {
     .contenuto-footer {
         padding: 2% 0;
     }
+
     .colonna-footer {
         display: block;
         margin: 0 auto;
         width: 60%;
     }
+
     .icone {
         width: 2.1875rem;
     }
-    .colonna-footer p, .colonna-footer h4 {
+
+    .colonna-footer {
         text-align: center;
     }
 }
