@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+body {
+font-family: 'Lato', sans-serif;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    background-color:#F6EBDA;
+
+}
+
+div{
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+
+    
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding:0rem 2rem;
+    border-spacing: 1rem;
+    
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+nav > ul > li > a {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1rem;
+    
+}
+
+.logo {
+    
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem 1rem;
+    
+}
+
+/* .lente {
+    display: flex;
+    justify-content: flex-end
+;
+} */
+
+.searchbar {
+    color: white;
+    padding: 2rem;
+    background: #FFFFFF;
+border-radius: 4rem;
+
+}
+
+.carrello {
+    display: flex;
+    justify-content: flex-end;
+
+}
