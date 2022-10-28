@@ -231,13 +231,6 @@ justify-content: space-between;
     
  }
 
- .vanilla-latte {
-    margin-top: 20.5rem;
-    margin-left: 2.2rem;
-    font-weight: bold;
-
- }
-
  .acquistati-card1 {
     position: absolute;
     margin-left: 16rem;
@@ -255,7 +248,12 @@ justify-content: space-between;
     margin-top: 1rem;
     margin-left: 1rem;
  }
+ .vanilla-latte {
+    margin-top: 20.5rem;
+    margin-left: 2.2rem;
+    font-weight: bold;
 
+ }
  .latte-cacao {
     margin-top: 1rem;
     margin-left: 1rem;
@@ -272,17 +270,21 @@ justify-content: space-between;
     margin-bottom: 1rem;
     font-weight: bold;
  }
+ 
+
+ .rating2 {
+    margin-left: 16.1rem;
+    margin-top: -3.3rem;
+    font-weight: bold;
+ }
 
  .rating3 {
     margin-left: 16.1rem;
     margin-top: -3.3rem;
     font-weight: bold;
  }
- .rating2 {
-    margin-left: 16.1rem;
-    margin-top: -3.3rem;
-    font-weight: bold;
 
-@media screen and (max-width:760px){
+
+ @media screen and (max-width:760px){
     ul{display: none;}
 }
