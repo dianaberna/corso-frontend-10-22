@@ -1,0 +1,27 @@
+
+main {
+    width: 100%;
+}
+
+.subscribe {    
+    height: 500px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe img {
+    position: absolute;
+    height: 390px;
+    width: 80%;
+    left: 10%;
+    z-index: -1;
+}
+
+.subscribe h2 {
+    color: white
+}
+
+#subscribe-email {
+    
+}
