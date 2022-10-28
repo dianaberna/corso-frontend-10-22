@@ -1,88 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Lato:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Lato:wght@300;400;700&display=swap");
 
-body{
-    font-family: 'Lato', sans-serif;
-    background-color: beige;
+body {
+    font-family: "Lato", sans-serif;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.card{
+.card-wrap {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.4) 0%,
+            rgba(255, 255, 255, 0.7) 100%);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px;
+    margin: 5px;
     background-color: white;
-    width: 300px;
-    padding: 10px 10px;
+    width: 343px;
+    
+        padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.score{
+.card .score {
+    width: fit-content;
     position: absolute;
-    left: 0;
-    margin-left: 20px;
+    left: 1rem;
+        top: 1rem;
     background-color: white;
     border-radius: 15px;
-    padding: 5px 10px;
-    border: 1px solid red;
+    padding: 5px 12px;
+        z-index: 1;
+        font-weight: 700;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .card .img-mask {
+        position: relative;
+        width: 100%;
+        height: 226px;
 }
 
-.card img{
-    width: 200px;
-    height: 200px;
+.card .img-mask img {
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
 }
 
-.card > div{
+.card-title,
+.card-footer {
+    padding: 0px 1rem;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
 }
 
-.card > div > div{
+.card>.card-title>p {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card>div>div {
     display: flex;
     gap: 2rem;
 }
 
-.card div span{
-    border: 2px solid orange;
-    color: orange;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-/* ul{
+.card-footer .temperature {
     display: flex;
-    flex-direction: row;
-} */
-
-/* 
-body{
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
+    align-items: center;
 }
 
-div{
-    font-size: 2rem;
-} 
+.card-footer .temperature span {
+    border-radius: 10px;
+    padding: 5px 10px;
+}
 
-button {
-    font-family: inherit;
-    background-color: #2F2105;
+.card .card-footer .hot {
+    border: 3px solid #ff912b;
+    color: #ff912b;
+}
+
+.card .card-footer .cold {
+    border: 3px solid #ffd28f;
+    color: #ffd28f;
+}
+
+.card-footer button {
     border: 0px;
-    border-radius: 20px;
-    color: #ffffff;
-    padding: 10px; 
+    background-color: #ff912b;
+        border-radius: 50%;
+        height: 44px;
+        width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-    padding: 10px 10px 10px 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px; 
-
-    padding: 10px 40px;
-
-    margin: 20px 20px;
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        background-color: orange;
+    }
 }
 
-button > div{
-    background-color: orange;
-    border-radius: 20px;
-    padding: 4px;
-} */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: rgb(93, 93, 176);
+    }
+}
