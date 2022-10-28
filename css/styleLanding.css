@@ -30,10 +30,6 @@ body {
     align-items: center;
 }
 
-.card > div {
-    
-}
-
 .card .score {
     width: fit-content;
     position: absolute;
