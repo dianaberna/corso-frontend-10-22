@@ -242,3 +242,45 @@ p[class='p-bold'] {
   margin-top: 0.5rem;
   font-weight: 600;
 }
+
+/* ABOUT US */
+section.about {
+  width: 100%;
+  background-color: #f7ebda;
+}
+div.about-container {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+div.about-container > img {
+  padding-right: 10rem;
+}
+
+div.about-us > h1,
+div.about-us > h3 {
+  padding: 1rem 0rem;
+  font-weight: 600;
+}
+div.about-us > h1 {
+  font-size: 2rem;
+}
+div.about-us > h3 {
+  font-size: 1.5rem;
+  width: 70%;
+}
+div.about-us > p {
+  font-size: 1rem;
+  padding: 1rem 0rem;
+  color: #7e7d7a;
+}
+div.about-us > button {
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  color: #f9d9aa;
+  background-color: #2f2105;
+}
+span.us {
+  border-bottom: 0.3rem solid #ff912b;
+}
