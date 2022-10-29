@@ -31,8 +31,16 @@ span.down-line {
 p[class='p-bold'] {
   font-weight: 600;
 }
+.shadow {
+  -webkit-box-shadow: 0px 0px 10px 3px #939393;
+  box-shadow: 0px 0px 10px 3px #939393;
+}
 div.card {
   position: relative;
+  background-color: #fff;
+  width: 22.25rem;
+  height: 23.125rem;
+  border-radius: 0.75rem;
 }
 .score {
   position: absolute;
@@ -208,13 +216,6 @@ section.popular-product {
   top: -8rem;
 }
 
-div.card {
-  background-color: #fff;
-  border: 6px solid #ffcc1359;
-  width: 22.25rem;
-  height: 23.125rem;
-  border-radius: 0.75rem;
-}
 div.card > img {
   width: 18.75rem;
   height: 13.75rem;
@@ -316,7 +317,7 @@ div.about-us > button {
 /*  SPECIAL MENU */
 #card-wrapper1,
 #card-wrapper2 {
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 .choose-menu {
   color: #7e7d7a;
