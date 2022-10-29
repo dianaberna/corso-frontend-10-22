@@ -228,15 +228,7 @@ justify-content: space-between;
     top: 751px;
     margin-left: 30rem;
     border-radius: 14px;
-    
- }
-
- .acquistati-card1 {
-    position: absolute;
-    margin-left: 16rem;
-    top: 62rem;
-    font-weight: bold;
- }
+}
 
  .tazza-marrone {
     position: absolute;
@@ -252,9 +244,9 @@ justify-content: space-between;
  }
 
  .vanilla-latte {
-    margin-top: 20.5rem;
-    margin-left: 2.2rem;
-    font-weight: bold;
+   margin-top: 17.3rem;
+   margin-left: 1rem;
+   font-weight: bold;
  }
 
  .latte-cacao {
@@ -275,6 +267,12 @@ justify-content: space-between;
     font-weight: bold;
  }
  
+ .rating1 {
+   margin-left: 16.1rem;
+   margin-top: -4.3rem;
+   font-weight: bold;
+
+ }
 
  .rating2 {
     margin-left: 16.1rem;
@@ -288,6 +286,91 @@ justify-content: space-between;
     font-weight: bold;
  }
 
+ .hot1 {
+  position: absolute;
+  margin-top: -1.6rem;
+  margin-left: 1.5rem;
+  background-color: orange;
+  border-radius: 0.8rem;
+  padding: 0.1rem 1rem;
+ }
+
+ .cold1 {
+  position: absolute;
+  margin-top: -1.6rem;
+  margin-left: 7.4rem;
+  background-color: orange;
+  border-radius: 0.8rem;
+  padding: 0.1rem 0.8rem;
+ }
+
+ .hot2 {
+   position: absolute;
+   margin-top: -1.8rem;
+   margin-left: 1.5rem;
+   background-color: orange;
+   border-radius: 0.8rem;
+   padding: 0.1rem 1rem;
+ }
+
+ .cold2 {
+   position: absolute;
+   margin-top: -1.8rem;
+   margin-left: 7.4rem;
+   background-color: orange;
+   border-radius: 0.8rem;
+   padding: 0.1rem 0.8rem;
+ }
+
+ .hot3 {
+   position: absolute;
+   margin-top: -1.8rem;
+   margin-left: 1.5rem;
+   background-color: orange;
+   border-radius: 0.8rem;
+   padding: 0.1rem 1rem;
+ }
+
+ .cold3 {
+   position: absolute;
+   margin-top: -1.8rem;
+   margin-left: 7.4rem;
+   background-color: orange;
+   border-radius: 0.8rem;
+   padding: 0.1rem 1rem;
+ }
+
+ .push-pay1 {
+   position: absolute;
+   margin-top: 23.9rem;
+   margin-left: 17.5rem;
+ }
+
+ .push-pay2 {
+   position: absolute;
+   margin-top: 23.9rem;
+   margin-left: 57.6rem;
+ }
+
+ .push-pay3 {
+   position: absolute;
+   margin-top: 23.9rem;
+   margin-left: 97.4rem;
+ }
+
+ .background-center {
+   position: absolute;
+   width: 10rem;
+   background-color: #F9D9AA;
+   border-radius: 4rem;
+   right: 5rem;
+   height: 20rem;
+   left: 5rem;
+   top: 52rem;
+   padding: 1rem 50rem;
+   z-index: -2;
+ 
+}
 
  @media screen and (max-width:760px){
     ul{display: none;}
