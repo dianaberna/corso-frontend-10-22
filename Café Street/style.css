@@ -87,7 +87,8 @@ button.order-now {
   align-content: center;
 }
 
-.svg-shop {
+.svg-shop,
+.svg-shop-card {
   background-color: #ff912b;
   border: none;
   width: 1.375rem;
@@ -172,7 +173,7 @@ main > section {
 }
 div.card {
   background-color: #fff;
-  border: 6px solid #505050;
+  border: 6px solid #ffcc1359;
   width: 22.25rem;
   height: 23.125rem;
   border-radius: 0.75rem;
@@ -190,8 +191,35 @@ div.card > img {
 }
 .name-drink > p {
   font-size: 1.5rem;
-  margin: 0 auto;
+  padding: 0 2rem;
 }
 .price-drink {
   font-weight: 600;
+}
+.choose-drink {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+.temp-drink > span {
+  padding: 0 1rem;
+  margin-right: 1rem;
+}
+span.drink {
+  border: 0.125rem solid #ffd28f;
+  color: #ffd28f;
+  border-radius: 0.625rem;
+}
+span.hot {
+  border: 0.125rem solid #ff912b;
+  color: #ff912b;
+  border-radius: 0.625rem;
+}
+.svg-shop-card {
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0.5rem;
 }
