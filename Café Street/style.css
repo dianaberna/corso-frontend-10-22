@@ -4,7 +4,6 @@
   margin: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  font-size: 16px;
 }
 body {
   width: 100%;
@@ -152,10 +151,10 @@ div.img-header-up-right {
   top: -2rem;
 }
 
-main > section {
+section.popular-product {
   position: relative;
   width: 79rem;
-  height: 22.9375rem;
+  height: 18.75rem;
   background-color: #f9d9aa;
   border-radius: 5rem;
   margin-top: -8rem;
@@ -222,4 +221,24 @@ span.hot {
   width: 2.75rem;
   height: 2.75rem;
   padding: 0.5rem;
+}
+
+/*  how to */
+#how-to {
+  margin: 5rem auto;
+  width: 70%;
+}
+#how-group {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.service {
+  font-size: 2rem;
+}
+p[class='p-bold'] {
+  margin-top: 0.5rem;
+  font-weight: 600;
 }
