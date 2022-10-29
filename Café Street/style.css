@@ -31,6 +31,24 @@ span.down-line {
 p[class='p-bold'] {
   font-weight: 600;
 }
+div.card {
+  position: relative;
+}
+.score {
+  position: absolute;
+  width: fit-content;
+  left: 2rem;
+  top: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.3rem 0.8rem;
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
 
 /* HEADER */
 header {
