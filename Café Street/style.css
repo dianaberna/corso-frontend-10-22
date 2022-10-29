@@ -254,7 +254,7 @@ div.about-container {
   width: 60%;
   margin: 0 auto;
 }
-div.about-container > img {
+div.about-container > div > img {
   padding-right: 10rem;
 }
 
