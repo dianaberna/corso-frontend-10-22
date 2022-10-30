@@ -27,7 +27,9 @@ span.down-line {
 .name-drink > p {
   font-size: 1.4rem;
 }
-
+p[class='p-yellow'] {
+  color: #ffcb45;
+}
 p[class='p-bold'] {
   font-weight: 600;
 }
@@ -211,7 +213,7 @@ section.popular-product {
   background-color: #f9d9aa;
   border-radius: 5rem;
   margin-top: -8rem;
-  left: 13rem;
+  left: 6.5rem;
 }
 #container {
   position: absolute;
@@ -331,3 +333,73 @@ div.about-us > button {
   margin-right: 1rem;
 }
 */
+
+/* TESTIMONIAL */
+.testimonial {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.testimonial > div {
+  width: 50%;
+}
+.testimonial-feedback > p {
+  font-size: 1.5rem;
+}
+.testimonial-feedback > p.p-bold {
+  font-size: 2rem;
+}
+.customers-feedback {
+  margin: 1rem auto;
+  padding: 2rem 1rem 1rem;
+  width: 80%;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+}
+.info-customers {
+  display: flex;
+}
+.about-custumers {
+  padding-left: 1rem;
+}
+.name-customers > p {
+  padding-left: 0.2rem;
+}
+.testimonial-img-down > img {
+  width: 46%;
+}
+/* NEWS LETTER */
+
+.news-container {
+  background: no-repeat url('/Café Street/assets/img-news-letter.png');
+  width: 80%;
+  height: 30rem;
+  margin: 5rem auto;
+  color: #f1f1f1;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+}
+.news-container > div {
+  padding-top: 8rem;
+}
+div.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.email > input[type='email'] {
+  position: relative;
+  width: 40%;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+}
+div.email > input[type='submit'] {
+  position: absolute;
+  right: 22.5rem;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #2f2105;
+}
