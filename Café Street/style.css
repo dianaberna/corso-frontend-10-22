@@ -134,10 +134,9 @@ button.order-now {
   border-radius: 1rem;
   background-color: #2f2105;
   color: white;
-  align-content: center;
   display: flex;
   gap: 0.3125rem;
-  align-content: center;
+  align-items: center;
 }
 
 .svg-shop,
@@ -214,7 +213,7 @@ section.popular-product {
   border-radius: 5rem;
   /* margin-top: -8rem; */
   /* left: 6.5rem; */
-  margin: -8rem auto;
+  margin: -8rem auto 8rem;
 }
 #container {
   position: absolute;
@@ -425,10 +424,13 @@ div > ul {
 }
 .column1 > p {
   color: rgba(29, 29, 29, 0.7);
+  padding-right: 2rem;
+  padding-top: 1rem;
 }
 .social {
   display: flex;
   align-items: center;
+  margin-left: -1.8rem;
 }
 p.copy-p {
   padding-bottom: 1rem;
@@ -437,4 +439,6 @@ p.copy-p {
   border-top: 1px solid black;
   text-align: center;
   padding-top: 1rem;
+  width: 80%;
+  margin: 0 auto;
 }
