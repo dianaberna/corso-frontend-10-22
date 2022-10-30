@@ -353,6 +353,7 @@ h1 span{color: #FF912B;}
 .btn_card_footer:hover{
     color: #FF912B;
     border-color: #FF912B;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .shop_card{
 
@@ -376,6 +377,9 @@ h1 span{color: #FF912B;}
     border-radius: 30px;
     margin: 0px 12px;
 }
+
+/* Responsive Layout */
+
 @media (max-width: 768px) {
     .container__card{
         display: flex;
@@ -427,4 +431,36 @@ h1 span{color: #FF912B;}
         left: 2px;
         background: #f6ebda;
     }
+}
+
+/* Delivery style */
+.text_delivery{
+    margin: 30px 0px 0px 60px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.text_delivery h2 span{
+    border-bottom: 3px solid #FF912B;
+}
+
+.conteiner_info_delivery{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+.info_delivery{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.info_delivery h3{
+    padding: 20px;
 }
