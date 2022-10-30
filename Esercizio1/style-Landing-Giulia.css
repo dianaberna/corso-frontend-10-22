@@ -1,18 +1,185 @@
-#contorno {
- margin: 50px 10px;
+/* stile footer Cafe Street
+- come andare a capo senza <br>?
+- come centrare nel div wrapper tutto il contenuto del footer?
+- come giustificare tutti gli <ul> nello spazio?
+- come allineare tutti gli <ul>? */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Lato:wght@300;400;700&display=swap");
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-span {
+
+#footer-sx {
+list-style-type:none;
+display: inline-block;
+display: flex;
+}
+
+#wrapper {
+ margin: 50px 10px;
+ background-color: #F6EBDA;
+ width: 100%;
+ height: 489px;
+}
+
+#logo{
+ position: absolute;
+ list-style-type:none;
+ display: inline-block;
+ display: flex;
+ margin-top: 50px;
+}
+
+#footer-sx{
+    position: absolute;
+    list-style-type:none;
+    display: inline-block;
+    display: flex;
+    margin-top: 100px;
+    width: 300px;
+    height: 50px;
+    color:rgba(29, 29, 29, 0.7);
+    }
+
+#testo-footer-sx{
+position: absolute;
+list-style-type:none;
+display: inline-block;
+display: flex;
+margin-top: 100px;
+width: 300px;
+height: 50px;
+color:rgba(29, 29, 29, 0.7);
+}
+
+#social{
+ list-style-type:none;
+ position: absolute;
+ list-style-type:none;
+ display: inline-block;
+ display: flex;
+ margin-top: 150px;
+}
+
+#social span {
 border-radius: 50%;
 box-shadow: 2px 2px 10px #B2B2B2; 
-padding: 15px 10px 5px 10px;
-margin: 10px 15px;
+/* padding: 10px; */
+margin: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .white {
 background-color:#FFFFFF;
+padding: 10px;
 }
 
 .yellow{
 background-color:gold;
+padding: 11px;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+#testo-footer-right{
+    /* float: right; */
+    margin-top: 133px;
+    margin-left: 280px;
+    display: inline-block;
+    display: flex;
+    list-style-type:none;
+    width: 430px;
+    height: 50px;
+    color:rgba(29, 29, 29, 0.7);
+}
+
+
+#testo-footer-right .titolo{
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 10px;
+
+}
+
+#testo-footer-right .testo{
+    font-size: medium;
+    color: rgba(29, 29, 29, 0.7); 
+}
+
+#testo-footer-center{
+    /* float: right; */
+    margin-top: -65px;
+    margin-left: 425px;
+    display: inline-block;
+    display: flex;
+    list-style-type:none;
+    width: 275px;
+    height: 50px;
+    color:rgba(29, 29, 29, 0.7);
+
+}
+
+#testo-footer-center .titolo{
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 10px;
+}
+
+#testo-footer-center .testo{
+    font-size: medium;
+    color: rgba(29, 29, 29, 0.7); 
+}
+
+#testo-footer-end{
+    /* float: right; */
+    /* position: absolute; */
+    margin-top: -66px;
+    margin-left: 525px;
+    display: inline-block;
+    display: flex;
+    list-style-type:none;
+    width: 260px;
+    height: 50px;
+    color:rgba(29, 29, 29, 0.7);
+}
+
+#testo-footer-end .titolo{
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 10px;
+
+}
+
+#testo-footer-end .testo{
+    font-size: medium;
+    color: rgba(29, 29, 29, 0.7); 
+}
+
+hr {
+position: absolute;
+width: 660px;
+height: 0px;
+left: 58px;
+top: 446px;
+border: 1px solid rgba(29, 29, 29, 0.5);
+}
+
+#diritti-bottom {
+ /* position: absolute; */
+ display: inline-block;
+ /* display: flex; */
+ margin-top: 210px;
+ margin-left: 250px;
+ font-size: small;
 }
