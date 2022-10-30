@@ -8,7 +8,7 @@ body {
 .header{
     display:flex;
     justify-content: space-between;
-    margin: 20px 50px;
+    margin: 40px 50px;
 }
 
 /* come faccio a distaccare tra di loro gli elementi della navbar? 
@@ -44,8 +44,84 @@ body {
 .header-shopcart{
     margin-left: 10px;
     position: absolute;
-    top: 27px;
+    top: 47px;
     cursor:pointer;
+}
+
+.main-sentence{
+  font-weight: 600;
+  color: #2F2105;
+  font-size: 38px;
+  margin-top: 60px;
+  margin-left: 90px;
+}
+
+.small-sentence{
+  margin-top: 24px;
+  margin-left: 90px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  color:#7E7D7A;
+}
+
+/* ho dovuto specificare di nuovo la font family, perchè? */
+.ordernow-button{
+  margin-left: 90px;
+  border: 0px;
+  border-radius: 33px;
+  background-color: #2F2105;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 32px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+/* non sono riuscito a far venire il bottene perfettamente cerchiato */
+.ordernow-cartshop{
+  border-radius: 50%;
+  border: 0px;
+  background-color: orange;
+  align-items: center;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.circlebg{
+  width: 416px;
+  height: 416px;
+  border: 0px;
+  border-radius: 50%;
+  background-color: #2F2105;
+  margin-right: 159px;
+}
+
+.infos-container{
+  background: linear-gradient(92.95deg, rgba(255, 255, 255, 0.4) 0.82%, rgba(255, 255, 255, 0.7) 96.47%);;
+  border-radius: 25px;
+  position: absolute;
+  margin-top: 20px;
+  right: 400px;
+}
+
+.product-infos{
+  background-color: white;
+  border-radius: 20px;
+  font-weight: 600;
+  margin: 5px;
+  padding: 4px 45px;
+  font-size: 24px;
+}
+
+.circleimg{
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 38px;
+  /* right: 196px; */
 }
 
 .card {
@@ -55,6 +131,7 @@ body {
   background-color: rgba(255, 250, 233, 1);
   border-radius: 12px;
   box-shadow: 6px 6px 5px rgba(220, 220, 220, 0.5);
+  color: #2F2105;
 }
 
 .imgcap {
@@ -62,7 +139,7 @@ body {
   border-radius: 15px;
 }
 
-.conteiner {
+.container {
   display: flex;
   justify-content: space-between;
 }
@@ -83,7 +160,7 @@ body {
 
 .card-description {
   font-weight: 700;
-  color: rgba(144, 144, 144, 1);
+  color:#7E7D7A;
   margin-left: 30px;
   margin-top: 20px;
   font-size: 20px;
@@ -100,18 +177,17 @@ body {
   margin-top: 10px;
 }
 
-.rating-conteiner {
-  background: rgba(220, 220, 220, 0.5);
+.rating-container-card {
+  background: linear-gradient(92.95deg, rgba(255, 255, 255, 0.4) 0.82%, rgba(255, 255, 255, 0.7) 96.47%);;
   border-radius: 25px;
   position: absolute;
   top: 25px;
   left: 38px;
 }
-.product-rating {
+.product-rating-card {
   background-color: white;
   border-radius: 20px;
   font-weight: 900;
   margin: 5px;
   padding: 2px 9px;
-  
 }
