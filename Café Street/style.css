@@ -208,12 +208,13 @@ div.img-header-up-right {
 
 section.popular-product {
   position: relative;
-  width: 79rem;
-  height: 18.75rem;
+  width: 80rem;
+  height: 20rem;
   background-color: #f9d9aa;
   border-radius: 5rem;
-  margin-top: -8rem;
-  left: 6.5rem;
+  /* margin-top: -8rem; */
+  /* left: 6.5rem; */
+  margin: -8rem auto;
 }
 #container {
   position: absolute;
@@ -413,6 +414,7 @@ footer {
   display: flex;
   margin: 0 auto;
   padding: 1rem;
+  width: 80%;
 }
 .footer-content > div {
   width: 25%;
