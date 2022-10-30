@@ -403,3 +403,36 @@ div.email > input[type='submit'] {
   color: #fff;
   background-color: #2f2105;
 }
+/* FOOTER */
+footer {
+  background-color: #ffd28f;
+  padding: 5rem;
+}
+
+.footer-content {
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.footer-content > div {
+  width: 25%;
+}
+div > ul {
+  list-style-type: none;
+  color: rgba(29, 29, 29, 0.7);
+}
+.column1 > p {
+  color: rgba(29, 29, 29, 0.7);
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+p.copy-p {
+  padding-bottom: 1rem;
+}
+.copyright {
+  border-top: 1px solid black;
+  text-align: center;
+  padding-top: 1rem;
+}
