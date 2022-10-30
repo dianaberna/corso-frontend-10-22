@@ -80,6 +80,7 @@ nav {
   padding: 1.25rem;
 }
 nav > ul {
+  z-index: 1git;
   display: flex;
   list-style-type: none;
   gap: 2rem;
@@ -91,6 +92,7 @@ li.about-us {
 div.nav-reserch {
   display: flex;
   gap: 1rem;
+  z-index: 1;
 }
 #reserchbar {
   border-radius: 1.25rem;
@@ -199,6 +201,7 @@ div.img-header-up-right {
   position: absolute;
   right: 0;
   top: -2rem;
+  z-index: 0;
 }
 
 section.popular-product {
