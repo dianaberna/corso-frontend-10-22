@@ -80,7 +80,7 @@ nav {
   padding: 1.25rem;
 }
 nav > ul {
-  z-index: 1git;
+  z-index: 1;
   display: flex;
   list-style-type: none;
   gap: 2rem;
