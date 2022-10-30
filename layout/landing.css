@@ -9,6 +9,7 @@ a{text-decoration: none; color: black;}
     /* border: 1px solid red; */
     width: 155px;
     padding: 20px;
+    z-index: 9999;
 }
 nav{
     /* border: 1px solid red; */
@@ -96,6 +97,9 @@ input{
 }
 .intro h1{
     font-size: 48px;
+}
+.intro p{
+    margin: 30px 0px;
 }
 h1 span{color: #FF912B;}
 .btn{
@@ -257,7 +261,7 @@ h1 span{color: #FF912B;}
     justify-content: center;
     align-content: center;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .background-card{
     border-radius: 38px;
@@ -283,14 +287,14 @@ h1 span{color: #FF912B;}
     align-items: center;
     position: relative;
     bottom: 428px;
-    left: 35px;
+    left: 30px;
 
 }
 .card{
-    width: 351px;
+    width: 330px;
     height: 368px;
     background: #ffff;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -298,7 +302,7 @@ h1 span{color: #FF912B;}
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin: 0px 15px;
+    margin: 13px 15px;
     
 }
 .card__img{
@@ -335,9 +339,7 @@ h1 span{color: #FF912B;}
     bottom: 23px;
 }
 .card_btn{
-    /* position: relative;
-    top: 55px;
-    right: 81px; */
+    
 }
 .btn_card_footer{
     width: 46px;
@@ -363,10 +365,66 @@ h1 span{color: #FF912B;}
     height: 30px;
     border-radius: 34px;
     border: none;
-    /* position: relative;
-    top: 55px;
-    left: 72px; */
 }
 .border_card{
-    
+    display: flex;
+    height: 400px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(2px);
+    -webkit-box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 60%);
+    box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 60%);
+    border-radius: 30px;
+    margin: 0px 12px;
+}
+@media (max-width: 768px) {
+    .container__card{
+        display: flex;
+    }
+    .backgr_imag{
+        display: none;
+    }
+    ul{display: none;}
+    .hero{
+         /* display: none; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        top: -320px;
+        left: 5px;
+    }
+    .container_caffe{
+        display: flex;
+    }
+    .intro{
+        height: 261px;
+        width: 404px;
+        position: relative;
+        left: 28px;
+        top: 445px; 
+    }
+
+    .background-card{
+        width: 100%;
+    }
+    .intro p{
+        margin: 10px 0px;
+    }
+
+    .wrap{
+        display: flex;
+        /* margin: 0% 10%; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 0px;
+        left: 2px;
+        background: #f6ebda;
+    }
 }
