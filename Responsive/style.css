@@ -83,7 +83,7 @@ main {
 .article__card__container {
   background-color: rgb(100, 100, 100);
   width: 48%;
-  height: 25rem;
+  height: 30rem;
   margin: 1rem 0;
   border-radius: 1rem;
 }
@@ -135,4 +135,29 @@ main {
 footer {
   text-align: center;
   padding: 0.5rem;
+}
+footer > div {
+  width: 100%;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  #sidebar {
+    display: none;
+  }
+  #content {
+    width: 100%;
+  }
+  .navbar {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .article__card__container {
+    width: 100%;
+  }
+  .navbar {
+    font-size: 0.7rem;
+    padding: 0.6rem 0.2rem;
+    justify-content: space-around;
+  }
 }
