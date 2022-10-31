@@ -464,6 +464,8 @@ h1 span{color: #FF912B;}
 .info_delivery h3{
     padding: 20px;
 }
+
+/* Style About */
 .about{
     background: #F6EBDA;
     width: 100%;
@@ -542,3 +544,103 @@ h1 span{color: #FF912B;}
     margin: 50px 0px 0px 67px;
 }
 
+
+.special__conteiner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.special-menu {
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 70px;
+    margin-bottom: 35px;
+}
+.special-menu h2 span{
+    border-bottom: 3px solid #FF912B;
+}
+
+.border-card-menu{
+    /* border: 3px solid red; */
+    width: 371px;
+    height: 400px;
+    margin: 0px 20px 30px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(2px);
+    -webkit-box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 60%);
+    box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 60%);
+    border-radius: 30px;
+}
+
+.card-menu{
+    display: flex;
+    width: 345px;
+    height: 373px;
+    /* border: 2px solid; */
+    border-radius: 20px;
+}
+.card-menu-img{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    border-radius: 18px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card-border_img{
+    border-radius: 20px;
+}
+.titolo-card{
+    height: 7%;
+    display: flex;
+    position: absolute;
+    bottom: 98px;
+    left: 32px;
+    font-size: 19px;
+}
+.titolo-card h3 span{
+    margin-left: 168px;
+}
+
+.descrip-card{
+    display: flex;
+    /* border: 2px solid; */
+    height: 10%;
+    width: 84%;
+    position: absolute;
+    bottom: 31px;
+    left: 27px;
+}
+
+.descrip-card-p{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.descrip-card-btn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 90px;
+    height: 38px;
+    width: 40px;
+    border-radius: 30px;
+    background: url('../img/Frame\ 5.png');
+    background-size: contain;
+    border: none;
+}
