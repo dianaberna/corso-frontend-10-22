@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Remove padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #181823;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.color-pink {
+  color: #f03875;
+}
+/* HEADER */
+/* NAV BAR */
+.navbar {
+  background-color: #000;
+  display: flex;
+}
+.navbar > div {
+  padding: 1rem 0rem 1rem 7rem;
+}
+/* HEADER CONTENT */
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 5rem 10rem;
+  background-color: #00000080;
+}
+.header__content__title {
+  width: 50%;
+  padding: 4rem;
+}
+.header__content__title h1,
+.header__content__title p,
+.header__content__title button {
+  margin-top: 1.5rem;
+}
+.header__content__title h1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+}
+
+.header__content__title button {
+  background-color: #f03a76;
+  color: #fff;
+  padding: 0.5rem 2.5rem;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  border: none;
+}
+.header__content__img {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    190.57deg,
+    #ffffff -16.23%,
+    rgba(255, 255, 255, 0) 112.53%
+  );
+  /* opacity: 0.3; */
+}
+.header__content__img__iphone {
+  position: absolute;
+  left: 4rem;
+  top: -5rem;
+}
+.header__content__img__message {
+  position: absolute;
+  left: 10rem;
+  top: 25rem;
+  width: 100%;
+}
