@@ -72,7 +72,7 @@ div.under-nav {
 div.under-nav {
   margin-top: 5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
 }
 /* NAV BAR */
