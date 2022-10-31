@@ -29,16 +29,16 @@ p,
 li {
   color: #c7e0fa;
 }
-
-.btn-pink {
+input[type='submit'] {
   background-color: #f03a76;
   color: #fff;
   padding: 0.5rem 2.5rem;
-  border-radius: 3rem;
-  font-size: 1.5rem;
   border: none;
+  font-size: 1.5rem;
+  border-radius: 2rem;
   margin-top: 1rem;
 }
+
 /* HEADER */
 /* NAV BAR */
 .navbar {
