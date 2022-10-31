@@ -104,8 +104,6 @@ body {
   background: linear-gradient(92.95deg, rgba(255, 255, 255, 0.4) 0.82%, rgba(255, 255, 255, 0.7) 96.47%);;
   border-radius: 25px;
   position: absolute;
-  margin-top: 20px;
-  right: 400px;
 }
 
 .product-infos{
@@ -113,8 +111,8 @@ body {
   border-radius: 20px;
   font-weight: 600;
   margin: 5px;
-  padding: 4px 45px;
   font-size: 24px;
+  color: #2F2105;
 }
 
 .circleimg{
