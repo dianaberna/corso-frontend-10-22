@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Readex+Pro:wght@400;500;600;700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: white;
+}
+h2,
+h3,
+h4{
+  padding: 0;
+  margin: 0;
+}
+.background-pictures{
+  margin: 0 -8rem;
+}
+button{
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  text-decoration: none;
+}
+#chicchi1{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+header{
+  margin: -.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  background-color: #F6EBDA;
+  padding: 1.5rem 8rem 0 8rem;
+}
+main{
+  margin: -.5rem;
+  display: flex;
+  flex-direction: column;
+}
+header nav{
+  font-size: 1.125rem;
+  display: flex;
+}
+header ul{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+header li{
+  display: flex;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+#about_us_h{
+  color: #FF912B;
+}
+#our_product_h,
+#delivery_h{
+  color: black;
+}
+#header-top-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+#search{
+  display: flex;
+  border: none;
+  height: 2.5rem;
+  width: 14rem;
+  padding-left: 2.5rem;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+#search:focus{
+  /*questo comando serve per non visualizzare il bordo del campo input*/
+  outline: none;
+}
+#search:focus::placeholder{
+  /*questo comando serve per non visualizzare il contenuto del campo input*/
+  color: transparent;
+}
+#magnifier{
+  display: flex;
+  position: relative;
+  left: -13.8rem;
+  top: 0;
+}
+#main-cart{
+  display: flex;
+}
+.main-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5rem 8rem 0 8rem;
+  background-color: #F6EBDA;
+}
+.body-top-left{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30rem; 
+}
+.enjoy{
+  color: #2F2105;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 4.5rem;
+}
+h4{
+  color: #7E7D7A;
+  font-size: 18px;
+  font-weight: 400;
+  width: 25rem;
+  margin-top: 2rem;
+}
+#coffee{
+  color: #FF912B;
+}
+.order_now{
+  background-color: #2F2105;
+  color: white;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  margin-top: 2rem;
+}
+.cart-top{
+  width: 0.75rem;
+  display: flex;
+  padding: 0.25rem;
+  border-radius: 50%;
+  background-color: #FF912B;
+  border: 0px;
+  cursor: pointer;
+  margin-left: 0.625rem;
+}
+.body-top-right{
+  position: relative;
+}
+.circle-top-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26rem;
+  height: 26rem; 
+  background-color: #2F2105;
+  border-radius: 15rem;
+  z-index: 1000;
+}
+#cappuccino-mug{
+  height: 22rem;
+  width: 22rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  z-index: 1000;
+}
+.glass-surround-main{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4rem;
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  z-index: 2000;
+}
+.glass-inside-main{
+  background-color: white;
+  border-radius: 3rem;
+  padding: .5em 1.5em;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin: 0.625rem;
+}
+.star-main{
+  height: 20px;
+  padding-left: 4px;
+  align-items: center;
+}
+#cappuccino{
+  top: 1.5rem;
+  left: -2rem;
+}
+#like18K{
+  bottom: 1.5rem;
+  left: 1rem;
+}
+#rate48{
+  top: 6rem;
+  right: -3rem;
+}
+#chicchi2{
+  position: absolute;
+  top: 34.5rem;
+  left: 0;
+}
+/* -- MIDDLE-TOP FRAME -- */
+.middle-top{
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 8rem 0rem 8rem;
+  background-color: #F6EBDA;
+  height: 20rem;
+}
+h2{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.75rem;
+}
+h2 span{
+  text-decoration: underline;
+  text-decoration-color: #FF912B;
+  text-underline-offset: 0.25em;
+}
+#trapezoid{
+  position: absolute;
+  top: 53rem;
+  left: 5.5rem;
+  z-index: 2;
+} 
+.popular-coffees{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+section > div{
+  z-index: 3;
+}
+
+/*--------------------------------*/
+/* Sezione relativa ai coffee-box */
+
+.coffe-box-glass{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  display: flex;
+  width: fit-content;
+}
+.coffe-box{
+  height: 24rem;
+  width: 22rem; 
+  border-radius: 0.75rem;
+  position: relative;
+  background-color: white;
+  color: #2F2105;
+  margin: 0.5rem;
+ }
+.coffe-pics{
+  height: 14rem;
+  border-radius: .75rem;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+}
+.under-coffe-picture{
+  display: flex;
+  justify-content: space-between;
+  margin: -.5rem 2.5rem -.5rem 2.5rem;
+  align-items: center;
+}
+.coffe-type{
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+}
+.coffe-like{
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+.coffe-description{
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.3125rem;
+  color: #7E7D7A;
+  width: 10.5rem;
+}
+.cart-button{
+  display: flex;
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-color: #FF912B;
+  border: 0px;
+  cursor: pointer;
+}
+.cart-pic{
+  width: 1.125rem;
+}
+.rating-background{
+  background-color: white;
+  background:rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  display: flex;
+  position: absolute;
+  top: 32px;
+  left: 35px;
+}
+.coffe-rating{
+  background-color: white;
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 5px;
+}
+.star{
+  height: 12px;
+  padding-left: 4px;
+  align-items: center;
+}
+.temperature-selection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.temp-button{
+  color: #FFD28F;
+  font-weight: 600;
+  border: 2px solid #FFD28F;
+  border-radius: 0.5rem;
+  padding: 0.25rem 1.75rem;
+  transition: 300ms;
+}
+.temp-button:focus{
+  color: #FF912B;
+  border: 2px solid #FF912B;
+}
+/*----------------------------------*/
+/* -- MIDDLE FRAME -- */
+.middle-middle{
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 8rem 16rem 8rem;
+  height: 18rem;
+}
+.delivery{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.delivery>div{
+  text-align: center;
+  font-size: 1.125rem;
+}
+.delivery p:first-of-type{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2F2105;
+  margin: 0 0 -0.5rem 0;
+}
+.delivery img{
+  width: 10rem;
+}
+/* -- ABOUT US -- */
+.about-us{
+  background-color: #F6EBDA;
+  display: flex;
+  padding: 6rem 8rem 0rem 8rem;
+  justify-content: space-between;
+}
+.about-us > div{
+  margin: -11rem 5rem 3rem 5rem;
+}
+.about-us img{
+  border: 0.5rem solid rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.about-us article{
+  margin: 0 3rem;
+}
+h3{
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 21.75rem;
+  margin-bottom: -1rem;
+}
+.about-us button{
+  background-color: #2F2105;
+  color: #F4AE26;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.about-us h4{
+  width: 30rem;
+}
+/* -- SPECIAL MENU -- */
+.special_menu{
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 8rem 0rem 8rem;
+}
+.special_menu > div{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.coffe-box2{
+  height: 24rem;
+  width: 22rem; 
+  box-shadow: 0 0 1rem rgba(0,0,0,0.15);
+  border-radius: 0.75rem;
+  position: relative;
+  background-color: white;
+  color: #2F2105;
+  margin: 0.5rem;
+ }
+ /* -- WHAT THEY SAY -- */
+ .what_they_say{
+  display: flex;
+  margin: 0 3rem;
+  padding: 6rem 8rem 3rem 8rem;
+  font-family: 'Readex Pro',sans-serif;
+  gap: 3rem;
+}
+.what_they_say>div>div>img{
+  margin: 0.375rem;
+  padding: 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+.what_they_say article>p{
+  color: #FFCB45;
+  font-weight: 500;
+  font-family: 'Readex Pro',sans-serif;
+}
+.what_they_say h2{
+  color: #1D1D1D;
+  font-weight: 700;
+  font-family: 'Readex Pro',sans-serif;
+  width: 28rem;
+}
+.review-box{
+  width: 26rem;
+  padding: 1rem;
+  background-color: #F1F1F1;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.review-box > div{
+  display: flex;
+  font-family: 'Readex Pro',sans-serif;
+  font-size: 1.125rem;
+  color: rgba(29, 29, 29, 0.7);
+}
+.review-box > div > div:first-child{ /* da sistemare */
+  margin: 1rem;
+  vertical-align: top;
+}
+.review-box > div > div > img{
+  object-fit: contain;
+}
+.review-box div>p{
+  display: flex;
+  font-family: 'Readex Pro',sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1D1D1D;
+}
+.review-box p>img{
+  height: 1.2rem;
+  margin: -0.5rem 0;
+}
+/* -- SUBSCRIBE -- */
+.subscribe{
+  display: flex;
+  flex-direction: row;
+
+  padding: 6rem 8rem 6rem 8rem;
+  font-family: 'Readex Pro',sans-serif;
+}
+.subscribe > div{
+  flex: 1;
+  display: flex;
+  background: url(./barista-machine.png) no-repeat center;
+  background-size: cover;
+  border-radius: 1rem;
+  height: 24.5rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+}
+.subscribe > div > span{
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  display:inline-block;
+  margin-bottom: 2rem;
+}
+.subscribe-email{
+  background-color: white;
+  height: 3rem;
+  display: flex;
+  border-radius: 1.5rem;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+.subscribe-email input{
+  width: 20rem;
+  color: #7E7D7A;
+  vertical-align: middle;
+  border-style: none;
+  padding: 0 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.subscribe-email input:focus{
+  /*questo comando serve per non visualizzare il bordo del campo input*/
+  outline: none;
+}
+.subscribe-email input:focus::placeholder{
+  /*questo comando serve per non visualizzare il contenuto del campo input*/
+  color: transparent;
+}
+.subscribe-email button{
+  margin-top: 0;
+  margin-right: -0.25rem;
+  font-weight: 600;
+}
+/* -- FOOTER -- */
+footer *{
+  font-family: 'Readex Pro',sans-serif;
+  color: rgba(29, 29, 29, 0.7);
+  font-size: 1.25rem;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-content:flex-start;
+  padding: 6rem 8rem 5rem 8rem;
+  background-color: #F6EBDA;
+  align-items:initial;
+}
+h5{
+  margin-top: -0.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1D1D1D;
+}
+footer ul{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 1.5rem;
+}
+footer li{
+  display: flex;
+
+}
+footer li>a{
+  color: rgba(29, 29, 29, 0.7);
+  font-size: 1.125rem;
+}
+.social{
+  display: flex;
+  gap: 1.25rem;
+  padding: .625rem;
+}
+#insta{
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(29, 29, 29, 0.15);
+  border-radius: 50%;
+}
+#face{
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFCB45;
+  box-shadow: 0px 4px 12px rgba(29, 29, 29, 0.15);
+  border-radius: 50%;
+}
+#twit{
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(29, 29, 29, 0.15);
+  border-radius: 50%;
+}
+.logo + p{
+  width: 21rem;
+}
+/* -- COPYRIGHT -- */
+#copyright{
+  padding: 0rem 8rem 2rem 8rem;
+  background-color: #F6EBDA;
+  align-items:initial;
+  background-color: #F6EBDA;
+  text-align: center;
+}
+#copyright hr{
+  margin: 1rem 0 2rem 0;
+}
+#copyright span{
+  font-size: 1rem;
+  color: #1D1D1D;
+  font-family: 'Readex Pro', sans-serif;
+}
