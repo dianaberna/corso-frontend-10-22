@@ -400,6 +400,123 @@ justify-content: space-between;
  
 }
 
+.how-to-delivery {
+position: absolute;
+margin-top: 40rem;
+font-weight: bold;
+}
+
+.schede-istruzioni {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.schede-istruzioni > #choose-coffee {
+   position: absolute;
+   margin-top: 45rem;
+   margin-left: 4.5rem;   
+}
+
+.schede-istruzioni > #we-delivery {
+   position: absolute;
+   margin-top: 45rem;
+   margin-left: 45.5rem; 
+}
+
+.schede-istruzioni > #enjoy-coffee {
+   position: absolute;
+   margin-top: 45rem;
+   margin-left: 85.5rem;
+}
+
+.testo-tazza-chicchi1 {
+   position: absolute;
+   margin-left: -4rem;
+   margin-top: -0.4rem;
+   font-weight: bold;
+}
+
+.informazioni1 {
+   margin-top: 2.2rem;
+   margin-left: -8rem;
+}
+
+.testo-we-delivery1 {
+   position: absolute;
+   margin-left: -4rem;
+   margin-top: -0.4rem;
+   font-weight: bold;
+   /* PROBLEMA A CAPO */
+}
+
+.informazioni2 {
+   margin-top: 2.2rem;
+   margin-left: -4.7rem;
+}
+
+.testo-coppa-coffee {
+   position: absolute;
+   margin-left: -3rem;
+   margin-top: -0.4rem;
+   font-weight: bold;
+}
+
+.informazioni3 {
+   margin-top: 2.2rem;
+   margin-left: -4.9rem;
+}
+
+.cappuccino-buono {
+   position: absolute;
+   margin-top: 67rem;
+   margin-left: 6rem;
+}
+
+.about-us-testo {
+   position: absolute;
+   margin-top: 75rem;
+   margin-left: 52rem;
+   font-weight: bold;
+}
+
+.grassetto-about-us {
+   position: absolute;
+   margin-left: 52rem;
+   margin-top: 81rem;
+   font-weight: bold;
+}
+
+.paragrafo-about-us {
+   position: absolute;
+   margin-top: 85rem;
+   margin-left: 52rem;
+}
+
+.rettangolo-centrale {
+   position: absolute;
+   background: white;
+   padding: 16.3rem 54.5rem;
+   margin-top: 70rem;
+   margin-bottom: 30rem;
+   z-index: -1;
+   right: 0%;
+   left: 0%;
+}
+
+#bottone-testo-caffe2 {
+   position: absolute;
+   margin-top: 94rem;
+   margin-left: 52rem;
+   background-color: #2F2105;
+   color: white;
+   border: 0;
+   padding: 1rem 4rem;
+   border-radius: 2rem;
+}
+
+
+
  @media screen and (max-width:760px){
     ul{display: none;}
 }
