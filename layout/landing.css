@@ -464,3 +464,81 @@ h1 span{color: #FF912B;}
 .info_delivery h3{
     padding: 20px;
 }
+.about{
+    background: #F6EBDA;
+    width: 100%;
+    height: 440px;
+    margin: 300px 0px 0px 0px;
+    display: flex;
+}
+.about_section{
+    /* border: 2px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-border{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(2px);
+    -webkit-box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 60%);
+    box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 60%);
+    border-radius: 30px;
+    margin-bottom: 177px;
+    width: 387px;
+    height: 519px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-card{
+    height: 490px;
+    width: 360px;
+    background: url('../img/about-card.png');
+    border-radius: 0px 0px 13px 13px;
+}
+
+.about_text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.about_text h3 span{border-bottom: 2px solid #FF912B;}
+.text-h3{
+    font-size: 33px;
+    font-weight: bold;
+    margin: 35px 0px 30px 70px;
+}
+.text-h4{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px 0px 20px 70px;
+    width: 270px;
+}
+.text-p{
+    font-size: 18px;
+    width: 331px;
+    margin-left: 70px;
+}
+.about-btn{
+    width: 145px;
+    height: 38px;
+    border-radius: 25px;
+    background: #2F2105;
+    color: #F4AE26;
+    font-weight: bold;
+    font-weight: bold;
+    margin: 50px 0px 0px 67px;
+}
+
