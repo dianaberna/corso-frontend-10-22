@@ -1,59 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-
-
-
-body { 
+body {
     background-color: white;
     display: flex;
     gap: 10px;
-    font-family: 'Poppins', sans-serif, ;
+    font-family: "Poppins", sans-serif;
 }
 
 .bevande {
-
-   position: relative;
-   background-color: white;
-   width: 343.97px;
-   height: 373px;
-   
-   
-   border-radius: 10px;
-   
-   box-shadow: 0px 0px 24px 19px rgba(0,0,0,0.1);
-
-   
-  
-   
-
+    position: relative;
+    background-color: white;
+    width: 343.97px;
+    height: 373px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px 19px rgba(0, 0, 0, 0.1);
 }
-#mocaccino {
+
+.mocaccino {
     margin-top: 20px;
     margin-left: 20px;
-    
     border-radius: 10px;
 }
 
 h3 {
-   margin-left:35px;
-   font-family: 'Poppins', sans-serif;
-
-   
-
+    margin-left: 35px;
 }
 
 p {
     margin-left: 35px;
-
-
 }
 
-#scritta {
+.scritta {
     margin-left: 35px;
-    font-family: 'Poppins', sans-serif;
-    color: #7E7D7A;
-
+    color: #7e7d7a;
 }
 
 .icona {
@@ -61,24 +40,18 @@ p {
     margin-left: 110px;
     border-radius: 50%;
     padding: 10px;
-
 }
-  
 
 svg {
     background-color: orange;
-    background-size: 100px;
-    
 }
 
-
-#titolo {
+.titolo {
     display: flex;
     gap: 2rem;
 }
 
 .score {
-    font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 50px;
     left: 50px;
@@ -86,13 +59,13 @@ svg {
     border-radius: 15px;
     padding: 5px 10px;
     border-style: solid;
-    border-color: rgba(0,0,0,0.1);
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
-#k {
+.price {
     margin-left: 110px;
 }
 
-#star {
+.star {
     margin-left: 5px;
 }
