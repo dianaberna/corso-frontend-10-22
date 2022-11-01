@@ -48,9 +48,8 @@ input {
 .cerchio {
     background-color: #2F2105;;
     border-radius: 100%;
-    width: 16rem;
-    height: 16rem;
+    width: 18rem;
+    height: 18rem;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
