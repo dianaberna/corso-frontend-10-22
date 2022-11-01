@@ -67,9 +67,23 @@ span {
 
 .button {
     position: absolute;
-    background-color: black;
-    width: 250px;
-    height: 20px;
-    padding: 20%;
-    border-radius: 4rem;
+    bottom: -30px;
+    width: 160px;
+    height: 40px;
+    border-radius: 30px;
+    background: #2F2105;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
 }
+ .cerchio2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    right: 8px;
+    border-radius: 100px;
+    background-color: #ff902a;
+    display: flex;
+    justify-content:center;
+ }
