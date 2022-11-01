@@ -1,522 +1,478 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;500;700&display=swap");
+
 body {
-font-family: 'Lato', sans-serif;
+	font-family: "Lato", sans-serif;
+	font-size: 1.5rem;
+	background-color: #f6ebda;
+	padding-left: 135px;
+	padding-right: 135px;
 }
 
-html {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    }
+/* il font size se è comune a tutti i testi andrebbe applicato al tag p 
+perché non è detto che tutti i div conterranno testo */
 
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
-    background-color:#F6EBDA;
-    padding-left: 135px;
-    padding-right: 135px;
-
-    }
-
-div {
-    font-family: "Lato", sans-serif;
+/* div {
     font-size: 2rem;
-    
-    }
+} */
 
 .bg-img-hero {
-position: absolute;
-right: 0%;
-top: 0%;
-z-index: -1;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	z-index: -1;
 }
 
 .rating-star {
-    padding-left: 0.3rem;
+	padding-left: 0.3rem;
 }
 
 .foto-caffe {
-    position: absolute;
-    right: 11.5rem;
-    margin-top: 2.4rem
+	position: absolute;
+	right: 11.5rem;
+	margin-top: 2.4rem;
 }
 
 .cerchio1 {
-    position: absolute;
-    right: 10rem;
-    z-index: -1;
+	position: absolute;
+	right: 10rem;
+	z-index: -1;
 }
 
 ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    padding:0rem 2rem;
-    border-spacing: 1rem;
-    
-    }
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	padding: 0rem 2rem;
+	border-spacing: 1rem;
+}
 
 /* PSEUDO-CLASSE */
 ul a:hover {
-    color: orange;
-
-    }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    }
-
-
-nav > ul > li > a {
-    color: black;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 1rem;
-    
-    }
-
-.logo {
-    
-    display: flex;
-    justify-content: flex-start;
-    padding: 2rem 1rem;
-    
-    }
-
-.lente {
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 5px;
-    
-    }
-
-.searchbar {  
-    border-radius: 4rem;
-    display: flex;
-    /* border: 1px solid black; */
-
-    }
-
-.searchbar input {
-    height: 1.3rem;
-    border: 0px;
-    padding: 5px 10px;
-    padding-left: 40px;
-    border-radius: 1.3rem;
-    margin-right: 1rem;
-
-    }
-
- div span{
-    font-weight: 300;
-    background-color: white;
-    border-radius: 2rem;
-    padding: 0.5rem 2.9rem;
-    font-size: 24px;
- }
-
- span.testo-nome {
-    position: absolute;
-    right: 28rem;
-    margin-top: 3rem;
-
- }
-
- span.punteggio {
-    position: absolute;
-    right: 11.5rem;
-    margin-top: 9rem;
- }
-
- span.numero {
-    position: absolute;
-    right: 28rem;
-    margin-top: 21.5rem;
- }
-
- div.regola-testo {
-    width: 25%;
- }
-
- .testo-caffe {
-    margin-top: 6.8rem;
-    font-size: 48px;
- }
-
- .testo2-caffe {
-    margin-top: 2rem;
-    font-size: 18px;
-    width: 80%;
-    border-left: 4rem;
- }
-
- .chicchi-caffe2 {
-    position: absolute;
-    margin-left: -135px;
-    z-index: -1;
-    
-
-
- }
-
- #bottone-testo-caffe {
-    background-color: #2F2105;
-    color: white;
-    border: 0;
-    padding: 1rem 4rem;
-    border-radius: 2rem;
- }
-
- .icon-botton {
-    display: flex;
-    padding: 0rem 9rem;
-    margin-top: -2.1rem;
- }
-
- .cart-icon {
-    display: flex;
-    padding: 0rem 9.1rem;
-    margin-top: -1.1rem;
- }
-
- .testo-popolari-ora {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 6rem;
- }
-
- .cards {
-display: flex;
-justify-content: space-between;
-
- }
-
- .cards > #card1 {
-    background: white;
-    position: absolute;
-    width: 343px;
-    height: 373px;
-    left: 155px;
-    top: 751px;
-    margin-left: 0;
-    border-radius: 14px;
-    z-index: -1;
-
-
- }
-
- .cards > #card2 {
-    background: white;
-    position: absolute;
-    width: 343px;
-    height: 373px;
-    left: 548px;
-    top: 751px;
-    margin-left: 15rem;
-    border-radius: 14px;
- }
-
- .cards > #card3 {
-    background: white;
-    position: absolute;
-    width: 343px;
-    height: 373px;
-    left: 941px;
-    top: 751px;
-    margin-left: 30rem;
-    border-radius: 14px;
+	color: orange;
 }
 
- .tazza-marrone {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    border-radius: 1rem;
- }
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
- .espresso {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    border-radius: 1rem;
- }
+nav > ul > li > a {
+	color: black;
+	font-family: "Lato", sans-serif;
+	font-size: 1.2rem;
+	text-decoration: none;
+	padding: 1rem;
+}
 
- .vanilla-latte {
-   margin-top: 17.3rem;
-   margin-left: 1rem;
-   font-weight: bold;
- }
+.logo {
+	display: flex;
+	justify-content: flex-start;
+	padding: 2rem 1rem;
+}
 
- .latte-cacao {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    border-radius: 1rem;
- }
+.lente {
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 5px;
+}
 
- .espresso-testo {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
- }
+.searchbar {
+	border-radius: 4rem;
+	display: flex;
+	/* border: 1px solid black; */
+}
 
- .latte-cacao-testo {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
- }
- 
- .rating1 {
-   margin-left: 16.1rem;
-   margin-top: -4.3rem;
-   font-weight: bold;
+.searchbar input {
+	height: 1.3rem;
+	border: 0px;
+	padding: 5px 10px;
+	padding-left: 40px;
+	border-radius: 1.3rem;
+	margin-right: 1rem;
+}
 
- }
+div span {
+	font-weight: 300;
+	background-color: white;
+	border-radius: 2rem;
+	padding: 0.5rem 2.9rem;
+	font-size: 24px;
+}
 
- .rating2 {
-    margin-left: 16.1rem;
-    margin-top: -3.3rem;
-    font-weight: bold;
- }
+span.testo-nome {
+	position: absolute;
+	right: 28rem;
+	margin-top: 3rem;
+}
 
- .rating3 {
-    margin-left: 16.1rem;
-    margin-top: -3.3rem;
-    font-weight: bold;
- }
+span.punteggio {
+	position: absolute;
+	right: 11.5rem;
+	margin-top: 9rem;
+}
 
- .hot1 {
-  position: absolute;
-  margin-top: -1.6rem;
-  margin-left: 1.5rem;
-  background-color: #FFD28F;
-  border-radius: 0.8rem;
-  padding: 0.1rem 1rem;
- }
+span.numero {
+	position: absolute;
+	right: 28rem;
+	margin-top: 21.5rem;
+}
 
- .cold1 {
-  position: absolute;
-  margin-top: -1.6rem;
-  margin-left: 7.4rem;
-  background-color: #FFD28F;
-  border-radius: 0.8rem;
-  padding: 0.1rem 0.8rem;
- }
+div.regola-testo {
+	width: 25%;
+}
 
- .hot2 {
-   position: absolute;
-   margin-top: -1.8rem;
-   margin-left: 1.5rem;
-   background-color: #FFD28F;
-   border-radius: 0.8rem;
-   padding: 0.1rem 1rem;
- }
+.testo-caffe {
+	margin-top: 6.8rem;
+	font-size: 48px;
+}
 
- .cold2 {
-   position: absolute;
-   margin-top: -1.8rem;
-   margin-left: 7.4rem;
-   background-color: #FFD28F;
-   border-radius: 0.8rem;
-   padding: 0.1rem 0.8rem;
- }
+.testo2-caffe {
+	margin-top: 2rem;
+	font-size: 18px;
+	width: 80%;
+	border-left: 4rem;
+}
 
- .hot3 {
-   position: absolute;
-   margin-top: -1.8rem;
-   margin-left: 1.5rem;
-   background-color: #FFD28F;
-   border-radius: 0.8rem;
-   padding: 0.1rem 1rem;
- }
+.chicchi-caffe2 {
+	position: absolute;
+	margin-left: -135px;
+	z-index: -1;
+}
 
- .cold3 {
-   position: absolute;
-   margin-top: -1.8rem;
-   margin-left: 7.4rem;
-   background-color: #FFD28F;
-   border-radius: 0.8rem;
-   padding: 0.1rem 1rem;
- }
+#bottone-testo-caffe {
+	background-color: #2f2105;
+	color: white;
+	border: 0;
+	padding: 1rem 4rem;
+	border-radius: 2rem;
+	display: flex;
+	gap: 2rem;
+}
 
- .hot1:hover {
-   color: orange;
- }
+.testo-popolari-ora {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 6rem;
+}
 
- .hot2:hover {
-   color: orange;
-   
+.cards {
+	display: flex;
+	justify-content: space-between;
+}
 
- }
- .hot3:hover {
-   color: orange;
-   
- }
+.cards > #card1 {
+	background: white;
+	position: absolute;
+	width: 343px;
+	height: 373px;
+	left: 155px;
+	top: 751px;
+	margin-left: 0;
+	border-radius: 14px;
+	z-index: -1;
+}
 
- .cold1:hover {
-   color: orange;
- }
+.cards > #card2 {
+	background: white;
+	position: absolute;
+	width: 343px;
+	height: 373px;
+	left: 548px;
+	top: 751px;
+	margin-left: 15rem;
+	border-radius: 14px;
+}
 
- .cold2:hover {
-   color: orange;
-   
+.cards > #card3 {
+	background: white;
+	position: absolute;
+	width: 343px;
+	height: 373px;
+	left: 941px;
+	top: 751px;
+	margin-left: 30rem;
+	border-radius: 14px;
+}
 
- }
- .cold3:hover {
-   color: orange;
-   
- }
+.tazza-marrone {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	border-radius: 1rem;
+}
 
- .push-pay1 {
-   position: absolute;
-   margin-top: 23.9rem;
-   margin-left: 17.5rem;
- }
+.espresso {
+	margin-top: 1rem;
+	margin-left: 1rem;
+	border-radius: 1rem;
+}
 
- .push-pay2 {
-   position: absolute;
-   margin-top: 23.9rem;
-   margin-left: 57.6rem;
- }
+.vanilla-latte {
+	margin-top: 17.3rem;
+	margin-left: 1rem;
+	font-weight: bold;
+}
 
- .push-pay3 {
-   position: absolute;
-   margin-top: 23.9rem;
-   margin-left: 97.4rem;
- }
+.latte-cacao {
+	margin-top: 1rem;
+	margin-left: 1rem;
+	border-radius: 1rem;
+}
 
- .background-center {
-   position: absolute;
-   width: 10rem;
-   background-color: #F9D9AA;
-   border-radius: 4rem;
-   right: 5rem;
-   height: 20rem;
-   left: 5rem;
-   top: 52rem;
-   padding: 1rem 50rem;
-   z-index: -2;
- 
+.espresso-testo {
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+
+.latte-cacao-testo {
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+
+.rating1 {
+	margin-left: 16.1rem;
+	margin-top: -4.3rem;
+	font-weight: bold;
+}
+
+.rating2 {
+	margin-left: 16.1rem;
+	margin-top: -3.3rem;
+	font-weight: bold;
+}
+
+.rating3 {
+	margin-left: 16.1rem;
+	margin-top: -3.3rem;
+	font-weight: bold;
+}
+
+.hot1 {
+	position: absolute;
+	margin-top: -1.6rem;
+	margin-left: 1.5rem;
+	background-color: #ffd28f;
+	border-radius: 0.8rem;
+	padding: 0.1rem 1rem;
+}
+
+.cold1 {
+	position: absolute;
+	margin-top: -1.6rem;
+	margin-left: 7.4rem;
+	background-color: #ffd28f;
+	border-radius: 0.8rem;
+	padding: 0.1rem 0.8rem;
+}
+
+.hot2 {
+	position: absolute;
+	margin-top: -1.8rem;
+	margin-left: 1.5rem;
+	background-color: #ffd28f;
+	border-radius: 0.8rem;
+	padding: 0.1rem 1rem;
+}
+
+.cold2 {
+	position: absolute;
+	margin-top: -1.8rem;
+	margin-left: 7.4rem;
+	background-color: #ffd28f;
+	border-radius: 0.8rem;
+	padding: 0.1rem 0.8rem;
+}
+
+.hot3 {
+	position: absolute;
+	margin-top: -1.8rem;
+	margin-left: 1.5rem;
+	background-color: #ffd28f;
+	border-radius: 0.8rem;
+	padding: 0.1rem 1rem;
+}
+
+.cold3 {
+	position: absolute;
+	margin-top: -1.8rem;
+	margin-left: 7.4rem;
+	background-color: #ffd28f;
+	border-radius: 0.8rem;
+	padding: 0.1rem 1rem;
+}
+
+.hot1:hover {
+	color: orange;
+}
+
+.hot2:hover {
+	color: orange;
+}
+.hot3:hover {
+	color: orange;
+}
+
+.cold1:hover {
+	color: orange;
+}
+
+.cold2:hover {
+	color: orange;
+}
+.cold3:hover {
+	color: orange;
+}
+
+.push-pay1 {
+	position: absolute;
+	margin-top: 23.9rem;
+	margin-left: 17.5rem;
+}
+
+.push-pay2 {
+	position: absolute;
+	margin-top: 23.9rem;
+	margin-left: 57.6rem;
+}
+
+.push-pay3 {
+	position: absolute;
+	margin-top: 23.9rem;
+	margin-left: 97.4rem;
+}
+
+.background-center {
+	position: absolute;
+	width: 10rem;
+	background-color: #f9d9aa;
+	border-radius: 4rem;
+	right: 5rem;
+	height: 20rem;
+	left: 5rem;
+	top: 52rem;
+	padding: 1rem 50rem;
+	z-index: -2;
 }
 
 .how-to-delivery {
-position: absolute;
-margin-top: 40rem;
-font-weight: bold;
+	position: absolute;
+	margin-top: 40rem;
+	font-weight: bold;
 }
 
 .schede-istruzioni {
-   display: flex;
-   justify-content: space-between;
-
+	display: flex;
+	justify-content: space-between;
 }
 
 .schede-istruzioni > #choose-coffee {
-   position: absolute;
-   margin-top: 45rem;
-   margin-left: 4.5rem;   
+	position: absolute;
+	margin-top: 45rem;
+	margin-left: 4.5rem;
 }
 
 .schede-istruzioni > #we-delivery {
-   position: absolute;
-   margin-top: 45rem;
-   margin-left: 45.5rem; 
+	position: absolute;
+	margin-top: 45rem;
+	margin-left: 45.5rem;
 }
 
 .schede-istruzioni > #enjoy-coffee {
-   position: absolute;
-   margin-top: 45rem;
-   margin-left: 85.5rem;
+	position: absolute;
+	margin-top: 45rem;
+	margin-left: 85.5rem;
 }
 
 .testo-tazza-chicchi1 {
-   position: absolute;
-   margin-left: -4rem;
-   margin-top: -0.4rem;
-   font-weight: bold;
+	position: absolute;
+	margin-left: -4rem;
+	margin-top: -0.4rem;
+	font-weight: bold;
 }
 
 .informazioni1 {
-   margin-top: 2.2rem;
-   margin-left: -8rem;
+	margin-top: 2.2rem;
+	margin-left: -8rem;
 }
 
 .testo-we-delivery1 {
-   position: absolute;
-   margin-left: -4rem;
-   margin-top: -0.4rem;
-   font-weight: bold;
-   /* PROBLEMA A CAPO */
+	position: absolute;
+	margin-left: -4rem;
+	margin-top: -0.4rem;
+	font-weight: bold;
+	/* PROBLEMA A CAPO */
 }
 
 .informazioni2 {
-   margin-top: 2.2rem;
-   margin-left: -4.7rem;
+	margin-top: 2.2rem;
+	margin-left: -4.7rem;
 }
 
 .testo-coppa-coffee {
-   position: absolute;
-   margin-left: -3rem;
-   margin-top: -0.4rem;
-   font-weight: bold;
+	position: absolute;
+	margin-left: -3rem;
+	margin-top: -0.4rem;
+	font-weight: bold;
 }
 
 .informazioni3 {
-   margin-top: 2.2rem;
-   margin-left: -4.9rem;
+	margin-top: 2.2rem;
+	margin-left: -4.9rem;
 }
 
 .cappuccino-buono {
-   position: absolute;
-   margin-top: 67rem;
-   margin-left: 6rem;
+	position: absolute;
+	margin-top: 67rem;
+	margin-left: 6rem;
 }
 
 .about-us-testo {
-   position: absolute;
-   margin-top: 75rem;
-   margin-left: 52rem;
-   font-weight: bold;
+	position: absolute;
+	margin-top: 75rem;
+	margin-left: 52rem;
+	font-weight: bold;
 }
 
 .grassetto-about-us {
-   position: absolute;
-   margin-left: 52rem;
-   margin-top: 81rem;
-   font-weight: bold;
+	position: absolute;
+	margin-left: 52rem;
+	margin-top: 81rem;
+	font-weight: bold;
 }
 
 .paragrafo-about-us {
-   position: absolute;
-   margin-top: 85rem;
-   margin-left: 52rem;
+	position: absolute;
+	margin-top: 85rem;
+	margin-left: 52rem;
 }
 
 .rettangolo-centrale {
-   position: absolute;
-   background: white;
-   padding: 16.3rem 54.5rem;
-   margin-top: 70rem;
-   margin-bottom: 30rem;
-   z-index: -1;
-   right: 0%;
-   left: 0%;
+	position: absolute;
+	background: white;
+	padding: 16.3rem 54.5rem;
+	margin-top: 70rem;
+	margin-bottom: 30rem;
+	z-index: -1;
+	right: 0%;
+	left: 0%;
 }
 
 #bottone-testo-caffe2 {
-   position: absolute;
-   margin-top: 94rem;
-   margin-left: 52rem;
-   background-color: #2F2105;
-   color: white;
-   border: 0;
-   padding: 1rem 4rem;
-   border-radius: 2rem;
+	position: absolute;
+	margin-top: 94rem;
+	margin-left: 52rem;
+	background-color: #2f2105;
+	color: white;
+	border: 0;
+	padding: 1rem 4rem;
+	border-radius: 2rem;
 }
 
-
-
- @media screen and (max-width:760px){
-    ul{display: none;}
+@media screen and (max-width: 760px) {
+	ul {
+		display: none;
+	}
 }
