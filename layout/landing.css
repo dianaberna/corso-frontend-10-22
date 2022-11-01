@@ -681,3 +681,64 @@ h1 span{color: #FF912B;}
     border-radius: 20px;
     font-weight: bold;
 }
+
+
+.container-customers {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 30px;
+}
+.customers-img {
+    width: 50%;
+    /* border: 2px solid; */
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.piatti-img {
+    width: 100%;
+    
+}
+.piatti__img {
+    width: 99%;
+    filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 2px;
+}
+.piatti-misti {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    position: relative;
+    top: -70px;
+    left: 2px;
+}
+.contei-misti1 {
+    width: 49%;
+    display: flex;
+    background: url('../img/pit.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 2px;
+
+}
+
+.contei-misti2 {
+    width: 49%;
+    background: url('../img/carne.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 2px;
+    
+}
+
