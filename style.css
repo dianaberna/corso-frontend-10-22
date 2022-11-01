@@ -18,9 +18,22 @@ h2{
     letter-spacing: 0.04em;
     color: #2F2105;
 }
-/*div .section2{
-    margin: 0px 100px;
-}*/
+.box_card{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%);
+    backdrop-filter: blur(1px);
+    border-radius: 12px;
+    position: absolute;
+    width: 355px;
+    height: 385px;
+}
+.box_score{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(2px);
+    border-radius: 27px;
+    width: 70px;
+    height: 34px;
+    position:absolute;
+}
 .all_card{
     display: flex;
     flex-direction: row;
@@ -28,6 +41,7 @@ h2{
     justify-content: space-around;
     background-color: #F9D9AA;
     border-radius: 12px;
+    padding: 20px;
 }
 .all_service{
     display: flex;
@@ -63,9 +77,10 @@ div .service{
     justify-content: center;
     gap: 5px;
 }
-/*.card > span{
-    align-content: space-between;
-}*/
+.score > img{
+    width: 14px;
+    height: 14px;
+}
 .service > h2{
     font-size: 24px;
     font-weight: 600;
