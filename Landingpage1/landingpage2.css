@@ -23,14 +23,13 @@ nav {
 
 ul#menu {
     display: flex;
-    gap: 32px;
+    gap: 80px;
     list-style-type: none;
 }
 
 .searchbar{
     display: flex;
-   
-}
+   }
 
 input {
     padding-left: 30px;
@@ -46,10 +45,13 @@ input {
 }
     
 .cerchio {
+    position: absolute;
+    right: 10%;
+    bottom: 1%;
     background-color: #2F2105;;
     border-radius: 100%;
-    width: 18rem;
-    height: 18rem;
+    width: 14rem;
+    height: 14rem;
     display: flex;
     justify-content: center;
 }
