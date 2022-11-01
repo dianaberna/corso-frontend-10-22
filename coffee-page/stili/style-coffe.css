@@ -469,6 +469,18 @@ h3{
   margin: 1rem;
   vertical-align: top;
 }
+.recensioni{
+  position: relative;
+}
+.recensioni > :nth-child(3){
+  position: absolute;
+  left: 30rem;
+  top: 10rem;
+  overflow: hidden;
+}
+.review-box{
+  overflow: hidden;
+}
 .review-box > div > div > img{
   object-fit: contain;
 }
@@ -483,11 +495,17 @@ h3{
   height: 1.2rem;
   margin: -0.5rem 0;
 }
+.scroll-reviews{
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: #FFCB45;
+  border-radius: 50%;
+  margin: 1rem 12rem;
+}
 /* -- SUBSCRIBE -- */
 .subscribe{
   display: flex;
   flex-direction: row;
-
   padding: 6rem 8rem 6rem 8rem;
   font-family: 'Readex Pro',sans-serif;
 }
