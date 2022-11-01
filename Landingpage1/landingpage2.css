@@ -45,3 +45,12 @@ input {
      margin-left: 5px;
 }
     
+.cerchio {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 400
+    top: 158px;
+    background: #2F2105;
+    border-radius: 0%
+}
