@@ -8,6 +8,16 @@
   --color-light: #292e3d;
   --color-info-dark: #bfc3c9;
   --color-primary: #a162f7;
+
+  --card-border-radius: 1.5rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-1: 0.8rem;
+  --border-radius-1: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 0rem 0.9rem var(--color-light);
 }
 * {
   margin: 0;
@@ -150,7 +160,7 @@ aside .sidebar a:hover span {
   gap: 1rem;
 }
 .navbar {
-  margin: 1.4rem 2rem;
+  margin: 1.4rem 2rem 0rem;
   justify-content: space-between;
 }
 .navbar__photo img {
@@ -163,6 +173,84 @@ aside .sidebar a:hover span {
   padding: 0.5rem 4rem 0.5rem 1rem;
   border-radius: 0.5rem;
 }
-.navbar__search input {
+.navbar__search input[type='text'] {
   background-color: transparent;
+}
+/* =============== MAIN CONTEINERS ==========*/
+.main__container {
+  display: grid;
+  grid-template-rows: 15rem auto 15rem;
+  height: 87vh;
+  background-color: var(--color-background-2);
+  margin: 1rem;
+}
+
+/* =============== NAV CARDS ================ */
+.nav__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.nav__cards > div {
+  display: flex;
+  background-color: var(--color-background);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  text-align: center;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  height: 100%;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: all 500ms ease;
+}
+.nav__cards > div:hover {
+  box-shadow: none;
+}
+.nav__cards > div span {
+  background-color: var(--color-primary);
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+}
+.nav__cards > div.nav__cards__2 span {
+  background-color: #fb5b56bd;
+  color: #fb5b56;
+}
+.nav__cards > div.nav__cards__3 span {
+  background-color: #569efbbd;
+  color: #569efb;
+}
+.nav__cards > div.nav__cards__4 span {
+  background-color: #d2fb56bd;
+  color: #d2fb56;
+}
+
+div.circle {
+  position: relative;
+}
+div.circle svg circle {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 0.7rem;
+}
+div.circle .number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle svg circle.stroke-red {
+  stroke: #fb5b56;
+}
+.circle svg circle.stroke-blue {
+  stroke: #569efb;
+}
+.nav__cards .circle svg circle.stroke-yellow {
+  stroke: #d2fb56;
 }
