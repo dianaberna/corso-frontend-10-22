@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 body {
-  background-color: peachpuff;
+  background-color: #F7EBDA;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -54,6 +54,7 @@ body {
   font-size: 38px;
   margin-top: 60px;
   margin-left: 90px;
+  /* font-style: italic; */
 }
 
 .small-sentence{
@@ -78,7 +79,6 @@ body {
   display: flex;
   cursor: pointer;
   align-items: center;
-  margin-bottom: 38px;
 }
 
 /* non sono riuscito a far venire il bottene perfettamente cerchiato */
@@ -122,6 +122,27 @@ body {
   /* right: 196px; */
 }
 
+.subtitle{
+  font-size: 26px; 
+  margin-left: 90px;
+  font-weight: 600;
+}
+
+/* non so quale sia il nome più appropriato per questa classe */
+.body-section{
+  background-color: #F9D9AA;
+  width: 100%;
+  height: 367px;
+  border-radius: 120px;
+  margin-top: 120px;
+  display: flex;
+}
+
+.body-section > .card{
+  position: absolute;  
+  top: 650px;
+}
+
 .card {
   position: relative;
   width: 356px;
@@ -154,6 +175,15 @@ body {
   font-size: 28px;
   margin-right: 28px;
   margin-top: 10px;
+}
+
+.product-temp{
+  margin-left: 30px;
+  margin-top: 20px;
+  border: 10px;
+  border-radius: 5px;
+  color: #FF912B; /* colore prova, deve essere cambiato in base al design */
+  font-weight: 600;
 }
 
 .card-description {
