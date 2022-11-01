@@ -48,7 +48,7 @@ body {
   width: 96%;
   margin: 0 auto;
   gap: 2rem;
-  grid-template-columns: 15rem auto;
+  grid-template-columns: 9rem auto;
 }
 a {
   color: var(--color-white);
@@ -178,9 +178,6 @@ aside .sidebar a:hover span {
 }
 /* =============== MAIN CONTEINERS ==========*/
 .main__container {
-  display: grid;
-  grid-template-rows: 17rem auto 15rem;
-  height: 87vh;
   background-color: var(--color-background-2);
   margin: 1rem;
 }
@@ -310,4 +307,11 @@ div.circle .number {
 .car__bottom__left {
   display: flex;
   align-items: center;
+}
+
+/* ============ MEDIA QUERY ============= */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-color: red;
+  }
 }
