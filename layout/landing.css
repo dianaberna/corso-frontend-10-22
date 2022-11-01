@@ -742,3 +742,43 @@ h1 span{color: #FF912B;}
     
 }
 
+.recensioni{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.recensioni h3{
+    color: #FFCB45;
+    width: 22%;
+    font-size: 23px;
+    margin: 70px 0px 30px 0px;
+
+}
+.recensioni h2{
+    font-size: 32px;
+    font-weight: bold;
+    width: 70%;
+}
+.fedb{
+    border: 1px solid;
+    height: 200px;
+    width: 475px;
+    display: flex;
+    background: #F1F1F1;
+    border-radius: 10px;
+}
+.fedb h2{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.fedb-fot{
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+}
