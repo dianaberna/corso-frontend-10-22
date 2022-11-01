@@ -496,10 +496,9 @@ font-weight: bold;
 .rettangolo-centrale {
    position: absolute;
    background: white;
-   padding: 16.3rem 54.5rem;
-   margin-top: 70rem;
-   margin-bottom: 30rem;
-   z-index: -1;
+   padding: 28rem 0rem;
+   margin-top: 16rem;
+   z-index: -3;
    right: 0%;
    left: 0%;
 }
@@ -515,7 +514,134 @@ font-weight: bold;
    border-radius: 2rem;
 }
 
+.background-centro2 {
+position: absolute;
+background: white;
+padding: 28rem 0rem;
+margin-top: 102rem;
+z-index: -4;
+right: 0%;
+left: 0%;
+}
 
+.special-menu1 {
+   font-weight: bold;
+   margin-top: -21rem;
+   margin-left: 11rem;
+ 
+
+}
+
+.special-menu {
+   position: absolute;
+   margin-top:-50rem;
+}
+
+div#sandwitch-card1 {
+   background: rgb(86, 84, 84);
+   position: absolute;
+   margin-top: 163.2rem;
+   margin-left: 3rem;
+   padding-bottom: 9rem;
+   padding-right: 2.1rem;
+   border-radius: 1rem;
+}
+
+
+div#latte-card2 {
+   background: rgb(86, 84, 84);
+   position: absolute;
+   margin-top: 163.1rem;
+   margin-left: 40rem;
+   padding-bottom: 9rem;
+   padding-right: 2.1rem;
+   border-radius: 1rem;   
+}
+
+div#latte-card3 {
+   position: absolute;
+   margin-top: 163.1rem;
+   margin-left: 75rem;
+   padding-bottom: 9rem;
+   padding-right: 2.1rem;
+   background: grey;
+   border-radius: 1rem;
+}
+
+.sandwitch {
+   margin-top: 1.5rem;
+   margin-left: 2rem;
+}
+
+.hot-milk {
+      margin-top: 1.5rem;
+      margin-left: 2rem;
+}
+
+.latte-card3 {
+   margin-top: 1.5rem;
+   margin-left: 2rem;
+}
+
+.text-sandwich1 {
+   position: absolute;
+   margin-top: 0.9rem;
+   margin-left: 2.9rem;
+   font-weight: bold;
+}
+
+.hotmilk-text {
+   font-weight: bold;
+   position: absolute;
+   margin-top: 0.9rem;
+   margin-left: 2rem;
+}
+
+.coffee-ice-cream-text {
+   font-weight: bold;
+   position: absolute;
+   margin-top: 0.9rem;
+   margin-left: 2rem;
+}
+
+.rating-sandwitch-card {
+   position: absolute;
+   margin-top: 1rem;
+   margin-left: 17.8rem;
+}
+
+.hotmilk-rating-card {
+   position: absolute;
+   margin-top: 1rem;
+   margin-left: 17.8rem;
+}
+
+.coffee-ice-cream-rating-card {
+   position: absolute;
+   margin-top: 1rem;
+   margin-left: 17.8rem;
+}
+
+.descrizione-sandwich {
+   position: absolute;
+   margin-top: 4rem;
+   margin-left: 2.8rem;
+   font-size: small;
+}
+
+.descrizione-hotmilk {
+   position: absolute;
+   margin-top: 4rem;
+   margin-left: 2rem;
+   font-size: small;
+}
+
+.descrizione-coffee-ice-cream {
+   position: absolute;
+   margin-top: 4rem;
+   margin-left: 2rem;
+   font-size:small;
+}
 
  @media screen and (max-width:760px){
     ul{display: none;}
