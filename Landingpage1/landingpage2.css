@@ -59,3 +59,17 @@ input {
 span {
    color: red;
 }
+
+.testo {
+    position: absolute;
+    left: 3%;
+}
+
+.button {
+    position: absolute;
+    background-color: black;
+    width: 250px;
+    height: 20px;
+    padding: 20%;
+    border-radius: 4rem;
+}
