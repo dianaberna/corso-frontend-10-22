@@ -46,11 +46,11 @@ input {
 }
     
 .cerchio {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    left: 400
-    top: 158px;
-    background: #2F2105;
-    border-radius: 0%
+    background-color: #2F2105;;
+    border-radius: 100%;
+    width: 16rem;
+    height: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
