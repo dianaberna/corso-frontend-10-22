@@ -9,43 +9,40 @@ body {
     display:flex;
     justify-content: space-between;
     margin: 40px 50px;
+    position: relative;
+    align-items: center;
 }
 
-/* come faccio a distaccare tra di loro gli elementi della navbar? 
-    come faccio ad allineare tutto l'header?*/
 .navbar a{
   display: flex;
-  justify-content:space-evenly;
   text-decoration: none;
   color: black;
 }
 
-/* .topnav a:hover {
-  color: orange;
-} */
-
-/* è giusto usare un elenco puntato in una navbar? 
-    se si, perchè?*/
 .ul-p{
     list-style-type:none;
     display:flex;
+    gap: 50px;
+    padding-left: 0px;
 }
 
-/* perchè ho bisogno di rispecificare la font-family per un input-text, dopo averlo  specificato per tutto il body?
-    come inserisco la lente d'ingrandimento nella searchbar?*/
+li > a:hover {
+    color: orange;
+}
+
 .searchbar{
     border-radius: 35px;
     font-weight: 500;
     padding: 10px 15px;
     font-family: 'Poppins', sans-serif;
+    padding-left: 45px;
 }
 
-/* è giusto allineare il carrello alla saerchbar in questa maniera (con position ecc)?*/
-.header-shopcart{
-    margin-left: 10px;
-    position: absolute;
-    top: 47px;
-    cursor:pointer;
+section > svg{
+  position: absolute;
+  top: 18px;
+  margin-left: 15px;
+  cursor: pointer;
 }
 
 .main-sentence{
@@ -65,7 +62,6 @@ body {
   color:#7E7D7A;
 }
 
-/* ho dovuto specificare di nuovo la font family, perchè? */
 .ordernow-button{
   margin-left: 90px;
   border: 0px;
@@ -81,7 +77,6 @@ body {
   align-items: center;
 }
 
-/* non sono riuscito a far venire il bottene perfettamente cerchiato */
 .ordernow-cartshop{
   border-radius: 50%;
   border: 0px;
@@ -89,6 +84,8 @@ body {
   align-items: center;
   padding: 5px;
   margin-left: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .circlebg{
@@ -128,19 +125,21 @@ body {
   font-weight: 600;
 }
 
-/* non so quale sia il nome più appropriato per questa classe */
 .body-section{
+  /* non so come abbassare il lato superiore del rettangolo  */
   background-color: #F9D9AA;
-  width: 100%;
   height: 367px;
   border-radius: 120px;
   margin-top: 120px;
   display: flex;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .body-section > .card{
   position: absolute;  
-  top: 650px;
+  top: -80px;
 }
 
 .card {

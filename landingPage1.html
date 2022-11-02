@@ -55,9 +55,23 @@
       <!-- come posiziono le immagini dei chicchi di caffe? -->
 
       <section>
+        <svg
+          width="21"
+          height="21"
+          viewBox="0 0 21 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 20L15.514 15.506L20 20ZM18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z"
+            stroke="#1D1D1D"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
         <input class="searchbar" type="text" placeholder="Cappuccino..." />
         <svg
-          class="header-shopcart"
+          style="cursor: pointer;"
           width="28"
           height="26"
           viewBox="0 0 28 26"
@@ -160,12 +174,21 @@
       </div>
     </div>
 
-    <p class="subtitle">Di Tendenza <span style="text-decoration: underline orange 3px; text-underline-offset: 5px;">Adesso</span></p>
+    <p class="subtitle">
+      Di Tendenza
+      <span
+        style="
+          text-decoration: underline orange 3px;
+          text-underline-offset: 5px;
+        "
+        >Adesso</span
+      >
+    </p>
 
     <!-- non so quale sia il nome più appropriato per questa classe -->
-    <div class="body-section">
+    <section class="body-section">
       <!-- è giusto sistemare le card utilizzando left e top in questo caso? è meglio usare relative per il div in bg?-->
-      <div class="card" style="left: 90px;">
+      <div class="card" style="left: 90px">
         <div class="rating-container-card">
           <div class="product-rating-card">
             4.8
@@ -187,7 +210,7 @@
           </div>
         </div>
         <img class="imgcap" src="assets/vanillaLatte.png" alt="Vanilla Latte" />
-  
+
         <div class="container">
           <div class="card-name">Vanilla Latte</div>
           <div class="card-like">12 K</div>
@@ -229,7 +252,7 @@
         </div>
       </div>
 
-      <div class="card" style="left: 585px;">
+      <div class="card" style="left: 700px">
         <div class="rating-container-card">
           <div class="product-rating-card">
             4.8
@@ -251,7 +274,7 @@
           </div>
         </div>
         <img class="imgcap" src="assets/espresso.png" alt="Vanilla Latte" />
-  
+
         <div class="container">
           <div class="card-name">Espresso</div>
           <div class="card-like">12 K</div>
@@ -293,7 +316,7 @@
         </div>
       </div>
 
-      <div class="card" style="right: 90px;">
+      <div class="card" style="right: 90px">
         <div class="rating-container-card">
           <div class="product-rating-card">
             4.8
@@ -314,8 +337,12 @@
             </svg>
           </div>
         </div>
-        <img class="imgcap" src="assets/hazelnut latte.png" alt="Vanilla Latte" />
-  
+        <img
+          class="imgcap"
+          src="assets/hazelnut latte.png"
+          alt="Vanilla Latte"
+        />
+
         <div class="container">
           <div class="card-name">Hazelnut Latte</div>
           <div class="card-like">12 K</div>
@@ -356,9 +383,18 @@
           </button>
         </div>
       </div>
-    </div>
+    </section>
 
-    <p class="subtitle" style="margin-top: 140px;">Come utilizzare il <span style="text-decoration: underline orange 3px; text-underline-offset: 5px;">servizio di delivery</span></p>
+    <p class="subtitle" style="margin-top: 140px">
+      Come utilizzare il
+      <span
+        style="
+          text-decoration: underline orange 3px;
+          text-underline-offset: 5px;
+        "
+        >servizio di delivery</span
+      >
+    </p>
 
     <div class="card">
       <div class="rating-container-card">
