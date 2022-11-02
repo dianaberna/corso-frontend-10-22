@@ -44,6 +44,9 @@ h3 {
   border-radius: 50%;
 }
 /* HEADER SETTINGS */
+header > h1 {
+  margin-bottom: 1.375rem;
+}
 header > div {
   display: flex;
   align-items: center;
@@ -60,7 +63,7 @@ header button {
 header > div:last-child {
   width: 100%;
   background-color: var(--color-square);
-  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  padding: 1rem 0 1rem 0.75rem;
   border-radius: 1rem;
 }
 header > div:last-child input {
@@ -72,9 +75,15 @@ header > div:last-child input {
 /* ================ MAIN ================== */
 
 /* ================ MAIN LAST CONTACTED ================== */
+.main__last > h3 {
+  margin-top: 1.875rem;
+  margin-bottom: 1.5625rem;
+}
 .container__square {
   overflow-x: scroll;
+  scrollbar-width: none;
 }
+
 .container__square > .wrapper {
   display: flex;
   gap: 1rem;
@@ -91,6 +100,9 @@ header > div:last-child input {
 }
 /* ================ MAIN MESSAGES ================== */
 .main__messages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
   background-color: var(--color-background-2);
   padding: 1rem 1.5rem;
   margin: 2rem -1rem 0rem;
@@ -98,12 +110,37 @@ header > div:last-child input {
   border-radius: 1.5rem;
   box-shadow: var(--box-shadow);
 }
-.main__messages > div {
+.main__messages__container {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  align-items: center;
   margin-top: 44px;
 }
+.main__messages__container .square {
+  width: 3.75rem;
+  height: 3.75rem;
+  min-width: 3.75rem;
+  margin-right: 0.5rem;
+}
+.main__messages__container > .text {
+  display: flex;
+  flex-direction: column;
+}
+.main__messages__container > .text > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text > div > p {
+  color: #a8a8a8;
+}
+.main__messages p,
+.main__messages h2 {
+  margin: 0;
+}
+.main__messages p {
+  font-size: 0.875rem;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 30.0625rem) {
   header div:last-child {
