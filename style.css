@@ -579,8 +579,10 @@ div#latte-card3 {
 }
 
 .latte-card3 {
-   margin-top: 1.5rem;
-   margin-left: 2rem;
+/*    margin-top: 1.5rem;
+   margin-left: 2rem; */
+   width: 356px;
+   height: 385px;
 }
 
 .text-sandwich1 {
@@ -637,10 +639,11 @@ div#latte-card3 {
 }
 
 .descrizione-coffee-ice-cream {
-   position: absolute;
+  /*  position: absolute; */
    margin-top: 4rem;
    margin-left: 2rem;
    font-size:small;
+   
 }
 
  @media screen and (max-width:760px){

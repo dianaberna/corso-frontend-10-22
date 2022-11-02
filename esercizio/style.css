@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    padding: 1rem;
+    margin: 0;
+}
+
+header {
+    padding-top: 2rem;
+}
+
+p, h3{
+    font-size: .875;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h1, h2, h3{
+    font-weight: 600;
+}
+
+header > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+header button {
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+header input{
+    background-color: #C4C4C4;
+    border: 0px;
+    border-radius: 16px;
+    padding: 10px; /* 10px 10px 10px 10px*/
+    padding-left: 2rem;
+    font-size: .875rem;
+    font-family: inherit;
+    width: 100%;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+header > div > svg{
+    position: absolute;
+    padding-left: 5px;
+}
+
+/* Sezione "Last contacted" */
+
+#contacted{
+
+}
+
+#contacted .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+} 
+
+#contacted2 .container{
+    overflow-y: scroll;
+}
+
+#contacted2 .wrapper{
+    display: flex; 
+    gap: 1rem;
+    width: fit-content;
+}
+
+#contacted  .container .square , 
+#contacted2 .container .square,
+#list .square{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #C4C4C4;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+#list .square{
+    min-width: 3.5rem;
+}
+
+#contacted  .container .square > div,
+#contacted2  .container .square > div{
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: #333333;
+    border-radius: 50%;
+    bottom: -5px;
+    right: -5px;
+    position: absolute;
+}
+
+/* Sezione lista dei contatti */
+
+#list {
+    margin: 3rem -1rem -1rem -1rem;
+    background-color: #F4F4F4;
+    border-radius: 20px 20px 0px 0px;
+    padding: 3rem 1rem 1rem 1rem;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+#list > div{
+    margin-bottom: 1rem;
+}
+
+#list .container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#list .container h3, #list .container p{
+    margin: 0;
+}
+
+#list .container > div > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#list .container > div > div > span{
+    color: #A8A8A8;
+}
+
+@media screen and (min-width: 481px) {
+    header input{
+        width: auto;
+    }
+    
+}
