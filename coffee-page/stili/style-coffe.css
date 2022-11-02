@@ -435,6 +435,7 @@ h3{
   padding: 6rem 8rem 3rem 8rem;
   font-family: 'Readex Pro',sans-serif;
   gap: 3rem;
+  overflow: hidden;
 }
 .what_they_say>div>div>img{
   margin: 0.375rem;
@@ -457,7 +458,6 @@ h3{
   padding: 1rem;
   background-color: #F1F1F1;
   border-radius: 0.75rem;
-  overflow: hidden;
 }
 .review-box > div{
   display: flex;
@@ -465,7 +465,7 @@ h3{
   font-size: 1.125rem;
   color: rgba(29, 29, 29, 0.7);
 }
-.review-box > div > div:first-child{ /* da sistemare */
+.review-box > div > div:first-child{ 
   margin: 1rem;
   vertical-align: top;
 }
@@ -476,10 +476,6 @@ h3{
   position: absolute;
   left: 30rem;
   top: 10rem;
-  overflow: hidden;
-}
-.review-box{
-  overflow: hidden;
 }
 .review-box > div > div > img{
   object-fit: contain;
