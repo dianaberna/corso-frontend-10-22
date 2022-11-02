@@ -3,6 +3,7 @@
 /* rooot settings */
 :root {
   --color-background: #fff;
+  --color-background-2: #f4f4f4;
   --color-square: #c4c4c4;
   --color-text: #000;
   --color-text-muted: #0000004d;
@@ -18,7 +19,8 @@ body {
   background-color: var(--color-background);
   font-family: 'Dm Sans', sans-serif;
   font-size: 16px;
-  margin: 1rem;
+  margin: 0;
+  padding: 1rem 1rem 0rem;
 }
 h1 {
   font-size: 1.5rem;
@@ -71,11 +73,16 @@ header > div:last-child input {
 
 /* ================ MAIN LAST CONTACTED ================== */
 .container__square {
+  overflow-x: scroll;
 }
 .container__square > .wrapper {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
 }
 .container__square .square {
   position: relative;
+  margin-bottom: 0.375rem;
 }
 .container__square .square .eclipse {
   position: absolute;
@@ -84,20 +91,18 @@ header > div:last-child input {
 }
 /* ================ MAIN MESSAGES ================== */
 .main__messages {
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 2.75rem 1.5rem;
-  margin: 1rem;
+  background-color: var(--color-background-2);
+  padding: 1rem 1.5rem;
+  margin: 2rem -1rem 0rem;
+  height: 100vh;
+  border-radius: 1.5rem;
+  box-shadow: var(--box-shadow);
 }
-main .main__messages > div {
+.main__messages > div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 32px;
-}
-.main__messages > div > .square {
-  width: 60px;
-  height: 60px;
+  gap: 1.5rem;
+  margin-top: 44px;
 }
 /* MEDIA QUERY */
 @media screen and (min-width: 30.0625rem) {
