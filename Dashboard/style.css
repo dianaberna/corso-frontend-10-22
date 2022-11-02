@@ -489,3 +489,8 @@ tr:hover {
   color: var(--color-primary);
 }
 /* ============ MEDIA QUERY ============= */
+@media screen and (min-width: 1340px) {
+  body {
+    margin: 0 auto;
+  }
+}
