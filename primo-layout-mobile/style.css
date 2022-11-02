@@ -65,7 +65,7 @@ section {
     overflow: auto;
 }
 
-::-webkit-scrollbar {
+section::-webkit-scrollbar {
     display: none;
 }
 
@@ -200,8 +200,12 @@ img {
     width: max(70%, 250px);
 }
 
+
+/* per far vedere i puntini, mi taglia il testo */
+/* RIC che è sempre meglio cn js! */
 p {
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #A162F7;
+}
+
+p, 
+p + a {
+    font-size: 1.13rem;
+}
+
+/* flexbox */
+.d-inline {
+    display: inline;
+    color: #7C7C8D;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex-column {
+    flex-direction: column;
+}
+
+.d-flex-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.centred {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+img {
+    padding-right: 0.5rem;
+}
+
+.bg-white {
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1.3rem;
+}
+
+main {
+    padding: 1rem;
+    max-width: 506px;
+    margin: auto;
+}
+
+button {
+    border-radius: 0.6rem;
+    border: none;
+    color: #fff;
+    padding: 1.1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-google {
+    background-color: transparent;
+    color: #010101;
+    border: 1px solid #E6E8EC;
+}
+
+.btn-fb {
+    background-color: #4776D0;
+}
+
+.btn {
+    background-color: #A162F7;
+    font-weight: 600;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.gap {
+    gap: 1.2rem;
+    margin-top: 3rem;
+}
+
+
+input {
+    font-family: inherit;
+    padding: 1.2rem;
+    border-radius: 0.6rem;
+    border: 1px solid #E6E8EC;
+}
+
+label {
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+label[for="password"] {
+    padding-top: 1.2rem;
+}
+
+
+input[type="checkbox"] + label {
+    font-weight: 400;
+    color: #B1B5C4;
+}
+
+@media (max-width: 480px) {
+    .btn-google,
+    .btn-fb {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+
+}
