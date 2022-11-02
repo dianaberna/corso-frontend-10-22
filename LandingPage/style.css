@@ -12,69 +12,52 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.container-1 {
+.container-1, .container-2, .container-3 {
     background-color: rgba(255, 255, 255, 0.5);
-    width: 16.875rem;
-    height: 3.625rem;
+    width: fit-content;
     border-radius: 2.625rem;
-    padding: 0.75rem;
+    padding: 0.4rem;
+    position: absolute;
 }
 
-.container-2 {
+.container-1 span, .container-2 span, .container-3 span {
     background-color: rgba(255, 255, 255, 1);
-    width: 16.9375rem;
-    height: 3.5625rem;
     border-radius: 2.625rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.text {
+.container-1{
+    top: 1.0625rem;
+    left: -3.25rem;
+}
+
+.container-2{
+    top: 6.5625rem;
+    right: -0.0187rem;
+}
+
+.container-3{
+    bottom: .875rem;
+    left: 1.25rem;
+}
+
+.text, .score {
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
     font-size: 1.5rem;
     line-height: 2.25rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 13.5625rem;
-    height: 1.875rem;
-}
-
-.container-3 {
-    background-color: rgba(255, 255, 255, 1);
-    width: 8.3425rem;
-    height: 3.6325rem;
-    border-radius: 2.625rem;
 }
 
 .score {
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 0.25rem;
-    height: 0.875rem;
 }
 
-.container-4 {
-    background-color: rgba(255, 255, 255, 1);
-    width: 8.8125rem;
-    height: 3.5625rem;
-    border-radius: 2.625rem;
-}
-
-.price {
+.text, .price {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 2.5625rem;
-    height: 2.25rem;
 }
