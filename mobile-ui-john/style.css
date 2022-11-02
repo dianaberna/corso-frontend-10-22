@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    padding: 1rem;
+    margin: 0;
+}
+
+header {
+    padding-top: 2rem;
+}
+
+p, h2{
+    font-size: .875;
+}
+
+.container2 {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+header h2 {
+    font-weight: bold;
+}
+
+.notifiche {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header p {
+    margin-top: -1.2rem;
+}
+
+header input {
+    background-color: #D0D0D0;
+    padding: 0.6rem 6rem;
+    border-radius: 0.4rem;
+    border: 0;
+}
+
+header > div > svg {
+    position: absolute;
+    padding-top: 0.5rem;
+    padding-left: 0.9rem;
+}
+
+main > .cotainer {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+main > .container2 .menu {
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+main > .container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+main > .container svg {
+    background-color: #D0D0D0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+main > .finestra {
+    margin-top: 1rem;
+    background: #F4F4F4;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    margin-bottom: -1rem;
+}
+
+.tenda {
+    width: 50px;
+    height: 4px;
+    background: #262626;
+    border-radius: 50px;
+    margin-left: 8.3rem;
+}
+
+.basic-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu1 {
+    border: 0;
+    background: transparent;
+}
+
+.icon {
+    border: 10rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    background-color: black;
+}
+
+div.commenti {
+    gap: 1rem;
+}
