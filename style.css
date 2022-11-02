@@ -4,21 +4,81 @@ body {
 
 .mainmenu {
     background-color: rgb(124, 108, 108);
+    color: #000000;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-nav ul{
+.mainmenu ul {
     background-color: aquamarine;
-    display: flex;
+    display: flex; /* per mostrare gli "li" in linea è più corretto questo?*/
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
     align-items: center;
-    font-weight: 400;
 }
 
-div.searchbar {
-    background-color: blueviolet;
-    display:flex;
-    align-items: center;
+.mainmenu li {
+    display: inline-block; /*o questo?*/
+    padding :1rem;
 }
+
+.mainmenu li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.mainmenu li a:hover {
+    color: #FF912B;    
+}
+
+.searchbar {
+    background-color: blueviolet;
+    display: inline; /*barra di ricerca che non centra verticalmente*/
+    align-items: center;
+} 
+
+#section1 {
+    background-color: #F7EBDA; 
+    /*sembra inutile perchè volendo suddividere la pagina in sezioni, togliendo il bg-color dall'elemento "body", nonostante questa regola, il bg risulta bianco*/
+    display: flex;
+}
+
+h1 {
+    color: #2F2105;
+    display: flex
+}
+
+h2 {
+    color: #7E7D7A;
+    display: flex;
+}
+
+#ordernow {
+    margin-left: 90px;
+    border: 0px;
+    border-radius: 33px;
+    background-color: #2F2105;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 32px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 38px;
+  } /*regola css copiata per velocizzare la compilatura, da ridefinire*/
+
+  #caffettino {
+    display: flex;
+    background-color: #2F2105;
+    border-radius: 100%; /*qualsiasi percentuale metta viene sempre un ellisse*/
+
+  }
+
+  
