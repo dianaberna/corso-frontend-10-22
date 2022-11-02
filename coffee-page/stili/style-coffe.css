@@ -4,6 +4,8 @@
 }
 body{
   background-color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 h2,
 h3,
@@ -435,7 +437,7 @@ h3{
   padding: 6rem 8rem 3rem 8rem;
   font-family: 'Readex Pro',sans-serif;
   gap: 3rem;
-  overflow: hidden;
+
 }
 .what_they_say>div>div>img{
   margin: 0.375rem;
