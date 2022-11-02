@@ -9,9 +9,9 @@ html{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
     justify-content: center;
     background-color: #181823;
+    
 }
 .intestazione {
     max-width: 46.875rem;
@@ -32,7 +32,7 @@ hr {
 .cards{
     display: flex;
     align-items: center;
-    
+    justify-content: space-around;
     flex-wrap: wrap;
     
 }
