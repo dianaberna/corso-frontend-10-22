@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {font-family: 'Poppins', sans-serif;}
+
+button {
+    background-color: #ffffff;
+    border-radius: 42px;
+    border: solid;
+    border-color: grey;
+    border-width: 5px;
+    border-style: opacity 0, 5;
+    padding: 10px 30px 10px 30px;
+    font-size: 24px;
+}
+
+input {background-color: grey;}
+body {
+    background-color: aqua;
+}
+
+.card {
+        
+        border-radius: 50px;
+        height: 373px;
+        width: 343px;
+        padding-top:20px;
+        padding-left: 25px; 
+        background-color: white;
+        }
+
+.bordercard { background-color:
+  rgba(255, 255, 255, 0.4) ;
+backdrop-filter: blur(2px);
+      }
+
+.card img {border-radius: 50px;}
+
+.espresso { 
+            display: flex;
+            justify-content: space-between;
+            padding-right: 35px;
+          }
+    
+.bottoni button {
+                  background-color: #FF912B;
+                  border: none;
+                  border-radius: 100%; 
+                  width:50px;
+                  height:50px;    
+                  padding: 0px; 
+                  position: relative;
+                  margin-top: -10px;
+                }   
+
+.bottoni button img {  
+                     width: 20px;
+                     height: 20px;
+
+                    }       
+
+.bottoni {
+            display:flex;
+            justify-content: space-between;
+            padding-right: 35px;
+         }
+.temperatura span + span {
+                            margin: 20px;
+                         }
+.temperatura span { 
+                    border-style: solid;
+                    border-color: #FFD28F ;
+                    color:#FFD28F;
+                    padding: 5px 10px 5px 10px;
+                    border-radius:10px;
+                    font-weight:600;
+                  }
+.temperatura :first-child        {
+                    padding: 5px 15px 5px 15px;
+                    }
+
+
+
+
+.elemento2 {
+              background-color:#F6EBDA;
+              width: 1441px;
+              height: 484px;
+              display: flex;
+              justify-content: space-between;
+            }    
+
+.contenuto {
+              margin-left: 400px;
+              margin-right:200px;
+              gap: 50px;
+              display: flex;
+              align-items: center;
+            
+           } 
+
+.contenuto button { width: 142px;
+                    height: 38px; 
+                    font-size:  12px; 
+                    border: none;
+                    background-color: #2F2105;
+                    color:  #FF912B;
+                    padding: 10px 20px 10px 20px;
+                  }
+
+.contenuto p { color:#7E7D7A; }                  
+
+id { text-decoration: underline;
+     text-decoration-color: #FF912B ;
+}
+ 
+
+.elemento2 img {
+                  width: 359.13px;
+                  height: 497.67px;
+                  position:relative;
+                  padding-bottom: 100px;
+                }
+
+p {text-align: left;}
