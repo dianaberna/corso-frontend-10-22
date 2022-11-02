@@ -9,15 +9,17 @@ body {
 /* Section_01 Maschera immagine */
 
 #section_01 .img-mask {
-  background-color: pink;
-  position: relative;
-  /* height: 200px; */
-  width: 300px;
+  background-image: url(img/HotMilk.png);
+  height: 200px;
+  width: 200px;
+  background-position: center;
   border-radius: 20px;
+  background-size: auto 100%;
 }
 
-#section_01 .img-mask img {
+/* #section_01 .img-mask img {
   border: 1px solid orange;
   position: absolute;
   width: 100%;
 }
+ */
