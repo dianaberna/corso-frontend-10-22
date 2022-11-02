@@ -4,8 +4,9 @@
     background-color: white;
   }
 }
+
 body{
-  overflow-y: visible;
+  overflow-y: scroll;
   overflow-x: hidden;
   font-family: 'Work Sans', sans-serif;
   margin: 0;
@@ -21,10 +22,6 @@ body>div{
 }
 button:hover{
   cursor: pointer;
-}
-main{
-  position: relative;
-  top: 16rem;
 }
 header,
 section,
@@ -120,6 +117,8 @@ main img{
 }
 main{
   margin: 2.5rem 0 0 0;
+  position: relative;
+  top: 16rem;
   padding-top: 2.5rem;
   background-color: #F4F4F4;
   border-radius: 1rem 1rem 0 0;
@@ -135,7 +134,7 @@ main>div{
   display: flex;
   justify-content: space-between;
 }
-.message div span:nth-child(1){
+.message div:nth-child(1) span:nth-child(1){
   font-weight: 600;
 }
 .message div span:nth-child(2){
@@ -143,11 +142,18 @@ main>div{
   font-size: 0.88rem;
   padding-bottom: 0.5rem;
 }
-.message:nth-child(2),
-.prova{
+.message:nth-child(2)
+{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+*::-webkit-scrollbar{
+  display: none;  /* Chrome Opera Safari */
+}
+*{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 /* ---- Visualizzazoione non da mobile ---- */
 @media only screen and (min-width: 481px) {
@@ -158,11 +164,3 @@ main>div{
     background-color: lightblue;
   }
 } 
-
-
-/* 
-3 domande: 
-- barra scorrimento verticale
-- 3 puntini 
-- div trasbordanti dal proprio flex (esempio caffé e mobile01)
-*/
