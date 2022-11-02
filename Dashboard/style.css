@@ -9,12 +9,12 @@
   --color-info-dark: #bfc3c9;
   --color-primary: #a162f7;
 
-  --card-border-radius: 1.5rem;
+  --card-border-radius: 0.875rem;
   --border-radius-1: 0.4rem;
-  --border-radius-1: 0.8rem;
-  --border-radius-1: 1.2rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
 
-  --card-padding: 1.8rem;
+  --card-padding: 1rem 1.75rem;
   --padding-1: 1.2rem;
 
   --box-shadow: 0 0rem 0.9rem var(--color-light);
@@ -34,8 +34,8 @@ html {
   font-size: 16px;
 }
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 83.75rem;
+  height: 64rem;
   font-family: 'DM Sans', sans-serif;
   background-color: var(--color-background);
   color: var(--color-white);
@@ -47,8 +47,7 @@ body {
   display: grid;
   width: 96%;
   margin: 0 auto;
-  gap: 2rem;
-  grid-template-columns: 9rem auto;
+  grid-template-columns: 244px auto;
 }
 a {
   color: var(--color-white);
@@ -160,7 +159,7 @@ aside .sidebar a:hover span {
   gap: 1rem;
 }
 .navbar {
-  margin: 1.4rem 2rem 0rem;
+  padding: 1rem 2rem;
   justify-content: space-between;
 }
 .navbar__photo img {
@@ -179,13 +178,14 @@ aside .sidebar a:hover span {
 /* =============== MAIN CONTEINERS ==========*/
 .main__container {
   background-color: var(--color-background-2);
-  margin: 1rem;
+  padding: 1.75rem 1.875rem;
 }
 
 /* =============== MAIN CARDS ================ */
 .section__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1.875rem;
 }
 .section__cards > div {
   display: flex;
@@ -193,12 +193,11 @@ aside .sidebar a:hover span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
   text-align: center;
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
   overflow: hidden;
-  box-shadow: var(--box-shadow);
+  /*box-shadow: var(--box-shadow);*/
   transition: all 500ms ease;
 }
 .section__cards > div:hover {
@@ -254,10 +253,11 @@ div.circle .number {
 .main__statistics {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem;
+  margin-top: 30px;
 }
 .main__statistics > div {
   background-color: var(--color-background);
-  margin: 1rem;
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
   display: flex;
@@ -268,6 +268,8 @@ div.circle .number {
 .main__car {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+  margin-top: 30px;
 }
 .main__car > div {
   border-radius: var(--card-border-radius);
@@ -275,8 +277,6 @@ div.circle .number {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1rem;
-  padding: 1rem;
 }
 .main__car__1 {
   background-color: #e1dfa4;
@@ -310,8 +310,3 @@ div.circle .number {
 }
 
 /* ============ MEDIA QUERY ============= */
-@media screen and (max-width: 1000px) {
-  .container {
-    background-color: red;
-  }
-}
