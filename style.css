@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;500;700&display=swap");
 
-body {
+/* body {
 	font-family: "Lato", sans-serif;
 	font-size: 1.5rem;
 	background-color: #f6ebda;
 	padding-left: 135px;
 	padding-right: 135px;
-}
+} */
 
 /* il font size se è comune a tutti i testi andrebbe applicato al tag p 
 perché non è detto che tutti i div conterranno testo */
@@ -15,19 +15,19 @@ perché non è detto che tutti i div conterranno testo */
     font-size: 2rem;
 } */
 
-.bg-img-hero {
-	position: absolute;
+/* .bg-img-hero {
+	position: absolute; 
 	right: 0%;
 	top: 0%;
 	z-index: -1;
 }
-
+ */
 .rating-star {
 	padding-left: 0.3rem;
 }
 
 .foto-caffe {
-	position: absolute;
+	position: absolute; 
 	right: 11.5rem;
 	margin-top: 2.4rem;
 }
@@ -101,19 +101,19 @@ div span {
 }
 
 span.testo-nome {
-	position: absolute;
+	position: absolute; 
 	right: 28rem;
 	margin-top: 3rem;
 }
 
 span.punteggio {
-	position: absolute;
+	position: absolute; 
 	right: 11.5rem;
 	margin-top: 9rem;
 }
 
 span.numero {
-	position: absolute;
+	position: absolute; 
 	right: 28rem;
 	margin-top: 21.5rem;
 }
@@ -134,11 +134,11 @@ div.regola-testo {
 	border-left: 4rem;
 }
 
-.chicchi-caffe2 {
-	position: absolute;
+/* .chicchi-caffe2 {
+	position: absolute; 
 	margin-left: -135px;
 	z-index: -1;
-}
+} */
 
 #bottone-testo-caffe {
 	background-color: #2f2105;
@@ -148,6 +148,7 @@ div.regola-testo {
 	border-radius: 2rem;
 	display: flex;
 	gap: 2rem;
+	align-items: center;
 }
 
 .testo-popolari-ora {
@@ -156,26 +157,23 @@ div.regola-testo {
 	margin-top: 6rem;
 }
 
-.cards {
+/* .cards {
 	display: flex;
 	justify-content: space-between;
-}
+} */
 
-.cards > #card1 {
+/* .cards > #card1 {
 	background: white;
-	position: absolute;
 	width: 343px;
 	height: 373px;
-	left: 155px;
-	top: 751px;
 	margin-left: 0;
 	border-radius: 14px;
 	z-index: -1;
-}
+} */
 
 .cards > #card2 {
 	background: white;
-	position: absolute;
+	/* position: absolute; */ 
 	width: 343px;
 	height: 373px;
 	left: 548px;
@@ -186,7 +184,7 @@ div.regola-testo {
 
 .cards > #card3 {
 	background: white;
-	position: absolute;
+	/* position: absolute; */ 
 	width: 343px;
 	height: 373px;
 	left: 941px;
@@ -196,7 +194,7 @@ div.regola-testo {
 }
 
 .tazza-marrone {
-	position: absolute;
+	/* position: absolute;  */
 	top: 1rem;
 	left: 1rem;
 	border-radius: 1rem;
@@ -208,144 +206,126 @@ div.regola-testo {
 	border-radius: 1rem;
 }
 
-.vanilla-latte {
+/* .vanilla-latte {
 	margin-top: 17.3rem;
 	margin-left: 1rem;
 	font-weight: bold;
-}
+} */
 
 .latte-cacao {
-	margin-top: 1rem;
-	margin-left: 1rem;
+	/* margin-top: 1rem;
+	margin-left: 1rem; */
 	border-radius: 1rem;
 }
 
 .espresso-testo {
-	margin-left: 1rem;
-	margin-bottom: 1rem;
+	/* margin-left: 1rem;
+	margin-bottom: 1rem; */
 	font-weight: bold;
 }
 
 .latte-cacao-testo {
-	margin-left: 1rem;
-	margin-bottom: 1rem;
+	/* margin-left: 1rem;
+	margin-bottom: 1rem; */
 	font-weight: bold;
 }
 
 .rating1 {
-	margin-left: 16.1rem;
-	margin-top: -4.3rem;
+	/* margin-left: 16.1rem;
+	margin-top: -4.3rem; */
 	font-weight: bold;
 }
 
 .rating2 {
-	margin-left: 16.1rem;
-	margin-top: -3.3rem;
+	/* margin-left: 16.1rem;
+	margin-top: -3.3rem; */
 	font-weight: bold;
 }
 
 .rating3 {
-	margin-left: 16.1rem;
-	margin-top: -3.3rem;
+	/* margin-left: 16.1rem;
+	margin-top: -3.3rem; */
 	font-weight: bold;
 }
 
 .hot1 {
-	position: absolute;
-	margin-top: -1.6rem;
-	margin-left: 1.5rem;
+	/* position: absolute; */ 
+	/* margin-top: -1.6rem;
+	margin-left: 1.5rem; */
 	background-color: #ffd28f;
 	border-radius: 0.8rem;
 	padding: 0.1rem 1rem;
 }
 
 .cold1 {
-	position: absolute;
-	margin-top: -1.6rem;
-	margin-left: 7.4rem;
+	/* position: absolute; */ 
+	/* margin-top: -1.6rem;
+	margin-left: 7.4rem; */
 	background-color: #ffd28f;
 	border-radius: 0.8rem;
 	padding: 0.1rem 0.8rem;
 }
 
 .hot2 {
-	position: absolute;
-	margin-top: -1.8rem;
-	margin-left: 1.5rem;
+	/* position: absolute; */ 
+	/* margin-top: -1.8rem;
+	margin-left: 1.5rem; */
 	background-color: #ffd28f;
 	border-radius: 0.8rem;
 	padding: 0.1rem 1rem;
 }
 
 .cold2 {
-	position: absolute;
-	margin-top: -1.8rem;
-	margin-left: 7.4rem;
+	/* position: absolute; */ 
+	/* margin-top: -1.8rem;
+	margin-left: 7.4rem; */
 	background-color: #ffd28f;
 	border-radius: 0.8rem;
 	padding: 0.1rem 0.8rem;
 }
 
 .hot3 {
-	position: absolute;
-	margin-top: -1.8rem;
-	margin-left: 1.5rem;
+	/* position: absolute; */ 
+	/* margin-top: -1.8rem;
+	margin-left: 1.5rem; */
 	background-color: #ffd28f;
 	border-radius: 0.8rem;
 	padding: 0.1rem 1rem;
 }
 
 .cold3 {
-	position: absolute;
-	margin-top: -1.8rem;
-	margin-left: 7.4rem;
+	/* position: absolute; */ 
+	/* margin-top: -1.8rem;
+	margin-left: 7.4rem; */
 	background-color: #ffd28f;
 	border-radius: 0.8rem;
 	padding: 0.1rem 1rem;
 }
 
-.hot1:hover {
-	color: orange;
-}
-
-.hot2:hover {
-	color: orange;
-}
-.hot3:hover {
-	color: orange;
-}
-
-.cold1:hover {
-	color: orange;
-}
-
-.cold2:hover {
-	color: orange;
-}
-.cold3:hover {
+.hot1:hover, .hot2:hover, .hot3:hover, .cold1:hover, .cold2:hover, .cold3:hover  {
 	color: orange;
 }
 
 .push-pay1 {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-top: 23.9rem;
 	margin-left: 17.5rem;
 }
 
 .push-pay2 {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-top: 23.9rem;
 	margin-left: 57.6rem;
 }
 
 .push-pay3 {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-top: 23.9rem;
 	margin-left: 97.4rem;
 }
 
 .background-center {
-	position: absolute;
+	/* position: absolute; */ 
 	width: 10rem;
 	background-color: #f9d9aa;
 	border-radius: 4rem;
@@ -358,7 +338,7 @@ div.regola-testo {
 }
 
 .how-to-delivery {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-top: 40rem;
 	font-weight: bold;
 }
@@ -369,25 +349,25 @@ div.regola-testo {
 }
 
 .schede-istruzioni > #choose-coffee {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-top: 45rem;
 	margin-left: 4.5rem;
 }
 
 .schede-istruzioni > #we-delivery {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-top: 45rem;
 	margin-left: 45.5rem;
 }
 
 .schede-istruzioni > #enjoy-coffee {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-top: 45rem;
 	margin-left: 85.5rem;
 }
 
 .testo-tazza-chicchi1 {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-left: -4rem;
 	margin-top: -0.4rem;
 	font-weight: bold;
@@ -399,7 +379,7 @@ div.regola-testo {
 }
 
 .testo-we-delivery1 {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-left: -4rem;
 	margin-top: -0.4rem;
 	font-weight: bold;
@@ -412,7 +392,7 @@ div.regola-testo {
 }
 
 .testo-coppa-coffee {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-left: -3rem;
 	margin-top: -0.4rem;
 	font-weight: bold;
@@ -424,33 +404,33 @@ div.regola-testo {
 }
 
 .cappuccino-buono {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-top: 67rem;
 	margin-left: 6rem;
 }
 
 .about-us-testo {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-top: 75rem;
 	margin-left: 52rem;
 	font-weight: bold;
 }
 
 .grassetto-about-us {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-left: 52rem;
 	margin-top: 81rem;
 	font-weight: bold;
 }
 
 .paragrafo-about-us {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-top: 85rem;
 	margin-left: 52rem;
 }
 
 .rettangolo-centrale {
-   position: absolute;
+   /* position: absolute; */ 
    background: white;
    padding: 28rem 0rem;
    margin-top: 16rem;
@@ -460,7 +440,7 @@ div.regola-testo {
 }
 
 #bottone-testo-caffe2 {
-	position: absolute;
+	/* position: absolute; */ 
 	margin-top: 94rem;
 	margin-left: 52rem;
 	background-color: #2f2105;
@@ -471,7 +451,7 @@ div.regola-testo {
 }
 
 .background-centro2 {
-position: absolute;
+/* position: absolute; */ 
 background: white;
 padding: 28rem 0rem;
 margin-top: 102rem;
@@ -489,13 +469,13 @@ left: 0%;
 }
 
 .special-menu {
-   position: absolute;
+   /* position: absolute; */ 
    margin-top:-50rem;
 }
 
 div#sandwitch-card1 {
    background: rgb(86, 84, 84);
-   position: absolute;
+   /* position: absolute; */ 
    margin-top: 163.2rem;
    margin-left: 3rem;
    padding-bottom: 9rem;
@@ -506,7 +486,7 @@ div#sandwitch-card1 {
 
 div#latte-card2 {
    background: rgb(86, 84, 84);
-   position: absolute;
+   /* position: absolute; */ 
    margin-top: 163.1rem;
    margin-left: 40rem;
    padding-bottom: 9rem;
@@ -515,7 +495,7 @@ div#latte-card2 {
 }
 
 div#latte-card3 {
-   position: absolute;
+   /* position: absolute; */ 
    margin-top: 163.1rem;
    margin-left: 75rem;
    padding-bottom: 9rem;
@@ -542,7 +522,7 @@ div#latte-card3 {
 }
 
 .text-sandwich1 {
-   position: absolute;
+   /* position: absolute; */ 
    margin-top: 0.9rem;
    margin-left: 2.9rem;
    font-weight: bold;
@@ -550,52 +530,52 @@ div#latte-card3 {
 
 .hotmilk-text {
    font-weight: bold;
-   position: absolute;
+   /* position: absolute; */ 
    margin-top: 0.9rem;
    margin-left: 2rem;
 }
 
 .coffee-ice-cream-text {
    font-weight: bold;
-   position: absolute;
+   /* position: absolute; */ 
    margin-top: 0.9rem;
    margin-left: 2rem;
 }
 
 .rating-sandwitch-card {
-   position: absolute;
+   /* position: absolute; */ 
    margin-top: 1rem;
    margin-left: 17.8rem;
 }
 
 .hotmilk-rating-card {
-   position: absolute;
+   /* position: absolute; */ 
    margin-top: 1rem;
    margin-left: 17.8rem;
 }
 
 .coffee-ice-cream-rating-card {
-   position: absolute;
+   /* position: absolute; */ 
    margin-top: 1rem;
    margin-left: 17.8rem;
 }
 
 .descrizione-sandwich {
-   position: absolute;
+   /* position: absolute; */ 
    margin-top: 4rem;
    margin-left: 2.8rem;
    font-size: small;
 }
 
 .descrizione-hotmilk {
-   position: absolute;
+   /* position: absolute; */ 
    margin-top: 4rem;
    margin-left: 2rem;
    font-size: small;
 }
 
 .descrizione-coffee-ice-cream {
-  /*  position: absolute; */
+/* position: absolute; */ 
    margin-top: 4rem;
    margin-left: 2rem;
    font-size:small;
