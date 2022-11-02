@@ -1,0 +1,128 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap");
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFD057;
+  letter-spacing: 0.08rem;
+}
+
+.card-wrap {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 355px;
+  height: 385px;
+  border: 2px solid green;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid pink;
+  position: relative;
+  /* margin: 6px; */
+  /* padding: 30px; */
+  width: 343px;
+  height: 373px;
+  background-color: white;
+  border-radius: 16px;
+
+}
+
+.card .img-mask {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  border: 2px solid turquoise;
+  width: 307px;
+  height: 226px;
+  border-radius: 16px;
+
+}
+
+.card .img-mask img {
+
+  border-radius: 16px;
+  min-width: 307px;
+  height: 206;
+}
+
+
+
+.score-wrap {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  border-radius: 16px;
+  border: 2px solid green;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+}
+
+.score-wrap .score {
+  background: rgba(255, 255, 255, 1);
+  margin: 4px;
+  padding: 5px 8px;
+  border-radius: 12px;
+  /* height: auto; */
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 16px 4px;
+}
+
+.card-title span {
+  font-size: 1.5em;
+}
+
+.card-title .title {
+  font-weight: 600;
+}
+
+.card-title .price {
+  font-weight: 700;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.card-footer .temperature .hot {
+  border: 2.5px solid #FF912B;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #FF912B;
+  padding: 6px 12px;
+}
+
+.card-footer .temperature .cold {
+  border: 2.5px solid #FFD28F;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #FFD28F;
+  padding: 6px 12px;
+}
+
+
+.card-footer button {
+  background-color: #FF912B;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
