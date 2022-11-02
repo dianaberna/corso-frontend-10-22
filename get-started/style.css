@@ -120,11 +120,23 @@ input[type="checkbox"] + label {
     color: #B1B5C4;
 }
 
+span { 
+    background:#F5F5F5; 
+    padding:0 10px; 
+}
+
+.or-line {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #B1B5C4; 
+    line-height: 0.1em;
+    margin: 40px 0 40px; 
+}
+
 @media (max-width: 480px) {
     .btn-google,
     .btn-fb {
         font-size: 0.7rem;
         padding: 0.5rem;
     }
-
 }
