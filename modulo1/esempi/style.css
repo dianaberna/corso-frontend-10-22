@@ -75,7 +75,7 @@ header > div > svg{
 } 
 
 #contacted2 .container{
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 #contacted2 .wrapper{
