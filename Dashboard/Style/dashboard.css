@@ -1,5 +1,6 @@
 @import url(/Dashboard/Style/style.css);
 @import url(/Dashboard/Style/sidebar.css);
+
 /* DASHBOARD */
 /* =============== MAIN CARDS ================ */
 .section__cards {
@@ -7,6 +8,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1.875rem;
 }
+
 .section__cards > div {
   display: flex;
   background-color: var(--color-background);
@@ -20,23 +22,28 @@
   /*box-shadow: var(--box-shadow);*/
   transition: all 500ms ease;
 }
+
 .section__cards > div:hover {
   box-shadow: none;
 }
+
 .section__cards > div span {
   background-color: var(--color-primary);
   padding: 0.5rem;
   border-radius: 50%;
   margin-bottom: 1.25rem;
 }
+
 .section__cards > div.section__cards__2 span {
   background-color: #fb5b56bd;
   color: #fb5b56;
 }
+
 .section__cards > div.section__cards__3 span {
   background-color: #569efbbd;
   color: #569efb;
 }
+
 .section__cards > div.section__cards__4 span {
   background-color: #d2fb56bd;
   color: #d2fb56;
@@ -45,11 +52,13 @@
 div.circle {
   position: relative;
 }
+
 div.circle svg circle {
   fill: none;
   stroke: var(--color-primary);
   stroke-width: 0.7rem;
 }
+
 div.circle .number {
   position: absolute;
   left: 0;
@@ -60,15 +69,19 @@ div.circle .number {
   justify-content: center;
   align-items: center;
 }
+
 .circle svg circle.stroke-red {
   stroke: #fb5b56;
 }
+
 .circle svg circle.stroke-blue {
   stroke: #569efb;
 }
+
 .section__cards .circle svg circle.stroke-yellow {
   stroke: #d2fb56;
 }
+
 /* ============== MAIN STATISTICS ================*/
 .main__statistics {
   display: grid;
@@ -76,6 +89,7 @@ div.circle .number {
   gap: 1.875rem;
   margin-top: 30px;
 }
+
 .main__statistics > div {
   background-color: var(--color-background);
   border-radius: var(--card-border-radius);
@@ -84,6 +98,7 @@ div.circle .number {
   flex-direction: column;
   justify-content: space-between;
 }
+
 /* ================== MAIN CAR =========== */
 .main__car {
   display: grid;
@@ -91,6 +106,7 @@ div.circle .number {
   gap: 1.875rem;
   margin-top: 30px;
 }
+
 .main__car > div {
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
@@ -98,32 +114,40 @@ div.circle .number {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .main__car__1 {
   background-color: #e1dfa4;
 }
+
 .main__car__2 {
   background-color: #e3ecf1;
 }
+
 .main__car__3 {
   background-color: #f4e3e5;
 }
+
 .main__car > div .recommend {
   display: flex;
   align-items: center;
   color: var(--color-light);
 }
+
 .main__car > div .recommend h3 {
   padding-left: 0.2rem;
 }
+
 .car__name h2 {
   color: var(--color-light);
 }
+
 .car__bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: var(--color-light);
 }
+
 .car__bottom__left {
   display: flex;
   align-items: center;
