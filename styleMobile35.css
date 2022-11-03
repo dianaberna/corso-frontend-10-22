@@ -89,9 +89,13 @@ svg {
 
 .heart {
     position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 35px;
     left: 35px;
-    padding: 15px;
+    height:50px;
+    width: 50px;
     border-radius: 50%;
     background-color: #C4C4C4;
 }
@@ -100,8 +104,8 @@ svg {
     padding-right: 20px;
 }
 
-img {
-    width: 100%;
+.card-img {
+   width: 100%;
 }
 
 .left-card-icons {
@@ -114,12 +118,15 @@ img {
 
 }
 
-.left-card-icons > div {
+.left-card-icons > .square {
 
     width: 36px;
     height: 36px;
     
     background-color: #C4C4C4;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
