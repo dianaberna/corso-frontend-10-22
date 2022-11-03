@@ -1,4 +1,5 @@
 @import url(/Dashboard/Style/style.css);
+@import url(/Dashboard/Style/sidebar.css);
 /* ASSETS */
 /* ============ MAIN CONTAINER ========== */
 .main__container > h1 {
