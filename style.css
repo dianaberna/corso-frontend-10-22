@@ -13,18 +13,17 @@
     background-color: #F6EBDA;
     height: 970px;
     font-family: 'Poppins', sans-serif;
+    padding-left: 135px;
+    padding-right: 135px;
 }
 /* Navbar */
 
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-top: 36px;
-}
-.navbar .logo{
-    margin-right: 269px;
 }
 .navbar ul{
     display: flex;
@@ -57,7 +56,7 @@
     height: 40px;
     background-color: #fff;
     margin-right: 24px;
-    margin-left: 142px;
+    filter: drop-shadow(6px 2px 24px rgba(0, 0, 0, 0.13));
 }
 .search-bar svg{
     margin-left: 14px;
@@ -80,7 +79,6 @@
 #hero .container{
     display: flex;
     flex-direction: column;
-    padding-left: 135px;
     padding-top: 216px;
 }
 
