@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+:root {
+    --white-color: #fff;
+    --gray-color: #F5F5F5;
+    --accent-color: #A162F7;
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #F5F5F5;
+    background-color: var(--gray-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,9 +17,10 @@ body {
     margin: 0;
 }
 
+
 a {
     text-decoration: none;
-    color: #A162F7;
+    color: var(--accent-color);
 }
 
 p, 
@@ -88,13 +95,13 @@ button {
 .btn {
     background-color: #A162F7;
     font-weight: 600;
-    margin-top: 2rem;
+    margin-top: 1.3rem;
     width: 100%;
 }
 
 .gap {
-    gap: 1.2rem;
-    margin-top: 3rem;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 
@@ -110,8 +117,13 @@ label {
     font-weight: 500;
 }
 
-label[for="password"] {
-    padding-top: 1.2rem;
+label[for="password"],
+label[for="last-name"] {
+    padding-top: 1rem;
+}
+
+input[name="last-name"] {
+    margin-bottom: 1rem;
 }
 
 
@@ -140,3 +152,16 @@ span {
         padding: 0.5rem;
     }
 }
+
+
+
+
+/* body.active-dark {
+    background-color: #1F2128;
+    color: #fff;
+}
+
+#active-dark {
+    background-color: #242731;
+}
+     */

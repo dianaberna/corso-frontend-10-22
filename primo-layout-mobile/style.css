@@ -20,20 +20,23 @@ header {
     padding: 1.5rem 1.5rem 0;
 }
 
+h1 {
+    font-size: 1.5rem;
+}
 
 h1, h2 {
     padding: 0.7rem 0;
 }
 
 p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 /* utilieties */
 
 .quadrato {
     background-color: rgb(182, 180, 180);
-    padding: 1.5rem;
+    padding: 2rem;
     width: fit-content;
     border-radius: 0.4em;
     position: relative;
@@ -85,7 +88,7 @@ button {
     border: none;
     background-color: black;
     color: white;
-    padding: 0.4rem;
+    padding: 0.4rem 0.4rem;
     cursor: pointer;
 }
 
@@ -95,8 +98,8 @@ input {
     border: none;
     background-color: rgb(225, 223, 223);
     border-radius: 0.6rem;
-    padding: 0.6rem ;
-    padding-left: 1.8rem;
+    padding: 1rem ;
+    padding-left: 2rem;
     width: min(100%, 600px);
     outline: none;
 }
@@ -112,7 +115,7 @@ input {
 
 i {
     position: absolute;
-    padding: 0.4rem;
+    padding: 0 0.7rem;
 }
 
 
@@ -165,13 +168,13 @@ h2 {
 
 @media (min-width: 768px) {
 
-    body {
-        max-width: 1110px;
-        margin-inline: auto;
+    :root {
+        font-size: 20px;
     }
 
-    :root {
-        font-size: 2.5rem;
+    body {
+        max-width: 800px;
+        margin-inline: auto;
     }
 
     .pallino {
