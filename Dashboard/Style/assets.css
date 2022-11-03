@@ -1,0 +1,186 @@
+@import url(/Dashboard/Style/style.css);
+/* ASSETS */
+/* ============ MAIN CONTAINER ========== */
+.main__container > h1 {
+  margin-bottom: 20px;
+}
+.assets {
+  display: grid;
+  grid-template-columns: 22.5rem 1fr;
+  gap: 1.875rem;
+}
+.main__container__left {
+  position: relative;
+  height: 821px;
+}
+.main__container__left__text {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-background);
+  height: 676px;
+  padding: 31px 24px;
+  border-radius: var(--card-border-radius);
+}
+.main__container__left__text p {
+  color: var(--color-gray-dark);
+  font-size: 1rem;
+}
+
+.main__container__left__text > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.main__container__left img {
+  position: absolute;
+  top: 150px;
+}
+
+/*======================================= */
+.main__container__right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+.main__container__right--activity {
+  background-color: var(--color-background);
+  padding: 1.75rem 24px;
+  border-radius: var(--card-border-radius);
+}
+.main__container__right--activity > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ====================================== */
+.main__container__right--noties {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem;
+}
+.main__container__right--noties > div {
+  background-color: var(--color-background);
+  border-radius: var(--card-border-radius);
+  padding: 0.8125rem 1.25rem;
+}
+.noties--container {
+  display: flex;
+  align-items: center;
+  gap: 14.4px;
+  margin-bottom: 1.125rem;
+}
+.noties--title > h2 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.noties--container--logo {
+  background-color: var(--color-backgroud-3);
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+.noties--container--text h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.noties--container--text p {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--color-gray-dark);
+}
+.noties--container--text .p-noties {
+  font-size: 10px;
+  background-color: var(--color-backgroud-3);
+  font-weight: 400;
+  padding: 3px 10px;
+  width: 6.25rem;
+  color: #fff;
+  border-radius: var(--border-radius-1);
+}
+.p-noties--active {
+  background-color: #d2fb56;
+  border-radius: var(--border-radius-1);
+  padding: 3px 10px;
+  width: 100px;
+}
+/* ====================================== */
+.available--form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.available--title > h2 {
+  font-size: 20px;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-backgroud-3);
+}
+.available--form + input[type='submit'] {
+  background-color: var(--color-secondary-red);
+  color: var(--color-white);
+  border-radius: var(--border-radius-1);
+  padding: 0.625rem 0.75rem;
+  font-size: 0.875rem;
+}
+.available--form > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#asset-fuel:checked {
+  accent-color: var(--color-secondary-red);
+}
+#asset-fuel:checked + label {
+  color: var(--color-secondary-red);
+}
+/* ====================================== */
+.main__container__right--reminder {
+  background-color: var(--color-background);
+  border-radius: var(--card-border-radius);
+  padding: 0.8125rem 1.25rem;
+}
+.reminder--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.reminder--title input {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  width: 100px;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--border-radius-1);
+}
+table,
+th,
+td {
+  border-top: 1px solid var(--color-gray-dark);
+  padding: 0.5rem 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  width: 20%;
+  color: var(--color-gray-dark);
+  font-size: 0.875rem;
+}
+td {
+  font-size: 0.7rem;
+}
+td,
+th {
+  text-align: left;
+}
+tr:hover {
+  background-color: var(--color-backgroud-3);
+  color: var(--color-primary);
+}
