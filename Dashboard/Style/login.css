@@ -86,6 +86,7 @@ h1 {
   background-color: var(--color-background);
   padding: 1.25rem;
   box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-3);
 }
 .form__login > div {
   display: flex;
@@ -93,7 +94,7 @@ h1 {
   flex-direction: column;
 }
 
-.form__login > div:first-child {
+.form__login > div {
   margin-bottom: 1.25rem;
 }
 .form__login > div > input {
