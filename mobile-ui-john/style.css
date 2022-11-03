@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    padding: 1rem;
+    padding: 2rem;
     margin: 0;
 }
 
@@ -79,6 +79,7 @@ main > .finestra {
     margin-right: -1rem;
     margin-left: -1rem;
     margin-bottom: -1rem;
+    overflow: scroll;
 }
 
 .tenda {
@@ -106,8 +107,40 @@ main > .finestra {
     height: 3.5rem;
     border-radius: 10px;
     background-color: black;
+    min-width: 3.5rem;
 }
 
 div.commenti {
     gap: 1rem;
+}
+
+div.comment {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    margin-top: 1rem;
+}
+
+div.menu-basso {
+    float: left;
+    position: fixed;
+    width: 100%;
+    gap: 1rem;
+    bottom: 0rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    background: #FFFFFF;
+    padding: 1rem;
+    left: 0;
+    right: 0;
+}
+
+div.menu-basso button  {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
 }

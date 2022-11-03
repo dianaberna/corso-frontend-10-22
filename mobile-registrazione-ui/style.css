@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    padding: 2rem;
+    margin: 0;
+}
+
+header {
+    padding-top: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 1.6rem;
+}
+
+.top {
+    margin-top: 3rem;
+}
+
+.welcome-text {
+    margin-top: 5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0rem;
+}
+
+.form > .input {
+     width: 100%;
+    height: 3rem;
+}
+
+input {
+    width: 100%;
+    height: 3rem;
+    padding-left: 4rem
+}
+
+div.username {
+    width: 100%;
+}
+
+div.email {
+    width: 100%;
+}
+
+div.password {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.password {
+    
+}
+
+.finish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-new-account {
+    width: 15rem;
+    height: 3rem;
+    margin-top: 3rem;
+    background: #0043CE;
+    color: white;
+    border: none;
+}
+
+.forgot-password {
+    width: 15rem;
+    height: 3rem;
+    margin-top: 0.2rem;
+    border: transparent;
+    color: blue;
+    font-weight: bold;
+    background: transparent;
+}
+
+svg {
+    position: absolute;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+}
+
+/* input::placeholder {
+    margin-left: 10rem;
+    color:red;
+} */
