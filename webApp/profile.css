@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
+    padding-left: 5px;
+    padding-right: 15px;
 }
 
 h1, h2, h3 {
@@ -45,18 +47,34 @@ div > button {
     font-size: .75rem;
     border: 0rem;
     border-radius: 50px;
-    padding: 8px;
+    height: 30px;
+    width: 90px;
     
 }
 
 header {
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+.follower {
+    display: flex;
+    gap: 2rem;
+}
+
+.follower h3 { 
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .profile {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -67,6 +85,9 @@ header {
     border-radius: 50px;
 }
 
+.friends, .photos, .profile {
+    padding-top: 20px;
+}
 
 .square {
     width: 110px;
@@ -78,10 +99,23 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
+    width: fit-content;
+    
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
+    overflow: scroll;
+    width: fit-content;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
 }
