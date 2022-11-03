@@ -32,6 +32,18 @@ h3 {
     color: #262626;
 }
 
+h4 {
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+
+p{
+    font-size: 12;
+    font-weight: 400;
+    color: black;
+}
+
 header h1 {
     padding-left: 20px;
 }
@@ -63,10 +75,51 @@ svg {
 }
 
 .card {
+    position: relative;
+    
+    /* margin-right: 20px;
+    margin-left: 20px; */
     margin-right: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
     border-style: none;
+    border-radius: 28px;
+    box-shadow: 4px 0px 57px -3px rgba(0,0,0,0.1)
+}
+
+.heart {
+    position:absolute;
+    top: 35px;
+    left: 35px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
+.card-text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.left-card-icons {
+    /* height: 36px;
+    width: 36px; */
+    display:flex;
+    width: fit-content;
+    gap: 5px;
+    margin-left: 20px;
+
+}
+
+.left-card-icons > div {
+
+    width: 36px;
+    height: 36px;
+    
+    background-color: #C4C4C4;
     border-radius: 8px;
-    box-shadow: 4px 0px 57px;
+
 }
