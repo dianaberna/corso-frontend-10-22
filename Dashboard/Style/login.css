@@ -1,0 +1,38 @@
+@import url(/Dashboard/Style/style.css);
+
+/* LOGIN */
+
+main {
+  width: 506px;
+  height: 650px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 1.875rem;
+}
+.main__title > p {
+  font-size: 1.125rem;
+  color: var(--color-info-dark);
+}
+.main__title > p span {
+  color: var(--color-primary);
+}
+.main__button {
+  display: flex;
+  gap: 14px;
+}
+.main__button button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-info-dark);
+  border-radius: 4px;
+  padding: 1.125rem 1.875rem;
+}
+.main__button button:last-child {
+  background-color: var(--color-blue);
+}
+.main__button button p {
+  color: #fff;
+}
