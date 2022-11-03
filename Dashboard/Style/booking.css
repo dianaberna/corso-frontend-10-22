@@ -1,0 +1,96 @@
+@import url(/Dashboard/Style/style.css);
+@import url(/Dashboard/Style/sidebar.css);
+/* ---------- ROOT VARIABLES ---------- */
+:root {
+  --color-background: #242731;
+  --color-background-2: #1f2128;
+  --color-backgroud-3: #2b2e38;
+  --color-white: #fff;
+  --color-light: #292e3d;
+  --color-info-dark: #bfc3c9;
+  --color-primary: #a162f7;
+  --color-gray-dark: #808191;
+  --color-secondary-red: #ff6370;
+  --color-blue: #4776d0;
+
+  --card-border-radius: 0.875rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1rem 1.75rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0px 20px 100px rgba(3, 3, 3, 0.25);
+}
+/* ==================== ============================*/
+.main__container > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+select:first-of-type {
+  margin-right: 1rem;
+}
+select {
+  padding: 0.625rem 1.25rem;
+  background-color: var(--color-backgroud-3);
+  border-radius: var(--border-radius-2);
+  color: var(--color-white);
+}
+
+.main__container > div:first-of-type div svg:first-of-type {
+  background-color: var(--color-backgroud-3);
+  padding: 0.625rem;
+  border-radius: 50%;
+  height: 2.75rem;
+  width: 2.75rem;
+  color: var(--color-white);
+  margin-right: 1rem;
+}
+.main__container > div:first-of-type div svg:last-of-type {
+  background-color: var(--color-primary);
+  padding: 0.625rem;
+  border-radius: 50%;
+  height: 2.75rem;
+  width: 2.75rem;
+  color: var(--color-white);
+}
+/* ====================== CAR MODEL =================== */
+section {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 24px;
+}
+.car {
+  display: flex;
+  justify-content: space-between;
+}
+.car__model {
+  background-color: var(--color-background);
+  width: 325px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: var(--card-border-radius);
+}
+.car__model > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.car__model--bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.car__model--bottom div:first-of-type {
+  align-items: center;
+  display: flex;
+}
+.car__model--bottom span:nth-of-type(2) {
+  padding-right: 1rem;
+}
