@@ -716,41 +716,30 @@ h1 span{color: #FF912B;}
     margin-top: 30px;
 }
 .customers-img {
-    width: 50%;
-    /* border: 2px solid; */
     margin: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
 }
-.piatti-img {
-    width: 100%;
-    
-}
+
 .piatti__img {
-    width: 99%;
+
     filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
     border-radius: 10px 10px 0px 0px;
     margin-left: 2px;
 }
 .piatti-misti {
     display: flex;
-    width: 100%;
     height: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 28px;
-    position: relative;
-    top: -70px;
-    left: 2px;
 }
 .contei-misti1 {
-    width: 49%;
+    width: 47%;
     display: flex;
     background: url('../img/pit.png');
     background-repeat: no-repeat;
-    background-size: contain;
     filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
     border-radius: 10px 10px 0px 0px;
     margin-left: 2px;
@@ -758,12 +747,11 @@ h1 span{color: #FF912B;}
 }
 
 .contei-misti2 {
-    width: 49%;
+    width: 47%;
     background: url('../img/carne.png');
     background-repeat: no-repeat;
-    background-size: contain;
     filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.25));
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 20px 0px;
     margin-left: 2px;
     
 }
@@ -786,17 +774,30 @@ h1 span{color: #FF912B;}
     font-size: 32px;
     font-weight: bold;
     width: 70%;
+    margin-bottom: 25px;
+
 }
+
+
+.conteiner-wrap {
+    width: 100%;
+    overflow-x: scroll;
+    cursor: pointer;
+    
+}
+
+
+
 .fedb{
     border: 1px solid;
     height: 200px;
     width: 475px;
-    display: flex;
+    margin-bottom: 8px;
     background: #F1F1F1;
     border-radius: 10px;
 }
+
 .fedb h2{
-    display: flex;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -804,7 +805,56 @@ h1 span{color: #FF912B;}
     justify-content: center;
 }
 .fedb-fot{
-    width: 40px;
-    height: 40px;
-    border: 1px solid;
+    width: 70px;
+    height: 60px;
+    background: url('../img/fed.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    /* border: 1px solid; */
+}
+.conteiner-fed{
+    overflow-x: scroll;
+}
+.wrap-fed{
+    display: flex; 
+    gap: 2rem;
+    width: fit-content;
+}
+.conte__fed{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+    gap: 1rem;
+    position: relative;
+}
+.stelle{
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    top: 45px;
+    left: 80px;
+}
+.stelle span{
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid red; */
+}
+.stelle span:nth-child(-n+4){
+    background: url('../img/Vector.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.stelle span:nth-child(5){
+    background: url('../img/Vector\ metà.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    ::-webkit-scrollbar{
+        display: none;  /* Chrome Opera Safari */
+    }
 }
