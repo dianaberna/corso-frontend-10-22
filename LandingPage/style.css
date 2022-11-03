@@ -15,7 +15,9 @@ body {
     position: relative;
 }
 
-.container-1, .container-2, .container-3 {
+.container-1,
+.container-2,
+.container-3 {
     background-color: rgba(255, 255, 255, 0.5);
     width: fit-content;
     border-radius: 2.625rem;
@@ -23,7 +25,9 @@ body {
     position: absolute;
 }
 
-.container-1 span, .container-2 span, .container-3 span {
+.container-1 span,
+.container-2 span,
+.container-3 span {
     background-color: rgba(255, 255, 255, 1);
     border-radius: 2.625rem;
     padding: 1rem 2rem;
@@ -32,22 +36,28 @@ body {
     align-items: center;
 }
 
-.container-1{
+.container-1 {
     top: 1.0625rem;
     left: -3.25rem;
 }
 
-.container-2{
+.container-2 {
     top: 6.5625rem;
     right: -0.0187rem;
 }
 
-.container-3{
-    bottom: .875rem;
+svg {
+    position: relative;
+    left: .3125rem;
+}
+
+.container-3 {
+    bottom: 0.875rem;
     left: 1.25rem;
 }
 
-.text, .score {
+.text,
+.score {
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     line-height: 2.25rem;
@@ -57,7 +67,8 @@ body {
     font-weight: 700;
 }
 
-.text, .price {
+.text,
+.price {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
