@@ -135,7 +135,44 @@
           <p>Sign in with Facebook</p>
         </button>
       </div>
-      <form action=""></form>
+      <div class="main__or">
+        <hr />
+        <span>or</span>
+        <hr />
+      </div>
+      <form action="">
+        <div class="form__login">
+          <div>
+            <label for="user-email">Email</label>
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="text@prova.com"
+            />
+          </div>
+          <div>
+            <label for="user-password">Password</label>
+            <input
+              type="password"
+              name="user-password"
+              id="user-password"
+              placeholder="**************"
+            />
+          </div>
+        </div>
+        <div class="form__remember">
+          <div class="form__remember--align">
+            <input
+              type="checkbox"
+              name="user-remember"
+              id="user-remember"
+            /><label for="user-remember">Remember me</label>
+          </div>
+          <div><p>Forgot you password?</p></div>
+        </div>
+        <div><input type="submit" value="Sign in" /></div>
+      </form>
     </main>
   </body>
 </html>

@@ -1,14 +1,46 @@
 @import url(/Dashboard/Style/style.css);
 
-/* LOGIN */
+/* ---------- ROOT VARIABLES ---------- */
+:root {
+  --color-background: #242731;
+  --color-background-2: #1f2128;
+  --color-backgroud-3: #2b2e38;
+  --color-white: #fff;
+  --color-light: #292e3d;
+  --color-info-dark: #bfc3c9;
+  --color-primary: #a162f7;
+  --color-gray-dark: #808191;
+  --color-secondary-red: #ff6370;
+  --color-blue: #4776d0;
 
+  --card-border-radius: 0.875rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1rem 1.75rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0px 20px 100px rgba(3, 3, 3, 0.25);
+}
+/* LOGIN */
+body {
+  background-color: var(--color-background-2);
+}
 main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 506px;
-  height: 650px;
   margin: 0 auto;
 }
 h1 {
   font-size: 1.875rem;
+  margin-bottom: 1rem;
+}
+.main__title {
+  margin-bottom: 3.375rem;
 }
 .main__title > p {
   font-size: 1.125rem;
@@ -27,7 +59,7 @@ h1 {
   gap: 8px;
   background-color: var(--color-background);
   border: 1px solid var(--color-info-dark);
-  border-radius: 4px;
+  border-radius: var(--border-radius-1);
   padding: 1.125rem 1.875rem;
 }
 .main__button button:last-child {
@@ -35,4 +67,70 @@ h1 {
 }
 .main__button button p {
   color: #fff;
+}
+.main__or {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 14px;
+  margin: 1.5rem 0rem;
+}
+.main__or > hr {
+  width: 45%;
+  height: 1px;
+  background: #2c303d;
+}
+/* ============ FORM ================== */
+.form__login {
+  background-color: var(--color-background);
+  padding: 1.25rem;
+  box-shadow: var(--box-shadow);
+}
+.form__login > div {
+  display: flex;
+  gap: 0.75rem;
+  flex-direction: column;
+}
+
+.form__login > div:first-child {
+  margin-bottom: 1.25rem;
+}
+.form__login > div > input {
+  width: 100%;
+  padding: 1.25rem;
+  border: 1px solid #323745;
+  background-color: transparent;
+  font-size: 16px;
+}
+.form__remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.875rem;
+}
+.form__remember > div > p {
+  color: var(--color-primary);
+}
+.form__remember--align input {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-gray-dark);
+}
+.form__remember--align {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--color-gray-dark);
+}
+form input[type='submit'] {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.25rem;
+  border-radius: 0.625rem;
+  height: 60px;
 }
