@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-/* :root {
+:root {
   color-scheme: light dark;
-} */
+  --background_light: #FFFFFF;
+  --background_dark: #242731;
+} 
 body{
   font-family: 'DM Sans', sans-serif;
   margin: 0;
+  background-color: #F5F5F5;
+  color: black;
 }
 header{
   position: fixed;
@@ -15,6 +19,7 @@ header{
   left: 15.5rem;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--background_light);
 }
 #searchbar{
   background-color: #F5F4F6;
@@ -69,6 +74,7 @@ aside{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--background_light);
 }
 #logo{
   display: flex;
@@ -114,19 +120,29 @@ aside footer > a{
   margin-bottom: 1.875rem;
   margin-top: -0.375rem;
 }
+main{
+  position: absolute;
+  top: 5rem;
+  left: 15.5rem;
+  right: 0;
+  bottom: 0;
+}
 
 
 
 
-
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     color: white;
-    background: #242731;
+    background: #1F2128;
   }
   #searchbar,
   #searchbar input{
     background-color: #1F2128;
+  }
+  aside,
+  header{
+    background-color: var(--background_dark);
   }
   aside nav > a{
     color: #808191;
@@ -137,3 +153,4 @@ aside footer > a{
     background-color: #292E3D;
   }
 }
+ */
