@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+body {
+    background-color:white ;
+    font-family: 'Work Sans', sans-serif;
+    padding: 1rem;
+    margin: 0;
+    }
+
+    header {
+        background-color: red;
+        display: flex;
+        justify-content: center;
+    }
+
+
+#fotoprofilo {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 100%;
+    background-color: #C4C4C4;
+}
+
+.dati {
+    display: flex;
+    justify-content: center;
+}
