@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+body {
+    background-color:white ;
+    font-family: 'Work Sans', sans-serif;
+    padding: 1rem;
+    margin: 0;
+    }
+
+h1, h2, h3, h4{
+    font-weight: 600;
+    }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.rettangolo {
+    height: 12.5rem;
+    background: #A8A8A8;
+    border-radius: 1rem;
+    margin-top: 5%;
+}
+
+#playlist {
+    display: flex;
+}
+
+.title { 
+    text-align: left;
+	margin: 0;
+    justify-content: space-between
+}
+
+#list {
+    margin-top: 15%;
+}
+.square{
+    width: 8rem;
+    height: 8rem;
+    background-color: #D0D0D0;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+#list .container h3, p {
+    text-align: left;
+	
+}
+
+.container {
+    display: flex;
+    gap: 5%
+}
+
