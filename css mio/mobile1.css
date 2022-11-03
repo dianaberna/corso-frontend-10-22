@@ -47,9 +47,10 @@ h2{
    font-size:0.875rem;
    padding-top: 1rem;
 }
-section >h2 + .contacts {
+.contacts {
     background-color: #C4C4C4;
     border-radius: 10px;
     width: 56px;
     height: 56px;
+    top:100px;
 }
