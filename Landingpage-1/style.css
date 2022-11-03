@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500&display=swap');
+:root{
+    --primary-color:#F6EBDA;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
+body{
+    width: 100vw;
+}
 
 /*HERO*/
 #hero{
-    background-color: #F6EBDA;
+    background-color: var(--primary-color);
     height: 970px;
     font-family: 'Poppins', sans-serif;
-    padding-left: 135px;
-    padding-right: 135px;
+    padding-left: 8.4375rem;
+    padding-right: 8.4375rem;
 }
+
 /* Navbar */
 
 .navbar{
@@ -23,12 +28,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 36px;
+    padding-top: 2.25rem;
 }
 .navbar ul{
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 2rem;
 }
 .navbar ul li{
     list-style: none;
@@ -37,7 +42,7 @@
     color: #000;
     text-decoration: none;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .navbar ul li:nth-of-type(1) a{
     color: #FF912B;
@@ -55,19 +60,19 @@
     width: 222px;
     height: 40px;
     background-color: #fff;
-    margin-right: 24px;
+    margin-right: 1.5rem;
     filter: drop-shadow(6px 2px 24px rgba(0, 0, 0, 0.13));
 }
 .search-bar svg{
-    margin-left: 14px;
-    margin-right: 19px;
+    margin-left: 0.875rem;
+    margin-right: 1.1875rem;
 }
 
 .search-container input{
     border: none;
     outline:none;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 .search-container input::placeholder{
     font-family: 'Poppins', sans-serif;
@@ -79,13 +84,13 @@
 #hero .container{
     display: flex;
     flex-direction: column;
-    padding-top: 216px;
+    padding-top: 13.5rem;
 }
 
 /* titolo */
 .container .titolo{
     font-weight: 600;
-    font-size: 48px;
+    font-size: 3rem;
     color:#2F2105;
 
 }
@@ -97,9 +102,9 @@
 .container .desc-titolo{
     font-weight: 400;
     color: #7E7D7A;
-    font-size: 18px;
-    margin-top: 24px;
-    margin-bottom: 32px;
+    font-size: 1.125rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 /* button order now */
 .btn-order{
@@ -109,12 +114,11 @@
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
     background-color: #2F2105;
     width: 170px;
     height: 46px;
     border-radius: 33px;
-    transition: all 0.5s;
 }
 .circle{
     display: flex;
@@ -124,8 +128,7 @@
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    margin-left: 10px;
-    transition: 0.5s;
+    margin-left: 0.625rem;
 }
 .circle svg{
     width: 12px;
@@ -136,7 +139,7 @@
 /* INIZIO FOOTER */
 footer{
     height: 489px;
-    background-color: #F6EBDA;
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -148,21 +151,21 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     width: 80%;
-    padding-top: 99px;
+    padding-top: 6.1875rem;
 }
 footer .logo{
-    margin-bottom: 21px;
+    margin-bottom: 1.3125rem;
 }
 .col .text{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     color: rgba(29, 29, 29, 0.7);
 }
 .social{
     display: flex;
     flex-direction: row;
-    gap: 24px;
-    margin-top: 32px;
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 .social .circle-social{
     background-color: #fff;
@@ -179,14 +182,14 @@ footer .logo{
 }
 .col h5{
     color: #1D1D1D;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 31px;
 }
 .col ul{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 }
 .col li{
     list-style: none;
@@ -194,13 +197,13 @@ footer .logo{
 .col li a{
     color:rgba(29, 29, 29, 0.7);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-decoration: none;
 
 }
     /* copyright */
 .copyright{
-    margin-top: 91px;
+    margin-top: 5.6875rem;
     width: 70%;
 }
 .copyright hr{
@@ -209,8 +212,8 @@ footer .logo{
 
 .copyright p{
     text-align: center;
-    margin-top: 46px;
-    font-size: 16px;
+    margin-top: 2.875rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #1D1D1D;
 }

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500&display=swap');
+:root{
+    --primary-color:#F6EBDA;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+}
+
+/*HERO*/
+#hero{
+    background-color: var(--primary-color);
+    height: 970px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 8.4375rem;
+    padding-right: 8.4375rem;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.25rem;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+.navbar ul li:nth-of-type(1) a{
+    color: #FF912B;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    width: 222px;
+    height: 40px;
+    background-color: #fff;
+    margin-right: 1.5rem;
+    filter: drop-shadow(6px 2px 24px rgba(0, 0, 0, 0.13));
+}
+.search-bar svg{
+    margin-left: 0.875rem;
+    margin-right: 1.1875rem;
+}
+
+.search-container input{
+    border: none;
+    outline:none;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+.search-container input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: #929292;
+
+}
+
+/* CONTENT HERO */
+#hero .container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 13.5rem;
+}
+
+/* titolo */
+.container .titolo{
+    font-weight: 600;
+    font-size: 3rem;
+    color:#2F2105;
+
+}
+.titolo span{
+    color: #FF902A;
+}
+
+/* descrizione */
+.container .desc-titolo{
+    font-weight: 400;
+    color: #7E7D7A;
+    font-size: 1.125rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+/* button order now */
+.btn-order{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    background-color: #2F2105;
+    width: 170px;
+    height: 46px;
+    border-radius: 33px;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF912B;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-left: 0.625rem;
+}
+.circle svg{
+    width: 12px;
+    height: 12px;
+}
+
+
+/* INIZIO FOOTER */
+footer{
+    height: 489px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Readex Pro', sans-serif;
+}
+/* content-area footer */
+.content-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    padding-top: 6.1875rem;
+}
+footer .logo{
+    margin-bottom: 1.3125rem;
+}
+.col .text{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(29, 29, 29, 0.7);
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.social .circle-social{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 24px rgba(29, 29, 29, 0.25);
+}
+.circle-social:nth-of-type(2){
+    background-color: #FFCB45;
+}
+.col h5{
+    color: #1D1D1D;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 31px;
+}
+.col ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.col li{
+    list-style: none;
+}
+.col li a{
+    color:rgba(29, 29, 29, 0.7);
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-decoration: none;
+
+}
+    /* copyright */
+.copyright{
+    margin-top: 5.6875rem;
+    width: 70%;
+}
+.copyright hr{
+    background-color: (29, 29, 29, 0.5);
+}
+
+.copyright p{
+    text-align: center;
+    margin-top: 2.875rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1D1D1D;
+}
