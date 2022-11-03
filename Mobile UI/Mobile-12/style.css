@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 24px;
+}
+/* ========= EQUAL SETTINGS ========== */
+.section__middle--title,
+.section__middle--bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ========= SECTION TOP ============= */
+h1 {
+  margin-top: 73.6px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+p {
+  font-size: 14px;
+}
+/* ========= SECTION MIDDLE ============= */
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.section__middle--container {
+  display: flex;
+  gap: 1.125rem;
+}
+.section__middle--container > div {
+  width: 3.8125rem;
+  height: 3.8125rem;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  position: relative;
+}
+.check-circle,
+.pending {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* ========= SECTION BOTTOM ============= */
+.section__bottom--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.625rem;
+}
+.section__bottom--container p {
+  text-align: center;
+}
+.container__device--circle .circle {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
+.container__device--circle {
+  margin: 10px 0 0 80px;
+}
+
+.container__device {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 107px;
+  height: 130px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.opacity-active {
+  opacity: 0.3;
+}
+.container__device--circle .circle-orange {
+  background-color: orange;
+  z-index: 1;
+}
