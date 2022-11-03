@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* REGOLE GENERALI */
+
+body {
+     font-family: 'Work Sans', sans-serif ;
+     padding: 1rem;
+}
+
+header {
+    padding-top: 2rem;
+}
+
+p {
+   font-size: ;
+}
+
+h1 {
+   font-size: ;
+}
+
+h2 {
+    font-size: ;
+}   
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* Header */
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+header button {
+ 
+}
+
+input {
+
+background-color: #C4C4C4;
+padding: 10px;
+border-radius: 15px;
+}
+
+header input {
+    
+    font-family: inherit;
+}
+
+#search-icon {
+    position: absolute;
+}
+
+/* Sezione Last contacted */
+
+.square {
+    width: 56px;
+    height: 56px;
+    background-color: #C4C4C4;
+    border-radius: 16px;
+}
+
+@media screen and (min-width: 481px){
+    header input{
+        width: auto;
+    }
+   
+    
+}

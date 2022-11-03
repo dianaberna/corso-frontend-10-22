@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,400;1,500;1,600;1,700&display=swap');
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+   
+
+}
+
+.arrow {
+    position: absolute;
+    z-index: 1;
+    top:50px;
+    left:50px;
+    padding:15px 20px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
+
+.dots{
+    position: absolute;
+    z-index: 1;
+    top:50px;
+    left:300px;
+    padding:20px 15px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+
+}
+
+.play-icon {
+    position:absolute;
+    top: 290px;
+    left: 330px;
+    z-index: 2;
+    
+}
+
+.rectangle {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+    /* top: 320px; */
+    background-color: #161616;
+    border-radius: 16px;
+    /* z-index: 2; */
+    width: 390px;
+   
+}
+
+.rectangle-text {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #161616;
+}
+
+.rectangle-text span {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.rectangle-text2 {
+   
+    display: flex;
+    gap: 2rem;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.rectangle2{
+    background-color: #525252;
+    height: 100px;
+    width: 100px;
+    border-style: 20px, solid ;
+    
+    
+   
+}
+
+.rectangle-text div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
