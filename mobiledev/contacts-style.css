@@ -1,16 +1,212 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
 
+/* REGOLRE GENERALI */
+
 body{
     font-family: 'Work Sans', sans-serif;
-    padding: 10px;
+    padding: 1rem;
+    padding-bottom: 0rem;
+    margin: 0;
 }
 
-header{
+/* REGOLE SCROLLBAR */
+
+::-webkit-scrollbar{
+    /* attributi del background della scrollbar */
+    width:0.8em;
+    height:0.8em;
+    background: #eaeaea;
+    margin-right: .625rem;
+}
+
+::-webkit-scrollbar:hover{
+    /* attributi del background della scrollbar quando ci siamo sopra col cursore */
+    background-color:#eaeaea ;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb{
+    /* attributi del cursore (thumb) della scrollbar in pagina, a pagina caricata il cursore della scroll bar si mostra così */
+    min-height:0.8em;
+    min-width:0.8em;
+    -webkit-border-radius:.625rem;
+    background-color: rgba(132,132,132,1);
+    border: none;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    /* colore del cursore della scrollbar quando ci siamo sopra con il cursore */
+    background-color: rgba(98,98,98,1);
+    border: none;
+}
+
+::-webkit-scrollbar-thumb:active{
+    /* colre del cursore della scrollbar quando ci clicchiamo sopra per trascinarlo/spostarlo */
+    background-color:rgba(98,98,98,1);
+    border: none;
+}
+
+/* ELEMENTI HEADER */
+header{ 
+    padding-top: 2rem;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+p, h2{
+    font-size: .875rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+h1, h2, h3{
+    font-weight: 600;
+}
+
+header > div{
     display: flex;
     justify-content: space-between;
 }
 
-header > button{
-    border: 0px;
+header button{
+    border: 0rem;
     background-color: transparent;
+    cursor: pointer;
+}
+
+header input{
+    background-color: #C4C4C4;
+    border: 0rem;
+    border-radius: 1rem;
+    padding: .625rem;
+    padding-left: 2.1875rem;
+    width: 100%;
+    font-family: inherit;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+#magn-lent-input{
+    position: absolute;
+    padding-left: .625rem;
+}
+
+/* SEZIONE LAST-CONTACTED */
+#contacted{
+    margin-bottom: 1rem;
+}
+
+#contacted .container{
+    overflow:scroll;
+
+}
+
+.container::-webkit-scrollbar {
+    /*metodo per rimuovere la scrollbar LATERALE dei quadrati in successione */
+    display: none;
+}
+
+.wrapped{
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+}
+
+.square{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #C4C4C4;
+    border-radius: .5rem;
+    position: relative;
+    margin-bottom: .3125rem;
+}
+
+.square > div{
+    background-color: #333333;
+    border: 0rem;
+    border-radius: 50%;
+    width: 1.125rem;
+    height: 1.125rem;
+    position: absolute;
+    right: -0.3125rem;
+    bottom: -0.3125rem;
+}
+
+/* SEZIONE LIST */
+
+#list{
+    background-color: #F4F4F4/* darkgray */;
+    border: 0rem;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+    padding-top: 2rem;
+    margin: .5rem -1rem 0rem -1rem;
+    box-shadow: 0rem -0.3125rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+#list .square{
+    min-width: 3.5rem;
+}
+
+#list .container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;  
+    margin-left: 1rem;
+}
+
+#list > div{
+    padding-bottom: 1rem;
+}
+
+#list .container h3, #list .container p{
+    margin: 0;
+}
+
+#list .container > div > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#list .container > div > div > span{
+    color: #A8A8A8;
+    padding-right: 1.5rem;
+}
+
+/* Visualizzazione da Tablet in poi */
+@media screen and (min-width: 481px) {
+
+    header input{
+        width: auto;
+    }
+
+    .container{
+        margin-bottom: 0rem;
+    }
+    
+    #list{
+        margin-right: -1rem;
+        padding-bottom: .375rem;
+        bottom: 0rem;
+        height: 100vh;
+    }
+    
+    #list .square{
+        margin: 0rem;
+    }
+
+    #list .container > div > div > span{
+        color: #A8A8A8;
+        padding-right: 1rem;
+    }
+
+    .message{
+        width: 100%;
+    }
 }
