@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    padding:1rem;
+}
+body > div {
+    display:flex;
+}
+
+/*Contacts+*/
+
+body > #header {
+    justify-content: space-between;
+}
+body > #header > button {
+    border:0px;
+    background-color: transparent;
+}
+h1{
+    font: size 21.5rem;
+}
+/*cerca contatti*/
+
+body > div > input {
+    border-radius: 1rem;
+    position:relative;
+    width: 100%;
+    padding: 10px; 
+    padding-left: 2.2rem;
+    font-size: .875rem;
+    font-family: inherit;
+    background-color: #C4C4C4;
+    
+}
+body > div > img {
+    position: absolute;
+    padding: 0.8rem;
+}
+body > div > input placeholder {
+    color: black;
+}
+
+/*Last contacted*/
+
+h2{
+   font-size:0.875rem;
+   padding-top: 1rem;
+}
+section >h2 + .contacts {
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    width: 56px;
+    height: 56px;
+}
