@@ -11,6 +11,7 @@ body{
 }
 header{
   position: fixed;
+  top: 0;
   width: 100vw;
   z-index: 1000;
 }
@@ -158,7 +159,6 @@ footer>div{
   padding: 0 1.5rem 1.125rem 1.5rem;
   display: flex;
   flex-direction: column;
-/*   background-color: #F4F4F4; */
   background-color: rgba(244,244,244,.85);
   flex: 1;
 }
@@ -201,3 +201,33 @@ main{
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/* -- media queries -- */
+
+@media only screen and (min-width: 481px) {
+  header>div{
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  .blurred-top{
+    top: 6rem;
+  }
+  #contact{
+    margin: 0.5rem 0;
+  }
+  #searchbar{
+    display: none;
+  }
+  main{
+    top: 7.25rem;
+  }
+  .left_chat,
+  .right_chat{
+    margin-bottom: .75rem;
+  }
+} 
