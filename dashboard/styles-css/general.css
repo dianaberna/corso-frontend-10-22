@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+/* :root {
+  color-scheme: light dark;
+} */
+body{
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+}
+header{
+  position: fixed;
+  padding: 1rem 2rem 1rem 2rem;
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 15.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+#searchbar{
+  background-color: #F5F4F6;
+  display: flex;
+  align-items: center;
+  width: 22.25rem;
+  height: 2.875rem;
+  border-radius: 0.5rem;
+}
+#searchbar svg{
+  margin-left: 0.875rem;
+}
+#searchbar input{
+  background-color: #F5F4F6;
+  font-weight: 500;
+  border: none;
+  padding: 1rem 0.875rem;
+  flex: 1;
+  border-radius: 0.5rem;
+}
+#searchbar input::placeholder{
+  color: #7C7C8D;
+}
+#searchbar input:focus{
+  /*questo comando serve per non visualizzare il bordo del campo input*/
+  outline: none;
+  color: #EF9011;
+}
+#searchbar input:focus::placeholder{
+  /*questo comando serve per non visualizzare il contenuto del campo input*/
+  color: transparent;
+}
+#top-right{
+  display: flex;
+  align-items: center;
+}
+#top-right img{
+  height: 2.875rem;
+  width: 2.875rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 2.5rem;
+}
+/* -- NAVIGATION SIDEBAR -- */
+aside{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.875rem 3.125rem 0 1.5rem;
+  width: 10.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#logo{
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  align-items: center;
+  margin-bottom: 2.125rem;
+}
+#logo div{
+  background-color: #A162F7;
+  height: 27px;
+  width: 27px;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: .75rem;
+}
+aside nav > a{
+  padding: .5rem;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  color: #5F6165;
+  font-weight: 500;
+  font-size: .875rem;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  margin-bottom: .625rem;
+}
+aside nav > a:hover,
+aside footer > a:hover{
+  background-color: #F3F5F8;
+}
+aside footer > a{
+  padding: .5rem;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  color: #5F6165;
+  font-weight: 500;
+  font-size: .875rem;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  margin-bottom: 1.875rem;
+  margin-top: -0.375rem;
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background: #242731;
+  }
+  #searchbar,
+  #searchbar input{
+    background-color: #1F2128;
+  }
+  aside nav > a{
+    color: #808191;
+  }
+  
+  aside nav > a:hover,
+  aside footer > a:hover{
+    background-color: #292E3D;
+  }
+}

@@ -11,6 +11,8 @@ body{
   font-family: 'Work Sans', sans-serif;
   margin: 0;
   background-color: white;
+  width: 100%;
+  height: 100%;
 }
 body>div{
   position: fixed;
@@ -104,6 +106,9 @@ main img{
   margin-right: 1rem;
   border-radius: 0.75rem;
 }
+main img{
+  margin-right: 0;
+}
 .last_contacts div:nth-child(2){
   height: 1.125rem;
   width: 1.125rem;
@@ -129,6 +134,9 @@ main>div{
   display: flex;
   align-items: center;
   margin: 0.5rem 0 0.75rem 0;
+}
+.message{
+  margin-left: 1rem;
 }
 .message div{
   display: flex;
