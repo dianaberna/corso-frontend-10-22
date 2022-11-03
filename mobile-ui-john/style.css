@@ -97,6 +97,7 @@ main > .finestra {
 .menu1 {
     border: 0;
     background: transparent;
+    cursor: pointer;
 }
 
 .icon {
