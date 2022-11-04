@@ -7,21 +7,52 @@ body {
     margin: 0;
     }
 
-    header {
-        background-color: red;
-        display: flex;
-        justify-content: center;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
-
 
 #fotoprofilo {
     width: 6.25rem;
     height: 6.25rem;
     border-radius: 100%;
     background-color: #C4C4C4;
+    }
+
+#chiocciola{
+    display: flex;
+    font-size: .875rem;
 }
 
-.dati {
+.valori {
+    position: relative;
     display: flex;
     justify-content: center;
+    background-color: blue;
 }
+
+.following {
+    position: absolute;
+    gap: 3.125rem;
+    text-align:center
+}
+
+.followers {
+    gap: 3.125rem;
+    text-align:center
+}
+
+.views {
+  
+    gap: 3.125rem;
+    
+}
+
+   
+
+
+    
+
+    
+    
