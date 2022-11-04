@@ -13,7 +13,8 @@ body {
     background-color: #FCFCFC;
 }
 
-header>p , header>h3 {
+header>p,
+header>h3 {
     margin: 0;
 }
 
@@ -34,11 +35,12 @@ header>div>input {
     background-color: var(--primary-color);
     border-radius: 1.5rem;
     border: none;
-    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
     height: 2.5rem;
     padding-left: 2.1875rem;
     width: 100%;
 }
+
 header>div>button {
     height: 2.5rem;
     width: 2.5rem;
@@ -63,6 +65,36 @@ main>section>div>p {
     text-decoration: underline;
     margin: 0;
 }
+
 main>section>div>h5 {
     margin: 0;
+}
+
+#scrollbar {
+    overflow-x: scroll;
+    display: flex;
+    gap: 10px;
+    margin-right: -24px;
+    margin-top: .9375rem;
+}
+
+.categories-food {
+    width: fit-content;
+    display: flex;
+}
+
+.categories-food>div {
+    background-color: var(--buttons-color);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 116px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.categories-food>div>p {  
+    font-size: small;
 }
