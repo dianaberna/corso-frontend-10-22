@@ -13,6 +13,8 @@ body {
     background-color: #FCFCFC;
 }
 
+/* header, titolo e barra di ricerca */
+
 header>p,
 header>h3 {
     margin: 0;
@@ -52,6 +54,8 @@ header>div>.search-lens {
     position: absolute;
     margin: 12px;
 }
+
+/* sezione Categories con scrollbar*/
 
 main>section>div {
     display: flex;
@@ -98,3 +102,6 @@ main>section>div>h5 {
 .categories-food>div>p {  
     font-size: small;
 }
+
+/* sezione open restaurant */
+
