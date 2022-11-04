@@ -38,12 +38,30 @@ header {
 .follower { 
     display: flex;
     justify-content: center;
+    gap: 2rem;
     
+}
+.follower >div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contatti {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contatti > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
 }
 
    
-
-
     
 
     
