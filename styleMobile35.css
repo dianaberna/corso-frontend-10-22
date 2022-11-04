@@ -69,8 +69,8 @@ header h1 {
 
 .today {
     background-color: #C4C4C4;
-    border-radius: 8px;
-    padding: 5px 10px 5px 10px;
+    border-radius: 24px;
+    padding: 5px 10px 12px 10px;
 
 }
 
@@ -109,6 +109,7 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     top: 35px;
     left: 35px;
     height:50px;
@@ -135,7 +136,7 @@ svg {
 
 }
 
-.left-card-icons > .square {
+/* .left-card-icons > .square {
 
     width: 36px;
     height: 36px;
@@ -146,16 +147,72 @@ svg {
     align-items: center;
     justify-content: center;
 
+} */
+
+.left-card-icons {
+
+    
+    
+    
+    
+
 }
+
+/* .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #C4C4C4;
+} */
 
 #card2 .card-text {
     /* width: 100%; */
     /* margin-left: 1rem; */
     left: 0;
     right: 0;
+    padding-top: 10px;
     position: absolute;
     background-color: #fff;
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
+
+}
+
+button {
+    width: 69px;
+    height: 36px;
+    
+    background-color: #C4C4C4;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+
+.card-icons {
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#heart {
+   margin: 0px; 
+   
+}
+
+.left-card-icons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #C4C4C4;
 
 }
