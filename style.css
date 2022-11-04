@@ -1,19 +1,22 @@
 body {
-    background-color: #F6EBDA;   
+    background-color: #F6EBDA; 
+    margin: 0 8rem;
 }
 
+/*Menù di navigazione */
+
 .mainmenu {
-    background-color: rgb(124, 108, 108);
+    background-color: rgb(124, 108, 108); /*aiuto per capire allineamento verticale elementi*/
     color: #000000;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .mainmenu ul {
-    background-color: aquamarine;
-    display: flex; /* per mostrare gli "li" in linea è più corretto questo?*/
+    display: flex; 
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -21,15 +24,14 @@ body {
 }
 
 .mainmenu li {
-    display: inline-block; /*o questo?*/
     padding :1rem;
 }
 
 .mainmenu li a {
     text-decoration: none;
     color: #000000;
-    font-weight: 600;
-    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mainmenu li a:hover {
@@ -37,25 +39,41 @@ body {
 }
 
 .searchbar {
-    background-color: blueviolet;
-    display: inline; /*barra di ricerca che non centra verticalmente*/
-    align-items: center;
+    display: inline;
+    align-items: center; /*non centra le svg*/
 } 
+
+input {
+    border-radius: 2rem;
+    border: 0;
+    height: 2rem;
+    text-align: center;
+    padding-left: 10px;
+    margin-bottom: 0.5rem;
+}
+
+/*Prima sezione*/
 
 #section1 {
     background-color: #F7EBDA; 
-    /*sembra inutile perchè volendo suddividere la pagina in sezioni, togliendo il bg-color dall'elemento "body", nonostante questa regola, il bg risulta bianco*/
     display: flex;
+    justify-content: space-evenly;
 }
 
 h1 {
     color: #2F2105;
-    display: flex
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
 }
 
-h2 {
+#section1 p {
     color: #7E7D7A;
-    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#section1 div {
+    width: 50%;
 }
 
 #ordernow {
@@ -77,8 +95,22 @@ h2 {
   #caffettino {
     display: flex;
     background-color: #2F2105;
-    border-radius: 100%; /*qualsiasi percentuale metta viene sempre un ellisse*/
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    justify-content: center;
+    align-content: center;
+}
 
-  }
+#caffettino > img { /*come centro perfettamente un'immagine all'interno di un div?*/
+    width: 85%;
+    height: 85%;  
+    margin-left: 00.5rem;  
+}
 
-  
+/*Seconda sezione*/
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
