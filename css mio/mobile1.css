@@ -1,56 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+:root{
+    --color-gray:#C4C4C4;
+}
 body{
     font-family: 'Work Sans', sans-serif;
-    padding:1rem;
+    
 }
-body > div {
+header > div {
     display:flex;
+    padding:0.5rem;
 }
 
 /*Contacts+*/
 
-body > #header {
+#header {
     justify-content: space-between;
 }
-body > #header > button {
+#header > button {
     border:0px;
     background-color: transparent;
 }
-h1{
-    font: size 21.5rem;
-}
+
 /*cerca contatti*/
 
-body > div > input {
+#search > input {
     border-radius: 1rem;
     position:relative;
     width: 100%;
     padding: 10px; 
-    padding-left: 2.2rem;
+    padding-left: 2rem;
     font-size: .875rem;
     font-family: inherit;
-    background-color: #C4C4C4;
+    background-color: var(--color-gray);
     
 }
-body > div > img {
+#search > img {
     position: absolute;
     padding: 0.8rem;
-}
-body > div > input placeholder {
-    color: black;
 }
 
 /*Last contacted*/
 
 h2{
    font-size:0.875rem;
-   padding-top: 1rem;
+   padding-top: 0.5rem;
 }
-.contacts {
-    background-color: #C4C4C4;
+#lastcontacted{
+    display:block;
+    padding-bottom: 2rem;
+}
+h2 + .container{
+    overflow: scroll;
+}
+ .container > .wrapper{ 
+    display:flex;
+    gap:1rem;
+    width: fit-content;
+
+}
+ .wrapper > .contacts {
+    background-color: var(--color-gray);
     border-radius: 10px;
-    width: 56px;
-    height: 56px;
-    top:100px;
+    width: 3.5rem;
+    height: 3.5rem;
+    top:6.25rem;
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.contacts > div {
+    background-color:  #333333;
+    height: 1.125rem;
+    width: 1.125rem;
+    border-radius: 50%;  
+}
+
+/*messages*/
+main{
+    background-color: #F4F4F4;
+    border-radius: 1rem;
+    margin-left: -0.5rem;
+    margin-right:-0.5rem;
+}
+
+#messagesection{
+    padding-top: 0.2rem;
+ 
+}
+.messages > .contactpicture {
+background-color: var(--color-gray);
+width: 3.75rem;
+height:3.75rem;
+border-radius: 10px;
+}
+#messagesection > .messages{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    padding-left: 0.5rem;
+    padding-bottom:0.5rem;
+}
+.contactpicture + div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactpicture + div{
+    display:flex;
+    flex-direction: column;
+
+}
+@media screen and (min-width:481px) {
+    #search > input{width:auto;}
 }
