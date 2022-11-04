@@ -21,6 +21,10 @@ header {
   padding-top: 2rem;
 }
 
+section {
+  margin: 40px 0;
+}
+
 p {
   color: var(--ink-light);
   line-height: 1.6;
@@ -208,7 +212,7 @@ header>div>svg {
   background-color: var(--neutral);
   border-radius: 50%;
   width: 2.875rem;
-    height: 2.875rem;
+  height: 2.875rem;
 }
 
 #chat-with>div span svg {
@@ -343,15 +347,14 @@ header>div>svg {
 
 #jogging {
   width: 100%;
-  margin: 30px 0;
 }
 
 #jogging .wrapper {
   display: flex;
   justify-content: space-around;
   background-color: var(--neutral-dark);
-  padding: 30px 10px;
-  border-radius: 12px;
+  padding: 1.875rem 0.625rem;
+    border-radius: 0.75rem;
 }
 
 #jogging .wrapper div {
@@ -366,18 +369,18 @@ header>div>svg {
 
 #jogging .wrapper div p {
   color: white;
-  line-height: 14px;
+  line-height: 0.875rem;
   padding: 0;
   margin: 1px 0;
 }
 
 #jogging .wrapper div p:nth-child(2) {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 #jogging .wrapper div p:nth-child(3) {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
@@ -390,7 +393,7 @@ header>div>svg {
 #health-status>div .left-box {
   position: relative;
   width: 31%;
-  padding: 28px;
+  padding: 1.75rem;
   background-color: var(--neutral);
   border-radius: 20px;
 }
@@ -398,7 +401,7 @@ header>div>svg {
 #health-status>div .right-box {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
   width: 32%;
 }
 
@@ -407,33 +410,76 @@ header>div>svg {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* height: 45%; */
-  padding: 28px;
+  padding: 1.75rem;
   background-color: var(--neutral);
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 #health-status>div .right-box div:last-child svg {
-  margin-right: -8px;
+  margin-right: -0.5rem;
 }
 
 #health-status>div .left-box svg:nth-child(4) {
   position: absolute;
   width: 100%;
-  left: 0px;
+  left: 0rem;
 }
 
 #health-status p {
-  line-height: 20px;
+  line-height: 1.25rem;
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
 
 #health-status>div .highlight {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
+#bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5rem;
+  background-color: white;
+  border-top: 1px solid #d0d0d0;
+  padding: 0 1.5rem;
+}
+
+#bottom-bar ul {
+  padding: 0;
+  list-style-type: none;
+  width: 87vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#bottom-bar ul li {
+  padding: 10px;
+}
+
+#bottom-bar .main-button {
+  align-self: center;
+  justify-self: center;
+  width: 4.375rem;
+  height: 4.375rem;
+  margin-top: -80px;
+  border-radius: 50%;
+  background-color: var(--neutral-light);
+  box-shadow: 0px 19px 16px -17px rgba(0, 0, 0, 0.3);
+}
+
+#bottom-bar .main-button svg {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  padding: 1.6875rem;
+}
+
+#bottom-bar ul li svg {
+  width: 1.375rem;
+  height: 1.375rem;
+}
 /* @media screen and (min-width: 481px) {
   header input {
     align-self: center;
