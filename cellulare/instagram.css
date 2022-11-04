@@ -54,11 +54,12 @@ header {
     gap: 2rem;
 }
 
-.contatti > button {
+.contatti > button,h3 {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25%;
+    color: blue;
 }
 
    
