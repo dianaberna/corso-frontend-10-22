@@ -1,0 +1,227 @@
+:root{
+    --color-gray: #c4c4c4;
+    --card-width:50px;
+    --card-height:70px;
+    --card-radius:10px
+}
+body{
+    padding:7px
+}
+.date{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    height: 40px;
+    flex-wrap: no-wrap;
+
+}
+.date p{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: smaller;
+    
+}
+.daily{
+    display: flex;
+    margin-top: -20px;
+    align-items: baseline;
+}
+.daily h3{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-size: 20px; 
+ 
+}
+.daily span{
+    background-color:var(--color-gray);
+    margin-left: 8.125rem;
+    height: 40px;
+    width: 40px;
+    border-radius: var(--card-radius);
+}
+#weekCards{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: no-wrap;
+  
+}
+#weekCards div{
+    background-color: var(--color-gray);
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: var(--card-radius);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#weekCards div p{
+    position:absolute;
+    margin-bottom: 40px;
+    font-size: smaller;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#weekCards div h3{
+    position:absolute;
+    margin-top: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#jogging{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.workout{
+    background-color: #262626;
+    height: 110px;
+    width: 100%;
+    border-radius: 10px;
+    padding-top:30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.workout .battito{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.workout .hours{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.workout .speed{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.workout img{
+    position: relative;
+    margin-bottom: -5px;
+}
+.workout h3{
+    position: relative;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+.workout p{
+    font-size: x-small;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.health{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    margin-top: 40px;
+}
+.statusConteiner{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: no-wrap;
+    align-items:flex-start;
+    height: 170px;
+    
+}
+#hearth{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: baseline;
+    overflow: hidden;
+    padding-left: 20px;
+    width: 135px;
+    height: 100%;
+    border-radius: var(--card-radius);
+    background-color: var(--color-gray);
+}
+#hearth h3{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+
+}
+#hearth p{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: smaller;
+}
+#hearth span{
+    display: flex;
+    align-items: baseline;
+}
+#hearth #vectorIcon{
+    position:relative;
+    margin-top: 20px;
+}
+#hearth #vectorStatistic{
+    position:relative;
+    margin-left: -20px;
+    margin-top: -35px;
+}
+.riquadri{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+#steps{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 8.4375rem;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 1px;
+    margin-bottom: 15px;
+    border-radius: var(--card-radius);
+    background-color: var(--color-gray);
+    margin-left: 13px;
+}
+#steps h3{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+#steps p{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: smaller;
+    margin-top: -15px;
+}
+#calories{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: raw;
+    width: 8.4375rem;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 1px;
+    border-radius: var(--card-radius);
+    background-color: var(--color-gray);
+    margin-left: 13px;
+}
+#calories h3{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+#calories p{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: smaller;
+    margin-top: -15px;
+}
+#calories img{
+    position: relative;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+}
