@@ -51,6 +51,10 @@ p {
     gap: 2rem;
 }
 
+.contact-form {
+    align-items: stretch;
+}
+
 .btn {
     background-color: #F03A76;
     border-radius: 3em;
@@ -85,6 +89,14 @@ nav {
 /* HEADER */
 header {
     padding: 1.5rem 0;
+}
+
+.wave-container {
+    background-image: url(./images/wave.svg);
+    background-position: bottom;
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: #181823;
 }
 
 h1 {
@@ -188,6 +200,10 @@ input, textarea {
     border-radius: 0.5rem;
 }
 
+input::placeholder {
+    color: #fff;
+}
+
 .right-side, .left-side {
     /* margin-right: auto; */
     display: flex;
@@ -232,6 +248,7 @@ footer h4 {
 footer li {
     padding: 0.5rem 0;
     list-style-type: none;
+    font-size: 0.8rem;
 }
 
 footer h4, footer li, footer p {
@@ -248,7 +265,8 @@ footer p {
 }
 
 .flex-inline {
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: flex;
     justify-content: flex-start;
     align-items: baseline;
     gap: 1rem;
@@ -293,4 +311,13 @@ footer p {
         text-align: left;
     }
 
+}
+
+@media (max-width: 760px) {
+    .flex-inline {
+        /* margin-inline: auto; */
+        /* text-align: center; */
+        justify-content: center;
+        margin-top: 1rem;
+    }
 }
