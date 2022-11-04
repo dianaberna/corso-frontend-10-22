@@ -25,30 +25,11 @@ header {
     font-size: .875rem;
 }
 
-.valori {
-    position: relative;
+.follower {
     display: flex;
     justify-content: center;
-    background-color: blue;
+    gap: .125rem;
 }
-
-.following {
-    position: absolute;
-    gap: 3.125rem;
-    text-align:center
-}
-
-.followers {
-    gap: 3.125rem;
-    text-align:center
-}
-
-.views {
-  
-    gap: 3.125rem;
-    
-}
-
    
 
 
