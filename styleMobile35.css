@@ -3,6 +3,8 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
+    padding: 1rem;
+    margin: 0;
 }
 
 header > div {
@@ -13,6 +15,8 @@ header > div {
     margin-left: 30px;
     margin-bottom: 30px;
 }
+
+
 
 h1 {
     font-size: 24px;
@@ -74,12 +78,25 @@ svg {
     margin-top: -10px;
 }
 
-.card {
+#card {
     position: relative;
     
-    /* margin-right: 20px;
-    margin-left: 20px; */
-    margin-right: 20px;
+    
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-style: none;
+    border-radius: 28px;
+    box-shadow: 4px 0px 57px -3px rgba(0,0,0,0.1)
+}
+
+#card2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-style: none;
@@ -128,5 +145,17 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+#card2 .card-text {
+    /* width: 100%; */
+    /* margin-left: 1rem; */
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: #fff;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
 
 }
