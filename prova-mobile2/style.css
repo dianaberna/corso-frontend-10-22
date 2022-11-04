@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
-    padding: 24px;
+    padding: 24px 24px 0 24px;
     background-color: #FCFCFC;
 }
 
@@ -138,7 +138,6 @@ section h5 {
     font-size: small;
 }
 
-
 .restaurant__card--transparent-block {
     background: rgba(82, 82, 82, 0.8);
     backdrop-filter: blur(2.5px);
@@ -180,9 +179,40 @@ section h5 {
     margin: 5px;
 }
 
+.restaurants__card:last-of-type {
+    margin-bottom: 2.5rem;
+}
+
 /* footer fixed */
 
+footer {
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid #e0e0e0;
+    height: 5.625rem;
+    background-color: #FCFCFC;
+    margin: 0 -24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+#plus {
+    background-color: var(--primary-color);
+    height: 82px;
+    width: 82px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 45px;
+}
+
+#plus>svg {
+    position: absolute;
+    left: 40%;
+    bottom: 35px;
+}
 
 @media screen and (min-width: 770px) {
     body {
