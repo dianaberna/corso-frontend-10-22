@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Lato:wght@300;400;700&display=swap");
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: white;
+    /*display: flex;
+    flex-wrap: wrap;*/
+}
+h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: #2F2105;
+}
+
+/* CARD */
+
+.all_card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F9D9AA;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.card-wrap {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px;
+    margin: 5px;
+    background-color: white;
+    width: 343px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score > div {
+    padding: 5px 12px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.score > div > img{
+    width: 14px;
+    height: 14px;
+}
+
+.card .score {
+    width: fit-content;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    padding: 4px;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card .img-mask {
+    position: relative;
+    width: 100%;
+    height: 226px;
+}
+
+.card .img-mask img {
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-title, .card-footer{
+    padding: 0px 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.card > .card-title > p {
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card > div > div {
+    display: flex;
+    gap: 2rem;
+}
+
+.card-footer .temperature{
+    display: flex;
+    align-items: center;
+}
+
+.card-footer .temperature span{
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.card .card-footer .hot {
+    border: 3px solid #ff912b;
+    color: #ff912b;
+}
+
+.card .card-footer .cold {
+    border: 3px solid #ffd28f;
+    color: #ffd28f;
+}
+
+.card-footer button {
+    border: 44px;
+    background-color: #ff912b;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* SERVIZI */
+
+.all_service{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div .service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service > h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+.service > p{
+    font-size: 18px;
+    margin-top: -10px;
+}
+.service > img{
+    width: 159px;
+    height: 159px;
+}
+
+/*
+
+
+.box_score{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(2px);
+    border-radius: 27px;
+    width: 70px;
+    height: 34px;
+    position:absolute;
+}
+
+.score{
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 12px;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 14px;
+    left: 3.5rem;
+    top: 3.5rem;
+    width: fit-content;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+*/
