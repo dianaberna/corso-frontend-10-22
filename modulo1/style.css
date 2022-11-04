@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+
+
+body{
+    font-family: 'work Sans', sans-serif;
+    padding: 50px;
+    margin: 50px;
+    margin-top: 50px;
+    background-size: 200px;
+}
+
+  header{
+    padding-top: 2rem;
+}
+
+p, h3{
+    font-size: 15px;
+    position: relative;
+    
+
+}
+
+h1{
+    font-size: 40px;
+    color: black;
+    
+}
+
+h2{
+    font-size: 20px;
+    color: black;
+}
+
+h1, h2, h3{
+    font-weight: 1.25rem;
+}
+span{
+  color: #A8A8A8;
+  right: 100px;
+}
+ /* Header */
+
+  header > div{
+    display:flex ;
+    justify-content: space-between
+  }
+
+  header button{
+    border: 0px;
+    background-color: transparent;
+    cursor:pointer;
+  }
+
+  header input{
+    background-color: #C4C4C4;
+    border: 10px;
+    border-radius: 16px;
+    padding: 10px; /* 10px 10px 10px 10px*/
+    padding-left: 2rem;
+    font-size: 20px;
+    font-family: inherit;
+    width: 100%;
+  }
+
+  header > div {
+    display: flex;
+    align-items: center;
+  }
+
+  header > div > svg{
+    position: absolute;
+    padding-left: 5px;
+  }
+
+  /* Sezione "Last contacted" */
+
+  
+
+  #contacted .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  #contacted2.container{
+    overflow-y: scroll;
+  }
+
+  #contacted2 .wrapper{
+    display: flex;
+    gap: 1rem;
+    width: fit-content;   
+  }
+
+  #contacted .container .square ,
+  #contacted .container .square ,
+  #list  .square{
+    width: 48px;
+    height: 50px;;
+    background-color: #C4C4C4;
+    background-position: right;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 5px; 
+
+  }
+  .container > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #list .square{
+     min-width: 50px;
+  }
+
+  #contacted  .container .square > div,
+  #contacted2 .container .square > div{
+    width: 15px;
+    height: 15px;
+    top: 35px;
+    left: 37px;
+    background-color: #333333;
+    border-radius: 50%;
+    bottom: 12px;
+    right: 5px;
+    position: absolute;
+  }
+
+  /*Sezione lista dei contatti*/
+
+  #list{
+      margin: 2rem 2rem 10rem 0rem;
+      background-color: #F4F4F4 ;
+      border-radius: 20px 20px 0px 0px;
+      padding: 2px 10px 10px 10px;
+      box-shadow: 0px 4px 16px rgda (0, 0, 0, 0, 25);
+  }
+
+  #list > div{
+    margin-bottom: 1rem;
+}
+
+  #list .container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+  
+  #list.container h3, #list .container p{
+    margin: 0;
+  }
+  
+  #list.container > div > div{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #list.container > div > div > span{
+    color: #A8A8A8
+     }
+     .container > div > div >span{
+      position:right
+      
+      
+     }
+  
+  @media screen and  (min-width: 300px)  {
+    header input {
+        width: 300px;
+    }
+  
+  }
+
+
+    
