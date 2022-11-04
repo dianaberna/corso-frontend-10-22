@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+  background-color: aquamarine;
+}
+
+main{
+  background-color:#FCFCFC;
+  border: .3125rem solid black;
+  border-radius: 1.5rem;
+  width: 390px;
+  height: 844px;
+  margin: 1.25rem 1.875rem;
+  padding: 4.375rem 1.5rem 2.5rem;
+}
+
+section h1{
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+section h2{
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+section p{
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+section > img {
+  width: 100%
+}
+
+.add_info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .625rem;
+  margin-bottom: 1.25rem;
+}
+
+
+
+/* FAMILY MEMBERS ACCESS*/
+
+/*Contenitore cerchi*/
+#section_members .all_circle{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/*Contenitore cerchio + check*/
+#section_members .all_circle > div{
+  display: flex;
+  position: relative;
+}
+
+/*Check*/
+#section_members .all_circle > div > img{
+  width: .8331rem;
+  height: .8331rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*Cerchio*/
+#section_members .circle{
+  background-color:#C4C4C4;
+  width: 3.8125rem;
+  height: 3.8125rem;
+  border-radius: 50%;
+}
+
+
+/* DEVICES IN LIVING ROOM */
+
+/*Contenitore delle card*/
+#section_device .all_device{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.0625rem;
+}
+
+/*Singola card*/
+#section_device .device{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F4F4F4;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: .25rem;
+  width: 6.6875rem;
+  height: 8.125rem;
+}
+
+/*Immagine nella card*/
+#section_device .device svg{
+  /*position: absolute;
+  top: 2.3125rem;
+  left: 1.875rem;*/
+  padding-top: 2rem;
+}
+
+/*Testo nella card*/
+#section_device .device p{
+  font-weight: 600;
+  /*position: absolute;*/
+  bottom: 0rem;
+}
+
+/*Cerchio colorato nella card*/
+#section_device .circle-green,
+#section_device .circle-yellow {
+  border-radius: 50%;
+  width: .625rem;
+  height: .625rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+#section_device .circle-green{
+  background-color: #24A148;
+}
+#section_device .circle-yellow{
+  background-color: #F1C21B;
+}
+
+/*Trasparenza della card*/
+#hidden{
+  opacity: 0.2;
+}
