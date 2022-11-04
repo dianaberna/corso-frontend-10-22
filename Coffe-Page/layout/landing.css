@@ -981,14 +981,7 @@ footer{
 }
 .descr-foot{
     height: 50%;
-    /* border: 1px solid; */
-    width: 70%;
-    display: flex;
-    border-bottom: 1px solid;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
+    width: 100%;
 }
 .logo-foot{
     width: 352px;
@@ -1014,39 +1007,48 @@ footer{
     border-radius: 60px;
     padding-top: 10px;
 }
-.info-foot{
-    display: flex;
-    list-style: none;
-    width: 75%;
-    /* padding-left: 120px; */
-}
 .info{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    gap: 2rem; 
-    width: 25%;
+    gap: 2rem;
+    list-style: none;
 }
 .info-titolo{ font-size: 18px;
     font-weight: bold; }
 .info__Compa{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 2rem;
 }
-.in__fo{
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 2rem; 
-    width: 25%;
-    margin: 30px;
-    justify-content: center;
-}
+
 .Copy {
     padding: 30px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    height: 100%;
+    margin-left: 70px;
+}
+.flex-items{
+    width: 25%;
+    /* border: 1px solid; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+  
+.foot-line{
+    width: 80%;
+    margin-top: 25px;
+    background: #1D1D1D;
+    border: 1px solid #1D1D1D;
+    border-radius: 50px;
 }
