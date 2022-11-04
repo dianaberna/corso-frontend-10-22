@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    padding-left: 5px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 h1, h2, h3 {
@@ -64,12 +64,16 @@ header {
     gap: 2rem;
 }
 
-.follower h3 { 
+.follower h3 {
     display: flex;
     justify-content: center;
 }
 
-
+.follower h2 { 
+    display: flex;
+    justify-content: center;
+    margin-block-end: -15px;
+}
 
 .profile {
     display: flex;
@@ -90,8 +94,8 @@ header {
 }
 
 .square {
-    width: 110px;
-    height: 110px;
+    width: 6.875rem;
+    height: 6.875rem;
     background-color: #c4c4c4;
 }
 
@@ -108,14 +112,23 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    overflow: scroll;
     width: fit-content;
 }
 
+.overflow {
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.overflow::-webkit-scrollbar {
+    display: none;
+}
 .user {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
 }
+
+ .user h4 {
+    margin-block-start: -15px;
+ }
