@@ -70,16 +70,16 @@ main>section>div>p {
     margin: 0;
 }
 
-main>section>div>h5 {
+section h5 {
     margin: 0;
+    margin-bottom:.9375rem;
 }
 
 #scrollbar {
     overflow-x: scroll;
     display: flex;
     gap: 10px;
-    margin-right: -24px;
-    margin-top: .9375rem;
+    margin: 0 -24px 1.875rem -24px;
 }
 
 .categories-food {
@@ -99,9 +99,93 @@ main>section>div>h5 {
     gap: 5px;
 }
 
+.categories-food:first-child {
+    margin-left: 24px;
+}
+
+.categories-food:last-child {
+    margin-right: 24px;
+}
+
 .categories-food>div>p {  
     font-size: small;
 }
 
 /* sezione open restaurant */
 
+
+.restaurants__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+.restaurants__card--img {
+    width: 100%;
+    align-self: center;
+    margin-bottom: .625rem;
+}
+
+.restaurants__card--delivery {
+    display: flex;
+    gap: 10px;
+    margin-bottom: .3125rem;
+}
+
+.restaurants__card--delivery>span {
+    font-size: small;
+}
+
+
+.restaurant__card--transparent-block {
+    background: rgba(82, 82, 82, 0.8);
+    backdrop-filter: blur(2.5px);
+    border-radius: 8px;
+    width: 6.5625rem;
+    height: 2.5rem;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.left-transparent-block {
+    position: absolute;
+    left: 15px;
+    bottom: 100px;
+}
+
+.right-transparent-block {
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+
+.restaurants__card div:last-of-type {
+    display: flex;
+    gap: 10px;
+}
+
+.restaurants__card--tag {
+    background-color: var(--buttons-color);
+    border-radius: 5px;
+}
+
+.restaurants__card--tag>p {
+    font-size: small;
+    margin: 5px;
+}
+
+/* footer fixed */
+
+
+
+@media screen and (min-width: 770px) {
+    body {
+        padding: 24px 20%;
+    }    
+}
