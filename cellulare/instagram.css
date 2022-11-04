@@ -6,6 +6,16 @@ body {
     padding: 1rem;
     margin: 0;
     }
+   
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    }
+
+h3 {font-size: 14px ;
+    font-weight: 400px ;
+
+}
 
 header {
     display: flex;
@@ -25,11 +35,12 @@ header {
     font-size: .875rem;
 }
 
-.follower {
+.follower { 
     display: flex;
     justify-content: center;
-    gap: .125rem;
+    
 }
+
    
 
 
