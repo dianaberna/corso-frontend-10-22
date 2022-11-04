@@ -189,15 +189,13 @@
         </div>
         <div class="graphs__source">
           <div>            
-            <button role="radio" name="graphs__source">
-              Day
-            </button>
-            <button role="radio" name="graphs__source">
-              Week
-            </button>
-            <button role="radio" name="graphs__source">
-              Month
-            </button>
+            <form id="left">
+              <section>
+                <input type="radio" name="radio1" id="Day" value="Day" checked><label for="Day">Day</label>
+                <input type="radio" name="radio1" id="Week" value="Week"><label for="Week">Week</label>
+                <input type="radio" name="radio1" id="Month" value="Month"><label for="Month">Month</label>
+              </section>
+            </form>
           </div>
           <span>256 Miles</span>
         </div>
@@ -308,7 +306,7 @@
             </svg>              
           </div>
         </div>
-        <div class="graphs__legend">
+        <div class="graphs__legend__left">
           <div>1PM</div>
           <div></div>
           <div>2PM</div>
@@ -325,13 +323,51 @@
         </div>        
       </div>
       <div>
-        <h2><span>Car</span> Statistics</h2>
+        <div class="graphs__title">
+          <h2><span>Car</span> Statistics</h2>
+        </div>
+        <div class="graphs__source">
+          <span>20 February 2022</span>
+          <div>            
+            <form id="right">
+              <section>
+                <input type="radio" name="radio2" id="Day_r" value="Day" checked><label for="Day_r">Day</label>
+                <input type="radio" name="radio2" id="Week_r" value="Week"><label for="Week_r">Week</label>
+                <input type="radio" name="radio2" id="Month_r" value="Month"><label for="Month_r">Month</label>
+              </section>
+            </form>
+          </div>
+
+        </div>
+        <div class="graphs__towers">
+          
+        </div>
+        <div class="graphs__legend__right">
+          <div>7am</div>
+          <div></div>
+          <div>9am</div>
+          <div></div>
+          <div>11am</div>
+          <div></div>
+          <div>1pm</div>
+          <div></div>
+          <div>3pm</div>
+          <div></div>
+          <div>5pm</div>
+          <div></div>
+          <div>7pm</div>
+          <div></div>
+          <div>9pm</div>
+        </div>        
       </div>
     </div>
     <div class="cars">
       <div>Mini Cooper</div>
       <div>Porsche 911 Carrera</div>
       <div>Porsche 911 Carrera</div>
+      <div>
+
+      </div>
     </div>
   </main>
 </body>

@@ -146,29 +146,42 @@ main > div > div{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 1rem;
 }
-.graphs__source button{
+.graphs__source section{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.graphs__source form input{
+  display: none;
+}
+.graphs__source form label{
+  margin: 0;
   font-size: .625rem;
   font-weight: 700;
   background-color: transparent;
   color: #5F6165;
   border-radius: 1.5rem;
-  border: none;
+  text-align: center;
   padding: 0.25rem 0.75rem;
   cursor: pointer;
-  transition: 150ms;
+  border: none;
 }
-.graphs__source button:focus{
+.graphs__source #left input:checked + label{
   background-color: #2884FF;
   color: white;
 }
+.graphs__source #right input:checked + label{
+  background-color: #FF764C;
+  color: white;
+}
+
 .graphs__source span{
   font-size: .875rem;
   font-weight: 700;
 }
 .graphs__towers,
-.graphs__legend{
+.graphs__legend__left{
   display: grid;
   grid-template-columns: 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr;
   align-items: baseline;
@@ -196,7 +209,8 @@ main > div > div{
 .graphs__towers > div > svg > rect{
   fill: #F4F5F9;
 }
-.graphs__legend{
+.graphs__legend__left,
+.graphs__legend__right{
   font-size: .875rem;
   color: #808191;
 }
@@ -210,7 +224,7 @@ main > div > div{
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 0.125rem 1.5rem 0.125rem 0.5rem;
+  padding: 0.125rem 1.25rem 0.125rem 0.25rem;
   top: 4rem;
   left: 2rem;
   width: 2rem;
@@ -220,10 +234,14 @@ main > div > div{
   margin: 0;
   padding: 0;
 }
+.graphs__legend__right{
+  display: grid;
+  grid-template-columns: 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr;
+  align-items: baseline;
+  text-align: center;
+}
 
 
-/* come fare a tenere un button pre-selezionato selezionato (tipo fosse un radio-button) */
-/* barre nel grafico */
 
 /*
 @media (prefers-color-scheme: dark) {

@@ -59,12 +59,16 @@ header{
   display: flex;
   align-items: center;
 }
+#top-right svg{
+  cursor: pointer;
+}
 #top-right img{
   height: 2.875rem;
   width: 2.875rem;
   object-fit: cover;
   border-radius: 50%;
   margin-left: 2.5rem;
+  cursor: pointer;
 }
 /* -- NAVIGATION SIDEBAR -- */
 aside{
