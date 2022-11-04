@@ -3,6 +3,8 @@
   color-scheme: light dark;
   --background_light: #FFFFFF;
   --background_dark: #242731;
+  --font_light: #000000;
+  --font_dark: #FFFFFF;
 } 
 body{
   font-family: 'DM Sans', sans-serif;
@@ -20,6 +22,7 @@ header{
   align-items: center;
   justify-content: space-between;
   background-color: var(--background_light);
+  z-index: 1000;
 }
 #searchbar{
   background-color: #F5F4F6;
@@ -75,6 +78,7 @@ aside{
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--background_light);
+  z-index: 1000;
 }
 #logo{
   display: flex;
@@ -103,6 +107,7 @@ aside nav > a{
   text-decoration: none;
   border-radius: 0.375rem;
   margin-bottom: .625rem;
+  transition: 300ms;
 }
 aside nav > a:hover,
 aside footer > a:hover{
@@ -130,8 +135,8 @@ main{
 
 
 
-
-/* @media (prefers-color-scheme: dark) {
+/*
+@media (prefers-color-scheme: dark) {
   body {
     color: white;
     background: #1F2128;
@@ -153,4 +158,4 @@ main{
     background-color: #292E3D;
   }
 }
- */
+*/

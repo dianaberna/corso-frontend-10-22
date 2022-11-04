@@ -1,0 +1,23 @@
+@import "./general.css";
+
+main{
+  background-color: #F5F5F5;
+  margin: 1.75rem 2.75rem 1.875rem 1.875rem;
+}
+aside nav > a:nth-of-type(8){
+  background-color: #f3f5f8;
+}
+
+
+
+/*
+@media (prefers-color-scheme: dark) {
+  main {
+    background-color: #1F2128;
+    color: var(--font_dark);
+  }
+  aside nav > a:nth-of-type(1){
+    background-color: #292E3D;
+  }
+}
+*/

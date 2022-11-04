@@ -4,6 +4,9 @@ main{
   background-color: #F5F5F5;
   margin: 1.75rem 2.75rem 1.875rem 1.875rem;
 }
+aside nav > a:nth-of-type(1){
+  background-color: #f3f5f8;
+}
 .statistics{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -33,6 +36,8 @@ main > div > div{
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 300ms;
+  cursor: pointer;
 }
 .statistics span:first-of-type{
   margin-top: .625rem;
@@ -60,21 +65,182 @@ main > div > div{
   top: 2rem;
 }
 
-/*-----*/
-#energy
-{
+/*-- gestione colori scheda Energy e Break Fluid --*/
+#energy > div:first-of-type,
+#break-fluid > div:first-of-type{
+  background-color: rgba(161, 98, 247, 0.1);;
+}
+#energy:hover,
+#break-fluid:hover{
   background-color: #A162F7;
   color: white;
 }
-#energy > div:first-of-type{
+#energy:hover .percent path:nth-of-type(1),
+#break-fluid:hover .percent path:nth-of-type(1){
+  fill: #B37EFC;
+}
+#energy:hover .percent path:nth-of-type(2),
+#break-fluid:hover .percent path:nth-of-type(2){
+  fill: white;
+}
+#energy:hover .icon path,
+#break-fluid:hover .icon path{
+  fill: white;
+}
+#energy:hover > div:first-of-type,
+#break-fluid:hover > div:first-of-type{
   background-color: #A66FF0;
 }
+/*-- gestione colori scheda Range --*/
 #range > div:first-of-type{
   background-color: rgba(255, 126, 134, 0.1);
 }
+#range:hover{
+  background-color: #FF7E86; /*rgb(161,98,247) - rgb(255,126,134)*/
+  color: white;
+}
+#range:hover .percent path:nth-of-type(1){
+  fill: rgb(255,154,139) /*rgb(179,126,252) - rgb(255,154,139)*/;
+}
+#range:hover .percent path:nth-of-type(2),
+#range:hover .icon path{
+  fill: white;
+}
+#range:hover > div:first-of-type{
+  background-color: rgb(255,139,127) /*rgb(166,111,240) - rgb(255,139,127)*/;
+}
+/*-- gestione colori Tire Wear --*/
+#tire-wear > div:first-of-type{
+  background-color: rgba(246, 204, 13, 0.1);
+}
+#tire-wear:hover{
+  background-color: rgb(246, 204, 13);
+  color: white;
+}
+#tire-wear:hover .percent path:nth-of-type(1){
+  fill: rgb(255,232,18);
+}
+#tire-wear:hover .percent path:nth-of-type(2),
+#tire-wear:hover .icon path{
+  fill: white;
+}
+#tire-wear:hover > div:first-of-type{
+  background-color: rgb(251,227,6);
+}
+/* -- Fine gestione colori delle statistics -- */
+.graphs>div{
+  padding: 1rem 2.25rem;
+}
+.graphs h2{
+  margin: 0;
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #242731;
+}
+.graphs h2 span{
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.graphs__source{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.graphs__source button{
+  font-size: .625rem;
+  font-weight: 700;
+  background-color: transparent;
+  color: #5F6165;
+  border-radius: 1.5rem;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  transition: 150ms;
+}
+.graphs__source button:focus{
+  background-color: #2884FF;
+  color: white;
+}
+.graphs__source span{
+  font-size: .875rem;
+  font-weight: 700;
+}
+.graphs__towers,
+.graphs__legend{
+  display: grid;
+  grid-template-columns: 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr;
+  align-items: baseline;
+  text-align: center;
+}
+.graphs__towers{
+  padding-top: 1rem;
+  position: relative;
+  align-items:flex-end;
+}
+.graphs__towers > div:nth-child(even){
+  background-color: #F2F2F2;
+  width: 1px;
+  height: 100%;
+}
+.graphs__towers > div > svg{
+  cursor: pointer;
+}
+.graphs__towers > div:nth-child(odd):hover svg > rect{
+  fill: #2884FF;
+}
+.graphs__towers > div:nth-child(odd):hover .graphs__comments{
+  visibility: visible;
+}
+.graphs__towers > div > svg > rect{
+  fill: #F4F5F9;
+}
+.graphs__legend{
+  font-size: .875rem;
+  color: #808191;
+}
+.graphs__comments{
+  color: white;
+  background: #282B32;
+  font-weight: 700;
+  font-size: .625rem;
+  box-shadow: 0px 0.25rem 0.875rem rgba(0, 0, 0, 0.14);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0.125rem 1.5rem 0.125rem 0.5rem;
+  top: 4rem;
+  left: 2rem;
+  width: 2rem;
+  visibility: hidden;
+}
+.graphs__comments > p{
+  margin: 0;
+  padding: 0;
+}
 
-/* @media (prefers-color-scheme: dark) {
+
+/* come fare a tenere un button pre-selezionato selezionato (tipo fosse un radio-button) */
+/* barre nel grafico */
+
+/*
+@media (prefers-color-scheme: dark) {
   main {
     background-color: #1F2128;
+    color: var(--font_dark);
   }
-} */
+  aside nav > a:nth-of-type(1){
+    background-color: #292E3D;
+  }
+  .statistics>div{
+    background-color: var(--background_dark);
+  }
+  .percent path:nth-of-type(1){
+    fill: #1F2128;
+  }
+}  
+*/
+
+/* appeareance none */
