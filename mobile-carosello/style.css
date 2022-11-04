@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    padding: 2rem;
+    margin: 0;
+    margin-top: 1rem;
+    background-color: #FCFCFC;
+}
+
+header {
+    padding-top: 1.4rem;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lente-ricerca {
+    border: transparent;
+    background-color: transparent;
+}
+
+.menu-top {
+    border: transparent;
+    background-color: transparent;
+}
+
+.anno {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    margin-left: 3rem;
+}
+
+.menu-anno {
+    border: transparent;
+    background-color: transparent;
+}
+
+.immagini {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.data-meteo {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.giorno-data-meteo {
+    background: transparent;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 4rem;
+    border: 1px solid #D0D0D0;
+}
+
+p {
+    padding: 0rem 1rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.icona-meteo {
+    position: absolute;
+    margin-left: -4rem;
+    margin-top: 0.7rem; 
+}

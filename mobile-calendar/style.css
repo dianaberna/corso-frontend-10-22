@@ -1,0 +1,121 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    padding: 2rem;
+    margin: 0;
+    margin-top: 2rem;
+    background-color: #FCFCFC;
+}
+
+header {
+    padding-top: 1.4rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h2 {
+    margin: 1.6;
+    margin-top: 2rem;
+}
+
+.welcome.back {
+    margin-top: 20%;
+}
+
+.mese-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.4rem;
+    margin-top: -3.5rem;
+}
+
+div.mese-menu span {
+    cursor: pointer;
+}
+
+button {
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+.giorni > div {
+    display: flex;
+    flex-direction: column;
+}
+
+button a:hover {
+	color: rgb(93, 93, 93);
+}
+
+span {
+    color: rgba(60, 60, 67, 0.3);
+}
+
+.giorni {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.messaggio {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.orario {
+    width: 2rem;
+}
+
+span.etichetta {
+    position: absolute;
+    margin-left: 6rem;
+    background: #262626;
+    border-radius: 0.8rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: white;
+    width: 4rem;
+    height: 1rem;
+    padding: 0 0.4rem;
+
+}
+
+p.messaggio {
+    padding: 1rem 3rem;
+    background: #F4F4F4;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    width: 20rem;
+    height: 3rem;
+}
+
+
+
+.menu {
+    margin-top: 2.4rem;
+    margin-left: -3rem;
+    cursor: pointer;
+}
+
+.bottone-fisso {
+    float: right;
+    position: fixed;
+    width: 4rem;
+    height: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    background: #C4C4C4;
+    padding: 1rem;
+    right: 1%;
+    bottom: 1%;
+    border-radius: 2rem;
+    max-width: 14%;
+    max-height: 10%;
+}
