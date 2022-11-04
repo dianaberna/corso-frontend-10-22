@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@700&display=swap');
+
+:root {
+    --color-greydark: #1F2128;
+    --color-primarygrey: #242731;
+    --color-white: #ffffff;
+    --color-greytext: #808191;
+    --color-greydark4: #7C7C8D;
+    --color-pink: #FF5E6F;
+    --color-purple: #A162F7;
+    --color-msggrey: #2B2E38;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--color-greydark);
+    position: relative;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+nav {
+    width: 15.5rem;
+    background-color: var(--color-primarygrey);
+    padding: 30px;
+}
+
+nav li {
+    list-style: none;
+    line-height: 5rem;
+    font-weight: 500;
+    font-size: .875rem;
+    color: var(--color-greytext);
+}
+
+
+.flex {
+    display: flex;
+    align-content: space-between;
+    gap: 0.1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+
+.header {
+    background-color: var(--color-primarygrey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.notifications {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 1.875rem;
+}
+
+
+.notification {
+    position: absolute;
+    margin-top: -33px;
+    margin-left: 12px;
+}
+
+.img-mask img {
+    border-radius: 50%;
+}
+
+.searchbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.searchbar input{
+    align-items: center;
+    margin-left: 20px;
+    padding-left: 40px;
+    border-radius: 8px;
+    color: var(--color-greydark4);
+    background-color: var(--color-greydark);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    width: 350px;
+    height: 45px;
+    border: none;
+    
+}
+
+.searchbar svg {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+}
+
+.messages {
+    background-color: var(--color-primarygrey);
+    border-style: solid;
+    border-color: var(--color-msggrey);
+    border-width: 1px;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content	;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: var(--color-msggrey);
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+.chat-header-user {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    padding: 30px;
+    
+}
+
+.user2-msg {
+    background-color: var(--color-purple);
+    border-radius: 10px 0px 10px 10px;
+    width: fit-content;
+
+}
+
+.user1-msg {
+    background-color: var(--color-msggrey);
+    border-radius: 0px 10px 10px 10px;
+    width: fit-content;
+}
+
+.active .out {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -17px;
+}
+
+.active .in {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: -15px;
+}
+
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.chat-header-opt {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    gap: 0.5rem;   
+    padding: 30px;
+
+}
+
+.textbar input {
+    align-items: center;
+    margin-left: 20px;
+    padding-left: 40px;
+    border-radius: 8px;
+    color: var(--color-greydark4);
+    background-color: var(--color-msggrey);
+    border: solid;
+    border-width: 1px;
+    border-color: var(--color-greydark4);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    width: 350px;
+    height: 45px;
+
+}
+
+.status {
+    color: var(--color-greytext);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.username {
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.user-status {
+    line-height: 25px;
+}
