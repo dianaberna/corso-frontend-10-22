@@ -1,0 +1,63 @@
+.white-circle-ontop {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    border: none;
+}
+
+.left-ontop {
+    top: 64px;
+    left: 24px;
+}
+
+.right-ontop {
+    top: 64px;
+    right: 24px;
+}
+
+#img-with-tops {
+    width: 100vw;
+    margin: -24px -24px 0 -24px;
+    gap: 0;
+}
+
+header>#img-with-tops>img {
+    width: 100%;
+    align-self: center;
+}
+
+#restaurant-info, #restaurant-delivery-reviews, #discount {
+    display: flex;
+    margin: 10px 0;
+}
+
+#restaurant-delivery-reviews {   
+    justify-content: space-between;
+}
+
+#restaurant-delivery-reviews>div {
+    display: flex;
+}
+
+#restaurant-delivery-reviews>div>p, #discount>p, #restaurant-info>p {
+    margin: 0;
+}
+
+#restaurant-info {
+    font-size: small;
+}
+
+#discount {
+    margin-top: 20px;
+    background-color: #c4c4c4;
+    width: 100%;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 770px) {
+    /* regolare qui che si ditrugge tutto header */
+}
