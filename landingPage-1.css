@@ -60,7 +60,7 @@ input {
 
 .lents {
     position: absolute;
-    right: 18rem;
+    right: 20.5rem;
     top: 2rem;
 }
 
@@ -202,6 +202,7 @@ h2 {
     border-radius: 1rem;
     padding: 1rem;
     margin: 0.5rem;
+    position: relative;
 }
 
 .card img {
@@ -209,20 +210,27 @@ h2 {
     width: 97%;
 }
 
-.trasparent_background {
-    width: 10%;
-    background: linear-gradient( 180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%);
+.score>div {
+    padding: 5px 12px;
+    background-color: white;
+    border-radius: 5px;
 }
 
-.score {
+.card .score {
+    width: fit-content;
     position: absolute;
-    left: 0;
-    margin-left: 2.5rem;
-    background-color: #fff;
-    margin-top: 0.65rem;
-    border-radius: 1rem;
-    padding: 0.3rem 0.6rem;
+    left: 2rem;
+    top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 4px;
+    z-index: 1;
     font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .text-row1 {
@@ -362,7 +370,7 @@ article h3 {
 
 .section_what-they-sey {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-end;
     /* gap: 2rem; */
     padding-left: 7rem;

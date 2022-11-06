@@ -38,6 +38,7 @@ header p {
 
 main {
     background: rgb(0, 0, 0);
+    background-image: url("assets/Vector 1.svg");
     background: linear-gradient( 19deg, rgba(0, 0, 0, 1) 67%, rgba(105, 101, 101, 1) 100%);
     opacity: 0, 09;
     display: flex;
@@ -151,6 +152,10 @@ button {
     position: absolute;
     top: -22.5rem;
     right: 2rem;
+}
+
+.vector {
+    margin-top: -14rem;
 }
 
 section {

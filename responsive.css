@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;600&family=Work+Sans:wght@400;600&display=swap");
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 0.875rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #02a28f;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+
+nav li {
+    padding: 0.7rem;
+}
+
+nav div p {
+    font-size: 2.25rem;
+    margin: 0;
+    padding: 0.3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.hamburgher {
+    display: grid;
+}
+
+.hamburgher span {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: #fff;
+    margin: 0.2rem 0;
+    cursor: pointer;
+    display: none;
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 0.5rem;
+}
+
+header section {
+    background-image: url("assetsresp/banner\ image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    min-width: 50%;
+    margin-top: 0.8rem;
+}
+
+header section div {
+    padding: 2rem;
+}
+
+header section div h1,
+header section div p {
+    margin: 0;
+}
+
+aside {
+    width: 30%;
+}
+
+aside h3 {
+    text-align: center;
+    background-color: #02a28f;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+article {
+    display: flex;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 0.65rem;
+    padding: 0.6rem;
+    box-shadow: 0px 0.625rem 1.125rem rgba(0, 0, 0, 0.1);
+}
+
+article div {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+article div h4,
+article div p {
+    margin-top: 0.001rem;
+}
+
+main {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.section_cards {
+    width: 53%;
+}
+
+.cards {
+    /* padding: 1rem; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.title-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #02a28f;
+    padding: 0 1rem;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+}
+
+.title-cards h3,
+.title-cards a {
+    color: #fff;
+    margin: 0.5rem;
+}
+
+.card {
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0.62rem;
+    margin: 0.5rem;
+    width: 47%;
+    box-shadow: 0px 0.625rem 1.125rem rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+}
+
+.text_card {
+    padding: 1rem;
+}
+
+.text_card a {
+    text-decoration: none;
+    color: #02a28f;
+}
+
+.text_card h3 {
+    margin: 0;
+}
+
+.text_card :nth-child(3) {
+    margin-top: 0;
+    color: #616161;
+}
+
+.date {
+    color: #616161;
+    font-size: 0.75rem;
+}
+
+.align {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside div {
+    width: 80%;
+}
+
+footer {
+    background-color: #02a28f;
+    padding: 0.2rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (min-width: 744px) and (max-width: 1024px) {
+    header section {
+        min-width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        color: black;
+    }
+    aside {
+        width: 15%;
+    }
+}
