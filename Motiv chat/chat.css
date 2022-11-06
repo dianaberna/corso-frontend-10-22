@@ -23,22 +23,36 @@ body {
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--color-white);
+
 }
 
 nav {
-    width: 15.5rem;
+    width: 300px;
     background-color: var(--color-primarygrey);
     padding: 30px;
+    position: relative;i
 }
 
 nav li {
     list-style: none;
-    line-height: 5rem;
     font-weight: 500;
     font-size: .875rem;
+    line-height: 40px;
     color: var(--color-greytext);
+    margin-left: -20px;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+}
+
+.navbar {
+    padding-top: 100px;
+}
 
 .flex {
     display: flex;
@@ -104,6 +118,7 @@ nav li {
     
 }
 
+
 .searchbar svg {
     position: absolute;
     display: flex;
@@ -112,32 +127,115 @@ nav li {
 
 }
 
-.messages {
+.searchbar2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+.searchbar2 input {
+    align-items: center;
+    padding-left: 40px;
+    border-radius: 8px;
+    color: var(--color-greydark4);
+    background-color: var(--color-msggrey);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    width: 240px;
+    height: 45px;
+    border: none;
+}
+
+.searchbar2 svg {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.bkg-display {
     background-color: var(--color-primarygrey);
+    margin: 30px 0 0 30px;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 30px;
+    gap: 1px;
+}
+
+.msg-list {
+    background-color: var(--color-primarygrey);
+    width: 300px;
+    padding-right: 30px;
+
+}
+
+.msg-list h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    padding-left: 20px;
+    color: var(--color-greydark4);
+}
+
+.msg-header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.msg-header svg {
+    position: absolute;
+    margin-top: 27px;
+    margin-left: 220px;
+
+}
+
+.msg-header h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color-white);
+}
+
+.messages {
     border-style: solid;
     border-color: var(--color-msggrey);
     border-width: 1px;
     border-radius: 20px;
     width: fit-content;
-    height: fit-content	;
+    height: fit-content;
 }
 
 .chat-header {
     display: flex;
     justify-content: space-between;
+    align-content: center;
     border-style: solid;
     border-color: var(--color-msggrey);
     border-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-radius: 20px;
-}
+    height: 80px;
+
+    }
 
 .chat-header-user {
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5px;
     position: relative;
-    padding: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
     
 }
 
@@ -173,6 +271,7 @@ nav li {
     color: var(--color-white);
     font-weight: 400;
     font-size: 13px;
+    padding: 20px;
 }
 
 .chat-header-opt {
@@ -217,4 +316,21 @@ nav li {
 
 .user-status {
     line-height: 25px;
+}
+
+.pinned, .all {
+    display: flex;
+    align-content: center;
+    position: relative;
+}
+
+.pinned > svg, .all svg {
+    position: absolute;
+    margin-top: 12px;
+}
+
+.svg-pen svg {
+    position: absolute;
+    margin-left: 7px;
+    margin-top: 7px;
 }
