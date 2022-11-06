@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{background: #1F2128;}
+
+.menu{
+    display: flex;
+    padding: 30px 24px 30px 24px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    /* border: 1px solid red; */
+    gap: 25px;
+
+
+}
+ul li{list-style: none; padding: 0px 0px 25px 0px; }
+ul li a{text-decoration: none; color: #808191;}
+
+nav{
+    color:#808191; 
+    /* border: 1px solid red;  */
+    background: #242731;
+    width: 248px;
+    height: 100vh;
+}
+.logo{
+    width: 109px;
+    height: 30px;
+}
+nav  ul li a:hover{ color: #ffff; transition: all 0.9s ease;}
+ul li:hover
+{   background: #292e3d;
+    border-radius: 6px;
+    box-shadow: 0px 0px 90px 25px #292e3d;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+}
+/********************************************************************************************************* 
+Child Menu
+*********************************************************************************************************/
+.menu ul li:nth-child(1){
+    background-image: url('./img/dashboard\ icon.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    /* border: 1px solid; */
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-top: 6px;
+}
+.menu ul li:nth-child(2){
+    background-image: url('./img/Line.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    /* border: 1px solid; */
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-top: 6px;
+}
+.menu ul li:nth-child(3){
+    background-image: url('./img/car.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    /* border: 1px solid; */
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-top: 6px;
+}
+.menu ul li:nth-child(4){
+    background-image: url('./img/borsa.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    /* border: 1px solid; */
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-top: 6px;
+}
+.menu ul li:nth-child(5){
+    background-image: url('./img/shop.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    /* border: 1px solid; */
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-top: 6px;
+}
+.menu ul li:nth-child(6){
+    background-image: url('./img/forbic.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    /* border: 1px solid; */
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-top: 6px;
+}
+.menu ul li:nth-child(7){
+    background-image: url('./img/calend.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    /* border: 1px solid; */
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-top: 6px;
+}
+.menu ul li:nth-child(8){
+    background-image: url('./img/mess.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    /* border: 1px solid; */
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-top: 6px;
+}
+.logout{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 28%;
+    /* border: 1px solid red; */
+    justify-content: flex-end;
+    padding: 30px 24px 30px 24px;
+}
+.logout ul li:nth-child(1){
+    background-image: url('./img/sett.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    /* border: 1px solid; */
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-top: 6px;
+}
+.logout ul li:nth-child(2){
+    background-image: url('./img/log_out.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    /* border: 1px solid; */
+    height: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-top: 6px;
+}
