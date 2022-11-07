@@ -72,7 +72,28 @@ let sommastrana = c + 3;    // il + se ho due stringhe oppure uno dei due è una
 console.log(sommastrana);
 console.log(typeof sommastrana);
 
-console.log("--stampa provanumero con parseInt-- ")
+// conversione esplicita 
+console.log("--- conversione esplicita --- ")
+
+// fa il parsing del valore e recupera il valore
+console.log(parseInt("30px"));  // 30
+console.log(parseInt("50"));    // 50
+// conversione di tipo
+console.log(Number("30px"));    // NaN
+console.log(Number("50"));      // 50
+
+// altri esempi
+console.log(parseInt());        // NaN
+console.log(parseInt(null));    // NaN
+console.log(parseInt(true));    // NaN
+console.log(parseInt(''));      // NaN
+
+console.log(Number());          // 0
+console.log(Number(null));      // 0
+console.log(Number(true));      // 1
+console.log(Number(''));        // 0
+
+console.log("--- stampa provanumero con parseInt-- ")
 let provanumero = "1"
 console.log(typeof provanumero)
 // parseInt -> ci converte una stringa in numero 
