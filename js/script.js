@@ -5,7 +5,7 @@ console.log("ciao mondo");
 // variabile
 
 // var -> globale, quindi esiste fuori e dentro il blocco
-// let/const -> locale al blocco cioè a {  }
+// let/const -> locale al blocco cioè a {  }
 
 var primavariabile; // dichiaro una nuova variabile -> ho una scatola vuota
 primavariabile = 1; // assegno un nuovo valore -> ho aggiunto un valore nella scatola
