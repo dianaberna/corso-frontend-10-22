@@ -280,29 +280,36 @@ console.log("--- loop ---");
 
 // while
 /*
-    dichiarazione/assegnazione variabile per la condizione
-    while(condizione){
-        corpo del while
-        incremento/aggiornamento della variabile per la condizione
-    }
+
+dichiarazione/assegnazione variabile per la condizione
+while(condizione){
+    corpo del while
+    incremento/aggiornamento della variabile per la condizione
+}
+
 */
 
+// stampare 4 numeri a partire da 0
 console.log("inizio while");
-let i = 0;
-while (i < 4) {
+let i = 0; // inizio da 0
+while (i < 4) {  // finché la variabile i è minore di 4 allora eseguo il corpo del while
     console.log(i);
-    // 400 righe di codice e per sbaglio uso la variabile i per contenere una stringa
-    i++; // i = i + 1;
+    // stampa dentro all'html 
+    i = i + 1; 
 }
 console.log("fine while");
 
+// stampare la somma di 20 numeri a partire da 0
+
 /*
 stampa "inizio while"
-i = 0 ciao mondo 
-i = 1 ciao mondo 
-i = 2 ciao mondo 
-i = 3 ciao mondo 
-i < 4 dove i = 4 esce dal while e stampa "fine while"
+i = 0
+    i<4? 0<4? si, stampa "0", i = i + 1 = 0 + 1 = 1
+    i<4? 1<4? si, stampa "1", i = i + 1 = 1 + 1 = 2
+    i<4? 2<4? si, stampa "2", i = i + 1 = 2 + 1 = 3
+    i<4? 3<4? si, stampa "3", i = i + 1 = 3 + 1 = 4
+    i<4? 4<4? no, esce dal while
+stampa "fine while"
 */
 
 // for
@@ -347,3 +354,4 @@ do {
     i++; // i = i + 1
 } while (i < 4);
 console.log("fine do-while");
+
