@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;600&family=Work+Sans:wght@400;600&display=swap");
 body {
     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -54,11 +56,14 @@ nav div p {
 }
 
 header {
+    max-width: 90rem;
+    width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
     margin-top: 2rem;
     gap: 0.5rem;
+    padding: 0;
 }
 
 header section {
@@ -71,11 +76,12 @@ header section {
     min-width: 50%;
     margin-top: 0.8rem;
     border-radius: 2.5rem;
+    flex-grow: 1;
+    min-height: 30rem;
 }
 
 header section div {
-    padding: 2rem;
-    margin-bottom: 1rem;
+    padding: 0rem 0rem 3rem 2rem;
 }
 
 header section div h1,
@@ -120,15 +126,14 @@ article div p {
 }
 
 main {
+    max-width: 90rem;
+    width: 100%;
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: baseline;
     gap: 1rem;
-}
-
-.section_cards {
-    width: 53%;
+    padding: 0;
 }
 
 .cards {
@@ -136,6 +141,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    gap: 2%;
 }
 
 .title-cards {
@@ -158,8 +164,7 @@ main {
     background: #ffffff;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 0.62rem;
-    margin: 0.5rem;
-    width: 47%;
+    width: 48%;
     box-shadow: 0px 0.625rem 1.125rem rgba(0, 0, 0, 0.1);
 }
 
@@ -210,35 +215,22 @@ footer p {
     color: #fff;
 }
 
-@media screen and (min-width: 744px) and (max-width: 1024px) {
-    header {
-        display: flex;
-        align-content: center;
-        justify-content: space-around;
-    }
-    header section {
-        background-size: cover;
-        display: flex;
-        justify-content: flex-start;
-        gap: 0;
-    }
-    header section div {
-        padding: 0;
-        margin-bottom: 5rem;
-        margin-left: 3.5rem;
-    }
-    h1 {
-        font-size: 1.5rem;
-    }
-    aside {
-        width: 35%;
-    }
-    .card {
-        width: 45%;
+header,
+main {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1439px) {
+    header,
+    main {
+        width: calc(100% - 4rem);
+        padding: 0rem 2rem;
+        margin: 0;
     }
 }
 
-@media screen and (min-width: 428px) and (max-width: 744px) {
+@media screen and (max-width: 1023px) {
     aside {
         display: none;
     }
@@ -249,9 +241,26 @@ footer p {
         display: flex;
     }
     header section {
-        width: fit-content;
+        gap: 0;
     }
-    h1 {
-        font-size: 0.5rem;
+    /* header section div {
+        padding: 0;
+        margin-bottom: 5rem;
+        margin-left: 3.5rem;
+    } */
+    aside {
+        width: 35%;
     }
 }
+
+@media screen and (max-width: 743px) {
+    .cards {
+        gap: 0;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+
+/* @media screen and (max-width: 428px) {} */

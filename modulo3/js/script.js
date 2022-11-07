@@ -350,12 +350,20 @@ do {
 } while (i < 4);
 console.log("fine do-while");
 
+let somma12 = 0; //scope globale stesso nome di variabile
+{
+    let somma12 = 2; // scope locale
+    console.log(somma12);
+}
+console.log(somma12);
+
 //stampare la somma di 20 numeri a partire da 0
-somma = 0;
+let somma3 = 0;
 let i2 = 0;
 
 while (i2 < 20) {
-    somma += i2;
+    somma3 += i2;
     i2++;
-    console.log(i2);
+
+    console.log(somma3);
 }
