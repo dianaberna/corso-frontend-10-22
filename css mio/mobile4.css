@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+:root{
+    --color-gray1:#C4C4C4;
+    --color-gray2:#525252;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: black; 
+}
+header{
+    display:flex;
+    
+}
+header img:first-child {
+    height:340px;
+    width: 390px;
+    margin: -6px;
+    
+}
+ .commands {
+    width: 3rem;
+    height:3rem;
+    border-radius: 50px;
+    background-color: var(--color-gray1);
+    position:absolute;
+    border:0px;
+    margin-top: 27px;
+    margin-left: 1rem;;
+ }
+ .commands img:first-of-type{
+    width: 1rem;
+    height:2rem;
+ }
+ .commands img:nth-of-type(2){
+    width:1rem;
+    height:0.5rem;
+ }
+.commands:nth-of-type(2){
+margin-left:19rem;
+}
+header> img:last-child{
+    width: 46px;
+    height: 46px;
+    position:absolute;
+    margin-top:19rem;
+    margin-left: 19rem;
+}
+
+/*main*/
+main {
+  
+color:white
+}
+
+/*Songs,Followers,Following*/
+
+.list li:last-child {
+    font-size: 24px;
+    font-weight:600;
+}
+.list li:first-child{
+    font-size: 14px;
+    font-weight:400;
+}
+.list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#list{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    justify-content:space-around;
+    padding-right: 1.5rem;
+}
+
+/*popular*/
+
+.album {
+    background-color: var(--color-gray1);
+    height: 130px;
+    width: 130px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.album > div {
+    background-color: var(--color-gray2);
+    height: 100px;
+    width: 100px;
+}
+/*.album +img {
+    position:absolute;
+    padding-left:7.5rem;
+
+}*/
+
+.play{
+    display: flex;
+    flex-direction: column;
+}
