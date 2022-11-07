@@ -175,6 +175,10 @@ main > div > div{
   background-color: #FF764C;
   color: white;
 }
+.graphs__source #right{
+  background-color: #F5F4F6;
+  border-radius: 1.5rem;
+}
 
 .graphs__source span{
   font-size: .875rem;
@@ -240,10 +244,76 @@ main > div > div{
   align-items: baseline;
   text-align: center;
 }
+.graphs__rollercoaster{
+  margin: 2rem 0 0.5rem 0;
+}
+.cars article{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.75rem;
+  border-radius: 0.875rem;
+  cursor: pointer;
+}
+.cars article>div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cars article>div:nth-of-type(1){
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-weight: 700;
+  gap: 0.5rem;
+  color: #242731;
+  margin-bottom: .75rem;
+}
+.cars article>div:nth-of-type(2){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: .75rem;
+}
+.cars article>div:nth-of-type(3){
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  color: #1F2128;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.cars article>div:nth-of-type(4){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #72767C;
+  font-weight: 500;
+  font-size: .875rem;
+}
+.cars article>div:nth-of-type(4)>div:nth-of-type(1){
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.cars article:nth-of-type(1)
+{
+  background-color: #E1DFA4;
+}
+.cars article:nth-of-type(2)
+{
+  background-color: #E3ECF1;
+}
+.cars article:nth-of-type(3)
+{
+  background-color: #F4E3E5;
+}
 
 
 
-/*
+/*appunti per fare il radio-button responsivo https://stackoverflow.com/questions/1431726/css-selector-for-a-checked-radio-buttons-label */
+
+
 @media (prefers-color-scheme: dark) {
   main {
     background-color: #1F2128;
@@ -258,7 +328,22 @@ main > div > div{
   .percent path:nth-of-type(1){
     fill: #1F2128;
   }
+  .graphs>div{
+    background-color: var(--background_dark);
+  }
+  .graphs h2{
+    color: var(--font_dark);
+  }
+  .graphs__towers > div:nth-child(even){
+    background-color: #282C2F;
+  }
+  .graphs__towers > div:nth-child(odd) svg > rect{
+    fill: #1F2128;
+  }
+  .graphs__source #right{
+    background-color: #2B2E38;
+  }
 }  
-*/
+
 
 /* appeareance none */
