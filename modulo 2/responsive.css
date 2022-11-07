@@ -70,10 +70,12 @@ header section {
     align-items: flex-end;
     min-width: 50%;
     margin-top: 0.8rem;
+    border-radius: 2.5rem;
 }
 
 header section div {
     padding: 2rem;
+    margin-bottom: 1rem;
 }
 
 header section div h1,
@@ -106,6 +108,10 @@ article div {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
+}
+
+article img {
+    width: 100%;
 }
 
 article div h4,
@@ -205,15 +211,47 @@ footer p {
 }
 
 @media screen and (min-width: 744px) and (max-width: 1024px) {
-    header section {
-        min-width: 25%;
+    header {
         display: flex;
-        justify-content: center;
+        align-content: center;
+        justify-content: space-around;
     }
-    nav ul {
-        color: black;
+    header section {
+        background-size: cover;
+        display: flex;
+        justify-content: flex-start;
+        gap: 0;
+    }
+    header section div {
+        padding: 0;
+        margin-bottom: 5rem;
+        margin-left: 3.5rem;
+    }
+    h1 {
+        font-size: 1.5rem;
     }
     aside {
-        width: 15%;
+        width: 35%;
+    }
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 428px) and (max-width: 744px) {
+    aside {
+        display: none;
+    }
+    nav ul {
+        display: none;
+    }
+    .hamburgher span {
+        display: flex;
+    }
+    header section {
+        width: fit-content;
+    }
+    h1 {
+        font-size: 0.5rem;
     }
 }
