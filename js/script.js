@@ -340,3 +340,5 @@ do {
 } while (i < 4);
 console.log("fine do-while");
 
+
+console.log("fine script.js")
