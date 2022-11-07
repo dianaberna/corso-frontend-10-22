@@ -29,12 +29,23 @@ nav ul {
 
 nav ul a {
     text-decoration: none; 
-    color: rgb(240, 56, 117);
     font-size: 1.1rem;
     font-size: 1.85rem;
     font-family: Lato;
     font-style: bold;
     font-weight: 5.625rem;
+        font-size: 1.875rem;
+}
+.tech {
+    font-family: 'Lato', sans-serif;
+    background: rgb(240, 56, 117);;
+    padding: 10rem;
+    margin: 0%;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+        font-size: 1.85rem;
+        font-weight: 5.625rem;
         font-size: 1.875rem;
 }
 .lista{
