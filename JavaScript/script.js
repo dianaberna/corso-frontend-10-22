@@ -18,7 +18,7 @@ if (b > 0) {
 b > 0 ? console.log('b è magiore di 0') : console.log('b è minore di 0');
 
 // Else if --> quando abbiamo bisogno di verificare più condizioni all'interno del nostro programma.
-// In questo caso io vado a verificare se c è maggiore di 0? se non lo è passo alla condizione sucessiva e vado a vedere se c è minore di 0? se non lo è passo alla condizione sucessiva c è uguale a 0? se non si verifica nessuna di queste condizioni allora mi stamperà
+// In questo caso io vado a verificare se c è maggiore di 0? se non lo è passo alla condizione sucessiva e vado a vedere se c è minore di 0? se non lo è passo alla condizione sucessiva c è uguale a 0? se non si verifica nessuna di queste condizioni allora mi stamperà caro utente sei sicuro di aver inserito un numero?
 if (c > 0) {
   console.log(typeof c);
   console.log('c è magiore di 0');
