@@ -70,9 +70,9 @@ console.log(typeof nuovasomma)
 // let, var, scope 
 console.log("--- scope ---")
 
-// scope globale 
+// scope globale => scope = contesto 
 var e = 4
-/* console.log(f) --> errore */
+/* console.log(f) -> errore */
 let f = 5
 console.log(e)
 console.log(f)
