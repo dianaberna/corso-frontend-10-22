@@ -1,10 +1,12 @@
 # Progetto Corso Frontend Developer Tree_Opinno
 
+[Link deploy](https://dianaberna.github.io/corso-frontend-10-22/)
+
 ## Docente:
 
-Diana Bernabei 🏆
+Diana Bernabei
 
-## elenco studenti del corso front-end:
+## Elenco studenti del corso front-end:
 
 1. Oleksandr Oleksyuk
 2. Daniel Terracina
@@ -35,12 +37,4 @@ Diana Bernabei 🏆
 27. Emanuela Madeccia
 28. Ylenia Chiappori
 29. Fabio Billeri
-
-prova branch
-
-## Oleksandr é dentro il branch di Ludovico
-prova di branch Domenico
-modifica
-
-
-aaa
+30. Leonilde Strino
