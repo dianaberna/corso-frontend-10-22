@@ -25,7 +25,6 @@ let array1 = [1, 2, 2, 3, 4, 6, 4];
 let array2 = [4, 2, 2, 4];
 
 while (i < array1.length || i < array2.length) {
-    console.log("i =" + i);
     array3[i] = 0;
     if (array1[i]) {
         array3[i] = array3[i] + array1[i];
