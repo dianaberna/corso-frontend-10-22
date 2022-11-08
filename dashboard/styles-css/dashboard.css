@@ -313,7 +313,7 @@ main > div > div{
 
 /*appunti per fare il radio-button responsivo https://stackoverflow.com/questions/1431726/css-selector-for-a-checked-radio-buttons-label */
 
-
+/* 
 @media (prefers-color-scheme: dark) {
   main {
     background-color: #1F2128;
@@ -344,6 +344,6 @@ main > div > div{
     background-color: #2B2E38;
   }
 }  
-
+ */
 
 /* appeareance none */

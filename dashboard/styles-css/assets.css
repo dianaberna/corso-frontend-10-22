@@ -7,8 +7,55 @@ main{
 aside nav > a:nth-of-type(2){
   background-color: #f3f5f8;
 }
-
-
+main h1{
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0 0 1.25rem 0;
+  padding: 0;
+}
+main>div{
+  display: flex;
+}
+.statistics{
+  display: grid;
+  grid-template-columns: 13fr 1fr 13fr;
+  background-color: #438FFE;
+  padding: 1rem;
+  border-radius: .875rem .875rem 0 0 ;
+}
+.statistics h3{
+  color: #C6DCFC;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.statistics p{
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+.statistics > div{
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+.statistics > div:nth-of-type(2),
+.statistics > div:nth-of-type(5){
+  background-color: #579BFF;
+  width: 2px;
+  height: 2.5rem;
+  align-self: center;
+  padding: 0;
+}
+.statistics+div{
+  background-color: #438FFE;
+  height: 30rem;
+  border-radius: 0 0 .875rem .875rem;
+  display: grid;
+  justify-content: center;
+}
 
 /*
 @media (prefers-color-scheme: dark) {
