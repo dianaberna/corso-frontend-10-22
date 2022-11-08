@@ -40,70 +40,113 @@ parseInt(null); // NaN
 parseInt(true); // NaN
 parseInt(''); // NaN
 
-// Possiamo
+let arrNum = [2, 3, 6, 9, 22, 23, 45];
 
-// CONDIZIONI
-// Se b è magiore di zero allora la mia console farà vedere b è maggiore di 0 altrimenti la console stamperà che b è minore di 0
-if (b > 0) {
-  console.log('b è magiore di 0');
-} else {
-  console.log('b è minore di 0');
-}
-// Thernay operator -- > permette di scrivere una condizione semplice dove le risposte possono essere o true o false
-b > 0 ? console.log('b è magiore di 0') : console.log('b è minore di 0');
-
-// Else if --> quando abbiamo bisogno di verificare più condizioni all'interno del nostro programma.
-// In questo caso io vado a verificare se c è maggiore di 0? se non lo è passo alla condizione sucessiva e vado a vedere se c è minore di 0? se non lo è passo alla condizione sucessiva c è uguale a 0? se non si verifica nessuna di queste condizioni allora mi stamperà caro utente sei sicuro di aver inserito un numero?
-if (c > 0) {
-  console.log(typeof c);
-  console.log('c è magiore di 0');
-} else if (c < 0) {
-  console.log('c è minore di 0');
-} else if (c === 0) {
-  console.log('c è uguale a 0');
-} else {
-  console.log('caro utente sei sicuro di aver inserito un numero?');
+// Ex. 1
+let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+for (let i = 0; i < array.length; i++) {
+  console.log(`Gli elementi del mio array ${array[i]}`);
 }
 
-// If annidati --> possiamo avere più condizioni insieme
-// se a è maggiore di 0 allora entrera nella prossima condizione e verifica anche se é maggiore o minore di 10. Se invece a è uguale a 0 o minore di 0 non entra nel nostro if annidato
-a = 11;
-if (a > 0) {
-  console.log('a è maggiore di 0');
-  if (a < 10) {
-    console.log('a è maggiore di 0 ma minore di 10');
-  } else {
-    console.log('a è maggiore di 0 ma maggiore di 10');
+// Ex. 2
+array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+let sum = 0;
+for (let i = 0; i < array.length; i++) {
+  sum += array[i];
+}
+console.log(`La somma del mio array è ${sum}`);
+
+// Ex. 3
+array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+sum = 0;
+for (let i = 0; i < array.length; i++) {
+  // utilizzo !== da 0 perchè se ci sono i numeri negativi dopo mi trovo in una situazione in cui anche se il numero è dispari ma negativo allora non lo conta il sistema se metto === 1
+  if (i / 2 !== 0) {
+    sum += array[i];
   }
-} else if (a === 0) {
-  console.log('a è uguale a 0');
-} else {
-  console.log('a è minore di 0');
+  i++;
+}
+console.log(`La somma dei soli numeri dispari è ${sum}!!!☕️`);
+
+// Ex. 4
+array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+sum = 0;
+for (let i = 0; i < array.length; i++) {
+  if (i % 2 === 1) {
+    sum += array[i];
+  }
 }
 
-// gli if annidati in alcuni casi possono essere scritti con l'utilizzo degli operatori logici
-if (a > 0 && a < 10) {
-  console.log('a è maggiore di 0 ma minore di 10');
-} else if (a > 0 && a > 10) {
-  console.log('a è maggiore di 0 ma maggiore di 10');
-} else if (a === 0) {
-  console.log('a è uguale a 0');
-} else {
-  console.log('a è minore di 0');
+console.log(`La somma dei elementi in posizione dispari è ${sum}`);
+// Ex. 5
+let numberTwoOnArray = 0;
+for (let i = 0; i < array.length; i++) {
+  if (array[i] === 2) {
+    numberTwoOnArray++;
+  } else {
+    i++;
+  }
 }
+console.log(`Il numero 2 comprare ${numberTwoOnArray} volta nel mio array`);
+// Ex. 6
+sum = 0;
+for (let i = 0; i < array.length; i++) {
+  if (array[i] >= 0) {
+    sum++;
+  } else {
+    i++;
+  }
+}
+console.log(`I numeri positivi compreso lo zero sono ${sum}!🏆`);
+// Ex. 7
+let numMax = 0;
+for (let i = 0; i < array.length; i++) {
+  if (array[i] > numMax) {
+    numMax = array[i];
+  } else {
+    i++;
+  }
+}
+console.log(`Il numero max del mio array è ${numMax}`);
+// ex. 8
+let numMin = 0;
+for (let i = 0; i < array.length; i++) {
+  if (array[i] < numMin) {
+    numMin = array[i];
+  } else {
+    i++;
+  }
+}
+console.log(`Il numero min del mio array è ${numMin}`);
+// Ex.9
+let negativeArr = [];
+for (let i = 0; i < array.length; i++) {
+  if (array[i] < 0) {
+    negativeArr.push(array[i]);
+  } else {
+    i++;
+  }
+}
+console.log(negativeArr);
+// Ex. 10
+let doubleArray = [];
+for (let i = 0; i < array.length; i++) {
+  doubleArray.push(array[i] * 2);
+}
+console.log(doubleArray);
+// Ex. 11
+let sumArray = [];
+for (let i = 0; i < array.length; i++) {
+  sumArray.push(array[i]);
+}
+for (let i = 0; i < array.length; i++) {
+  sumArray.push(array[i]);
+}
+console.log(sumArray);
 
-// SWITCH
-// L'istruzione switch controlla una condizione (exrp), confrontando il valore dell'espressione con una serie di case ed esegue le istruzioni che si trovano all'interno, finché non viene incontrata un'istruzione break che interrompe il confronto. Se ci troviamo in una situazione che nessuna nostra condizione corrisponde al case, allora ci verrà stampata un'istruzione di default.
-const expr = 'Papayas';
-switch (expr) {
-  case 'Oranges':
-    console.log('Oranges are $0.59 a pound.');
-    break;
-  case 'Mangoes':
-  case 'Papayas':
-    console.log('Mangoes and papayas are $2.79 a pound.');
-    // expected output: "Mangoes and papayas are $2.79 a pound."
-    break;
-  default:
-    console.log(`Sorry, we are out of ${expr}.`);
+// Ex. 12
+let inverseArray = [];
+for (let i = array.length - 1; i >= 0; i--) {
+  inverseArray.push(array[i]);
 }
+console.log(inverseArray);
