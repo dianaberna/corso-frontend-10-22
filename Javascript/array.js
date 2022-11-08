@@ -69,3 +69,12 @@ for(let i = 0; i < array.length; i++) {
 console.log("sommapari con for = " +sommaPari);
 
 
+//somma quante volte il valore 2 si trova all'interno dell'array
+let j = 0;
+for (let i = 0; i < array.length; i++) {
+    if (array[i]==2) {                                               
+        j++
+    }
+}
+
+console.log(j);
