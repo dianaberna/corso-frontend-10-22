@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    background-color:#181823;
+    color:white;
+    font-family:Lato;
+}
+#title {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards {
+    display:flex;
+    justify-content:center;
+}
+.cards {
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    height: 320px;
+    width:330px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.cardsimg {
+    max-width: 150px;
+    margin-left: 80px;
+    margin-top:15px;
+
+}
+
+img:first-of-type {
+margin-top:8px;
+margin-bottom: 8px;
+}
+
+#title :first-child {
+    font-size: 30px;
+    margin-bottom:15px;
+}
+#firstlorem {
+width:700px;
+margin-top:15px;
+margin-bottom:25px;
+font-size: 15px;
+text-align:center;
+
+}
+
+.cardstitle {
+    font-family: Nunito;
+    margin-left: 110px;
+    font-size: large;
+   margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cardsLorem {
+    width: 300px;
+    text-align:center;
+    font-size: small;
+    padding:10px;
+}
+
