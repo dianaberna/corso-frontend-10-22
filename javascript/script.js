@@ -98,9 +98,9 @@ i = 0;
 conta=0
 while (i < array.length) {
     if (array[i] < 0) {
-
+        arrayNeg[conta]= array[i];
         conta++
-        arrayNeg[conta-1]= array[i];
+        
     }
     i++;
 }
