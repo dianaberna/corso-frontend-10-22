@@ -8,10 +8,22 @@
     <script>
         console.log("ciao mondo")
     </script>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script>
+    <script src="esempi-loop.js"></script> -->
+    <script src="array.js"></script>
+    <!-- <script src="esempi-operatori.js"></script>
+    <script src="esempi-nan.js"></script> -->
+    <!-- <script src="https://dianaberna.github.io/corso-frontend-10-22/js/script.js"></script> -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- 
+        Se <script src=""></script> viene aggiunto nell'head il codice js è caricato prima del contenuto/body. 
+        Quindi se tutto l'html è "creato" in js ho bisogno di caricare subito il js. -->
 </head>
 <body>
+    <!-- Se <script src=""></script> viene aggiunto nel body il codice js è caricato al termine del carimento 
+    di tutte le risorse nell'head, cioè se ho file css, librerie esterne, font esterni  -->
     <p>Non ci sono elementi html... è tutto javascript</p>
+    <!-- Se <script src=""></script> viene aggiunto a posteriori del caricamento di tutti i file nell'head e 
+        di tutto il contenuto presente nel body fino a questa posizione finale, verrà caricato il file js  -->
 </body>
 </html>
