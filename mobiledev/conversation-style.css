@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+
+/* REGOLE GENERALI */
+
+body {
+  font-family: "Work Sans", sans-serif;
+  padding: 1.5rem;
+  padding-bottom: 0rem;
+  margin: 0;
+}
+
+/* REGOLE SCROLLBAR */
+
+::-webkit-scrollbar {
+    /* attributi del background della scrollbar */
+    width: 0.8em;
+    height: 0.8em;
+    background: #eaeaea;
+    margin-right: 0.625rem;
+  }
+  
+  ::-webkit-scrollbar:hover {
+    /* attributi del background della scrollbar quando ci siamo sopra col cursore */
+    background-color: #eaeaea;
+    border: none;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    /* attributi del cursore (thumb) della scrollbar in pagina, a pagina caricata il cursore della scroll bar si mostra così */
+    min-height: 0.8em;
+    min-width: 0.8em;
+    -webkit-border-radius: 0.625rem;
+    background-color: rgba(132, 132, 132, 1);
+    border: none;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    /* colore del cursore della scrollbar quando ci siamo sopra con il cursore */
+    background-color: rgba(98, 98, 98, 1);
+    border: none;
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    /* colre del cursore della scrollbar quando ci clicchiamo sopra per trascinarlo/spostarlo */
+    background-color: rgba(98, 98, 98, 1);
+    border: none;
+  }
+
+/* REGOLE HEADER */
+
+header {
+  padding-top: 1rem;
+}
+
+header > div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header > div > input {
+  background-color: rgba(196, 196, 196, 1);
+  border: 0rem;
+  border-radius: 0.9375rem;
+  padding: 0.625rem 0.625rem;
+  padding-left: 2.2rem;
+  width: 100%;
+  font-family: inherit;
+}
+
+header > div > svg {
+  position: absolute;
+  padding-left: 0.6875rem;
+}
+
+/* REGOLE MAIN */
+
+/* CSS Informazioni e Azioni Chat */
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#icons-container {
+  display: flex;
+}
+
+.action-container {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  border-radius: 50%;
+  background-color: rgba(196, 196, 196, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.9375rem;
+}
+
+/* Spazio Messaggi */
+
+#conversation-space {
+  border: 0px;
+  background-color: darkred /* #F4F4F4 */;
+  border-radius: 1.25rem 1.25rem 0rem 0rem;
+  margin: 0.5rem -1.5rem 0rem -1.5rem;
+  box-shadow: 0rem -0.0625rem 0.5rem rgba(0, 0, 0, 0.25);
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1.875rem;
+}
+
+.recived-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.square {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  background-color: #c4c4c4;
+  border-radius: 0.5rem;
+}
+
+.recived-container > .recived-rectangle, /* Messaggi Inviati da "X", con accanto Immagine di Profilo */
+.recived-container ~ .recived-rectangle /* Messaggi Inviati da "X", direttamente successivi ad un suo messaggio inviato */ {
+  border-radius: 2.8125rem;
+  border-bottom-left-radius: 0px;
+  background-color: #c4c4c4;
+  padding: 0.7375rem 1.1rem 0.3125rem 1.5625rem;
+  margin-left: 1.5rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  margin-bottom: initial;
+}
+
+.sended-rectangle + .recived-container /*  Messaggi Inviati da "X", con accanto Immagine di Profilo, che seguono ad un mio messaggio inviato  */ {
+  margin-top: 1rem;
+}
+
+.sended-rectangle /* Messaggi Inviati da me, direttamente successivi ad un mio messaggio inviato */ {
+  border-radius: 2.8125rem;
+  border-bottom-right-radius: 0px;
+  background-color: #c4c4c4;
+  padding: 0.7375rem 0rem 0.3125rem 1.5rem;
+  margin-left: 5rem;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}
+
+.recived-container + .sended-rectangle, /* Messaggi inviati da me, che seguono un Messaggio Inviato da "X", con accanto immagine del profilo */
+.recived-rectangle + .sended-rectangle /* Messaggi inviati da me, che seguono un Messaggio Inviato da "X" */{
+  margin-top: 2rem;
+}
+
+.writing-area{
+    margin-top: 1.875rem;
+    display: flex;
+    margin-right: 1.5rem;
+    position: relative;
+    align-items: center;
+    
+}
+
+.writing-area > input{
+    background-color: #c4c4c4;
+    width: 100%;
+    border: 0;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.writing-area > input::placeholder{
+    color: black;
+}
+
+.writing-area > button{
+    width: 40px;
+    height: 42px;   
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    right: 3px;
+    cursor: pointer;
+}
+
+/* .writing-area > button:: */
