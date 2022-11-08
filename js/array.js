@@ -126,10 +126,11 @@ indice = 0;
 sommaposizionepari = 0;
 while (indice < arraynumerico.length) {
     console.log("indice = " + indice);
-    if (indice % 2 == 0) {
-        sommaposizionepari = sommaposizionepari + arraynumerico[indice];
-    }
+    sommaposizionepari = sommaposizionepari + arraynumerico[indice];
     console.log("sommaposizionepari = " + sommaposizionepari);
-    indice = indice + 1;
+    indice = indice + 2; // invece di fare un if e vedere se l'indice è pari 
 }
+
+// con indice = indice + 1 --> per scorrere tutto l'array impiegheremo n volte
+// con indice = indice + 2 --> per scorrere tutto l'array impiegheremo n/2 volte -> algoritmica 
 console.log("sommaposizionepari fine while = " + sommaposizionepari);
