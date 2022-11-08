@@ -95,7 +95,7 @@ console.log(min);
 
 console.log("9-crerare array con numeri negativi");
 
-arrayNeg = [];
+let arrayNeg = [];
 i = 0;
 conta=0
 while (i < array.length) {
@@ -108,9 +108,9 @@ while (i < array.length) {
 }
 console.log(arrayNeg);
 
-console.log("11-crerare array con numeri doppi");
+console.log("10-crerare array con numeri doppi");
 
-arrayDouble = [];
+let arrayDouble = [];
 
 i = 0;
 let doppio=0
@@ -136,10 +136,59 @@ console.log(arrayx2);
 console.log("12-Stampare al contrario gli elementi dell’array");
 
 i=0
-arrayContr=[];
+let arrayContr=[];
 while (i < array.length) {
 
     arrayContr[array.length-i-1]=array[i]
     i++;
 }
 console.log(arrayContr)
+
+
+
+let array1 = [ 1, 2, 2, 3, 4], array2 = [4, 2, 2, 4];
+
+console.log("es 13")
+let array3=[];
+
+i = 0;
+somma = 0;
+while (i < array1.length) {
+    if (array2[i]==undefined){
+        somma = array1[i];
+        array3[i]=somma
+    }else{
+        somma = array1[i]+ array2[i];
+        array3[i]=somma}
+    i++;
+}
+console.log(array3);
+
+console.log("es 14")
+
+array3=[];
+
+i = 0;
+conta=0;
+let el = 0;
+
+while (i< array1.length) {
+    if (array1[i]%2!=0){
+        el = array1[i];
+        array3[conta]=el
+        conta++
+    }
+    i++
+}
+i=0
+while (i < array2.length) {
+    if (array2[i]%2==0){
+        el = array2[i];
+        array3[conta]=el
+        conta++
+    }
+    i++
+}
+console.log(array3);
+
+console.log("es 15")
