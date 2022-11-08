@@ -1,9 +1,15 @@
-let c = 6;
-let d = 9;
-let somma = c + d;
-console.log("somma");
-console.log(typeof somma);
+mioArray = [-5, 8, 9, -1, -6];
+i = 0;
+sommaPosizionePari = 0;
 
-let sommastringhe = a + b;
-console.log(sommastringhe);
-console.log(sommastringhe);
+while (i < mioArray.length) {
+  console.log("l'indice è " + i);
+  sommaPosizionePari = sommaPosizionePari + mioArray[i];
+  console.log("la somma è " + sommaPosizionePari);
+  i = i + 2;
+}
+
+// for (let i = 0; i < mioArray.length; i += 1); {
+//   let sommaPosizionePari = sommaPosizionePari + mioArray[i];
+//   console.log(sommaPosizionePari);
+// }
