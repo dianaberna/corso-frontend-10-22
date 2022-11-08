@@ -342,15 +342,15 @@ switch (numeronuovo) {
         break;
 }
 
-// loop
+// loop --> di ripetere/iterare più e più volte il codice all'interno del ciclo 
 console.log("--- loop ---");
 
 // while
 /*
-dichiarazione/assegnazione variabile per la condizione
-while(condizione){
-    corpo del while
-    incremento/aggiornamento della variabile per la condizione
+dichiarazione/assegnazione variabile per la condizione --> può essere anche frutto di un calcolo precedente 
+while(condizione){ --> la condizione deve risultare vera per eseguire il corpo del while, quando risulterà falsa uscirà dal while
+    corpo del while --> codice 
+    incremento/aggiornamento della variabile per la condizione -> attenzione!! rischiamo di avere un loop infinito!
 }
 */
 
@@ -361,17 +361,30 @@ while (i < 4) {
     // finché la variabile i è minore di 4 allora eseguo il corpo del while
     console.log(i);
     // stampa dentro all'html
-    i = i + 1;
+    i = i + 1; // i++
 }
 console.log("fine while");
+
+/*
+stampa "inizio while"
+i = 0
+    i<4? 0<4? si, stampa "0", i = i + 1 = 0 + 1 = 1
+    i<4? 1<4? si, stampa "1", i = i + 1 = 1 + 1 = 2
+    i<4? 2<4? si, stampa "2", i = i + 1 = 2 + 1 = 3
+    i<4? 3<4? si, stampa "3", i = i + 1 = 3 + 1 = 4
+    i<4? 4<4? no, esce dal while
+stampa "fine while"
+*/
+
 // for
 /*
 for (dichiariazione/assegnazione variabile ; condizione ; incremento/aggiornamento){
     corpo del for
 }
 */
+
 console.log("inizio for");
-for (let j = 0; j < 4; j = j + 1) {
+for (let j = 0 ; j < 4 ; j = j + 1) { // per j uguale a 0, finchè j è minore di 4, esegui il corpo del for e incrementa di uno la j
     // j esiste solo nel for
     console.log(j);
 }
@@ -408,3 +421,4 @@ do {
 console.log("fine do-while");
 
 console.log("fine script.js");
+

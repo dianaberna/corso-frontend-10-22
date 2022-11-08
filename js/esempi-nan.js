@@ -25,7 +25,7 @@ if (provanumeronuova === "1") {
     console.log("no");
 }
 
-x = true;
+let x = true;
 if (isNaN(x) == false) {
     console.log("x è un numero di tipo " + typeof x + ", e vale " + x);
 } else {
@@ -33,7 +33,7 @@ if (isNaN(x) == false) {
 }
 
 // by Luca
-let x = 0;
+x = 0;
 if (isNaN(x) == false) {
     console.log("x è un numero di tipo " + typeof x + ", e vale " + x);
 } else {
