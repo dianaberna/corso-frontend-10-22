@@ -150,3 +150,81 @@ for (let i = array.length - 1; i >= 0; i--) {
   inverseArray.push(array[i]);
 }
 console.log(inverseArray);
+
+console.log('---------');
+let array1 = [1, 2, 2, 3, 4];
+let array2 = [4, 2, 2, 4];
+let array3 = [];
+let k = 0;
+// ex. 13
+while (k < array1.length) {
+  if (k < array1.length && k < array2.length) {
+    array3.push(array1[k] + array2[k]);
+  } else {
+    array3.push(array1[k]);
+  }
+  k++;
+}
+console.log(array3);
+
+console.log('====================================');
+// Ex. 13
+array1 = [1, 2, 2, 3, 4];
+array2 = [4, 2, 2, 4];
+array3 = [];
+k = 0;
+while (k < array1.length) {
+  console.log(array1, array2);
+  if (array1[k] % 2 !== 0) {
+    array3.push(array1[k]);
+  }
+  if (array2[k] % 2 === 0) {
+    array3.push(array2[k]);
+  }
+  k++;
+}
+console.log(array3); // Versione 2
+
+array1 = [1, 2, 2, 3, 4];
+array2 = [4, 2, 2, 4];
+array3 = [];
+k = 0;
+while (k < array1.length) {
+  if (array1[k] % 2 !== 0) {
+    array3.push(array1[k]);
+  }
+  k++;
+}
+k = 0;
+while (k < array2.length) {
+  if (array2[k] % 2 === 0) {
+    array3.push(array2[k]);
+  }
+  k++;
+}
+console.log(array3); // Versione 1
+
+// Ex. 15
+array1 = [1, 2, 2, 3, 4];
+array2 = [4, 2, 2, 4];
+array3 = [];
+
+for (let i = 0; i < array2.length; i++) {
+  array2[i] = array2[i] / array1[array2.length - i];
+}
+
+console.log(array2);
+let singolName = [];
+let newName = [];
+// Ex 16
+let namePeople = ['anna', 'radar', 'emme'];
+console.log(namePeople[0][0]);
+console.log(' ------ ');
+for (let i = 0; i < namePeople.length; i++) {
+  singolName = namePeople[i];
+  console.log(singolName);
+  for (let k = 0; k < singolName[i].length; k++) {
+    newName = singolName[k];
+  }
+}
+console.log(newName);
