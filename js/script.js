@@ -1,4 +1,9 @@
-/* commento su più righe */
+/* 
+    commento 
+    su 
+    più 
+    righe 
+*/
 // commento su una riga
 console.log("ciao mondo");
 
@@ -39,91 +44,96 @@ console.log(secondacostante);
     "ciao sono diana 1234" -> stringa
 */
 
-// typeof
+// typeof = restituisce il tipo del dato che gli passiamo
 console.log("--- typeof ---");
 
 let a = 5;
 let tipodidato = typeof a;
-console.log(tipodidato); // stampa number
-a = "ciao"; // assegno una stringa alla variabile che era numero --> conversione implicita
-console.log(typeof a); // stampa string
+console.log(tipodidato);    // stampa number
+a = "ciao";                 // assegno una stringa alla variabile che era numero --> conversione implicita
+console.log(typeof a);      // stampa string
 
 let b = "mario";
-console.log(typeof b); // stampa string
+console.log(typeof b);      // stampa string
+b = 9;
+console.log(typeof b);
 
-// typeof con somme
-console.log("--- typeof con somme ---");
+// typeof con somme quindi conversione esplicita 
+console.log("--- typeof e operatore somma (+) quindi conversione esplicita ---");
 
-let c = 6; // number
-let d = 9; // number
-let somma = c + d; // 6+9 -> 15
-console.log(somma); // stampa 15
-console.log(typeof somma); // stampa number
+let c = 6;                  // number
+let d = 9;                  // number
+let somma = c + d;          // 6+9 -> 15
+console.log(somma);         // stampa 15
+console.log(typeof somma);  // stampa number
 
-console.log(typeof a);  // string -> ciao
-console.log(typeof b);  // string -> mario
-let sommastringhe = a + " " + b; // concatenare a con b, cioè "ciao mario"
+b = "mario"
+console.log(typeof a);          // string -> ciao
+console.log(typeof b);          // string -> mario
+let sommastringhe = a + b;      // concatenare a con b, cioè "ciaomario"
+sommastringhe = a + " " + b;    // concatenare a con b, cioè "ciao mario"
 console.log(sommastringhe);
 console.log(typeof sommastringhe); // string
 
 console.log(a); // ciao -> string
 console.log(c); // 6 -> number
-let sommastrana = c + a; // il + se ho due stringhe oppure uno dei due è una
+let sommastrana = c + a; 
+// il + se ho due stringhe oppure uno dei due è una
 // stringa diventa concatenazione delle due variabili
 // non più somma di due numeri
-
-/*
-stringa + numero -> stringa
-numero + stringa -> stringa
-stringa + stringa -> stringa
-numero + numero -> numero
-*/
-
 console.log(sommastrana);
 console.log(typeof sommastrana);
 
-// conversione esplicita
-console.log("--- conversione esplicita --- ");
+/*
+stringa + numero -> stringa (concatenazione di caratteri)
+numero + stringa -> stringa (concatenazione di caratteri)
+stringa + stringa -> stringa (concatenazione di caratteri)
+numero + numero -> numero (somma aritmetica)
+*/
 
-// fa il parsing del valore e recupera il valore
-console.log(parseInt("30px"));  // 30
-console.log(parseInt("size-30"));  // NaN  "size" "30" 
-console.log(parseInt("50"));    // 50
 // conversione di tipo
-console.log(Number("30ciao"));  // NaN
-console.log(Number("50"));      // 50
+console.log(Number("30ciao"));      // NaN = Not a Number 
+console.log(Number("50"));          // 50
+
+// fa il parsing del valore e recupera il valore (parseInt è un più intelligente di Number)
+console.log(parseInt("30px"));      // 30 (di tipo number)
+console.log(parseInt("size-30"));   // NaN  "size" "30"
+console.log(parseInt("50"));        // 50
 
 // altri esempi
-console.log(parseInt());        // NaN
-console.log(parseInt(null));    // NaN
-console.log(parseInt(true));    // NaN
-console.log(parseInt(""));      // NaN
+console.log(Number());              // 0
+console.log(Number(null));          // 0
+console.log(Number(true));          // 1
+console.log(Number(""));            // 0
 
-console.log(Number());          // 0
-console.log(Number(null));      // 0
-console.log(Number(true));      // 1
-console.log(Number(""));        // 0
+console.log(parseInt());            // NaN
+console.log(parseInt(null));        // NaN
+console.log(parseInt(true));        // NaN
+console.log(parseInt(""));          // NaN
 
 console.log("--- stampa provanumero con Number ---");
 let provanumero = "1";
 console.log(typeof provanumero);
 let provanumeronuova = Number(provanumero); // conversione esplicita del tipo di dato da stringa a numero
-console.log(typeof provanumeronuova); // stampa number
-console.log(provanumeronuova); // 1 di tipo number
+console.log(typeof provanumeronuova);       // stampa number
+console.log(provanumeronuova);              // 1 di tipo number
 
 console.log("-- stampa provastringa con Number --");
 let provastringa = "ciao";
-console.log(provastringa);
-
-let provastringanuova = Number(provastringa); 
-console.log(typeof provastringanuova); // NaN
-console.log(provastringanuova); // NaN
+console.log(typeof provastringa);           // stampa string
+let provastringanuova = Number(provastringa); // --> va a "sporcare" la nostra variabile perché non riesce a fare la conversione
+console.log(typeof provastringanuova);      // NaN
+console.log(provastringanuova);             // NaN 
 
 console.log("-- stampa con String --");
 // String converte un numero in stringa
-let nuovovalore = 12;
+let nuovovalore = 12;                   
+console.log(typeof nuovovalore);            // stampa number
 let nuovastringa = String(nuovovalore);
-console.log(nuovastringa);
+console.log(nuovastringa);                  // "12"
+console.log(typeof nuovastringa);           // stampa string
+
+// stop
 
 console.log("-- stampa isNan --");
 
@@ -208,18 +218,19 @@ console.log("--- costrutti base ---");
 // condizionale
 a = 5;
 if (a > 0) {
-    // rombo --> nei diagrammi di flusso 
+    // rombo --> nei diagrammi di flusso
     // condizione vera
     console.log("a è maggiore di 0");
-} else { // altrimenti 
+} else {
+    // altrimenti
     // condizione false
     console.log("a è minore di 0");
 }
 
-if (a > 0){
+if (a > 0) {
     console.log("a è maggiore di 0");
-}else if(a > -10){
-    console.log("a è minore di 0 ma maggiore di -10")
+} else if (a > -10) {
+    console.log("a è minore di 0 ma maggiore di -10");
 }
 
 // operatore ternario (condizionale)
@@ -227,7 +238,8 @@ if (a > 0){
 a > 0 ? console.log("a è maggiore di 0") : console.log("a è minore di 0");
 
 if (a > 0) {
-    if (a < 10) { // if annidati
+    if (a < 10) {
+        // if annidati
         console.log("ciao mondo");
         a = a + 1;
     } else {
@@ -239,10 +251,10 @@ if (a > 0) {
     a = a + 10;
 }
 
-if( a > 0 ){
+if (a > 0) {
     console.log("a maggiore di 0");
-}else if( a < 10 ){
-    console.log("a è minore di 10")
+} else if (a < 10) {
+    console.log("a è minore di 10");
 }
 
 console.log(a);
@@ -280,21 +292,21 @@ console.log("--- loop ---");
 
 // while
 /*
-
 dichiarazione/assegnazione variabile per la condizione
 while(condizione){
     corpo del while
     incremento/aggiornamento della variabile per la condizione
 }
-
 */
+
 // stampare 4 numeri a partire da 0
 console.log("inizio while");
 let i = 0; // inizio da 0
-while (i < 4) {  // finché la variabile i è minore di 4 allora eseguo il corpo del while
+while (i < 4) {
+    // finché la variabile i è minore di 4 allora eseguo il corpo del while
     console.log(i);
-    // stampa dentro all'html 
-    i = i + 1; 
+    // stampa dentro all'html
+    i = i + 1;
 }
 console.log("fine while");
 // for
@@ -313,7 +325,7 @@ console.log("fine for");
 console.log("inizio for");
 for (let j = 4; j > 0; j = j - 1) {
     // j esiste solo nel for
-    console.log(j-1);
+    console.log(j - 1);
 }
 console.log("fine for");
 
@@ -321,7 +333,7 @@ console.log("fine for");
     console.log(i)
 } */
 
-// do-while -> esegue il corpo almeno una volta 
+// do-while -> esegue il corpo almeno una volta
 /*
 dichiarazione/assegnazione variabile per la condizione
 do{
@@ -340,5 +352,4 @@ do {
 } while (i < 4);
 console.log("fine do-while");
 
-
-console.log("fine script.js")
+console.log("fine script.js");
