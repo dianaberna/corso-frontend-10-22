@@ -19,24 +19,26 @@ while (i < array.length) {
 }
 console.log(somma);
 
-console.log("3-sommare elementi in posizione pari");
+
+
+console.log("3-sommare elementi dispari");
 
 i = 0;
 somma = 0;
 while (i < array.length) {
-    if ([i] % 2 == 0) {
+    if (array[i] % 2 != 0) {
         somma += array[i];
     }
     i++;
 }
 console.log(somma);
 
-console.log("4-sommare elementi dispari");
+console.log("4-sommare elementi in posizione pari");
 
 i = 0;
 somma = 0;
 while (i < array.length) {
-    if (array[i] % 2 != 0) {
+    if ([i] % 2 == 0) {
         somma += array[i];
     }
     i++;
@@ -119,10 +121,10 @@ while (i < array.length) {
 }
 console.log(arrayDouble);
 
-console.log("12-Creare (e stampare) un nuovo array in cui inserisco due volte (una di seguito l’altra)");
+console.log("11-Creare (e stampare) un nuovo array in cui inserisco due volte (una di seguito l’altra)");
 
 i = 0;
-arrayx2=[];
+let arrayx2=[];
 while (i < array.length) {
 
     arrayx2[i]=array[i]
@@ -131,7 +133,7 @@ while (i < array.length) {
 }
 
 console.log(arrayx2);
-console.log("13-Stampare al contrario gli elementi dell’array");
+console.log("12-Stampare al contrario gli elementi dell’array");
 
 i=0
 arrayContr=[];
