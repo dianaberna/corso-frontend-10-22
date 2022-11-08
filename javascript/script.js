@@ -1,4 +1,4 @@
-array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
 console.log(array);
 console.log(array.length);
 console.log("1-stampa elementi");
@@ -19,12 +19,12 @@ while (i < array.length) {
 }
 console.log(somma);
 
-console.log("3-sommare elementi pari");
+console.log("3-sommare elementi in posizione pari");
 
 i = 0;
 somma = 0;
 while (i < array.length) {
-    if (array[i] % 2 == 0) {
+    if ([i] % 2 == 0) {
         somma += array[i];
     }
     i++;
