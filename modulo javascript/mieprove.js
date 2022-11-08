@@ -1,8 +1,10 @@
-console.log(parseInt("306px"));
-console.log(parseInt("px306"));
+let array = [2,6,9,10,-2,-3,0,2,5,1]
 
-console.log ("--stampa i primi 4 numeri pari--")
+console.log(array);
+let i = 0;
 
-let i=0
-while {i%2
-}
+while i < array.length {
+    
+    console.log(i)
+    i =i+1;
+} console.log(i)
