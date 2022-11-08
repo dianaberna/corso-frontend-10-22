@@ -1,7 +1,10 @@
 // array
 let animali = ["gatto", "cane", "coniglio"];
 /* console.log(animali)
-console.log(animali.length) */
+for (let index = 0; index < array.length; index++) {
+	const element = array[index];
+	console.log(animali.length)
+} */
 
 let arraymisto = ["gatto", 2, 5, "topo", 3, 299];
 // "gatto" è in posizione/indice 0
