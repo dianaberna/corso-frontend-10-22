@@ -4,9 +4,11 @@ body{
   font-family: 'Work Sans', sans-serif;
   color: black;
   background-color: aquamarine;
+  display: flex;
+  justify-content: flex-start;
 }
 
-main{
+.mobile{
   background-color:#FCFCFC;
   border: .3125rem solid black;
   border-radius: 1.5rem;
@@ -142,4 +144,50 @@ section > img {
 /*Trasparenza della card*/
 #hidden{
   opacity: 0.2;
+}
+
+/* ------------------------------------------------- */
+
+/*BANNER RESTAURANT*/
+
+/*Contenitore elementi banner*/
+#section_banner .all_banner{
+  display: flex;
+  position: relative;
+}
+
+/*Foto piatto*/
+#section_banner .all_banner div > img {
+  margin-top: -4.375rem;
+  margin-left: -1.5rem;
+}
+
+#section_banner .all_banner .button{
+  display: flex;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+#section_banner .all_banner .button button{
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+}
+
+#section_banner .all_banner .time{
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: flex-start;
+  bottom: 1.6875rem;
+  left: 1.5rem;
+  padding: .75rem;
+  background-color: #525252CC;
+  opacity: 80%;
+  backdrop-filter: blur(2.5px);
+  border-radius: .5rem;
+  color: white;
 }
