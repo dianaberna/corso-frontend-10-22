@@ -128,7 +128,7 @@ let arrayx2=[];
 while (i < array.length) {
 
     arrayx2[i]=array[i]
-    arrayx2[i+10]=array[i]
+    arrayx2[i+array.length]=array[i]
     i++;
 }
 
