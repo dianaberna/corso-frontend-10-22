@@ -142,7 +142,8 @@ console.log(" 11) Creazione e stampa di un array che contiene 2 volte gli elemen
 let array2x = [];
 for (i = 0; i < array.length; i++) {
     array2x[i] = array[i];
-    array2x[i+10] = array[i];
+    array2x[i+array.length] = array[i];
+    //array.concat(array);
 }
 console.log("Stampa degli elementi del nuovo array che contiene 2 volte l array iniziale: ");
 
@@ -170,6 +171,8 @@ let array1=[1, 2, 2, 3, 4];
 let array2=[4, 2, 2, 4];
 
 let array3=[];
+
+//prima   verificare quale dei due array è maggiore 
 
 for (i = 0; i < array1.length; i++) {
   if (i < array2.length) {
@@ -261,7 +264,7 @@ if (bool==true) {
 }
 
 console.log("Controllo palindromo per array2:");
-array2=[4, 2, 2, 4];
+array2=[4, 2, 1, 2, 4];
 
 i=0;
 bool=true;
