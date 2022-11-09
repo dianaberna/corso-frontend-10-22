@@ -88,13 +88,13 @@ console.log("i numeri positivi sono " + numeriPositivi);
 
 
 //ok
-console.log("06. Stampare il numero massimo");
+console.log("07. Stampare il numero massimo");
 
 numeroMassimo = 0;
 for (i = 0; i < mioArray.length; i++) {
   if (
     numeroMassimo >= mioArray[i]) {
-    numeroMassimo = numeroMassimo
+    numeroMassimo = numeroMassimo;
   } else {
     numeroMassimo = mioArray[i];
   };
@@ -105,15 +105,17 @@ console.log("il numero massimo è " + numeroMassimo);
 
 
 
-//ok
-console.log("07. Stampare il numero minimo");
+//ok (usando però il while)
+console.log("08. Stampare il numero minimo");
 numeroMinimo = 0;
-for (i = 0; i < mioArray.length; i++) {
+i = 0
+while (i < mioArray.length) {
   if (numeroMinimo <= mioArray[i]) {
     numeroMinimo = numeroMinimo
   } else {
     numeroMinimo = mioArray[i];
   };
+  i++;
 };
 console.log("il numero minimo è " + numeroMinimo);
 
@@ -121,24 +123,50 @@ console.log("il numero minimo è " + numeroMinimo);
 
 
 
-//forse
-console.log("08. Inserire in un nuovo array solo gli elementi negativi");
+//ok senza push
+console.log("09/a. Inserire in un nuovo array solo gli elementi negativi");
 
-numNegativo = "";
-aggiungoNegativo = 0;
+arrayConNegativi = [];
+indiceNuovoArray = 0;
 for (i = 0; i < mioArray.length; i++) {
   if (mioArray[i] < 0) {
-    numNegativo = numNegativo + " " + mioArray[i];
+    arrayConNegativi[indiceNuovoArray] = mioArray[i];
+    indiceNuovoArray++;
   };
 };
-console.log("numeri negativi " + numNegativo);
+console.log(arrayConNegativi);
 
 
+
+//ok usando push
+console.log("09/b. Inserire in un nuovo array solo gli elementi negativi");
+
+numNegativi = [];
+for (i = 0; i < mioArray.length; i++) {
+  if (mioArray[i] < 0) {
+    numNegativi.push(mioArray[i]);
+  }
+}
+console.log(numNegativi);
+
+
+//usando push e while
+console.log("09 /b.Inserire in un nuovo array solo gli elementi negativi");
+
+numNegativi = [];
+i = 0;
+while (i < mioArray.length) {
+  if (mioArray[i] < 0) {
+    numNegativi.push(mioArray[i]);
+  }
+  i++;
+}
+console.log(numNegativi);
 
 
 
 //ok
-console.log("09/a. calcola il doppio di ogni elemento");
+console.log("10/a. calcola il doppio di ogni elemento");
 
 doppio = 0;
 for (i = 0; i < mioArray.length; i++) {
@@ -146,33 +174,51 @@ for (i = 0; i < mioArray.length; i++) {
   console.log("il doppio di " + mioArray[i] + " è " + doppio);
 }
 
+//ok? senza push
+console.log("10/b. Creare un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato");
 
-
-
-//ok
-console.log("09/b. Creare un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato");
-
-doppio = "";
+arrayDoppio = [];
+doppio = 0;
 for (i = 0; i < mioArray.length; i++) {
-  doppio = doppio + (mioArray[i] * 2) + " ";
-}
-console.log("l'array coi doppi è " + doppio);
+  doppio = mioArray[i] * 2;
+  arrayDoppio[i] = doppio;
+};
+console.log(arrayDoppio);
+
+
+//ok senza push con variabile nuovo indice
+console.log("10/c. Creare un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato");
+
+arrayConDoppi = [];
+indiceNuovoArray = 0;
+for (i = 0; i < mioArray.length; i++) {
+  arrayConDoppi[indiceNuovoArray] = 2 * mioArray[i];
+  indiceNuovoArray++;
+};
+console.log(arrayConDoppi);
 
 
 
 
 
-//ok forse
-console.log("10. Creare un nuovo array in cui inserisco due volte (una di seguito all'altra) l'array dato");
 
-doppioArray = "[" + mioArray + "," + mioArray + "]";
+
+//no
+console.log("11. Creare un nuovo array in cui inserisco due volte (una di seguito all'altra) l'array dato");
+
+doppioArray = [];
+nuovoIndice = 0;
+i = 0;
+
+doppioArray = mioArray.push(mioArray);
 
 console.log(doppioArray);
+console.log(mioArray);
 
 
 
-//ok
-console.log("12. Stampare al contrario gli elementi dell'array:[1, 5, 2, 0, -3, -2, 10, 9, 6, 2]");
+// 12a ok - ma non in un array
+console.log("12a. Stampare al contrario gli elementi dell'array:[1, 5, 2, 0, -3, -2, 10, 9, 6, 2]");
 
 mioArray = [1, 5, 2, 0, -3, -2, 10, 9, 6, 2];
 
@@ -180,8 +226,53 @@ alContrario = "";
 for (i = 0; i < mioArray.length; i++) {
   alContrario = mioArray[i] + " " + alContrario;
 }
-
 console.log(alContrario);
+
+
+
+
+// 12b OK
+// Stampare l'array con gli elementi al contrario usando: (i < array)
+
+console.log("12b. Stampare l'array con gli elementi al contrario");
+i = 0;
+while (i < mioArray.length) {
+  i = i + 1;
+};
+console.log(mioArray);
+
+
+// 12c OK
+// Stampare l'array con gli elementi al contrario usando: (i >= 0)
+
+console.log("12c. Stampare l'array con gli elementi al contrario");
+i = mioArray.length - 1; // l'indice di 10 elementi parte da 0 e arriva a 9
+console.log("numero di elementi dell'array: " + mioArray.length);
+while (i >= 0) {
+  i = i - 1;
+};
+console.log(mioArray);
+
+
+// OK
+// Contare quante parole di 4 lettere ci sono nel nostro array
+console.log("Contare quante parole di 4 lettere ci sono nel nostro array")
+
+mioArray = ["gatto", "cane", "coniglio", "topo"];
+i = 0;
+let conteggio = 0;
+while (i < mioArray.length) {
+  if (mioArray[i].length == 4) {
+    conteggio = conteggio + 1;
+  };
+  i++;
+};
+console.log("Ci sono " + conteggio + " parole di quattro lettere");
+
+
+
+//quanto è lungo il nostro array?
+// console.log(indice);
 
 
 
@@ -189,6 +280,11 @@ console.log(alContrario);
 // array2 = [4, 2, 2, 4];
 
 // console.log("13) Creare un array3 con la somma degli elementi dell'array1 e dell'array2 [5, 4, 4, 7, 4]");
+
+// indiceNuovoArray = 0;
+// nuovoArray = [];
+// for (i = 0; i < array1.lentgh; i++);
+
 
 
 
