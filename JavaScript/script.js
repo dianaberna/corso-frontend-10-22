@@ -218,14 +218,21 @@ let singolName = [];
 let newName = [];
 // Ex 16
 array = ['anna', 'radar', 'emme', 'sasha'];
-console.log(array[0]);
+console.log(...array[0]);
 console.log(' ------ ');
 for (let i = 0; i < array.length; i++) {
   let namePeople = array[i];
   console.log(namePeople);
-  let newArray = [];
-  for (let k = namePeople.length - 1; k >= 0; k--) {
-    newArray = namePeople.join();
-  }
+  let newArray;
+  for (let k = 0; k < namePeople.length; k++) {}
   console.log(newArray);
 }
+
+let animali = ['cane', 'gatto', 'serpente', 'topo'];
+let newAnimal = [];
+for (let i = 0; i < animali.length; i++) {
+  if (animali[i].length === 4) {
+    newAnimal.push(animali[i]);
+  }
+}
+console.log(newAnimal);
