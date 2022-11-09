@@ -1,5 +1,5 @@
-// array = [ 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
-let array =[ 2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+// Stampare tutti gli elementi dell’array 
+array =[ 2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
 console.log(array);
 console.log(array.length);
 let i = 0
@@ -8,6 +8,7 @@ while (i<array.length) {
   i= i+1;  
 }
 
+// Stampare la somma di tutti gli elementi dell’ array 
 let somma = 0
 i = 0
 while (i<array.length ) {
@@ -15,6 +16,7 @@ while (i<array.length ) {
     i= i+1;
 }
 
+// Stampare la somma dei soli elementi dispari 
 console.log (somma);
 
 let sommadispari = 0
@@ -26,3 +28,5 @@ while (i<array.length ) {
     i= i+1;
 }
 console.log (sommadispari);
+
+// Stampare la somma dei soli elementi in posizione pari
