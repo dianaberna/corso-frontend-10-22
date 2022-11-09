@@ -99,7 +99,7 @@ for (let i = 0; i < array.length; i++) {
 }
 console.log(`I numeri positivi compreso lo zero sono ${sum}!🏆`);
 // Ex. 7
-let numMax = 0;
+let numMax = array[0];
 for (let i = 0; i < array.length; i++) {
   if (array[i] > numMax) {
     numMax = array[i];
@@ -109,7 +109,7 @@ for (let i = 0; i < array.length; i++) {
 }
 console.log(`Il numero max del mio array è ${numMax}`);
 // ex. 8
-let numMin = 0;
+let numMin = array[0];
 for (let i = 0; i < array.length; i++) {
   if (array[i] < numMin) {
     numMin = array[i];
@@ -128,14 +128,33 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 console.log(negativeArr);
-// Ex. 10
+// Ex. 10 senza .push
 let doubleArray = [];
+for (let i = 0; i < array.length; i++) {
+  doubleArray[i] = array[i] * 2;
+}
+console.log(doubleArray);
+// Ex. 10 con push
+doubleArray = [];
 for (let i = 0; i < array.length; i++) {
   doubleArray.push(array[i] * 2);
 }
 console.log(doubleArray);
-// Ex. 11
+
+// Ex. 11 senza .push
+array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
 let sumArray = [];
+let i = 0;
+for (i = 0; i < array.length; i++) {
+  sumArray[i] = array[i];
+  sumArray[i + array.length] = array[i];
+}
+console.log(i);
+console.log(sumArray);
+
+// Ex. 11 con .push non si può fare tutto in uno, se si
+array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
+sumArray = [];
 for (let i = 0; i < array.length; i++) {
   sumArray.push(array[i]);
 }
@@ -153,22 +172,56 @@ console.log(inverseArray);
 
 console.log('---------');
 let array1 = [1, 2, 2, 3, 4];
-let array2 = [4, 2, 2, 4];
+let array2 = [4, 2, 2, 4, 3, 6, 1, 2, 4, 0, 10, 20];
 let array3 = [];
 let k = 0;
+/*
+let lunghezza;
+if (array1.length >= array2.length) {
+  lunghezza = array1.length;
+} else {
+  lunghezza = array2.length;
+}
+*/
 // ex. 13
-while (k < array1.length) {
-  if (k < array1.length && k < array2.length) {
-    array3.push(array1[k] + array2[k]);
-  } else {
+while (k < array1.length || k < array2.length) {
+  if (array1[k] && array2[k]) {
+    array3[k] = array1[k] + array2[k];
+  } else if (array1[k]) {
     array3.push(array1[k]);
+  } else if (array2[k]) {
+    array3.push(array2[k]);
   }
   k++;
 }
 console.log(array3);
+console.log('==================SOLUZIONE MARTINA==================');
+array1 = [1, 2, 2, 3, 4];
+array2 = [4, 2, 2, 4, 3, 6, 1, 2, 4, 0, 10, 20];
+array3 = [];
+let x = 0;
+let j = 0;
+for (i = 0, j = 0; i < array1.length || j < array2.length; i++, j++) {
+  if (array1.length > array2.length) {
+    if (j < array2.length) {
+      array3[x] = array1[i] + array2[j];
+    } else {
+      array3[x] = array1[i];
+    }
+    x++;
+  } else {
+    if (i < array1.length) {
+      array3[x] = array1[i] + array2[j];
+    } else {
+      array3[x] = array2[j];
+    }
+    x++;
+  }
+}
+console.log(array3);
 
 console.log('====================================');
-// Ex. 13
+// Ex. 14
 array1 = [1, 2, 2, 3, 4];
 array2 = [4, 2, 2, 4];
 array3 = [];
@@ -207,13 +260,15 @@ console.log(array3); // Versione 1
 // Ex. 15
 array1 = [1, 2, 2, 3, 4];
 array2 = [4, 2, 2, 4];
-array3 = [];
+array3 = [...array2];
+console.log(array3);
+console.log(...array2);
 
 for (let i = 0; i < array2.length; i++) {
   array2[i] = array2[i] / array1[array2.length - i];
 }
-
 console.log(array2);
+/*
 let singolName = [];
 let newName = [];
 // Ex 16
@@ -236,3 +291,7 @@ for (let i = 0; i < animali.length; i++) {
   }
 }
 console.log(newAnimal);
+console.log(animali);
+animali.splice(1, 0, 'ciao');
+console.log(animali);
+*/
