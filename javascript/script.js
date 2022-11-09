@@ -150,12 +150,24 @@ let array1 = [ 1, 2, 2, 3, 4], array2 = [4, 2, 2, 4];
 
 console.log("es 13")
 let array3=[];
-
+let lunghezza
+let corto=[]
+let lungo=[]
+if (array1.length>=array2.length){
+    lunghezza= array1.length
+    corto=array2
+    lungo=array1
+}
+else {
+    lunghezza=array2.length
+    corto=array1
+    lungo=array2
+}
 i = 0;
 somma = 0;
-while (i < array1.length) {
-    if (array2[i]==undefined){
-        somma = array1[i];
+while (i < lunghezza) {
+    if (corto[i]==undefined){
+        somma = lungo[i];
         array3[i]=somma
     }else{
         somma = array1[i]+ array2[i];
@@ -172,16 +184,13 @@ i = 0;
 conta=0;
 let el = 0;
 
-while (i< array1.length) {
+
+while (i< array1.length || i<array2.length) {
     if (array1[i]%2!=0){
         el = array1[i];
         array3[conta]=el
         conta++
     }
-    i++
-}
-i=0
-while (i < array2.length) {
     if (array2[i]%2==0){
         el = array2[i];
         array3[conta]=el
@@ -189,6 +198,7 @@ while (i < array2.length) {
     }
     i++
 }
+
 console.log(array3);
 
 console.log("es 15") 
