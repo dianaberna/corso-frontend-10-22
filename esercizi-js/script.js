@@ -198,29 +198,38 @@ for(i=0; i<array2.length; i++){
 }
 console.log("Es. 15) L'array2 con i valori aggiornati dividendo tutti i suoi elementi per l'ultimo elemento dell'array1 è costituito da: "+array2);
 // Ritorno all'array2 originale per gli esercizi seguenti
-array2 = [4, 2, 2, 4];
+array2 = [4, 2, 3, 2, 4];
 
 //Es. 16 Verificare se gli array sono palindromi, cioè se possono essere letti al contrario senza cambiare l'ordine di lettura degli elementi (es. "Anna")
+
+//Verifica su array1 [1, 2, 2, 3, 4]
 let palindromo = 0;
-for(i=0, j=array1.length-1; i<j; i++, j--){
-  if(array1[i] == array1[j]){
+let array = array1;
+for(i=0, j=array.length-1; i!=j && i<j; i++, j--){
+  if(array[i] == array[j]){
     palindromo++;
+  }else{
+    break;
   }
 }
-if(palindromo == array1.length/2 || palindromo == array1.length/2-1){
-  console.log("Es. 16a)L'array1 è palindromo, infatti i suoi elementi sono: ["+array1+"]");
+if(palindromo == array.length/2 || palindromo == array.length/2-0.5){
+  console.log("Es. 16) L'array è palindromo, infatti i suoi elementi sono: ["+array+"]");
 }else{
-  console.log("Es. 16a) L'array1 NON è palindromo, infatti i suoi elementi sono: ["+array1+"]");
+  console.log("Es. 16) L'array NON è palindromo, infatti i suoi elementi sono: ["+array+"]");
 }
 
+//Verifica su array2 [4, 2, 3, 2, 4]
 palindromo = 0;
-for(i=0, j=array2.length-1; i<j; i++, j--){
-  if(array2[i] == array2[j]){
+array = array2;
+for(i=0, j=array.length-1; i!=j && i<j; i++, j--){
+  if(array[i] == array[j]){
     palindromo++;
+  }else{
+    break;
   }
 }
-if(palindromo == array2.length/2 || palindromo == array2.length/2-1){
-  console.log("Es. 16b) L'array2 è palindromo, infatti i suoi elementi sono: ["+array2+"]");
+if(palindromo == array.length/2 || palindromo == array.length/2-0.5){
+  console.log("Es. 16) L'array è palindromo, infatti i suoi elementi sono: ["+array+"]");
 }else{
-  console.log("Es. 16b) L'array2 NON è palindromo, infatti i suoi elementi sono: ["+array2+"]");
+  console.log("Es. 16) L'array NON è palindromo, infatti i suoi elementi sono: ["+array+"]");
 }
