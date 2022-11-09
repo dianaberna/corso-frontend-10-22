@@ -54,22 +54,22 @@ console.log("somma dispari con while" + " " + sommaDispari);
 
 // somma degli elementi all'interno dell'array solo numeri pari con while e for
 i = 0;
-sommaPari = 0;
+Pari = 0;
 while (i < array.length) {
-    sommaPari = sommaPari + array[i];
+    Pari = Pari + array[i];
     i = i + 2; 
 }
-console.log("sommapari con while = " + sommaPari);
+console.log("somma pari con while = " + Pari);
 
 for(let i = 0; i < array.length; i++) {
     if(array[i]%2==2) {
-        sommaPari = sommaPari + array[i]
+        Pari = Pari + array[i]
     }
 }
-console.log("sommapari con for = " +sommaPari);
+console.log("somma pari con for = " +Pari);
 
 
-//somma quante volte il valore 2 si trova all'interno dell'array
+//somma quante volte il valore 2 si trova all'interno dell'array con for e while
 let j = 0;
 for (let i = 0; i < array.length; i++) {
     if (array[i]==2) {                                               
@@ -77,4 +77,86 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 
-console.log(j);
+console.log("somma di quante volte il valore 2 si trova nell' array con for" + " " + j);
+
+
+while( i < array.length){
+    j = j +array[i]
+    j++
+}
+console.log("somma di quante volte il valore 2 si trova nell' array con while" + " " + j);
+
+
+
+//verificaquanti numeri positivi ci sono nell'array
+let k = 0;
+for (let i = 0; i < array.length; i++){
+    if (array[i]>=0) {                                            
+        k++
+    }
+    
+}
+
+console.log("numeri positivi nell'array con for" + " " + k);
+while(k >= array.length){
+    k = k +array[i]
+    k++
+}
+console.log("numeri positivi nwll' array con while" + " " + k);
+// valore massimo in un array
+let massimo = array[0];
+for (let i = 0; i < array.length; i++){
+    if (massimo < array[i]) {                                            
+        massimo = array[i]
+    }
+    
+}
+console.log("valore massimo in un array con for"+ " " + massimo);
+
+while (i < array.length) {
+    massimo = massimo + array[i]
+    i++
+}
+console.log("valore massimo in un array con while"+ " " + massimo);
+
+// valore minimo in un array
+let minimo = array[0]
+for( let i = 0; i < array.length; i++){
+    if(minimo > array[i]){
+        minimo = array[i]
+    }
+}
+console.log("valore minimo in un array con for"+ " " + minimo);
+while( i < array.length){
+    minimo = minimo + array[i]
+    i++
+}
+console.log("valore minimo in un array con while"+ " " + minimo);
+
+
+
+// let animali = ["gatto" , "cane", "coniglio", "topo", "ape"  ]
+// let indice = 0;
+// let newarray = [];
+// let contatotre = 0;
+// while(indice < animali.length){
+//     if(animali[indice].length == 4){
+//         newarray[contatotre] = animali[indice]
+//         contatotre = contatotre +1
+         
+//     }
+//     indice = indice + 1;
+// }
+// console.log(newarray);
+
+
+// inserire in un nuovo array solo gli elementi negativi  → [-2, -3]
+let newArray = [];
+i=0;
+while( i < array.length){
+    if(array[i] < 0){
+        newArray.push(array[i])
+    }
+    i++
+}
+console.log("nuovo array solo gli elementi negativi con while" + " " + newArray);
