@@ -217,14 +217,15 @@ console.log(array2);
 let singolName = [];
 let newName = [];
 // Ex 16
-let namePeople = ['anna', 'radar', 'emme'];
-console.log(namePeople[0][0]);
+array = ['anna', 'radar', 'emme', 'sasha'];
+console.log(array[0]);
 console.log(' ------ ');
-for (let i = 0; i < namePeople.length; i++) {
-  singolName = namePeople[i];
-  console.log(singolName);
-  for (let k = 0; k < singolName[i].length; k++) {
-    newName = singolName[k];
+for (let i = 0; i < array.length; i++) {
+  let namePeople = array[i];
+  console.log(namePeople);
+  let newArray = [];
+  for (let k = namePeople.length - 1; k >= 0; k--) {
+    newArray = namePeople.join();
   }
+  console.log(newArray);
 }
-console.log(newName);
