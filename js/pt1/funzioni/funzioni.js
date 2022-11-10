@@ -2,14 +2,15 @@ console.log("-- funzioni --");
 
 /**
  *
- * sintassi creazione funzione
+ * creazione funzione
  * function nomeFunzione(paramentro1, paramentr2, ...){
  *      blocco della funzione
- *      return valoreCheRitornoFuori
+ *      return valoreCheRitornoFuori -> termina la funzione
  * }
  *
  * sintassi per richiamare la funzione
- * nomefunzione(paramentro1, parametro2, ...)
+ * nomefunzione(paramentro1, parametro2, ...) -> chiamata della funzioni
+ * let valorediritorno = nomefunzione(paramentro1, parametro2, ...)
  *
  */
 
@@ -79,7 +80,9 @@ function sommaArray(array) {
 
 let nuovoarray = [1, 5, 3];
 let s1 = sommaArray(nuovoarray);
-sommaArray([5, 5, 2]);
+console.log(s1)
+console.log(sommaArray([5, 5, 2]));
+
 
 console.log("--- modifica array ---");
 // per ogni elemento dell'array moltiplica il numero passato come secondo parametro
@@ -203,3 +206,40 @@ function ControlloForm(){
 ControlloForm()
 
 */
+
+console.log("--- esempi overloading ---")
+
+function funzioneSomma(a = 1, b = 1) {
+    /* 
+    if (b) {
+        console.log("b inserito");
+    } else {
+        console.log("b NON inserito");
+        return;
+    } 
+    */
+    return a + b;
+}
+
+/* 
+function funzioneSomma(c) {
+    return c + c;
+}  
+*/
+
+// overloading
+
+console.log(funzioneSomma());
+console.log(funzioneSomma(2));
+console.log(funzioneSomma(2, 3));
+console.log(funzioneSomma(4, -38));
+
+console.log("--- numero argomenti ---")
+
+function funzione() {
+  console.log(arguments.length);
+}
+
+funzione();
+funzione(7, 4);
+funzione(90, 654, 32, 4);
