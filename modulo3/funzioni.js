@@ -72,12 +72,13 @@ console.log(``)
 console.log(`Esrcizio 3 - Verifica numero minore o uguale a 0`)
 { //parentesi messe solo per chiudere
   function minEqualZero(n1) {
-    if (n1<=0) {
+/*     if (n1<=0) {
       return true   
     }
     else{
       return false
-    }
+    } */
+    return n1 <=0? true : false
   }
   console.log(minEqualZero(5))
   console.log(minEqualZero(0))
@@ -89,10 +90,7 @@ console.log(``)
 console.log(`Esrcizio 4 - Problema fattoria`)
 { //parentesi messe solo per chiudere
   function totLegs(array1){
-    let n1= array1[0]*2
-    let n2= array1[1]*4
-    let n3= array1[2]*4
-    return (n1+n2+n3)
+    return (array1[0]*2+((array1[1]+array1[2])*4))
   }
   console.log(totLegs([2,3,5]))
   console.log(totLegs([1,2,3]))
@@ -104,16 +102,21 @@ console.log(``)
 console.log(`Esrcizio 5 - Case di fiammiferi`)
 { //parentesi messe solo per chiudere
   function matches(n1) {
-    if (n1>0) {
+    if ((n1>0)&&(n1%1==0)) {
       return (6*n1-(n1-1))
-    } else {
-      return ("Hai bruciato la casetta di fiammiferi!!!")
+    } else 
+    if (n1==0){
+      return (0)
+    }
+    else{
+      return ("Hai inserito dei dati sbagliati!!!")
     }
   }
   console.log(matches(1))
   console.log(matches(4))
   console.log(matches(87))
   console.log(matches(-10))
+  console.log(matches(0))
 }
 console.log(``)
 console.log(`-------------------------------------------------------`)
@@ -137,7 +140,7 @@ console.log(``)
 console.log(`Esrcizio 7 - Trova lo sconto`)
 { //parentesi messe solo per chiudere
   function discount(n1,n2) {
-    return (n1-(n1*n2/100))
+    return ((n1-(n1*n2/100)).toFixed(2))
   }
   console.log(discount(1500,50))
   console.log(discount(89,20))
@@ -325,18 +328,22 @@ console.log(``)
 console.log(`-------------------------------------------------------`)
 console.log(``)
 console.log(`Esrcizio 15 - Conteggio giorni tra 2 date`)
-{
+{ //parentesi messe solo per chiudere
   const d = new Date("2015-03-25");
   function dayDiff(d1,d2) {
     let date1 = new Date(d1)
     let date2 = new Date(d2)
-    return ((date2-date1)/1000/60/60/24)
+    return Math.abs((date2-date1)/1000/60/60/24)
   }
   console.log(dayDiff("June 14, 2019","June 20, 2019"))
   console.log(dayDiff("December 29, 2018","January 1, 2019"))
   console.log(dayDiff("July 20, 2019","July 30, 2019"))
+  console.log(dayDiff("July 30, 2019","July 20, 2019"))
 }
 console.log(``)
 console.log(`-------------------------------------------------------`)
 console.log(``)
 console.log(`Esrcizio 16 - Rimuovere i duplicati di un array`)
+{ //parentesi messe solo per chiudere
+
+}
