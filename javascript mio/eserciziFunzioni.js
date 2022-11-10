@@ -78,7 +78,7 @@ console.log("Case di fiammiferi");
 
 function numeroDiFiammiferi(step) {
     if (step == 0) {
-        console.log("hai inserito 0");
+        return 0;
     } else if (step < 0) {
         console.log("hai inserito un numero negativo");
     } else if (step > 0) {
@@ -94,7 +94,6 @@ console.log(numeroDiFiammiferi(87));
 console.log("\n");
 
 // Somma i numeri da un unico numero
-
 
 console.log("Somma i numeri da un unico numero");
 
@@ -116,10 +115,8 @@ console.log("\n");
 
 console.log("Trova lo sconto");
 
-function trovaSconto(prezzo, sconto)
-{
-
-    sott = (sconto * prezzo)/ 100;
+function trovaSconto(prezzo, sconto) {
+    sott = (sconto * prezzo) / 100;
 
     scontato = parseFloat(prezzo - sott);
 
@@ -132,6 +129,60 @@ console.log(trovaSconto(100, 75));
 
 console.log("\n");
 
-// Posizione nell'alfabeto 
+// Posizione nell'alfabeto
+console.log("Posizione nell'alfabeto");
+function letteraInPosizione(numero) {
+    if (numero >= 1 && numero <= 26) {
+        lettera = String.fromCharCode(numero + 96);
+    }
 
+    return lettera;
+}
 
+console.log(letteraInPosizione(26));
+
+console.log("\n");
+
+// Calcolatrice di base
+
+console.log("Calcolatrice");
+
+function calcolatrice(n1, n2, op) {
+    switch (op) {
+        case "+": {
+            risultato = n1 + n2;
+            return risultato;
+        }
+
+        case "-": {
+            risultato = n1 - n2;
+            return risultato;
+        }
+
+        case "*": {
+            risultato = n1 * n2;
+            return risultato;
+        }
+
+        case "/": {
+            if (n2 == 0) {
+                console.log("Impossibile dividere per 0!");
+            } else {
+                risultato = n1 / n2;
+                return risultato;
+            }
+        }
+    }
+}
+
+console.log(
+    "La somma, la sottrazione, la moltiplicazione, la divisione di 4 e 2, sono:"
+);
+
+console.log(calcolatrice(4, 2, "+"));
+console.log(calcolatrice(4, 2, "-"));
+console.log(calcolatrice(4, 2, "*"));
+console.log(calcolatrice(4, 2, "/"));
+console.log(calcolatrice(4, 0, "/"));
+
+console.log("\n");
