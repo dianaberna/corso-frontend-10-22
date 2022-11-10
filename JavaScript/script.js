@@ -1,5 +1,3 @@
-'use strict';
-
 // I miei appunti di JS
 
 // Il linguaggio JS è un linguaggio case sensitive
@@ -8,7 +6,7 @@
 var a = 1; // var si utilizzava fino al 2015 che sono state inoltrate le variabili let e const
 let b = 2; // la grande differenza da var, che le variabili con let che dichiariamo all'interno di un blocco non si possono chiamare al di fuori del nostro blocco. Questo ci da dei vanataggi, uno è quello che su progetti molto grandi la nostra variabile non rimane salvata in memoria tutto il tempo quindi questo permette di avere dei programmi più leggeri rispetto al totale utilizzo di var.
 const c = 3; // se siamo consapevoli che la nostra variabile non cambierà mai, allora per non avere errori non voluti impostiamo la nostra variabile con const così siamo consapevoli che non cambierà mai.
-
+/*
 // Le variabili possono essere di tipo:
 // Primitive types
 let number = 1234; // Number
@@ -182,7 +180,7 @@ if (array1.length >= array2.length) {
 } else {
   lunghezza = array2.length;
 }
-*/
+
 // ex. 13
 while (k < array1.length || k < array2.length) {
   if (array1[k] && array2[k]) {
@@ -268,7 +266,7 @@ for (let i = 0; i < array2.length; i++) {
   array2[i] = array2[i] / array1[array2.length - i];
 }
 console.log(array2);
-/*
+
 let singolName = [];
 let newName = [];
 // Ex 16
@@ -295,3 +293,22 @@ console.log(animali);
 animali.splice(1, 0, 'ciao');
 console.log(animali);
 */
+
+function sumArray(myArr) {
+  let sum = 0;
+  for (let i = 0; i < myArr.length; i++) {
+    sum = sum + myArr[i];
+  }
+  return sum;
+}
+
+console.log(sumArray([2, 4, 5]));
+
+function sumFunction(a, b) {
+  let somma = a + b;
+  return somma;
+}
+console.log(sumFunction(1, 2));
+function moltFunction(p1, p2) {
+  let moltiplicazione;
+}
