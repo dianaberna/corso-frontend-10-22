@@ -115,3 +115,44 @@ for(let i=0;i<array.length;i++){
     n=n-1
 }
 console.log(arraycontrario);
+
+let array1=[1,2,2,3,4];
+let array2=[4,2,2,4];
+let lunghezza;
+let lungo;
+console.log("--- 13) Creare un array3 con la somma degli elementi dell’array1 e dell’array2");
+if(array1.length >= array2.length){
+    lunghezza= array1.length;
+    lungo=true;
+}else{
+    lunghezza= array2.length;
+    lungo=false;
+}
+let array3=[];
+for(let i=0;i < lunghezza;i++){
+    if(i < array2.length && lungo === true){
+        array3.push(array1[i]+array2[i]);
+    }else if(lungo === true){
+        array3.push(array1[i]);
+    }
+    if(i < array1.length && lungo === false){
+        array3.push(array1[i]+array2[i]);
+    }else if(lungo === false){
+        array3.push(array2[i]);
+    }
+}
+console.log(array3);
+
+console.log("--- 14) Creare un array3 con la somma degli elementi (non la posizione) dispari di array1 e pari di array2");
+
+console.log("--- 15) Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1");
+let arraydiv=[];
+for(let i=0;i<array1.length;i++){
+    array2[i]=array2[i]/(array2[(array1.length-i)]);
+}
+console.log(arraydiv);
+console.log("--- 16) Verificare se gli array sono palindromi come ad esempio “anna”, “radar”, “emme”");
+for(let i=0;i<array1.length;i++){
+
+
+}
