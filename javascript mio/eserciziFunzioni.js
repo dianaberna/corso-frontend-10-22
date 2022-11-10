@@ -186,3 +186,29 @@ console.log(calcolatrice(4, 2, "/"));
 console.log(calcolatrice(4, 0, "/"));
 
 console.log("\n");
+
+// Fare la somma di tutti gli elementi di un array
+
+function sommaElementiArray(n1, n2, n3, n4) {
+    let arr = new Array();
+    arr[0] = n1;
+    arr[1] = n2;
+    arr[2] = n3;
+    arr[3] = n4;
+
+    long = arr.length;
+    somma = 0;
+    i = 0;
+
+    while (i < long) {
+        somma = somma + arr[i];
+        i++;
+    }
+
+    return somma;
+}
+
+console.log("La somma degli elementi dell'array è: ");
+console.log(sommaElementiArray(4, 3, 6, 8));
+
+console.log("\n");
