@@ -201,26 +201,6 @@ if (palindromo!=false) {
   console.log("Il nome "+str6ter+" è palindromo")
 }
 
-// stesso esercizio con funzione reverse //
-const array11=[...array7]
-console.log(array7)
-console.log(array11)
-console.log(array7.reverse())
-console.log(array11)
-if (array11 == array7) {
-  console.log("reverse - L'array 7 è palindromo")
-}
-else{
-  console.log("reverse - L'array 7 non è palindromo")
-}
-/*array11=array7
-if (array11 == array7.reverse()) {
-  console.log("reverse - L'array 7 è palindromo")
-}
-else{
-  console.log("reverse - L'array 7 non è palindromo")
-} */
-
 //---- ES 15 ----------------------
 
 for (i = 0; i < max_length; i++) {
