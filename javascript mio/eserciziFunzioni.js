@@ -50,4 +50,19 @@ console.log("\n");
 
 // Il problema della fattoria
 
+console.log("Il problema della fattoria");
 
+function quanteZampe(polli, mucche, maiali)
+{
+
+    zampePolli = polli * 2;
+    zampeMucche = mucche * 4;
+    zampeMaiali = maiali * 4;
+
+    totaleZampe = zampePolli + zampeMucche + zampeMaiali;
+
+    return zampePolli, zampeMucche, zampeMaiali, totaleZampe;
+
+}
+
+console.log(quanteZampe(3, 4, 5));
