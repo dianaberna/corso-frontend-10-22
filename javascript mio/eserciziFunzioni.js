@@ -74,6 +74,8 @@ console.log("\n");
 
 // Case di fiammiferi
 
+console.log("Case di fiammiferi");
+
 function numeroDiFiammiferi(step) {
     if (step == 0) {
         console.log("hai inserito 0");
@@ -93,6 +95,9 @@ console.log("\n");
 
 // Somma i numeri da un unico numero
 
+
+console.log("Somma i numeri da un unico numero");
+
 function sommaDaUnUnicoNumero(numero) {
     i = 1;
     somma = 0;
@@ -105,6 +110,28 @@ function sommaDaUnUnicoNumero(numero) {
 
 console.log(sommaDaUnUnicoNumero(6));
 
+console.log("\n");
+
 // Trova lo sconto
 
-function trovaSconto()
+console.log("Trova lo sconto");
+
+function trovaSconto(prezzo, sconto)
+{
+
+    sott = (sconto * prezzo)/ 100;
+
+    scontato = parseFloat(prezzo - sott);
+
+    return scontato;
+}
+
+console.log(trovaSconto(1500, 50));
+console.log(trovaSconto(89, 20));
+console.log(trovaSconto(100, 75));
+
+console.log("\n");
+
+// Posizione nell'alfabeto 
+
+
