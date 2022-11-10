@@ -13,22 +13,20 @@ console.log(animali)
 animali.pop()
 console.log(animali) 
 animali.splice(2 , 2, "fenicottero")
-/* animali.splice(1, 1, "criceto1") */
-/* animali[1] = "criceto2" */
-console.log("---")
 console.log(animali) 
 let elemento = animali.slice(1)
 console.log(elemento)
-console.log("---")
 
+console.log("--- stampa arraymisto ---")
 let arraymisto = ["gatto", 2, 5, "topo", 3, 299];
+
 // "gatto" è in posizione/indice 0
 // 2 è in posizione 1
 // 5 è in posizione 2
 // "topo" è in posizione 3
+
 console.log(arraymisto);
 console.log(arraymisto.length); // stampa 6
-// pippo[a] --> l'elemento dell'array pippo in posizione a
 
 let a = 2;
 let b = 6;

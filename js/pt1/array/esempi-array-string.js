@@ -1,4 +1,4 @@
-let animali = ["gatto", "cane", "coniglio", "topo", "ape"];
+animali = ["gatto", "cane", "coniglio", "topo", "ape"];
 // let animali = ["gatto", "criceto", "cane", "coniglio", "topo", "ape", "gatto", "cane", "coniglio", "topo", "ape"];
 // stringhe =
 console.log(animali)
@@ -12,7 +12,7 @@ console.log(animali[0][3])
 // requisito --> animali[i].length == 4
 
 
-let indice = 0; 
+indice = 0; 
 
 // contare quante parole di 4 caratteri ci sono nel nostro array
 /*
