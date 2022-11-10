@@ -85,20 +85,31 @@ console.log("\ntrovaSconto");
 
 function trovaSconto(prezzo, sconto) {
     if (sconto <= 100) {
-        let totale = parseFloat(prezzo-((prezzo / 100) * sconto));
+        let totale = parseFloat(prezzo - (prezzo / 100) * sconto);
         return totale.toFixed(2);
     } else {
         return "inserisci un  sconto max del 100%";
     }
 }
 
-console.log(trovaSconto(1500, 50)); 
-console.log(trovaSconto(89, 20)); 
-console.log(trovaSconto(100, 75)); 
+console.log(trovaSconto(1500, 50));
+console.log(trovaSconto(89, 20));
+console.log(trovaSconto(100, 75));
 
 console.log("\nletteraInPosizione");
 
-// function letteraInPosizione(car) {
-//     risultato=
-// }
+function letteraInPosizione(car) {
+    if (car > 0 && car <= 26 && Number.isInteger(car)) {
+        car = parseInt(car);
+        risultato = String.fromCharCode(car + 96);
+        return risultato;
+    } else {
+        risultato = "invalid";
+        return risultato
+    }
+}
 
+console.log(letteraInPosizione(1));
+console.log(letteraInPosizione(26.0));
+console.log(letteraInPosizione(0));
+console.log(letteraInPosizione(4.5));
