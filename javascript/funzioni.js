@@ -105,7 +105,7 @@ function letteraInPosizione(car) {
         return risultato;
     } else {
         risultato = "invalid";
-        return risultato
+        return risultato;
     }
 }
 
@@ -113,3 +113,80 @@ console.log(letteraInPosizione(1));
 console.log(letteraInPosizione(26.0));
 console.log(letteraInPosizione(0));
 console.log(letteraInPosizione(4.5));
+
+console.log("\ncalcolatrice");
+
+function calcolatrice(num1, op, num2) {
+    if (op == "+") {
+        risultato = num1 + num2;
+        return risultato;
+    } else if (op == "*") {
+        risultato = num1 * num2;
+        return risultato;
+    } else if (op == "/") {
+        if (num2 == 0) {
+            return "Impossibile dividere per 0!";
+        } else {
+            risultato = num1 / num2;
+            return risultato;
+        }
+    } else if (op == "-") {
+        risultato = num1 - num2;
+        return risultato;
+    } else {
+        return "non hai inserito un operatore corretto";
+    }
+}
+
+console.log(calcolatrice(2, "+", 4));
+console.log(calcolatrice(2, "*", 4));
+console.log(calcolatrice(2, "/", 4));
+console.log(calcolatrice(2, "-", 4));
+
+console.log("\nsommaElementiArray");
+
+function sommaElementiArray(array) {
+    let i = 0;
+    let somma = 0;
+    while (i < array.length) {
+        somma += array[i];
+        i++;
+    }
+    return somma;
+}
+
+console.log(sommaElementiArray([1, 2, 4]));
+console.log(sommaElementiArray([4, 2, 10, 2]));
+console.log(sommaElementiArray([1]));
+
+console.log("\nquantiTrue");
+
+function quantiTrue(array) {
+    let i = 0;
+    let conta = 0;
+    while (i < array.length) {
+        if (array[i] == true || array[i] == false) {
+            if(array[i] == true){
+                conta++;
+            }
+            
+        }else{
+            return "i valori non sono tutti booleani"
+        }
+        i++;
+    }
+    return conta;
+}
+
+console.log(quantiTrue([true, true,true, false]));
+console.log(quantiTrue([]));
+console.log("prova con un valore non booleano");
+console.log(quantiTrue([true, true,true, false,2]));
+
+
+console.log("\nspessore pezzo di carta (in progress)");
+
+function spessore(pieghe){
+    let i=0
+
+}
