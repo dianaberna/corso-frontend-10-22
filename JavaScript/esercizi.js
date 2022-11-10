@@ -150,3 +150,29 @@ console.log(newArray11);
 // 12) Stampare al contrario gli elementi dell’array
 
 console.log("esercizio 12");
+
+let s = 0;
+let newArray12 = array.reverse(array);
+
+console.log(newArray12);
+
+// 13) Creare un array3 con la somma degli elementi dell’array1 e dell’array2
+
+console.log("esercizio 13");
+
+let array1 = [1, 2, 2, 3, 4];
+let array2 = [4, 2, 2, 4];
+let newArray13 = [];
+let t = 0;
+
+for (t = 0; t < array1.length; t++) {
+    if (array2.length < array1.length) {
+        array2.push(0);
+    }
+    newArray13.push(array1[t] + array2[t]);
+}
+console.log(newArray13);
+
+// 14)  Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2
+
+console.log("esercizio 14");
