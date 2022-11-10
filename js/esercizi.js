@@ -148,7 +148,7 @@ while (i < arraydop.length) {
     i = i + 1;
 }
 
-// esercizi 11
+// esercizio 11
 
 i = 0;
 j = 0;
@@ -158,27 +158,102 @@ long2 = array.length + array.length;
 
 let duevolte = new Array(long2);
 
-while( i < array.length)
-{
+while (i < array.length) {
     duevolte[i] = array[i];
     i++;
 }
 
-j = i + 1;
+j = i;
 i = 0;
 
-while( j < duevolte.length)
-{
-
+while (j < duevolte.length) {
     duevolte[j] = array[i];
     j = j + 1;
     i = i + 1;
 }
 
-console.log("L'array con due volte gli elementi di array è: ")
+console.log("L'array con due volte gli elementi di array è: ");
 
-while( k < duevolte.length)
-{
-    console.log(duevolte[k])
+while (k < duevolte.length) {
+    console.log(duevolte[k]);
     k = k + 1;
 }
+
+// esercizio 12
+
+console.log("l'array stampato dalla fine all'inizio: ");
+
+i = array.length - 1;
+
+while (i >= 0) {
+    console.log(array[i]);
+    i = i - 1;
+}
+
+// esercizio 13
+
+
+const array1 = [1, 2, 2, 3, 4];
+const array2 = [4, 2, 2, 4];
+
+/*
+longarr = 0;
+shortarr = 0;
+
+if (array1.length >= array2.length) {
+    longarr = array1.length;
+    shortarr = array2.length;
+} else {
+    longarr = array2.length;
+    shortarr = array1.length;
+}
+
+let array3 = new Array(longarr);
+
+i = 0;
+
+while (i < shortarr) {
+    array3[i] = array1[i] + array2[i];
+    i = i + 1;
+}
+
+if( array1.length == longarr )
+{
+    while( i < longarr )
+    {
+        array3[i] = array1[i]
+    }
+} 
+
+console.log("array3, con gli elementi sommati di array1 e array2 è: ");
+
+i = 0;
+
+while (i < longarr) {
+    console.log(array3[i]);
+    i = i + 1;
+}
+
+*/
+
+
+array3 = []; 
+let maxArrayLen = 0;
+
+if (array1.length > array2.length) {
+    maxArrayLen = array1.length;
+} else {
+    maxArrayLen = array2.lenghth;
+}
+for (let i = 0; i < maxArrayLen; i++) {
+    if (array1[i] != undefined && array2[i] != undefined) {
+        array3.push(array1[i]+array2[i])
+    } else if (array1[i] == undefined && array2[i] != undefined) {
+        array3.push(array2[i])
+    } else {
+        array3.push(array1[i])
+    }
+}
+console.log(array3);
+
+// esericizio 14
