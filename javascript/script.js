@@ -179,21 +179,16 @@ console.log(array3);
 console.log("es 14")
 
 array3=[];
-
 i = 0;
 conta=0;
-let el = 0;
-
 
 while (i< array1.length || i<array2.length) {
     if (array1[i]%2!=0){
-        el = array1[i];
-        array3[conta]=el
+        array3[conta]=array1[i]
         conta++
     }
     if (array2[i]%2==0){
-        el = array2[i];
-        array3[conta]=el
+        array3[conta]=array2[i]
         conta++
     }
     i++
