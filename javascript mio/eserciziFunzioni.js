@@ -74,33 +74,37 @@ console.log("\n");
 
 // Case di fiammiferi
 
-function numeroDiFiammiferi(step)
-{
-
-    if( step = 0)
-    {
-        return 0;
-
-    } else if( step < 0 ){
-        
-        console.log("inserire un numero intero positivo");
-        
-    } else if( step > 0){
-
-        numero = step * 6 - (step - 1);
-
-        return numero;
-
+function numeroDiFiammiferi(step) {
+    if (step == 0) {
+        console.log("hai inserito 0");
+    } else if (step < 0) {
+        console.log("hai inserito un numero negativo");
+    } else if (step > 0) {
+        totale = step * 6 - (step - 1);
+        return totale;
     }
-
 } // fine casa fiammiferi
 
-console.log(numeroDiFiammiferi(0));
 console.log(numeroDiFiammiferi(1));
 console.log(numeroDiFiammiferi(4));
 console.log(numeroDiFiammiferi(87));
 
+console.log("\n");
 
+// Somma i numeri da un unico numero
 
+function sommaDaUnUnicoNumero(numero) {
+    i = 1;
+    somma = 0;
+    while (i <= numero) {
+        somma = somma + i;
+        i++;
+    }
+    return somma;
+}
 
+console.log(sommaDaUnUnicoNumero(6));
 
+// Trova lo sconto
+
+function trovaSconto()
