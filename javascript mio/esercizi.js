@@ -257,3 +257,5 @@ for (let i = 0; i < maxArrayLen; i++) {
 console.log(array3);
 
 // esericizio 14
+
+
