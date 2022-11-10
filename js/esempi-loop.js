@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 // stampo 4 numeri pari 
 console.log("inizio stampo 4 numeri pari ")
 i = 0;
@@ -45,8 +49,11 @@ console.log("----")
 
 console.log("----")
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> main
 // quanti numeri pari ci sono da 1 a 100 TRANNE da 40 a 60
 i = 1;
 cont = 0;
@@ -92,4 +99,8 @@ while( i <= 100){
 }
 console.log("numeri dispari da 0 a 100 = "+cont)
 console.log("----")
+<<<<<<< HEAD
 console.log("fine esempi-loop.js");
+=======
+console.log("fine esempi-loop.js");
+>>>>>>> main

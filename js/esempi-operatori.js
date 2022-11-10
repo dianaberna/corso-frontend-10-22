@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> main
 // esempio calcolatrice
 let operatore = "+";
 let primonumero = 1;
