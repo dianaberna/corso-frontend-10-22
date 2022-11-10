@@ -329,7 +329,6 @@ console.log(`-------------------------------------------------------`)
 console.log(``)
 console.log(`Esrcizio 15 - Conteggio giorni tra 2 date`)
 { //parentesi messe solo per chiudere
-  const d = new Date("2015-03-25");
   function dayDiff(d1,d2) {
     let date1 = new Date(d1)
     let date2 = new Date(d2)
@@ -345,5 +344,34 @@ console.log(`-------------------------------------------------------`)
 console.log(``)
 console.log(`Esrcizio 16 - Rimuovere i duplicati di un array`)
 { //parentesi messe solo per chiudere
-
+  function dupsRemove1(array) { // questa funazione richiede l'ordinamento preventvo dell'array
+    array.sort()
+    for (let i = 0; i < array.length; i++) {
+      let last=array.lastIndexOf(array[i])
+      if ((i!=last)&&(array[i]==array[last])) {
+        array.splice((i),(last-i))
+      }
+    }  
+    return array
+  }
+  /******/
+  function dupsRemove2(array) { // questa funzione invece non lo richiede
+    for (let i = 0; i < array.length; i++) {
+      let last=array.lastIndexOf(array[i]) //qui inizializzo la variabile last che mi va ad indicare l'ultima posizione all'interno dell'array del valore che devo andare a confrontare
+      while ((i!=last)&&(array[i]==array[last])) {       // per non fare cancellare un dato che compare solo una volta, qui verifico 2 cose: che l'indice nel quale mi trovo sia diverso dall'ultimo (quindi che stiamo confrontando 2 valori che si trovano indici diversi) e che i valori siano duplicati (così da andare successivamente a cancellare l'ultimo valore) 
+        array.splice((last),(1))
+        last=array.lastIndexOf(array[i])  //qui reinizializzo la variabile last, così da verificase se, una volta cancellato l'ultimo valore duplicato dell'array, ce ne siano altri precedenti
+      }
+    }  
+    return array
+  }
+  console.log(dupsRemove1([1,0,1,0,1,1,1,1,1,1,0,0,0,0,0,2,3,1,2,0,0,0,0,true]))
+  console.log(dupsRemove1(["The","big","big","cat"]))
+  console.log(dupsRemove1(["John","John","Taylor"]))
+  console.log(`-- soluzione senza funzione sort --`)
+  console.log(dupsRemove2([1,0,1,0,1,1,1,1,1,1,0,0,0,0,0,2,3,1,2,0,0,0,0,true]))
+  console.log(dupsRemove2(["The","big","big","cat"]))
+  console.log(dupsRemove2(["Taylor","John","John","Taylor"]))
 }
+console.log(``)
+console.log(`-------------------------------------------------------`)
