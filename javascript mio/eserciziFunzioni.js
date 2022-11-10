@@ -189,26 +189,32 @@ console.log("\n");
 
 // Fare la somma di tutti gli elementi di un array
 
-function sommaElementiArray(n1, n2, n3, n4) {
-    let arr = new Array();
-    arr[0] = n1;
-    arr[1] = n2;
-    arr[2] = n3;
-    arr[3] = n4;
-
-    long = arr.length;
+function sommaElementiArray(array) {
+    
     somma = 0;
     i = 0;
 
-    while (i < long) {
-        somma = somma + arr[i];
-        i++;
+    while(i < array.length)
+    {
+
+        somma = somma + array[i];
+        i++
     }
 
     return somma;
+
 }
 
-console.log("La somma degli elementi dell'array è: ");
-console.log(sommaElementiArray(4, 3, 6, 8));
+array1 = [4, 3, 6, 8];
+array2 = [5, 7, 8, 3, 2];
+
+console.log("La somma degli elementi degli elementi dell'array è: ");
+
+console.log(sommaElementiArray(array1));
+console.log(sommaElementiArray(array2));
 
 console.log("\n");
+
+// Quante volte è vero?
+
+
