@@ -3,6 +3,12 @@
 console.log("moltiplicazione");
 
 function moltiplicazione(a, b) {
+    if (b) {
+        console.log("b è stato inserito");
+    } else {
+        console.log("b non è stato inserito");
+        return "non è stato inserito b";
+    }
     return a * b;
 }
 
@@ -94,3 +100,166 @@ function trovaSconto(prezzo, percentualeSconto) {
 console.log(trovaSconto(1500, 50));
 console.log(trovaSconto(89, 20));
 console.log(trovaSconto(100, 75));
+
+// Posizione nell'alfabeto
+
+console.log("posizione nell'alfabeto");
+
+function letteraInPosizione(a) {
+    if (Number.isInteger(a) && 0 < a && a < 27) {
+        return String.fromCharCode(a + 96);
+    } else {
+        return "invalid";
+    }
+}
+
+console.log(letteraInPosizione(1));
+console.log(letteraInPosizione(26.0));
+console.log(letteraInPosizione(0));
+console.log(letteraInPosizione(4.5));
+
+// Calcolatrice di base
+
+console.log("calcolatrice di base");
+
+function calcolatrice(a, b, c) {
+    if (b === "+") {
+        return a + c;
+    } else if (b === "-") {
+        return a - c;
+    } else if (b === "/") {
+        if (c === 0) {
+            return "impossibile dividere per 0";
+        } else {
+            return a / c;
+        }
+    } else if (b === "*") {
+        return a * c;
+    }
+}
+
+console.log(calcolatrice(2, "+", 2));
+console.log(calcolatrice(10, "-", 2));
+console.log(calcolatrice(2, "*", 2));
+console.log(calcolatrice(4, "/", 2));
+console.log(calcolatrice(5, "/", 0));
+
+// Fare la somma di tutti gli elementi di un array
+
+console.log("somma elementi array");
+
+function sommaElementiArray(array) {
+    let sommaArray = 0;
+    for (let i = 0; i < array.length; i++) {
+        sommaArray += array[i];
+    }
+    return sommaArray;
+}
+
+console.log(sommaElementiArray([1, 2, 4]));
+console.log(sommaElementiArray([4, 2, 10, 2]));
+console.log(sommaElementiArray([1]));
+
+// Quante volte è vero?
+
+console.log("quante volte è vero?");
+
+function quantiTrue(array2) {
+    let sommaTrue = 0;
+    if (array2.length === 0) {
+        sommaTrue = 0;
+    } else {
+        for (let i = 0; i < array2.length; i++) {
+            if (array2[i] === true) {
+                sommaTrue++;
+            }
+        }
+    }
+    return sommaTrue;
+}
+
+console.log(quantiTrue([true, false, false, true, false]));
+console.log(quantiTrue([false, false, false, false]));
+console.log(quantiTrue([]));
+
+// Piegare un pezzo di Paper
+
+console.log("piegare un pezzo di Paper");
+
+function spessore(n) {
+    let s = 0.0005;
+    return 2 ** n * s;
+}
+
+console.log(spessore(1));
+console.log(spessore(4));
+console.log(spessore(21));
+
+// Validare un'email
+
+console.log("validare un'email");
+
+function validateEmail(mail) {
+    if (mail.includes("@") && mail.includes(".")) {
+        if (
+            mail.indexOf("@") > 0 &&
+            mail.lastIndexOf(".") > mail.indexOf("@") + 1 &&
+            mail.lastIndexOf(".") < mail.length - 1
+        ) {
+            return "L'indirizzo mail è valido";
+        } else {
+            return "L'indirizzo mail non è valido";
+        }
+    } else {
+        return "L'indirizzo mail non è valido";
+    }
+}
+
+console.log(validateEmail("@gmail.com"));
+console.log(validateEmail("hello.gmail@com"));
+console.log(validateEmail("gmail"));
+console.log(validateEmail("hello@gmail"));
+console.log(validateEmail("hello@edabit.com"));
+
+// Sasso carta forbici
+
+console.log("sasso carta forbici");
+
+function rps(p1, p2) {
+    if (
+        (p1 == "Rock" || p1 == "Paper" || p1 == "Scissors") &&
+        (p2 == "Rock" || p2 == "Paper" || p2 == "Scissors")
+    ) {
+        if (p1 === p2) {
+            return "It's a draw";
+        } else if (p1 === "Rock") {
+            if (p2 === "Paper") {
+                return "The winner is p2";
+            } else if (p2 === "Scissors") {
+                return "The winner is p1";
+            }
+        } else if (p1 === "Paper") {
+            if (p2 === "Scissors") {
+                return "The winner is p2";
+            } else if (p2 === "Rock") {
+                return "The winner is p1";
+            }
+        } else if (p1 === "Scissors") {
+            if (p2 === "Paper") {
+                return "The winner is p1";
+            } else if (p2 === "Rock") {
+                return "The winner is p2";
+            }
+        }
+    } else {
+        return "Please write 'Rock, Paper or Scissors'";
+    }
+}
+console.log(rps("Rock", "Paper"));
+console.log(rps("Scissors", "Paper"));
+console.log(rps("Paper", "Paper"));
+console.log(rps("Prova", "else"));
+
+// Quanti giorni tra due date
+
+console.log("quanti giorni tra due date");

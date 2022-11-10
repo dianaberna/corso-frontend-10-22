@@ -36,7 +36,7 @@ for (j = 0; j < array.length; j++) {
 }
 console.log(sommaEs3);
 
-// 4) tampare la somma dei soli elementi in posizione pari
+// 4) Stampare la somma dei soli elementi in posizione pari
 
 console.log("esercizio 4");
 
