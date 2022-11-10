@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {--rosa:#F03A76;
+       --bianco:#DEECF9;
+
+      }
+
+body  {
+        /* background-color: white; */
+        background-color:  #181823;
+        background-image: url(./assets/background.png);
+        background-repeat: no-repeat;
+        background-size: 100vw auto;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900px;
+      }
+
+
+
+                          
+nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 250px;
+        margin-left: 250px;
+    }
+
+nav :first-child {
+                    color: var(--rosa);
+                    font-weight: 900;
+                    font-size: 30px;
+                 }
+
+.header-content img {
+                       
+                      width: 706px;
+                      height: 703px;
+                        
+                        
+                   }
+
+.header-content {
+                display: flex;
+                align-items: center;
+                margin-left: 200px;
+                gap: 200px;
+                text-align: start;
+
+              }
+
+.headline { 
+            width: 540px;
+}
+                
+h1, h2, h3, p {color:var(--bianco);}
+
+
+h1 { font-size: 56px;
+     text-transform: capitalize;
+   }
+
+.header-content span { color: var(--rosa);} 
+
+.header-content button {
+                        background-color: var(--rosa);
+                        width: 223px;
+                        height: 58px;
+                        border-radius: 50px;
+                        color: white;
+                        font-family: inherit;
+                        font-size: 24px;
+                        border-style: none;
+                     }
+
+.mobile, .website, .ui-ux {
+                            background-color: black;
+                            border-radius: 15px;
+                            width: 389px;
+                            height: 320px
+                            color: var(--bianco);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            text-align: center;
+                            padding: 10px;
+                          }
+
+.categories {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              gap: 20px;
+              padding-top: 100px;
+  }
+
+.text {
+        width: 500px;
+        text-align: center;
+        color: var(--bianco);
+        margin-top: 400px;
+        margin-left: 700px;
+      }  
+            
+.text hr {
+                  
+                  width: 70px;
+                  height: 0px;
+                  border-color: var(--rosa);
+
+              }
+            
+.engeneering {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-left: 300px;
+                padding-right: 400px;
+                padding-top: 150px;
+                gap: 200px;
+              }
+
+.engeneering hr {
+                    width: 70px;
+                    height: 0px;
+                    border-color: #14B8E4;
+                    margin-right: 527px;
+                }      
+                
+.engeneering h2 {
+                            font-size: 36px;
+                            text-transform: capitalize;
+
+                }        
+                
+.engeneering p { font-size: 18px;}   
+
+.engeneering span {
+                      width: 600px;
+                      text-align: start;
+
+                  }
+
+.team {
+        background-color: black;
+        width: auto;
+        height: 700px;
+        display: flex;
+        flex-direction: row;
+
+      }                  
+
+.team hr {  width: 70px;
+            height: 0px;
+            border-color: var(--rosa);
+          }
+
+.team span {width: 500px;
+  text-align: center;
+  color: var(--bianco);
+  margin-top: 400px;
+  margin-left: 700px;
+text-align: start;
+}
