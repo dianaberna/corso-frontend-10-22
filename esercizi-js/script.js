@@ -204,7 +204,7 @@ array2 = [4, 2, 3, 2, 4];
 
 //Verifica su array1 [1, 2, 2, 3, 4]
 let palindromo = 0;
-let array = array1;
+let array = array1;    //Nome array da verificare
 for(i=0, j=array.length-1; i!=j && i<j; i++, j--){
   if(array[i] == array[j]){
     palindromo++;
