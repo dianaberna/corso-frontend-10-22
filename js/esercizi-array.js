@@ -302,9 +302,9 @@ while (i < array1.length || i < array2.length) {
     i++;
 }
 
-// 16 - Verificare se gli array sono palindromi come ad esempio “anna”, “radar”, “emme”
+// 16 - Verificare se gli array sono palindromi come ad esempio “anna”, “radar”, “emme”, "112 211"
 console.log("-- 16 --");
-array2 = [4, 2, 3, 2, 4];
+array2 = [4, 2, 5, 2, 4];
 // array2 = [4, 2, 3, 2, 4];
 i = 0;
 cont = 0;
@@ -323,7 +323,7 @@ while (i < Math.floor(array2.length) / 2) {
     i++;
 }
 
-if (cont == array2.length / 2 || cont == Math.floor(array2.length / 2) + 1) {
+if (cont == array2.length / 2 || cont == Math.floor(array2.length / 2)) {
     console.log("è palindromo");
 } else {
     console.log("non è palindromo");
@@ -337,17 +337,32 @@ if (cont == array2.length / 2 || cont == Math.floor(array2.length / 2) + 1) {
 console.log(Math.floor(array2.length / 2))
 console.log(Math.ceil(array2.length / 2))
 
+console.log("Math");
 if(3 % 2 == 1){
     console.log("dispari")
- }else{
-     console.log("pari")
- }
- 
- if(Math.abs(-3 % 2) == 1){
-     console.log("dispari")
- }else{
-      console.log("pari")
- }
+}else{
+    console.log("pari")
+}
+
+console.log(-3 % 2)
+let numerodacontrollare = 3
+if(numerodacontrollare % 2 == 1 || numerodacontrollare % 2 == -1){
+    console.log("dispari")
+}else{
+    console.log("pari")
+}
+
+if(numerodacontrollare % 2 != 0){
+    console.log("dispari")
+}else{
+    console.log("pari")
+}
+
+if(Math.abs(-3 % 2) == 1){
+    console.log("dispari")
+}else{
+    console.log("pari")
+}
 
 console.log(5 / 2)
 console.log(Math.floor(5 / 2))
