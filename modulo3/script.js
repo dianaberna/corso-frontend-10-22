@@ -280,3 +280,26 @@ console.log("La somma dei numeri è "+somma_luca2)
 console.log("La somma dei numeri è "+somma_luca3)
 console.log("La somma dei numeri dentro l'array annidato è "+somma_luca5)
 console.log("La somma dei numeri del vettore più i numeri del vettore annidiato è "+(somma_luca3+somma_luca5))
+
+
+
+
+/*********************************/
+
+const str = "Hello World ciao"
+str.replace("l","?")
+console.log(str)
+console.log(str.replace("l","*"))
+console.log(str.replaceAll("l","*"))
+console.log(str.repeat(3))
+console.log(str.slice(6))
+console.log(str.split(" "))
+
+let newstr = "hello.world.ciao.ciao"
+console.log(newstr.split("."))
+
+console.log(str.substring(1,5))
+console.log(str.indexOf("World"))
+
+console.log(str.includes("Hello"))
+console.log(str.includes("Prova"))

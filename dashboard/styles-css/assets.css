@@ -16,6 +16,9 @@ main h1{
 main>div{
   display: flex;
 }
+main>div>div{
+  margin: 0.75rem;
+}
 .statistics{
   display: grid;
   grid-template-columns: 13fr 1fr 13fr;
@@ -55,6 +58,13 @@ main>div{
   border-radius: 0 0 .875rem .875rem;
   display: grid;
   justify-content: center;
+}
+.graph{
+  background-color: white;
+}
+.graph div:last-of-type{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 /*

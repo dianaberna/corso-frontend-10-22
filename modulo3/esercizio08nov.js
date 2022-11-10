@@ -13,6 +13,7 @@ let array3 = []
 let array4 = []
 let array5 = []
 console.log("---STAMPA VALORI ARRAY---")
+
 for (let i = 0; i < array.length; i++) {
   console.log(" - Il "+(i+1)+"° elemento dell'array è "+array[i])   // stampa tutti gli elementi dell'array in ordine
   somma1=somma1+array[i]                                            //somma di tutti gli elementi
@@ -35,13 +36,19 @@ for (let i = 0; i < array.length; i++) {
     min=array[i]
   }
   if (array[i]<0) {                                                 //crea un nuovo array con i soli elementi dispari
-    array2[x]=array[i]
-    x++
+    array2.push(array[i])
+    //array2[x]=array[i]
+    //x++
   }
-  array3[i]=array[i]*2                                              //crea un nuovo array con i valori raddoppiati
-  array4[i]=array4[i+array.length]=array[i]                         //crea un nuovo array con i dati duplicati
-  array5[array.length-i-1]=array[i]                                 //crea un nuovo array ordinato al contrario
+  array3.push(array[i]*2)
+  //array3[i]=array[i]*2                                            //crea un nuovo array con i valori raddoppiati
+  //array4[i]=array4[i+array.length]=array[i]                       //crea un nuovo array con i dati duplicati
+  //array5[array.length-i-1]=array[i]                               //crea un nuovo array ordinato al contrario
 }
+array4=array.concat(array)
+array.reverse()
+array5=array
+//---//
 console.log("")
 console.log("---ESERCIZI BASE---")
 console.log("")
@@ -59,3 +66,271 @@ console.log(" - Il secondo array è composto dai valori "+array2)
 console.log(" - Il terzo array è composto dai valori "+array3)
 console.log(" - Il quarto array è composto dai valori "+array4)
 console.log(" - L'array iniziale scritto al contrario è composto dai valori "+array5)
+array.reverse()
+
+// -------------------------- //
+console.log("")
+console.log("---ESERCIZI ARRAY INTERMEDI---")
+console.log("")
+let array6=[1,2,2,3,4]
+let array6bis=["a","n","n","a"]
+let str6ter='Anina'
+let array7=[4,2,2,4]
+let array7bis=["L","u","c","a"]
+let str7ter='luca'
+let array8=[]
+let array9=[]
+let array10=[]
+let m=0
+let n=0
+
+for (n = 0; n < array6.length; n++) {
+  if (array6[n]%2!=0) {
+    array10[m]=array6[n]
+    m++
+  }
+}
+for (n = 0; n < array7.length; n++) {
+  if (array7[n]%2==0) {
+    array10[m]=array7[n]
+    m++
+  }  
+}
+//---- ES 13 e 14 -----------------
+m=0
+let max_length=array7.length
+if (array7.length < array6.length) {
+  max_length=array6.length
+} 
+for (i = 0; i < max_length; i++) {
+  if (typeof (array6[i]) != 'number') {
+  // if (typeof (array6[i]) === false) {
+    array8[i]=0+array7[i];
+  }
+  else{
+    if (typeof (array7[i]) != 'number') {
+    //if (typeof (array7[i]) === false) {
+      array8[i]=array6[i]+0;
+    } else {
+      array8[i]=array6[i]+array7[i];
+    }
+  }
+  if (array6[i]%2!=0) {
+    array9[m]=array6[i]
+    m++
+  }
+  if (array7[i]%2==0) {
+    array9[m]=array7[i]
+    m++
+  }  
+}
+
+
+console.log("L'array risultante dalla somma degli array 6 e 7 è composto dai numeri: "+array8)
+console.log("L'array composto dai numeri dispari del 6 e pari del 7 è composto dai numeri: "+array9)
+console.log("L'array composto dai numeri dispari del 6 e pari del 7 è composto dai numeri: "+array10)
+
+//---- ES 16 ---------------------------------------
+
+let palindromo
+for (i = 0; i < (array7.length/2); i++) {
+  if ((array6[i])!=(array6[array6.length-i-1])) {
+    console.log("L'array 6 non è palindromo")
+    palindromo = false
+    break;
+  }
+}
+if (palindromo!=false) {
+  console.log("L'array 6 è palindromo")
+}
+
+palindromo = null
+for (i = 0; i < (array7.length/2); i++) {
+  if ((array7[i])!=(array7[array7.length-i-1])) {
+    console.log("L'array 7 non è palindromo")
+    palindromo = false
+    break;
+  }
+}
+if (palindromo!=false) {
+  console.log("L'array 7 è palindromo")
+}
+
+palindromo = null
+for (i = 0; i < (array6bis.length/2); i++) {
+  if ((array6bis[i])!=(array6bis[array6bis.length-i-1])) {
+    console.log("L'array 6 bis non è palindromo")
+    palindromo = false
+    break;
+  }
+}
+if (palindromo!=false) {
+  console.log("L'array 6bis è palindromo")
+}
+palindromo = null
+for (i = 0; i < (array7bis.length/2); i++) {
+  if ((array7bis[i])!=(array7bis[array7bis.length-i-1])) {
+    console.log("L'array 7 bis non è palindromo")
+    palindromo = false
+    break;
+  }
+}
+if (palindromo!=false) {
+  console.log("L'array 7bis è palindromo")
+}
+palindromo = null
+for (i = 0; i < (str6ter.length/2); i++) {
+  if ((str6ter[i].toLowerCase())!=(str6ter[str6ter.length-i-1].toLowerCase())) {
+    console.log("Il nome "+str6ter+" non è palindromo")
+    palindromo = false
+    break;
+  }
+}
+if (palindromo!=false) {
+  console.log("Il nome "+str6ter+" è palindromo")
+}
+palindromo = null
+for (i = 0; i < (str7ter.length/2); i++) {
+  if ((str7ter[i].toLowerCase())!=(str7ter[str7ter.length-i-1].toLowerCase())) {
+    console.log("Il nome "+str7ter+" non è palindromo")
+    palindromo = false
+    break;
+  }
+}
+if (palindromo!=false) {
+  console.log("Il nome "+str6ter+" è palindromo")
+}
+
+// stesso esercizio con funzione reverse //
+const array11=[...array7]
+console.log(array7)
+console.log(array11)
+console.log(array7.reverse())
+console.log(array11)
+if (array11 == array7) {
+  console.log("reverse - L'array 7 è palindromo")
+}
+else{
+  console.log("reverse - L'array 7 non è palindromo")
+}
+/*array11=array7
+if (array11 == array7.reverse()) {
+  console.log("reverse - L'array 7 è palindromo")
+}
+else{
+  console.log("reverse - L'array 7 non è palindromo")
+} */
+
+//---- ES 15 ----------------------
+
+for (i = 0; i < max_length; i++) {
+  if ((typeof (array6[max_length-i-1]) != 'number') || ((array6[max_length-i-1]) == 0)){ // denominatore = 0
+    if ((typeof (array7[i]) != 'number') || ((array7[i]) == 0)) {
+      array7[i]="Indefinito"
+    } 
+    else {
+      array7[i]="Infinito"
+    }
+  }
+  else{
+    if ((typeof (array7[i]) != 'number') || ((array7[i]) == 0)) {
+      array7[i]=0
+      }
+      else{
+        array7[i]=array7[i]/(array6[max_length-i-1])
+      }
+  }
+}
+console.log("I valori aggiornati dell'array 7 sono: "+array7)
+
+console.log("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
+console.log("ESERCIZIO 16 con modifiche")
+console.log("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
+
+let primoarray=[1,2,2,3,4]
+let primoarraybis=["a","n","n","a"]
+let str1ter='Anina'
+let secondoarray=[4,2,2,4]
+let secondoarraybis=["L","u","c","a"]
+let str2ter='luca'
+
+let palin_control
+for (i = 0; i < (primoarray.length/2); i++) {
+  if ((primoarray[i])!=(primoarray[primoarray.length-i-1])) {
+    console.log("L'array 6 non è palin_control")
+    palin_control = false
+    break;
+  }
+}
+if (palin_control!=false) {
+  console.log("L'array 6 è palin_control")
+}
+
+palin_control = null
+for (i = 0; i < (secondoarray.length/2); i++) {
+  if ((secondoarray[i])!=(secondoarray[secondoarray.length-i-1])) {
+    console.log("L'array 7 non è palin_control")
+    palin_control = false
+    break;
+  }
+}
+if (palin_control!=false) {
+  console.log("L'array 7 è palin_control")
+}
+
+palin_control = null
+for (i = 0; i < (primoarraybis.length/2); i++) {
+  if ((primoarraybis[i])!=(primoarraybis[primoarraybis.length-i-1])) {
+    console.log("L'array 6 bis non è palin_control")
+    palin_control = false
+    break;
+  }
+}
+if (palin_control!=false) {
+  console.log("L'array 6bis è palin_control")
+}
+palin_control = null
+for (i = 0; i < (secondoarraybis.length/2); i++) {
+  if ((secondoarraybis[i])!=(secondoarraybis[secondoarraybis.length-i-1])) {
+    console.log("L'array 7 bis non è palin_control")
+    palin_control = false
+    break;
+  }
+}
+if (palin_control!=false) {
+  console.log("L'array 7bis è palin_control")
+}
+palin_control = null
+for (i = 0; i < (str1ter.length/2); i++) {
+  if ((str1ter[i].toLowerCase())!=(str1ter[str1ter.length-i-1].toLowerCase())) {
+    console.log("Il nome "+str1ter+" non è palin_control")
+    palin_control = false
+    break;
+  }
+}
+if (palin_control!=false) {
+  console.log("Il nome "+str1ter+" è palin_control")
+}
+palin_control = null
+for (i = 0; i < (str2ter.length/2); i++) {
+  if ((str2ter[i].toLowerCase())!=(str2ter[str2ter.length-i-1].toLowerCase())) {
+    console.log("Il nome "+str2ter+" non è palin_control")
+    palin_control = false
+    break;
+  }
+}
+if (palin_control!=false) {
+  console.log("Il nome "+str1ter+" è palin_control")
+}
+console.log("****PROVA****")
+const provaes15=primoarray
+console.log(primoarray)
+console.log(provaes15)
+console.log(primoarray.reverse())
+console.log(provaes15)
+if (provaes15 == primoarray.reverse()) {
+  console.log("prova reverse - L'array è palindromo")
+}
+else{
+  console.log("prova reverse - L'array non è palindromo")
+}
