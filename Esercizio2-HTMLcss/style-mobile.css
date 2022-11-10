@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    padding: 1rem;
+    margin: 0;
+}
+
+header{
+    padding-top: 2rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 18px;
+}
+
+p{
+    font-size: 14px;
+}
+
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button{
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header input{
+    background-color: transparent;
+    border: none;
+    padding-left: 1rem;
+    font-size: .875rem;
+    font-family: inherit;
+    width: 100%;
+}
+
+#input-search{
+    display: flex;
+    background-color: #C4C4C4;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: .875rem;
+    font-family: inherit;
+    width: 95%;
+}
+
+
+#last-contacted .container {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    overflow-x: scroll;
+    min-height: 4.6875rem;
+}
+
+#last-contacted > .container > .img > #span1 {
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: #333333;
+    border-radius: 100%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    
+}
+
+#last-contacted > .container > .img > #span2 {
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: #333333;
+    border-radius: 100%;
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    
+}
+
+#last-contacted > .container > .img > #span3 {
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: #333333;
+    border-radius: 100%;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    
+}
+
+#last-contacted > .container > .img > #span4 {
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: #333333;
+    border-radius: 100%;
+    position: absolute;
+    top: 50px;
+    left: 275px;
+    
+}
+
+#last-contacted > .container > .img > #span5 {
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: #333333;
+    border-radius: 100%;
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    
+}
+
+#last-contacted > .container > .img > #span6 {
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: #333333;
+    border-radius: 100%;
+    position: absolute;
+    top: 50px;
+    left: 425px;
+    
+}
+
+
+main {
+    background-color: #F4F4F4;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+
+}
+
+main .list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+main .list .titolo {
+    display: flex;
+    align-items: center;
+    gap: 150px; 
+    margin-top: -20px;
+}
+
+main .list .testo {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 78px;
+    margin-top: 20px;
+}
+
+
+
+@media screen and (min-width: 481px) {
+    header input{
+        width: auto;
+    }
+}
