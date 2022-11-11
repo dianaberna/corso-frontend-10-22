@@ -296,33 +296,55 @@ console.log(`Esrcizio 14 - Sasso, carta, forbici`)
         switch (s1) {
           case "Sasso":
             if (s2=="Carta") {
-              return ("Il vincitore è il giocatore 2")
+              return (`Il vincitore è il giocatore 2 perché ${s2} batte ${s1}`)
             } else {
-              return ("Il vincitore è il giocatore 1")
+              return ((`Il vincitore è il giocatore 1 perché ${s1} batte ${s2}`))
             }
           case "Carta":
             if (s2=="Forbici") {
-              return ("Il vincitore è il giocatore 2")
+              return (`Il vincitore è il giocatore 2 perché ${s2} batte ${s1}`)
             } else {
-              return ("Il vincitore è il giocatore 1")
+              return ((`Il vincitore è il giocatore 1 perché ${s1} batte ${s2}`))
             }
           case "Forbici":
             if (s2=="Sasso") {
-              return ("Il vincitore è il giocatore 2")
+              return (`Il vincitore è il giocatore 2 perché ${s2} batte ${s1}`)
             } else {
-              return ("Il vincitore è il giocatore 1")
+              return ((`Il vincitore è il giocatore 1 perché ${s1} batte ${s2}`))
             }
         }
       }
     } else {
       return ("Inserisci i dati corretti!")
     }
-    
+  }
+  /*-- soluzione alternativa --*/
+  function rPS2(s1,s2) {
+    if (((s1=="Sasso")||(s1=="Carta")||(s1=="Forbici"))&&((s2=="Sasso")||(s2=="Carta")||(s2=="Forbici"))) {
+      if (s1==s2) {
+        return ("É un pareggio")
+      } else {
+        if (((s1+s2)=="SassoCarta")||((s1+s2)=="CartaForbici")||((s1+s2)=="ForbiciSasso")) {
+          return (`Il vincitore è il giocatore 2 perché ${s2} batte ${s1}`)
+        }else{
+            return (`Il vincitore è il giocatore 1 perché ${s1} batte ${s2}`)
+        }
+      }
+    } else {
+      return ("Inserisci i dati corretti!")
+    }
   }
   console.log(rPS("Sasso","Carta"))
   console.log(rPS("Forbici","Carta"))
+  console.log(rPS("Forbici","Sasso"))
   console.log(rPS("Carta","Carta"))
   console.log(rPS("Carte","Carta"))
+  console.log(`-- soluzione senza utilizzo switch --`)
+  console.log(rPS2("Sasso","Carta"))
+  console.log(rPS2("Forbici","Carta"))
+  console.log(rPS2("Forbici","Sasso"))
+  console.log(rPS2("Carta","Carta"))
+  console.log(rPS2("Carte","Carta"))
 }
 console.log(``)
 console.log(`-------------------------------------------------------`)
@@ -351,27 +373,117 @@ console.log(`Esrcizio 16 - Rimuovere i duplicati di un array`)
       if ((i!=last)&&(array[i]==array[last])) {
         array.splice((i),(last-i))
       }
-    }  
-    return array
-  }
-  /******/
-  function dupsRemove2(array) { // questa funzione invece non lo richiede
-    for (let i = 0; i < array.length; i++) {
-      let last=array.lastIndexOf(array[i]) //qui inizializzo la variabile last che mi va ad indicare l'ultima posizione all'interno dell'array del valore che devo andare a confrontare
-      while ((i!=last)&&(array[i]==array[last])) {       // per non fare cancellare un dato che compare solo una volta, qui verifico 2 cose: che l'indice nel quale mi trovo sia diverso dall'ultimo (quindi che stiamo confrontando 2 valori che si trovano indici diversi) e che i valori siano duplicati (così da andare successivamente a cancellare l'ultimo valore) 
-        array.splice((last),(1))
-        last=array.lastIndexOf(array[i])  //qui reinizializzo la variabile last, così da verificase se, una volta cancellato l'ultimo valore duplicato dell'array, ce ne siano altri precedenti
+      if(array[i]==null){
+        array.splice(i,(array.length))
       }
     }  
     return array
   }
-  console.log(dupsRemove1([1,0,1,0,1,1,1,1,1,1,0,0,0,0,0,2,3,1,2,0,0,0,0,true]))
-  console.log(dupsRemove1(["The","big","big","cat"]))
+  /******/
+  function dupsRemove2(array) {
+    for (i = 0; i < array.length; i++) {
+      let last=array.lastIndexOf(array[i]) //qui inizializzo la variabile last che mi va ad indicare l'ultima posizione all'interno dell'array del valore che devo andare a confrontare
+      if (array[i]==null) {                // eliminazione valori nulli
+        array.splice(i,1)
+        i--                                   // mi serve per non skippare il prossimo campo vuoto se sono contigui
+      }else{   
+        while ((i!=last)&&(array[i]==array[last])) {       // per non fare cancellare un dato che compare solo una volta, qui verifico 2 cose: che l'indice nel quale mi trovo sia diverso dall'ultimo (quindi che stiamo confrontando 2 valori che si trovano indici diversi) e che i valori siano duplicati (così da andare successivamente a cancellare l'ultimo valore) 
+          array.splice((last),(1))
+          last=array.lastIndexOf(array[i])  //qui reinizializzo la variabile last, così da verificase se, una volta cancellato l'ultimo valore duplicato dell'array, ce ne siano altri precedenti
+        }
+      }
+    } 
+    return(array)
+  }
+  /******/
+  function dupsRemove3(array) {               //funzione fatta con includes
+    let newArray =[]
+    for (let i = 0; i < array.length; i++) {
+      if (array[i]!=null){                    //eliminazione valori nulli
+        (newArray.includes(array[i]) == false) ? newArray.push(array[i]) : null
+      }
+    }
+    return newArray
+  }
+  console.log(`-- soluzione con funzione sort e splice --`)
+  console.log(dupsRemove1([,,,,,,1,0,1,0,1,,,,,1,1,1,1,1,0,0,0,0,0,2,3,1,2,0,0,0,0,true]))
+  console.log(dupsRemove1(["The","big","big","cat",,,,,,,,]))
   console.log(dupsRemove1(["John","John","Taylor"]))
-  console.log(`-- soluzione senza funzione sort --`)
-  console.log(dupsRemove2([1,0,1,0,1,1,1,1,1,1,0,0,0,0,0,2,3,1,2,0,0,0,0,true]))
-  console.log(dupsRemove2(["The","big","big","cat"]))
+  console.log(`-- soluzione solo con funzione splice --`)
+  console.log(dupsRemove2([,,,,,,1,0,1,0,1,,,,,1,1,1,1,1,0,0,0,0,0,2,3,1,2,0,0,0,0,true]))
+  console.log(dupsRemove2(["The",,,"big","big",,,"cat",,]))
   console.log(dupsRemove2(["Taylor","John","John","Taylor"]))
+  console.log(`-- soluzione con include e push --`)
+  console.log(dupsRemove3([,,,,,,1,0,1,0,1,,,,,1,1,1,1,1,0,0,0,0,0,2,3,1,2,0,0,0,0,true]))
+  console.log(dupsRemove3(["The",,,"big","big",,,"cat",,]))
+  console.log(dupsRemove3(["Taylor","John","John","Taylor"]))
+}
+console.log(``)
+console.log(`-------------------------------------------------------`)
+console.log(``)
+console.log(`Esrcizio 17 - Somma budget`)
+{ //parentesi messe solo per chiudere
+  function getTotBudget(object){
+    let tot=0
+    for (let i = 0; i < object.length; i++) {
+      tot=tot+object[i].budget
+    }
+    return tot
+  }
+  console.log(getTotBudget([
+        { name: "John", age: 21, budget: 23000 },
+        { name: "Steve", age: 32, budget: 40000 },
+        { name: "Martin", age: 16, budget: 2700 },
+    ])
+  );
+  console.log(
+    getTotBudget([
+        { name: "John", age: 21, budget: 29000 },
+        { name: "Steve", age: 32, budget: 32000 },
+        { name: "Martin", age: 16, budget: 1600 },
+    ])
+  );
+}
+console.log(``)
+console.log(`-------------------------------------------------------`)
+console.log(``)
+console.log(`Esrcizio 18 - Prezzo totale generi alimentari`)
+{ //parentesi messe solo per chiudere
+  function getTotalPrice(object){
+    let tot=0
+    for (let i = 0; i < object.length; i++) {
+      tot=tot+(object[i].price*object[i].quantity)
+    }
+    return tot.toFixed(2)
+  }
+  console.log(
+    getTotalPrice([
+      { product: "milk", quantity: 1, price: 1.5 }
+    ])
+  );
+  console.log(
+    getTotalPrice([
+        { product: "milk", quantity: 1, price: 1.5 },
+        { product: "cereals", quantity: 1, price: 2.5 },
+    ])
+  );
+  console.log(
+    getTotalPrice([{ product: "milk", quantity: 3, price: 1.5 }])
+  );
+  console.log(
+    getTotalPrice([
+        { product: "milk", quantity: 1, price: 1.5 },
+        { product: "eggs", quantity: 12, price: 0.10 },
+        { product: "bread", quantity: 2, price: 1.6 },
+        { product: "cheese", quantity: 1, price: 4.5 },
+    ])
+  );
+  console.log(
+    getTotalPrice([
+        { product: "chocolate", quantity: 1, price: 0.10 },
+        { product: "lollipop", quantity: 1, price: 0.20 },
+    ])
+  );
 }
 console.log(``)
 console.log(`-------------------------------------------------------`)
