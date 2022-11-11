@@ -1,3 +1,4 @@
+'use strict';
 console.log('=== Ex. 1 ===');
 // EX. 1 Crea una funzione che accetta due numeri come argomenti e ne restituisce la moltiplicazione.
 function moltiplication(a, b) {
@@ -97,34 +98,26 @@ function calculator(x, operatore, y) {
   let sum = 0;
   switch (operatore) {
     case '+':
-      sum = x + y;
-      console.log(`The result of my function is ${sum}`);
-      break;
+      return x + y;
     case '-':
-      sum = x - y;
-      console.log(`The result of my function is ${sum}`);
-      break;
+      return x - y;
     case '*':
-      sum = x * y;
-      console.log(`The result of my function is ${sum}`);
-      break;
+      return x * y;
     case '/':
       if (y !== 0) {
-        sum = x / y;
-        console.log(`The result of my function is ${sum}`);
+        return x / y;
       } else {
-        console.log('Impossible to divide by 0! :)');
+        return 'Impossible to divide by 0! :)';
       }
-      break;
     default:
-      console.log('Are you sure you have entered a number?');
-      break;
+      return 'Are you sure you have entered a operator?';
   }
 }
-calculator(10, '+', 2);
-calculator(10, '-', 2);
-calculator(10, '*', 2);
-calculator(10, '/', 2);
+
+console.log(`The result of my function is ${calculator(10, '+', 2)}`);
+console.log(`The result of my function is ${calculator(10, '-', 2)}`);
+console.log(`The result of my function is ${calculator(10, '*', 2)}`);
+console.log(`The result of my function is ${calculator(10, '/', 0)}`);
 // ======================
 function calculator2(x, operatore, y) {
   let sum = 0;
@@ -142,7 +135,7 @@ function calculator2(x, operatore, y) {
     ? console.log(`The result of my function is ${sum}`)
     : console.log('Impossible to divide by 0! :)');
 }
-calculator2(10, '+', 2);
+calculator2(10, '+', 0);
 calculator2(10, '-', 2);
 calculator2(10, '*', 2);
 calculator2(10, '/', 0);
@@ -168,7 +161,7 @@ console.log('=== Ex. 11 ===');
 function howManyTrue(array) {
   let cont = 0;
   for (let i = 0; i < array.length; i++) {
-    array[i] === true ? cont++ : (cont += 0);
+    array[i] === true ? cont++ : null;
   }
   return cont;
 }
@@ -198,19 +191,22 @@ console.log('=== Ex. 13 ===');
 // Se la stringa supera questi test, viene considerata un indirizzo email valido.
 function validateEmail(email) {
   const str = email;
+  let arrDomini = ['it', 'com', 'net', 'org'];
+  let strSplit = str.split('.');
   return str.includes('@') &&
     str.includes('.') &&
     str.indexOf('@') > 0 === true &&
-    str.indexOf('@') - str.lastIndexOf('.') < -1
+    str.indexOf('@') - str.lastIndexOf('.') < -1 &&
+    str.lastIndexOf('.') < str.length - 1 &&
+    arrDomini.includes(strSplit[strSplit.length - 1])
     ? true
     : false;
 }
-console.log(validateEmail('@gmail.com'));
-console.log(validateEmail('hello.gmail@.com'));
+console.log(validateEmail('@gmail.org'));
+console.log(validateEmail('hello.gmail@.it'));
 console.log(validateEmail('gmail'));
-console.log(validateEmail('hello@gmail'));
-console.log(validateEmail('hello@edabit.com'));
-
+console.log(validateEmail('hello@gmail.'));
+console.log(validateEmail('heßllo.prova@edabit.com'));
 console.log('=== Ex. 14 ===');
 // Crea una funzione che accetta due stringhe (p1 e p2 ⁠— che rappresentano i giocatori 1 e 2) come argomenti e restituisce una stringa che indica il vincitore in una partita a stone, Carta, Forbici.
 // Ogni argomento conterrà una singola stringa: "Sasso", "Carta" o "Forbici". Restituisci il vincitore secondo le seguenti regole:
@@ -244,18 +240,18 @@ rps('Scissors', 'Stone');
 
 console.log('=== Ex. 15 ===');
 // Crea una funzione che accetta due date e restituisce il numero di giorni tra la prima e la seconda data.
-function calcDays(d1, d2) {
-  utc1 = d1.getDate();
-  utc2 = d2.getDate();
-  return console.log(utc2 - utc1);
-}
-calcDays(new Date('June 14, 2019'), new Date('June 20, 2019'));
+// function calcDays(d1, d2) {
+//   let utc1 = d1.getDate();
+//   let utc2 = d2.getDate();
+//   return console.log(utc2 - utc1);
+// }
+// calcDays(new Date('June 14, 2019'), new Date('June 20, 2019'));
 function calcDays2(d1, d2) {
   let millesecADay = (d2 - d1) / 1000 / 60 / 60 / 24;
-  return console.log(millesecADay);
+  return console.log(Math.abs(millesecADay));
 }
 calcDays2(new Date('June 14, 2019'), new Date('June 20, 2019'));
-calcDays2(new Date('December 29, 2018'), new Date('January 01, 2019'));
+calcDays2(new Date('January 01, 2019'), new Date('December 29, 2018'));
 calcDays2(new Date('July 20, 2019'), new Date('July 30, 2019'));
 
 console.log('=== Ex. 16 ===');
@@ -281,6 +277,8 @@ function removeDups(array) {
 console.log(removeDups([1, 0, 1, 0]));
 console.log(removeDups(['The', 'big', 'cat']));
 console.log(removeDups(['John', 'Taylor', 'John']));
+
+// Soluzione diEmanuela
 
 console.log('=== Ex. 17 ===');
 // Crea la funzione che accetta un array con oggetti e restituisce la somma dei budget delle persone.
@@ -311,7 +309,7 @@ console.log('=== Ex. 18 ===');
 function totalPriceFoods(array) {
   let sumPrice = 0;
   for (let i = 0; i < array.length; i++) {
-    sumPrice += array[i].price;
+    sumPrice += array[i].price * array[i].quantity;
   }
   return console.log(`Final price is ${sumPrice.toFixed(2)}$`);
 }
@@ -333,4 +331,38 @@ totalPriceFoods([
 totalPriceFoods([
   { product: 'chocolate', quantity: 1, price: 0.1 },
   { product: 'lollipop', quantity: 1, price: 0.2 },
+]);
+
+// let hasDrivesLicens = false;
+// const passDrive = true;
+
+// if (passDrive) hasDrivesLicens = true;
+// if (hasDrivesLicens) console.log('I can drive :D');
+
+// function fruitProcessor(apples, oranges) {
+//   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//   return juice;
+// }
+// const appleJuice = fruitProcessor(5, 0);
+// console.log(appleJuice);
+
+// const orangeJuice = fruitProcessor(0, 4);
+// console.log(orangeJuice);
+
+// function calc1(a, b) {
+//   return a + b;
+// }
+// const calc2 = function (a, b) {
+//   return a + b;
+// };
+budgetPeople = [
+  { name: 'John', age: 21, budget: 23000 },
+  { name: 'Steve', age: 32, budget: 40000 },
+  { name: 'Martin', age: 16, budget: 2700 },
+];
+console.log(budgetPeople[0].budget);
+console.log(budgetPeople[0]['budget']);
+console.log([
+  [1, 2],
+  [4, 5],
 ]);
