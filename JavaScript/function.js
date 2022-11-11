@@ -243,3 +243,94 @@ rps('Stone', 'Stone');
 rps('Scissors', 'Stone');
 
 console.log('=== Ex. 15 ===');
+// Crea una funzione che accetta due date e restituisce il numero di giorni tra la prima e la seconda data.
+function calcDays(d1, d2) {
+  utc1 = d1.getDate();
+  utc2 = d2.getDate();
+  return console.log(utc2 - utc1);
+}
+calcDays(new Date('June 14, 2019'), new Date('June 20, 2019'));
+function calcDays2(d1, d2) {
+  let millesecADay = (d2 - d1) / 1000 / 60 / 60 / 24;
+  return console.log(millesecADay);
+}
+calcDays2(new Date('June 14, 2019'), new Date('June 20, 2019'));
+calcDays2(new Date('December 29, 2018'), new Date('January 01, 2019'));
+calcDays2(new Date('July 20, 2019'), new Date('July 30, 2019'));
+
+console.log('=== Ex. 16 ===');
+// Crea una funzione che accetta un array di elementi, rimuove tutti gli elementi duplicati e restituisce un nuovo array nello stesso ordine sequenziale del vecchio array (meno i duplicati).
+function removeDups(array) {
+  return [...new Set(array)];
+}
+console.log(removeDups([1, 0, 1, 0]));
+console.log(removeDups(['The', 'big', 'cat']));
+console.log(removeDups(['John', 'Taylor', 'John']));
+
+// Soluzione di Andrea
+function removeDups(array) {
+  let arrayNuovo = [];
+  for (let i = 0; i < array.length; i++) {
+    if (arrayNuovo.includes(array[i])) {
+    } else {
+      arrayNuovo.push(array[i]);
+    }
+  }
+  return arrayNuovo;
+}
+console.log(removeDups([1, 0, 1, 0]));
+console.log(removeDups(['The', 'big', 'cat']));
+console.log(removeDups(['John', 'Taylor', 'John']));
+
+console.log('=== Ex. 17 ===');
+// Crea la funzione che accetta un array con oggetti e restituisce la somma dei budget delle persone.
+let budgetPeople = [
+  { name: 'John', age: 21, budget: 23000 },
+  { name: 'Steve', age: 32, budget: 40000 },
+  { name: 'Martin', age: 16, budget: 2700 },
+];
+
+let budgetPeople2 = [
+  { name: 'John', age: 21, budget: 29000 },
+  { name: 'Steve', age: 32, budget: 32000 },
+  { name: 'Martin', age: 16, budget: 1600 },
+];
+
+function totalBudget(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i].budget;
+  }
+  return sum;
+}
+console.log(totalBudget(budgetPeople));
+console.log(totalBudget(budgetPeople2));
+
+console.log('=== Ex. 18 ===');
+// Crea una funzione che prenda un array di oggetti (alimentari) che calcoli il prezzo totale e lo restituisca come un numero. Un oggetto alimentare ha un prodotto, una quantità e un prezzo, ad esempio:
+function totalPriceFoods(array) {
+  let sumPrice = 0;
+  for (let i = 0; i < array.length; i++) {
+    sumPrice += array[i].price;
+  }
+  return console.log(`Final price is ${sumPrice.toFixed(2)}$`);
+}
+totalPriceFoods([{ product: 'milk', quantity: 1, price: 1.5 }]);
+
+totalPriceFoods([
+  { product: 'milk', quantity: 1, price: 1.5 },
+  { product: 'cereals', quantity: 1, price: 2.5 },
+]);
+totalPriceFoods([{ product: 'milk', quantity: 3, price: 1.5 }]);
+
+totalPriceFoods([
+  { product: 'milk', quantity: 1, price: 1.5 },
+  { product: 'eggs', quantity: 12, price: 0.1 },
+  { product: 'bread', quantity: 2, price: 1.6 },
+  { product: 'cheese', quantity: 1, price: 4.5 },
+]);
+
+totalPriceFoods([
+  { product: 'chocolate', quantity: 1, price: 0.1 },
+  { product: 'lollipop', quantity: 1, price: 0.2 },
+]);
