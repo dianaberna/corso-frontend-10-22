@@ -204,7 +204,7 @@ while(i<array.length){
 }
 
 // 12 - Stampare al contrario gli elementi dell’array → [1, 5, 2, 0, -3, -2, 10, 9, 6, 2] 🙂
-console.log("-- 12 --");
+console.log("--- 12 --");
 // stampo il mio array
 // let array = [2, 6, 9, 10, -2, -3, 0, 2, 5, 1];
 i = 0;
