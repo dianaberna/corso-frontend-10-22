@@ -287,7 +287,12 @@ console.log("\ngetDate");
 
 function getDate(day1, day2) {
     differenza = 0;
+    let date1= new Date(day1);
+    let date2= new Date (day2);
+    return Math.abs((date2-date1)/1000/60/60/24)
 }
+
+console.log(getDate("october 21, 1989", "november 11, 2022"))
 
 console.log("\nremoveDumps");
 
