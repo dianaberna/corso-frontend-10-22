@@ -1,19 +1,32 @@
 // array
 let animali = ["gatto", "cane", "coniglio"];
-/* console.log(animali)
-for (let index = 0; index < array.length; index++) {
-	const element = array[index];
-	console.log(animali.length)
-} */
+console.log(animali)        // 
+console.log(animali[1])     // cane
+console.log(animali.length) // 3
+console.log(animali.indexOf("cane")) // 1
+console.log(animali) 
+animali.sort()
+console.log(animali) 
+animali.push("tartaruga")
+animali.push("topo")
+console.log(animali) 
+animali.pop()
+console.log(animali) 
+animali.splice(2 , 2, "fenicottero")
+console.log(animali) 
+let elemento = animali.slice(1)
+console.log(elemento)
 
+console.log("--- stampa arraymisto ---")
 let arraymisto = ["gatto", 2, 5, "topo", 3, 299];
+
 // "gatto" è in posizione/indice 0
 // 2 è in posizione 1
 // 5 è in posizione 2
 // "topo" è in posizione 3
+
 console.log(arraymisto);
 console.log(arraymisto.length); // stampa 6
-// pippo[a] --> l'elemento dell'array pippo in posizione a
 
 let a = 2;
 let b = 6;
@@ -137,3 +150,33 @@ while (indice < arraynumerico.length) {
 // con indice = indice + 1 --> per scorrere tutto l'array impiegheremo n volte
 // con indice = indice + 2 --> per scorrere tutto l'array impiegheremo n/2 volte -> algoritmica 
 console.log("sommaposizionepari fine while = " + sommaposizionepari);
+
+// spread operator --> ...   ci estrae gli elementi dell'array
+let arrayNuovo = [1, 2, 3, 4]
+let arrayNuovo2 = [3, 6, 4, 2]
+console.log(arrayNuovo)
+console.log(...arrayNuovo)
+
+let arrayRisultante = [...arrayNuovo, ...arrayNuovo2]
+console.log(arrayRisultante)
+
+// Creare (e stampare) un nuovo array in cui inserisco due volte (una di seguito l’altra) l’array dato
+let array = [ 2, 6, 9, 10, -2, -3, 0, 2, 5, 1]
+let arrayRis = [array, array]
+console.log(arrayRis)
+let arrayRisultateEsercizio = [...array, ...array]
+console.log(arrayRisultateEsercizio)
+
+let array2 = array // sono la stessa scatola 
+console.log("----")
+console.log(array)
+console.log(array2)
+console.log("reverse")
+console.log(array.reverse())
+console.log(array)
+console.log(array2)
+
+let array3 = [...array] // sto creando una nuova scatola 
+console.log(array3)
+let array4 = [array]
+console.log(array4)
