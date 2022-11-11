@@ -201,23 +201,21 @@ console.log(spessore(4));
 console.log("\nvalidateEmail");
 
 function validateEmail(email) {
-    console.log(email.slice(0,(email.indexOf("@"))))
+    console.log(email.slice(0, email.indexOf("@")));
     if (!email.includes("@")) {
-        return "l'email non contiene la @"
-    }else if (!email.includes(".")){
-        return "l'email non contiene il ."
-    }else if (!email.slice((email.indexOf("@")+2)).includes(".")){
-        return "l'email deve contenere il . dopo la @ e il dominio"
-    }else if(!email.slice(0,(email.indexOf("@")))){
-        return "l'email deve contenere caratteri prima della @"
-    }else{
-        return email
+        return "l'email non contiene la @";
+    } else if (!email.includes(".")) {
+        return "l'email non contiene il .";
+    } else if (!email.slice(email.indexOf("@") + 2).includes(".")) {
+        return "l'email deve contenere il . dopo la @ e il dominio";
+    } else if (!email.slice(0, email.indexOf("@"))) {
+        return "l'email deve contenere caratteri prima della @";
+    } else {
+        return email;
     }
-    
 }
 
-console.log(validateEmail("billerifabio@gmail.com"))
-
+console.log(validateEmail("billerifabio@gmail.com"));
 
 /* 
 String indexOf()
@@ -249,37 +247,59 @@ String split()
 */
 console.log("\nsassoCartaForbici");
 
-
-function sassoCartaForbici(p1,p2){
-let sasso="sasso"
-let carta="carta"
-let forbici="forbici"  
-    if ((p1==sasso || p1==carta || p1== forbici)&&(p2==sasso || p2==carta || p2== forbici)){
-        if (p1==sasso && p2 ==forbici){
-            return "ha vinto il giocatore 1"
-        }else if(p1==sasso && p2 ==carta){
-            return "ha vinto il giocatore 2"
-        }else if(p1==carta && p2 ==sasso){
-            return "ha vinto il giocatore 1"
-        }else if(p1==carta && p2 ==forbici){
-            return "ha vinto il giocatore 2"
-        }else if(p1==forbici && p2 ==sasso){
-            return "ha vinto il giocatore 2"
-        }else if(p1==forbici && p2 ==carta){
-                return "ha vinto il giocatore 1"
-        }else{
-            return "Pareggio"
+function sassoCartaForbici(p1, p2) {
+    let sasso = "sasso";
+    let carta = "carta";
+    let forbici = "forbici";
+    if (
+        (p1 == sasso || p1 == carta || p1 == forbici) &&
+        (p2 == sasso || p2 == carta || p2 == forbici)
+    ) {
+        if (p1 == sasso && p2 == forbici) {
+            return "ha vinto il giocatore 1";
+        } else if (p1 == sasso && p2 == carta) {
+            return "ha vinto il giocatore 2";
+        } else if (p1 == carta && p2 == sasso) {
+            return "ha vinto il giocatore 1";
+        } else if (p1 == carta && p2 == forbici) {
+            return "ha vinto il giocatore 2";
+        } else if (p1 == forbici && p2 == sasso) {
+            return "ha vinto il giocatore 2";
+        } else if (p1 == forbici && p2 == carta) {
+            return "ha vinto il giocatore 1";
+        } else {
+            return "Pareggio";
         }
-    } else{
-        return "non hai inserito valori corretti"
+    } else {
+        return "non hai inserito valori corretti";
     }
 }
 
-console.log(sassoCartaForbici("sasso","sasso"));
-console.log(sassoCartaForbici("sasso","forbici"));
-console.log(sassoCartaForbici("forbici","sasso"));
-console.log(sassoCartaForbici("forbici","carta"));
-console.log(sassoCartaForbici("carta","forbici"));
-console.log(sassoCartaForbici("carta","sasso"));
-console.log(sassoCartaForbici("carta","saso"));
+console.log(sassoCartaForbici("sasso", "sasso"));
+console.log(sassoCartaForbici("sasso", "forbici"));
+console.log(sassoCartaForbici("forbici", "sasso"));
+console.log(sassoCartaForbici("forbici", "carta"));
+console.log(sassoCartaForbici("carta", "forbici"));
+console.log(sassoCartaForbici("carta", "sasso"));
+console.log(sassoCartaForbici("carta", "saso"));
 
+console.log("\ngetDate");
+
+function getDate(day1, day2) {
+    differenza = 0;
+}
+
+console.log("\nremoveDumps");
+
+function removeDumps(arr) {
+    let array2 = [];
+    let i = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (!array2.includes(arr[i])) {
+            array2.push(arr[i]);
+        }
+    }
+    return array2;
+}
+
+console.log(removeDumps([1, 2, 1, 3, 2, 3, 5, 5, 5, 5, 7, 8, 9, 9, 9, 9, 9,"prova", "prova",1,1,1,1,1,1,1,10]));
