@@ -179,7 +179,12 @@ console.log(`Esrcizio 9 - Calcolatrice di base`)
     return n1-n2
   }
   function div2Numbers(n1,n2){
-    return n1/n2
+    if (n2==0) {
+      return ("Impossibile dividere per 0")
+    }
+    else{
+      return n1/n2
+    }
   }
   function baseCalc(n1,o1,n2) {
     switch (o1) {
@@ -190,14 +195,9 @@ console.log(`Esrcizio 9 - Calcolatrice di base`)
       case "*":
         return (mult2Numbers(n1,n2))
       case "/":
-        if (n2==0) {
-          return ("Impossibile dividere per 0")
-        }
-        else{
-          return (div2Numbers(n1,n2))
-        }
+        return (div2Numbers(n1,n2))        
       default:
-        console.log("Hai inserit dei dati sbagliati")
+        console.log("Hai inserito dei dati sbagliati")
         break;
     }
   }
@@ -243,12 +243,23 @@ console.log(`Esrcizio 11 - Trovare quante volte vero`)
     }
     return (n1)
   }
+  function nTrue2(array) {
+    n1=0
+    for (let i = 0; i < array.length; i++) {
+      array[i] === true? n1++ : null
+    }
+    return (n1)
+  }
   array4=[true,false,false,true,false]
   array5=[false,false,false,false]
   array6=[]
   console.log(nTrue(array4))
   console.log(nTrue(array5))
   console.log(nTrue(array6))
+  /******/
+  console.log(nTrue2(array4))
+  console.log(nTrue2(array5))
+  console.log(nTrue2(array6))
 }
 console.log(``)
 console.log(`-------------------------------------------------------`)
@@ -268,8 +279,15 @@ console.log(``)
 console.log(`Esrcizio 13 - Validare una email`)
 { //parentesi messe solo per chiudere
   function mailValid(s1) {
-    if ((s1.includes("@")==true)&&(s1.includes(".")==true)) {
-      if ((s1.indexOf("@")>0)&&(s1.lastIndexOf(".")>(s1.indexOf("@")+1))&&(s1.lastIndexOf(".")<(s1.length-1))) {
+    let arrayDomains=['it','com','net','org']
+    let strSplit = s1.split('.')
+    console.log(strSplit)
+    if ((s1.includes("@")==true)&&
+    (s1.includes(".")==true)) {
+      if ((s1.indexOf("@")>0)&&
+      (s1.lastIndexOf(".")>(s1.indexOf("@")+1))&&
+      (s1.lastIndexOf(".")<(s1.length-1)) &&
+      (arrayDomains.includes(strSplit[strSplit.length-1]))) {
         return ("L'indirizzo email è valido")
       }
     }
@@ -403,8 +421,11 @@ console.log(`Esrcizio 16 - Rimuovere i duplicati di un array`)
         (newArray.includes(array[i]) == false) ? newArray.push(array[i]) : null
       }
     }
-    return newArray
+    return array=newArray
   }
+  /******/
+  //let uniqueChars = [...new Set(chars)]
+  
   console.log(`-- soluzione con funzione sort e splice --`)
   console.log(dupsRemove1([,,,,,,1,0,1,0,1,,,,,1,1,1,1,1,0,0,0,0,0,2,3,1,2,0,0,0,0,true]))
   console.log(dupsRemove1(["The","big","big","cat",,,,,,,,]))
@@ -487,3 +508,50 @@ console.log(`Esrcizio 18 - Prezzo totale generi alimentari`)
 }
 console.log(``)
 console.log(`-------------------------------------------------------`)
+console.log(``)
+console.log(`Esrcizio 19 - Conversione in binario di un numero decimale`)
+{
+  function decConv(n1) {
+    let tot=0
+    n1=n1.toString()
+    for (let i = 0; i < n1.length; i++) {
+      tot= tot+ (n1[i]*(2**(n1.length-i-1)))
+    }
+    return tot
+  }
+  console.log(decConv(1111101000))
+}
+console.log(``)
+console.log(`-------------------------------------------------------`)
+console.log(``)
+console.log(`Esrcizio 20 - Conversione in decimale di un numero binario`)
+{
+  function binConv(n1) {
+    let tot=0
+    for (let i = 10; i >= 0; i--) {
+      if (n1/(2**i)>=1) {
+        tot=tot+10**i
+        n1=n1-(2**i)
+      } else {
+        tot=tot+0
+      }      
+    }
+    return tot.toString()
+  }
+  /******/
+  function binConv2(n1) {   //soluzione semplice
+    return n1.toString(2);
+  }
+  console.log(binConv(10))
+  console.log(binConv(0))
+  console.log(binConv(1023))
+  console.log(binConv(1000))
+  console.log(binConv2(10))
+  console.log(binConv2(0))
+  console.log(binConv2(1023))
+  console.log(binConv2(1000))
+}
+console.log(``)
+console.log(`-------------------------------------------------------`)
+console.log(``)
+console.log(`Esrcizio 21 - `)
