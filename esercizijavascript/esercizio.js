@@ -243,7 +243,7 @@ while (i < array.length){
 //versione più veloce
 
 i=0
-arrayripetzione []
+arrayripetzione =[]
 
 while (i<array.length) {
     
@@ -254,6 +254,128 @@ while (i<array.length) {
     i++
 }
 
-console.log [arrayripetzione]
+console.log (arrayripetzione)
 
-console.log (" - es 12")
+console.log ("Stampare al contrario gli elementi dell’array- es 12")
+
+let a
+
+
+console.log ("Creare un array3 con la somma degli elementi dell’array1 e dell’array2 - es 13")
+
+i=0
+let array1 = [1, 2, 2, 3, 4, 6, 4];
+ array2 = [4, 2, 2, 4];
+let array3= []
+
+while (i < array1.length || i < array2.length) {
+    array3[i] = 0;
+    if (array1[i]) {
+        array3[i] = array3[i] + array1[i];
+    }
+    if (array2[i]) {
+        array3[i] = array3[i] + array2[i];
+    }
+    i++;
+}
+
+
+
+console.log (array3);
+
+
+//secondo metodo
+
+
+for(let i = 0; i < array1.length || i < array2.length; i++){
+    if(array1[i] && array2[i]){
+        array3[i] = array1[i] + array2[i]
+    }
+
+    if(array1[i] && !array2[i]){
+        array3[i] = array1[i];
+    }
+
+    if(!array1[i] && array2[i]){
+        array3[i] = array2[i];
+    }
+}
+
+
+console.log ("esercizio 14")
+
+
+
+
+array1 = [ 1, 2, 2, 3, 4]
+ array2 = [4, 2, 2, 4]  
+ array3= []
+
+ let indicenuovo= 0;
+
+ for (i=0; i<array1.length; i++  ) {
+    if (array1[i]  % 2 != 0){
+        array3[indicenuovo] = array1 [i]
+        indicenuovo ++
+    }
+ }
+
+ for(i=0; i<array2.length; i++) {
+    if (array2[i] %2 ===0){
+        array3[indicenuovo+1] = array2
+    }
+ }
+
+
+
+
+ console.log ("esercizio 15")
+
+ i=0;
+
+ while (i<array2.length){
+
+    if(array1[array2.length-i-1]) {
+     
+    array2[i]= array2[i] / array1[array2.length-i-1] 
+
+    }
+    
+
+    i++
+ }
+
+ console.log (array2)
+
+// array1= [2, 3, 4]
+// array2= [3,4,]
+
+/* i=0, 0<2? si, array2[0]= 3/3
+   i=1, 1<2? si, array2[1]= 4/2
+   i=2, 2<2? no
+
+
+
+
+// array1= [2, 3]
+// array2= [3,4,5]
+
+/* i=0, 0<3? si, array1[2] non esiste
+   i=1, 1<3? si, array1[1] esiste, array2[1]= 4/3 
+   i=2, 2<3? si, array1[0] esiste, array2[2]= 5/2
+   i=3, 3<3? no*/
+
+
+
+
+//15) Aggiornare l’array2 con elemento = il suo valore diviso il valore nella posizione lunghezza-posizione dell’array1
+//array2[i] = array2[i] / array1[lunghezza-i]
+
+/* array1= [2, 3, 4]
+array2= [3,4,5]
+
+i=0 0 < 3? si, array[2] esiste, array2[0] = 3/ 4
+i=1 1<3? si, array[1] esiste, array2[1] = 4 / 3
+i=2 2<3? si, array[0] esiste, array2[2]= 5/2*/
+
+console.log ("esercizio 16 - controlla se i due array sono palindromi")
