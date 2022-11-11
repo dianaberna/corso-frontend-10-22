@@ -231,7 +231,6 @@ console.log("PIEGARE UN PEZZO DI CARTA");
 console.log(spessoreCarta(1));           //"0.001m" // carta piegata una volta = 1mm 
 console.log(spessoreCarta(4));           //"0.008m" // carta piegata 4 volte = 8mm 
 console.log(spessoreCarta(21));          //"1048.576m" // carta piegata 21 volte = 1048576mm 
-console.log("----- PIEGARE UN PEZZO DI CARTA: DA RIVEDERE ----");
 
 
 /* VALIDARE UN'EMAIL 
@@ -325,7 +324,7 @@ function nGiorni(data1, data2){
 // secondi = millisecondi/1000
 // minuti = secondi/60
 // ore = minuti/60
-// Giorni = ore/24
+// giorni = ore/24
 
 console.log("QUANTI GIORNI TRA DUE DATE");
 console.log(nGiorni("June 14, 2019","June 20, 2019"));          //6
@@ -340,11 +339,86 @@ e restituisce un nuovo array nello stesso ordine sequenziale del vecchio array (
 (2) I test fanno distinzione tra maiuscole e minuscole. */
 
 function eliminaDuplicati(array){
-
-  return array;
+  nuovoArray = [];
+  for(i=0; i<array.length; i++){
+    if(!nuovoArray.includes(array[i])){
+      nuovoArray.push(array[i]);
+    }
+  }
+  return nuovoArray;
 }
 
-console.log("RIMUOVERE I DUPLICATI DA UN ARRAY ---- DA FARE");
+console.log("RIMUOVERE I DUPLICATI DA UN ARRAY");
 console.log(eliminaDuplicati([1, 0, 1, 0]));                 // [1, 0]
 console.log(eliminaDuplicati(["The", "big", "cat"]));        // ["The", "big", "cat"]
 console.log(eliminaDuplicati(["John", "Taylor", "John"]));   // ["John", "Taylor"]
+
+
+/* OTTIENI LA SOMMA DEL BUDGET DELLE PERSONE 
+Crea la funzione che accetta un array con oggetti 
+e restituisce la somma dei budget delle persone. */
+
+function sommaBudget(array){
+  somma = 0;
+  for(i=0; i<array.length; i++){
+    if(array[i].budget){
+      somma = somma + array[i].budget;
+    }
+  }
+  return somma;
+}
+
+console.log("OTTIENI LA SOMMA DEL BUDGET DELLE PERSONE");
+console.log(sommaBudget([
+  { name: "John", age: 21, budget: 23000 },
+  { name: "Steve", age: 32, budget: 40000 },
+  { name: "Martin", age: 16, budget: 2700 }])    //65700
+);
+console.log(sommaBudget([
+  { name: "John", age: 21, budget: 29000 },
+  { name: "Steve", age: 32, budget: 32000 },
+  { name: "Martin", age: 16, budget: 1600 }])   //62600
+);
+
+
+/* CALCOLA IL PREZZO TOTALE DEI GENERI ALIMENTARI
+Crea una funzione che prenda un array di oggetti (alimentari) che calcoli il prezzo totale 
+e lo restituisca come un numero. Un oggetto alimentare ha un prodotto, una quantità e un prezzo.
+
+{
+ "product": "Milk",
+ "quantity": 1,
+ "price": 1.50
+} */
+
+function prezzoTotale(array){
+  prezzo = 0;
+  for(i=0; i<array.length; i++){
+    if(array[i].price){
+      prezzo = prezzo + (array[i].price * [array[i].quantity]);
+    }
+  }
+  return prezzo.toFixed(1);
+}
+
+console.log("CALCOLA IL PREZZO TOTALE DEI GENERI ALIMENTARI");
+console.log(prezzoTotale([
+  { product: "milk", quantity: 1, price: 1.5 }])         //1.5
+);
+console.log(prezzoTotale([
+  { product: "milk", quantity: 1, price: 1.5 },
+  { product: "cereals", quantity: 1, price: 2.5 }])      //4
+);
+console.log(prezzoTotale([
+  { product: "milk", quantity: 3, price: 1.5 }])         //4.5
+);
+console.log(prezzoTotale([
+  { product: "milk", quantity: 1, price: 1.5 },
+  { product: "eggs", quantity: 12, price: 0.10 },
+  { product: "bread", quantity: 2, price: 1.6 },
+  { product: "cheese", quantity: 1, price: 4.5 }])       //10.4
+);
+console.log(prezzoTotale([
+  { product: "chocolate", quantity: 1, price: 0.10 },
+  { product: "lollipop", quantity: 1, price: 0.20 }])    //0.3
+);
