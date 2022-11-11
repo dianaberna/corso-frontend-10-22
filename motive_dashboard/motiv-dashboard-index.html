@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="motiv-dashboard-style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="top-bar">
+        <div id="top-bar__search">
+          <img src="img/search.svg" />
+          <input placeholder="Search.." />
+        </div>
+        <div id="top-bar__profile">
+          <div id="notice">
+            <img src="img/bell.svg" /><img src="img/notice.svg" />
+          </div>
+          <img src="img/profile-img.png" />
+        </div>
+      </div>
+    </header>
+    <nav id="sidebar">
+      <h1><img src="img/logo.svg" />Motiv.</h1>
+      <div>
+        <div>
+          <button><img src="img/shape.svg" />Dashboard</button>
+          <button><img src="img/shape.svg" />Assets</button>
+          <button><img src="img/shape.svg" />Booking</button>
+          <button><img src="img/shape.svg" />Sell Cars</button>
+          <button><img src="img/shape.svg" />Buy Cars</button>
+          <button><img src="img/shape.svg" />Services</button>
+          <button><img src="img/shape.svg" />Calender</button>
+          <button><img src="img/shape.svg" />Messages</button>
+        </div>
+        <div>
+          <button><img src="img/shape.svg" />Settings</button>
+          <button><img src="img/shape.svg" />Log out</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!--------Service station-------------->
+      <section id="service-station">
+        <h1>Service Station</h1>
+        <div>
+          <div>
+            <div><p>A1</p></div>
+            <div>A2</div>
+            <div>A3</div>
+            <div>A4</div>
+            <div>A5</div>
+            <div>A6</div>
+            <div>A7</div>
+            <div>A8</div>
+            <div>A9</div>
+            <div>A10</div>
+          </div>
+          <div>
+            <div>B1</div>
+            <div>B2</div>
+            <div>B3</div>
+            <div>B4</div>
+            <div>B5</div>
+            <div>B6</div>
+            <div>B7</div>
+            <div>B8</div>
+            <div>B9</div>
+            <div>B10</div>
+          </div>
+        </div>
+        <div>
+          <p><img src="img/notice.svg" />Ready</p>
+          <p><img src="img/notice.svg" />Booked</p>
+          <p><img src="img/notice.svg" />Current Station</p>
+        </div>
+      </section>
+      <!--------------------Order-------------------->
+      <section id="order">
+        <div>
+          <div>
+            <h1>Your Order</h1>
+            <div>
+              <img src="" />
+              <div>
+                <p>Service Time</p>
+                <p>5,2h</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p><img />Brake fluid change</p>
+              <div>$32</div>
+            </div>
+            <div>
+              <p><img />Diagnostics</p>
+              <div>$32</div>
+            </div>
+            <div>
+              <p><img />External Washing</p>
+              <div>$10</div>
+            </div>
+            <div>
+              <p><img />Add Services</p>
+            </div>
+          </div>
+        </div>
+        <button>Pay $86</button>
+      </section>
+      <!--------Service required-------------->
+      <section id="service-required">
+        <h1>Service Required</h1>
+        <div id="service-required__box">
+          <div>
+            <img src="img/center-car-img.svg" /><span></span
+            ><img src="img/diagnostic-img.svg" /><span></span
+            ><img src="img/inner-cleaning-img.svg" />
+          </div>
+          <div>
+            <div>
+              <h2>Center Care</h2>
+              <div>
+                <p>Price : <span id="service-required__price-1">$48</span></p>
+                <p>
+                  Processing :
+                  <span id="service-required__hour-1">1 hours</span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2>Diagnostics</h2>
+              <div>
+                <p>Price : <span id="service-required__price-2">$78</span></p>
+                <p>
+                  Processing :
+                  <span id="service-required__hour-2">2 hours</span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2>Inner Cleaning</h2>
+              <div>
+                <p>Price : <span id="service-required__price-3">$78</span></p>
+                <p>
+                  Processing :
+                  <span id="service-required__hour-3">1 hours</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-----------------Bottom container---------------------->
+      <section id="bottom-container">
+        <div>
+          <img src="img/photo_1.png" />
+          <h2>Oil Level</h2>
+          <p><span>Engine</span><span>Don’t Replace</span></p>
+          <div class="bottom-container__loading-bar">
+            <div class="bottom-container__loading-bar--color"></div>
+          </div>
+        </div>
+        <div>
+          <img src="img/photo_2.png" />
+          <h2>Brake Pads</h2>
+          <p><span>Wheels</span><span>Still Good</span></p>
+          <div class="bottom-container__loading-bar">
+            <div class="bottom-container__loading-bar--color"></div>
+          </div>
+        </div>
+        <div>
+          <img src="img/photo_3.png" />
+          <h2>Steering</h2>
+          <p><span>Drivetrain</span><span>Need Change</span></p>
+          <div class="bottom-container__loading-bar">
+            <div class="bottom-container__loading-bar--color"></div>
+          </div>
+        </div>
+        <div>
+          <img src="img/photo_1.png" />
+          <h2>Oil Level</h2>
+          <p><span>Engine</span><span>Don’t Replace</span></p>
+          <div class="bottom-container__loading-bar">
+            <div class="bottom-container__loading-bar--color"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
