@@ -217,4 +217,36 @@ console.log("\n");
 
 // Quante volte è vero?
 
+function quantiTrue(array)
+{
+    let t = 0;
+    let i = 0
+    
+    while( i < array.length)
+    {
+        if(array[i] == true || array[i] == false )
+        {
+            if( array[i] == true )
+            {
+                t++;
+            } 
+        } else {
+            return "L'array non è booleano o è vuoto"
+        }  
+        
+        i++;
+
+    } // fine dell'array    
+    
+    return t;
+
+}
+
+arr = [true, true, true, false];
+console.log(quantiTrue(arr));
+console.log(quantiTrue([false, true, false, false]));
+
+// Piegare un pezzo di carta
+
+
 
