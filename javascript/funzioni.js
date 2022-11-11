@@ -166,27 +166,84 @@ function quantiTrue(array) {
     let conta = 0;
     while (i < array.length) {
         if (array[i] == true || array[i] == false) {
-            if(array[i] == true){
+            if (array[i] == true) {
                 conta++;
             }
-            
-        }else{
-            return "i valori non sono tutti booleani"
+        } else {
+            return "i valori non sono tutti booleani";
         }
         i++;
     }
     return conta;
 }
 
-console.log(quantiTrue([true, true,true, false]));
+console.log(quantiTrue([true, true, true, false]));
 console.log(quantiTrue([]));
 console.log("prova con un valore non booleano");
-console.log(quantiTrue([true, true,true, false,2]));
-
+console.log(quantiTrue([true, true, true, false, 2]));
 
 console.log("\nspessore pezzo di carta (in progress)");
 
-function spessore(pieghe){
-    let i=0
+function spessore(pieghe) {
+    let i = 0;
+    spessore1 = 0.0005;
+    while (i < pieghe) {
+        spessore1 = spessore1 * 2;
+        i++;
+    }
 
+    return spessore1;
 }
+
+console.log(spessore(21));
+console.log(spessore(4));
+
+console.log("\nvalidateEmail");
+
+function validateEmail(email) {
+    console.log(email.slice((email.indexOf("@")),0))
+    if (!email.includes("@")) {
+        return "l'email non contiene la @"
+    }else if (!email.includes(".")){
+        return "l'email non contiene il ."
+    }else if (!email.slice((email.indexOf("@")+2)).includes(".")){
+        return "l'email non contiene il . dopo la @"
+    }else if(email.slice((email.indexOf("@")),0)==" "){
+        return "l'email deve contenere caratteri prima della @"
+    }else{
+        return email
+    }
+    
+}
+
+console.log(validateEmail("@v.iao1"))
+
+
+/* 
+String indexOf()
+String lastIndexOf()
+String search()
+String match()
+String matchAll()
+String includes()
+String startsWith()
+String endsWith()
+
+String length
+String slice()
+String substring()
+String substr()
+String replace()
+String replaceAll()
+String toUpperCase()
+String toLowerCase()
+String concat()
+String trim()
+String trimStart()
+String trimEnd()
+String padStart()
+String padEnd()
+String charAt()
+String charCodeAt()
+String split()
+*/
