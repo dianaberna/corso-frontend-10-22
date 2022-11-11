@@ -85,3 +85,71 @@ function trovaSconto(prezzo, sconto) {
 console.log(trovaSconto(1500, 50));
 console.log(trovaSconto(89, 20));
 console.log(trovaSconto(100, 75));
+
+// Esercizio 8
+console.log("esercizio 8");
+
+function lettere(posizione) {
+    let i = posizione;
+    let j = 0;
+    while(i >= 1 && i <= 26 && i % 1 == 0) {
+        j = j + i;
+       console.log(j);
+        return String.fromCharCode(i + 96);
+        
+    }
+   
+}
+
+console.log(lettere(1));
+console.log(lettere(26.0));
+console.log(lettere(0));
+console.log(lettere(4.5));
+
+// Esercizio 9
+console.log("calcolatrice di base");
+
+function calcolatrice(nu1, operazione, nu2) {
+    switch (operazione) {
+        case "+":
+            return nu1 + nu2;
+        case "-":
+            return nu1 - nu2;
+        case "*":
+            return nu1 * nu2;
+        case '/':
+            if(nu2 !== 0) {
+               divi = nu1 / nu2;
+                console.log( divi);
+            }else{
+                console.log("non si divide per 0");
+            }
+        break;
+       
+
+            
+        
+    }
+}
+
+
+
+
+console.log(calcolatrice(2, "+", 2));
+console.log(calcolatrice(2, "*", 2));
+console.log(calcolatrice(4, "/", 2));
+console.log(calcolatrice(2, "/", 0));
+
+// esercizo 10
+console.log("somma di elementi array ");
+function sommaArray(array) {
+    let som = 0;
+    for (let k = 0; k < array.length; k++) {
+        som = som + array[k];
+    }
+    return som;
+}
+
+console.log(sommaArray([1, 2, 4]));
+console.log(sommaArray([4, 2, 10, 2]));
+console.log(sommaArray([1]));
