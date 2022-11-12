@@ -185,14 +185,37 @@ let arrayDoppio=[...array,...array];
 console.log(arrayDoppio)
 
 
+
+
 //esercizio 12 - Stampare al contrario gli elementi dell’array
 
-let inversearray=[];
+
 console.log("esercizio 12")
-for(i=array.length-1;i>=0;i--){
-    
-    inversearray.push(array[i]);
-}console.log(inversearray)
+
+array = [2,6,9,10,-2,-3,0,2,5,1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -281,7 +304,7 @@ while (i < array2.length) {
 
 // esercizio 16 - Verificare se gli array sono palindromi come ad esempio “anna”, “radar”, “emme”
 
-console.log("-- 16 --");
+/*console.log("-- 16 --");
 
 array1 = [1, 2, 2, 3, 4];
 array2 = [4, 2, 2, 4];
@@ -292,4 +315,5 @@ while(cont== array2.length/2 || cont == Math.floor(array2.length/2)+1){
 
 while(cont== array1.length/2 || cont == Math.floor(array1.length/2)+1){
     console.log("è palindromo");
-} else {console.log("non è palindromo")}
+} else {console.log("non è palindromo")}*/
+
