@@ -1,4 +1,5 @@
 'use strict';
+/*
 console.log('=== Ex. 1 ===');
 // EX. 1 Crea una funzione che accetta due numeri come argomenti e ne restituisce la moltiplicazione.
 function moltiplication(a, b) {
@@ -28,8 +29,8 @@ console.log(lessThanZero(0));
 console.log(lessThanZero(-2));
 
 console.log('=== Ex. 4 ===');
-/* Ex. 4 In questa sfida, un contadino ti chiede di dirgli quante zampe si possono contare tra tutti i suoi animali. L'agricoltore alleva tre specie: polli = 2 zampe, mucche = 4 zampe, maiali = 4 zampe
-L'agricoltore ha contato i suoi animali e ti dà un subtotale per ogni specie. Devi implementare una funzione che restituisca il numero totale di zampe di tutti gli animali. */
+//  Ex. 4 In questa sfida, un contadino ti chiede di dirgli quante zampe si possono contare tra tutti i suoi animali. L'agricoltore alleva tre specie: polli = 2 zampe, mucche = 4 zampe, maiali = 4 zampe
+// L'agricoltore ha contato i suoi animali e ti dà un subtotale per ogni specie. Devi implementare una funzione che restituisca il numero totale di zampe di tutti gli animali. 
 function numberOfLegs(numChicken, numCows, numPigs) {
   const numPawChicken = 2;
   const numPawCows = 4;
@@ -372,3 +373,192 @@ console.log([
   [1, 2],
   [4, 5],
 ]);
+
+const calcAge = function (birthYear) {
+  return 2022 - birthYear;
+};
+
+const calcAge2 = (birthYear) => 2022 - birthYear;
+const age2 = calcAge2(1997);
+console.log(age2);
+
+const yearsUntilRetirement = (birthYear) => {
+  const year = 2022;
+  const age = year - birthYear;
+  const retirement = 65 - age;
+  return retirement;
+};
+console.log(yearsUntilRetirement(1997));
+
+function fruitProcessor(apples, oranges) {
+  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
+}
+
+// EX.
+console.log('==== function ex ====');
+// Punteggi delle due squadre
+const teamPlay = {
+  team1: 'Doplhins',
+  team2: 'Koals',
+  scoreTeam1: [30, 30, 30],
+  scoreTeam2: [13, 13, 13],
+};
+// Creo una funzione per calcolare la media
+const calcAverage = function (score) {
+  let sum = 0;
+  for (let i = 0; i < score.length; i++) {
+    sum += score[i];
+  }
+  let average = sum / score.length;
+  return average;
+};
+// Creo una funzione per verificare chi ha vinto
+const checkWinner = function (team1, team2) {
+  const averageFirstTeam = calcAverage(team1);
+  const averageSecondTeam = calcAverage(team2);
+  if (averageFirstTeam >= averageSecondTeam * 2) {
+    return `${teamPlay.team1} win 🏆 (${averageFirstTeam} vs ${averageSecondTeam})`;
+  } else if (averageSecondTeam >= averageFirstTeam * 2) {
+    return `${teamPlay.team2} win 🏆 (${averageSecondTeam} vs ${averageFirstTeam})`;
+  } else {
+    return `No team wins...`;
+  }
+};
+const winner = checkWinner(teamPlay.scoreTeam1, teamPlay.scoreTeam2);
+console.log(winner);
+
+console.log('==== array ex ===');
+const calcTip = function (bill) {
+  const tip = bill > 50 && bill < 300 ? bill * 0.15 : bill * 0.2;
+  return tip;
+};
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(total);
+console.log('=== soluzione intelligente ===');
+const calcTip2 = function (bill) {
+  let total = [];
+  for (let i = 0; i < bill.length; i++) {
+    const tip = bill[i] > 50 && bill[i] < 300 ? bill[i] * 0.15 : bill[i] * 0.2;
+    total.push(bill[i] + tip);
+  }
+  return total;
+};
+console.log(calcTip2(bills));
+
+const sasha = {
+  firstName: 'Oleksandr',
+  secondName: 'Oleksyuk',
+  job: 'Student',
+  yearBorn: 1997,
+  nationality: 'Ukraine',
+  hasDriversLicense: true,
+  friend: ['Lester', 'Davide', 'Giuseppe'],
+
+  // calcAge: function (year){
+  //   return year - this.yearBorn
+  // } // per evitare che il nostro programma scriva del codice doppio, andiamo a fare in modo che lo faccia solo una volta.
+  calcAge: function (year) {
+    this.age = year - this.yearBorn;
+    return this.age;
+  }, // in questo caso, cosa facciamo? creiamo una variabile in che modo? 'this.age' cosi nel nostro oggetto si crea questa nuova key che si chiama age
+  getSummary: function () {
+    const keyName = 'Name';
+    const str =
+      `${this['first' + keyName]} ${
+        this['second' + keyName]
+      } have ${this.calcAge(2022)} years, him from ${this.nationality} ` +
+      `${
+        this.hasDriversLicense
+          ? 'has a driver license'
+          : `hasn't a driver license`
+      }`;
+    return str;
+  },
+};
+console.log(sasha.getSummary());
+console.log(sasha.calcAge(2022));
+console.log(sasha.age);
+console.log(sasha.age); // alo stesso tempo ora non chiamiamo più la funzione machiamiamo il age allínterno del nostro oggetto
+console.log(sasha.age);
+console.log(sasha.firstName);
+console.log(sasha['yearBorn']);
+const keyName = 'Name';
+console.log(sasha['first' + keyName]);
+console.log(sasha['second' + keyName]);
+
+
+// const interestedIn = prompt(
+//   'Che cosa vuoi sapere su Sasha? scegli tra firstName, secondName, job, yearBorn, nationality'
+// );
+// sasha[interestedIn]
+//   ? console.log(
+//       `Hai selezionato ${interestedIn}, la risposta è: ${sasha[interestedIn]}`
+//     )
+//   : console.log(
+//       'Richiesta errata! scegli tra firstName, secondName, job, yearBorn, nationality'
+//     );
+
+// console.log(
+//   `${sasha.firstName} ha ${sasha.friend.length} friend, and his best friend is called ${sasha.friend[0]}`
+// );
+// console.log(
+//   `${sasha['firstName']} ha ${sasha['friend'].length} friend, and his best friend is called ${sasha['friend'][0]}`
+// );
+
+console.log('==== coding challenge after study object and this===');
+
+const mark = {
+  firstName: 'Mark',
+  lastName: 'Miller',
+  mass: 78,
+  height: 1.9,
+  calcBMI: function () {
+    this.bmi = (this.mass / this.height ** 2).toFixed(2);
+    return this.bmi;
+  },
+};
+const john = {
+  firstName: 'John',
+  lastName: 'Smith',
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = (this.mass / this.height ** 2).toFixed(2);
+    return this.bmi;
+  },
+};
+const avgMark = mark.calcBMI();
+const avgJohn = john.calcBMI();
+console.log(john, mark);
+
+avgMark > avgJohn
+  ? console.log(
+      `${mark.firstName}'s BMI (${mark.bmi}) is higher than ${john.firstName}'s (${john.bmi})`
+    )
+  : console.log(
+      `${john.firstName}'s BMI (${john.bmi}) is higher than ${mark.firstName}'s (${mark.bmi})`
+    );
+*/
+
+const arr = [
+  'Oleksandr',
+  'Oleksyuk',
+  1997,
+  ['Ela', 'Alona', 'Pietro'],
+  true,
+  'sono una stringa',
+];
+// console.log('=== ONLY STRING ===');
+// for (let i = 0; i < arr.length; i++) {
+//   if (typeof arr[i] !== 'string') continue;
+// }
+let excersiceGym = ['panca piana', 'squat', 'pressa'];
+for (let excercise = 0; excercise < excersiceGym.length; excercise++) {
+  console.log(`====== Starting excercie ${excersiceGym[excercise]}`);
+  for (let rep = 3; rep < 16; rep += 3) {
+    console.log(`==== rep ${rep}`);
+  }
+}
