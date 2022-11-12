@@ -339,22 +339,28 @@ totalPriceFoods([
 // if (passDrive) hasDrivesLicens = true;
 // if (hasDrivesLicens) console.log('I can drive :D');
 
-// function fruitProcessor(apples, oranges) {
-//   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-//   return juice;
-// }
-// const appleJuice = fruitProcessor(5, 0);
-// console.log(appleJuice);
+function fruitProcessor(apples, oranges) {
+  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
+}
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice);
 
-// const orangeJuice = fruitProcessor(0, 4);
-// console.log(orangeJuice);
+const orangeJuice = fruitProcessor(0, 4);
+console.log(orangeJuice);
 
-// function calc1(a, b) {
-//   return a + b;
-// }
-// const calc2 = function (a, b) {
-//   return a + b;
-// };
+// Function declaration
+// Questo tipo di funzione la si puó invocare anche prima della sua creazione
+// Questo tipo di funzione non produce un valore(non ho ancora capito cosa vuol dire questa frase)
+function calc1(a, b) {
+  return a + b;
+}
+// function expression
+// Questo tipo di funzione non si può invocare anche prima della sua creazione
+// Questo tipo di funzione produce un valore(non ho ancora capito cosa vuol dire questa frase)
+const calc2 = function (a, b) {
+  return a + b;
+};
 budgetPeople = [
   { name: 'John', age: 21, budget: 23000 },
   { name: 'Steve', age: 32, budget: 40000 },
