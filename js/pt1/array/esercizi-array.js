@@ -58,6 +58,7 @@ while(i<array.length){
     i++;
 }
 console.log(cont)
+
 // 6 - Stampare quanti numeri positivi (compreso lo zero) ci sono nell’array → 8
 console.log("-- 6 --");
 i=0; 
@@ -238,16 +239,61 @@ while (i < array1.length || i < array2.length) {
     i++;
 }
 
+for(i=0; i < array1.length || i < array2.length; i++) {
+    array3[i] = 0;
+    if (array1[i]) {
+        array3[i] = array3[i] + array1[i];
+    }
+    if (array2[i]) {
+        array3[i] = array3[i] + array2[i];
+    }
+}
+
+array1 = [1, 2, 2, 3, 4, 6, 4];
+array2 = [4, 2, 2, 4];
+console.log(array3);
+console.log("--- ")
+array3 = []
+for(let i = 0; i < array1.length || i < array2.length; i++){
+    /* if(array2[i]){
+        console.log("elemento array 1 in posizione "+i+" esiste")
+    }else{
+        console.log("elemento array 1 in posizione "+i+" non esiste")
+    } */
+    // hanno la stessa lunghezza 
+    if(array1[i] && array2[i]){ 
+        array3[i] = array1[i] + array2[i]
+    }
+
+    // array1 è più lungo di array2
+    // and -> vero solo se entrambe sono vere
+    if(array1[i] && !array2[i]){  // true and not(false) -> true and true -> true 
+        // se l'elemento di indice i nell'array esiste E l'elementi di indice i nell'array 2 NON esiste
+        array3[i] = array1[i];
+    }
+
+    // array2 è più lungo di array1
+    if(!array1[i] && array2[i]){
+        array3[i] = array2[i];
+    }
+}
+
+console.log("--- ")
 console.log(array3);
 
-// 14 - Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 → versione1 [1,3,4,2,2,4] 	versione2 [1,4,2,2,3,4]
+// 14 - Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2
+// versione1 [1,3,4,2,2,4] 	-> scorre l'array 1 e seleziono gli elementi dispari POI scorre l'array 2 e seleziona gli elementi pari
+// versione2 [1,4,2,2,3,4]  -> scorre insieme l'array1 e l'array2 controllando sia se l'elemento nell'array1 è dispari
+//              sia se l'elemento nell'array2 è pari (nella stessa posizione)
 console.log("-- 14 --");
 array1 = [1, 2, 2, 3, 4];
 array2 = [4, 2, 2, 4];
+
 i = 0;
 array3 = [];
-indicearray3 = 0;
-// versione 1
+
+// versione 1 con while
+console.log("versione 1 con while");
 while (i < array1.length) {
     if (array1[i] % 2 == 1) {
         array3.push(array1[i]);
@@ -261,7 +307,23 @@ while (i < array2.length) {
     }
     i++;
 }
-console.log("versione 1");
+console.log(array3);
+
+// versione 1 con for 
+console.log("versione 1 con for");
+for (i=0; i < array1.length; i++) {
+    if (array1[i] % 2 == 1) {
+        array3.push(array1[i]);
+    }
+
+}
+i = 0;
+for(i=0; i < array2.length; i++) {
+    if (array2[i] % 2 == 0) {
+        array3.push(array2[i]);
+    }
+}
+
 console.log(array3);
 
 //versione 2
@@ -287,10 +349,9 @@ console.log("-- 15 -- da aggiornare");
 array1 = [1, 2, 2, 3, 4];
 array2 = [4, 2, 2, 4]; // ne manca uno 
 i = 0;
-while (i < array1.length || i < array2.length) {
-    if (array1.length >= array2.length) {
-        if(array1[i] )
-            array2[i] = array2[i] / array1[array2.length - i];
+while (i < array2.length) {
+    if(array1[array2.length - i - 1] ){
+            array2[i] = array2[i] / array1[array2.length - i - 1];
     }
 
     // 0 -> 4 / array1[4 - 0]
@@ -304,7 +365,7 @@ while (i < array1.length || i < array2.length) {
 
 // 16 - Verificare se gli array sono palindromi come ad esempio “anna”, “radar”, “emme”, "112 211"
 console.log("-- 16 --");
-array2 = [4, 2, 5, 2, 4];
+array2 = [2, 2, 2, 2];
 // array2 = [4, 2, 3, 2, 4];
 i = 0;
 cont = 0;
@@ -315,20 +376,36 @@ cont = 0;
 // array.lenght = 5 / 2 = 2
 // i = 0 -> 4 == 4 cont = 1
 // i = 1 -> 2 == 2 cont = 2
-while (i < Math.floor(array2.length) / 2) {
+while (i < array2.length / 2) {
     // se lunghezza è pari
     if (array2[i] === array2[array2.length - i - 1]) {
-        cont++;
+        cont ++
+    }else{
+        console.log("non è palindromo");
+        break;
+    }
+    i++;
+}
+
+if (cont == array2.length / 2 || cont == Math.ceil(array2.length / 2)) {
+    console.log("è palindromo");
+} 
+
+i=0
+while (i < array2.length / 2) {
+    // se lunghezza è pari
+    if (array2[i] === array2[array2.length - i - 1]) {
+        cont =i
+    }else{
+        console.log("non è palindromo");
+        break;
     }
     i++;
 }
 
 if (cont == array2.length / 2 || cont == Math.floor(array2.length / 2)) {
     console.log("è palindromo");
-} else {
-    console.log("non è palindromo");
-}
-
+} 
 
 // Math
 // math.floor -> parte intera inferiore   5.1 -> 5  5.9 -> 5
