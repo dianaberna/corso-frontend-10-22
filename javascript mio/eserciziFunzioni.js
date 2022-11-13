@@ -216,6 +216,7 @@ console.log(sommaElementiArray(array2));
 console.log("\n");
 
 // Quante volte è vero?
+console.log("Quante volte è vero?");
 
 function quantiTrue(array)
 {
@@ -246,7 +247,22 @@ arr = [true, true, true, false];
 console.log(quantiTrue(arr));
 console.log(quantiTrue([false, true, false, false]));
 
+console.log("\n");
+
 // Piegare un pezzo di carta
+
+// Validare un'em-mail
+
+console.log("Validare un'e-mail");
+
+function validateEmail(email)
+{
+    if((email.includes("@") == true) && (email.includes("." == true)))
+    {
+        if((email.indexOf("@") > 0) && (email.lastIndexOf(".") > (email.indexOf("@") + 1)) &&)
+    }
+
+}
 
 
 
