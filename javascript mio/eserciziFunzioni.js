@@ -288,75 +288,137 @@ console.log("\n");
 
 console.log("Esercizio 14 - Sasso, carta, forbici");
 
-function rps(m1, m2)
-{
-
-    switch (m1){
-
+function rps(m1, m2) {
+    switch (m1) {
         case "sasso":
-            if( m2 == "carta")
-            {
+            if (m2 == "carta") {
                 return "Hai perso";
             }
-            if( m2 == "forbici")
-            {
+            if (m2 == "forbici") {
                 return "Hai vinto";
-
             }
-            if( m2 == "sasso")
-            {
+            if (m2 == "sasso") {
                 return "Pareggio";
             }
 
-         case "forbici":
-            if( m2 == "sasso")
-            {
+        case "forbici":
+            if (m2 == "sasso") {
                 return "Hai perso";
             }
-            if( m2 == "carta")
-            {
+            if (m2 == "carta") {
                 return "Hai vinto";
+            }
+            if (m2 == "forbici") {
+                return "Pareggio";
+            }
 
-            }
-            if( m2 == "forbici")
-            {
+        case "carta":
+            if (m2 == "carta") {
                 return "Pareggio";
             }
-        
-         case "carta":
-            if( m2 == "carta")
-            {
-                return "Pareggio";
-            }
-            if( m2 == "forbici")
-            {
+            if (m2 == "forbici") {
                 return "Hai perso";
-
             }
-            if( m2 == "sasso")
-            {
+            if (m2 == "sasso") {
                 return "Hai vinto";
             }
-         
-        } // fine dello switch
-
+    } // fine dello switch
 } // fine di function rps
 
 console.log("Se la prima mano è sasso e la seconda è carta: ");
-console.log(rps("sasso","carta"));
+console.log(rps("sasso", "carta"));
 console.log("Se la prima mano è sasso e la seconda è forbici: ");
 console.log(rps("sasso", "forbici"));
 console.log("Se la prima mano è sasso e la seconda è sasso: ");
 console.log(rps("sasso", "sasso"));
 console.log("Se la prima mano è forbici e la seconda è carta: ");
-console.log(rps("forbici","carta"));
+console.log(rps("forbici", "carta"));
 console.log("Se la prima mano è forbici e la seconda è sasso: ");
-console.log(rps("forbici","sasso"));
+console.log(rps("forbici", "sasso"));
 console.log("Se la prima mano è forbici e la seconda è forbici: ");
-console.log(rps("forbici","forbici"));
+console.log(rps("forbici", "forbici"));
 console.log("Se la prima mano è carta e la seconda è sasso: ");
-console.log(rps("carta","sasso"));
+console.log(rps("carta", "sasso"));
 console.log("Se la prima mano è carta e la seconda è forbici: ");
-console.log(rps("carta","forbici"));
+console.log(rps("carta", "forbici"));
 console.log("Se la prima mano è carta e la seconda è carta: ");
-console.log(rps("carta","carta"));
+console.log(rps("carta", "carta"));
+
+console.log("\n");
+
+// Quanti giorni tra due date
+console.log("Esercizio 15 - Quanti giorni tra due date");
+
+function getDays(d1, d2) {
+    let data1 = new Date(d1);
+    let data2 = new Date(d2);
+
+    return Math.abs((data2 - data1) / 1000 / 60 / 60 / 24);
+} // fine di getDays
+
+console.log(getDays("June 14, 2019", "June 20, 2019"));
+console.log(getDays("December 29, 2018", "January 1, 2019"));
+console.log(getDays("July 20, 2019", "July 30, 2019"));
+console.log(getDays("July 30, 2019", "July 20, 2019"));
+
+console.log("\n");
+
+// Rimuovere i duplicati di un array
+console.log("Rimuovere i duplicati di un array");
+console.log("da rivedere e terminare");
+
+console.log("\n");
+
+// Ottieni la somma del budget delle persone
+console.log("Ottieni la somma del budget delle persone");
+
+function getBudgets(oggetto) {
+    let tot = 0;
+    i = 0;
+
+    while (i < oggetto.length) {
+        tot = tot + oggetto[i].budget;
+        i++;
+    } // fine del while
+
+    return tot;
+}
+
+let listaPersone = [
+    { nome: "John", eta: 21, budget: 23000 },
+    { nome: "Steve", eta: 32, budget: 40000 },
+    { nome: "Martin", eta: 16, budget: 2700 },
+];
+
+console.log(getBudgets(listaPersone));
+
+console.log("\n");
+
+// Calcola il prezzo totale dei generi alimentari
+console.log("Calcola il prezzo totale dei generi alimentari");
+
+function getTotalPrice(obj){
+
+    let totale = 0;
+    i = 0;
+
+    while( i < alimenti.length )
+    {
+        totale = totale + alimenti[i].prezzo * alimenti[i].quant;
+        i++;
+
+    } // fine del while
+
+    return totale;
+
+}
+
+let alimenti = [
+    { prod: "latte", quant: 1, prezzo: 1.50 },
+    { prod: "uova", quant: 12, prezzo: 0.10 },
+    { prod: "pane", quant: 2, prezzo: 1.60},
+    { prod: "formaggio", quant: 1, prezzo: 4.50 },
+]
+
+console.log("Il prezzo totale della spesa è: ")
+console.log(getTotalPrice(alimenti));
