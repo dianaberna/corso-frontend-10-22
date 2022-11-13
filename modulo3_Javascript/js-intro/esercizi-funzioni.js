@@ -203,16 +203,12 @@ function quantiTrue(array) {
     return 0;
   } else {
     for (i = 0; i < array.length; i++) {
-      if (array[i] == true) {
-        cont++;
-      } else {
-        cont = cont;
-      };
+      array[i] === true ? cont++ : null;
     };
     return cont;
   };
-
 };
+
 console.log(quantiTrue([])); // 0
 console.log(quantiTrue([true, false, false, true, false])); // 2
 console.log(quantiTrue([true, true, true, true])); // 4
@@ -224,12 +220,9 @@ console.log(quantiTrue([false, false, false])); // 0
 // OK
 // Piegare un pezzo di carta 
 // Creare una funzione che restituisca lo spessore (in metri) di un foglio di carta dopo averlo piegato n numero di volte. La carta inizia con uno spessore di 0,5 mm.
-// PS. (1) Ci sono 1000 mm in un solo metro. (2) Non arrotondare le risposte.
-// es. spessore(1) ➞ "0.001m"    // carta piegata una volta = 1mm (cioè 0.001m); spessore(4) ➞ "0.008m"  // carta piegata 4 volte = 8mm (cioè 0.008m); spessore(21) ➞ "1048.576m" // carta piegata 21 volte = 1048576mm (cioè 1048.576m)
 console.log("--> Piegare un pezzo di carta ");
 
 function spessoreTot(p) {
-
   return Math.pow(2, p) / 2 / 1000;
 };
 
@@ -275,7 +268,7 @@ console.log((spessoreTot(21))); //1048.576mm
 
 
 // OK (c'è una soluzione migliore?)
-// Sasso, carta, forbici 
+// 14 - Sasso, carta, forbici 
 // Crea una funzione che accetta due stringhe (p1 e p2 - che rappresentano i giocatori 1 e 2) come argomenti e restituisce una stringa che indica il vincitore in una partita a Sasso, Carta, Forbici. Ogni argomento conterrà una singola stringa: "Sasso", "Carta" o "Forbici". Restituisci il vincitore secondo le seguenti regole: Il sasso batte le forbici / Le forbici battono la carta / La carta batte il sasso
 // Se p1 vince, restituisci la stringa "Il vincitore è p1". Se p2 vince, restituisci la stringa "Il vincitore è p2" e se p1 e p2 sono gli stessi, restituisci "È un pareggio".
 console.log("--> Sasso, carta, forbici");
@@ -297,38 +290,52 @@ console.log(scf("f", "c")); // p1
 
 
 
-
-// Quanti giorni tra due date 
+// OK
+// 15 - Quanti giorni tra due date 
 // Crea una funzione che accetta due date e restituisce il numero di giorni tra la prima e la seconda data.".
 
 console.log("--> Quanti giorni tra due date");
 
 function getDays(data1, data2) {
-  let ms1 = new Date(data1);
-  let ms2 = new Date(data2);
-  // let ms = new Date.UTC(data2);
-  return Math.abs((ms2 - ms1) / 1000 / 60 / 60 / 24);
+  return Math.abs((data2 - data1) / 1000 / 60 / 60 / 24);
 }
 
-
-
-console.log(getDays(
-  ("June 14, 2019", "June 20, 2019")
-)); // 6
-
-console.log(getDays(
-  ("December 29, 2018", "January 1, 2019")
-)); // 3
+console.log(getDays(new Date('June 14, 2019'), new Date('June 20, 2019'))); // 6
+console.log(getDays(new Date('January 01, 2019'), new Date('December 29, 2018'))); // 3
+console.log(getDays(new Date('July 20, 2019'), new Date('July 30, 2019'))); // 10
 
 
 
 
+// NO...
+// 16 - Rimuovere i duplicati da un array
+// Crea una funzione che accetta un array di elementi, rimuove tutti gli elementi duplicati e restituisce un nuovo array nello stesso ordine sequenziale del vecchio array (meno i duplicati). PS. I test contengono array con stringhe e numeri. I test fanno distinzione tra maiuscole e minuscole.
+// removeDups([1, 0, 1, 0]) ➞ [1, 0]; removeDups(["The", "big", "cat"]) ➞ ["The", "big", "cat"] ; removeDups(["John", "Taylor", "John"]) ➞ ["John", "Taylor"]
+
+
+console.log("--> Rimuovere i duplicati da un array ");
+
+function removeDups(mioarray) {
+  num = 0;
+  nuovoarray = [];
+  for (i = 0; i < mioarray.length; i++) {
+    for (j = 0; j < mioarray.length; j++) {
+      if (mioarray[i] != mioarray[i + j]) {
+        num = mioarray[i];
+        console.log(num);
+      };
+    };
+    nuovoarray.push(num);
+  };
+  return nuovoarray;
+  console.log(num);
+};
 
 
 
 
 // OK
-// Ottieni la somma del budget delle persone 
+// 17 - Ottieni la somma del budget delle persone 
 // Crea la funzione che accetta un array con oggetti e restituisce la somma dei budget delle persone.
 console.log("--> Ottieni la somma del budget delle persone ");
 
@@ -359,7 +366,7 @@ console.log(
 
 
 // OK
-// Calcola il prezzo totale dei generi alimentari 
+// 18 - Calcola il prezzo totale dei generi alimentari 
 // Crea una funzione che prenda un array di oggetti (alimentari) che calcoli il prezzo totale e lo restituisca come un numero. Un oggetto alimentare ha un prodotto, una quantità e un prezzo.
 console.log("--> Calcola il prezzo totale dei generi alimentari ");
 
@@ -372,8 +379,6 @@ function prezzoTotaleAlimenti(alimento) {
   };
   return prezzo_array;
 };
-
-
 
 console.log(
   prezzoTotaleAlimenti([{ product: "milk", quantity: 1, price: 1.5 }])
