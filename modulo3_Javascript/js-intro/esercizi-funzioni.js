@@ -1,3 +1,4 @@
+// OK
 // Moltiplicazione di due numeri
 // Crea una funzione che accetta due numeri come argomenti e ne restituisce la moltiplicazione.
 // Esempio: moltiplicazione(3, 2) ➞ 6
@@ -10,7 +11,7 @@ console.log(moltiplicazione(-3, 4));
 console.log(moltiplicazione(3, 2));
 
 
-
+// OK
 // Convertire anni in giorni
 // Creare una funzione che prenda l'età in anni e restituisca l'età in giorni.
 // Esempi: anniInGiorni(65) ➞ 23725; anniInGiorni(0) ➞ 0
@@ -23,6 +24,7 @@ console.log(anniInGiorni(65));
 console.log(anniInGiorni(0));
 
 
+// OK
 // Minore o uguale a zero
 // Crea una funzione che accetta un numero come unico argomento e restituisce true se è minore o uguale a zero, altrimenti restituisce false.
 // Es: minoreUgualeAZero(5) ➞ false; minoreUgualeAZero(0) ➞ true
@@ -36,6 +38,7 @@ console.log(minoreUgualeAZero(-2));
 
 
 
+// OK
 // Il problema della fattoria
 // In questa sfida, un contadino ti chiede di dirgli quante zampe si possono contare tra tutti i suoi animali. L'agricoltore alleva tre specie: polli = 2 zampe, mucche = 4 zampe, maiali = 4 zampe
 // L'agricoltore ha contato i suoi animali e ti dà un subtotale per ogni specie. Devi implementare una funzione che restituisca il numero totale di zampe di tutti gli animali. 
@@ -49,6 +52,7 @@ console.log(numeroZampe(2, 3, 5));
 
 
 
+// OK
 // Case di fiammiferi
 // Crea una funzione che prenda un numero (step) come argomento e restituisca il numero di fiammiferi in quello step. Vedere i passaggi 1, 2 e 3 nell'immagine. 
 //Esempi: numeroDiFiammiferi(1) ➞ 6; numeroDiFiammiferi(4) ➞ 21; numeroDiFiammiferi(87) ➞ 436
@@ -67,6 +71,7 @@ console.log(numeroDiFiammiferi(87));
 
 
 
+// OK
 // Somma i numeri da un unico numero
 // Crea una funzione che accetta un numero come argomento. Somma tutti i numeri da 1 al numero passato alla funzione. Ad esempio, se l'input è 4, la tua funzione dovrebbe restituire 10 perché 1 + 2 + 3 + 4 = 10.
 // Es: sommaDaUnUnicoNumero(4) ➞ 10; sommaDaUnUnicoNumero(13) ➞ 91; sommaDaUnUnicoNumero(600) ➞ 180300
@@ -86,6 +91,7 @@ console.log(sommaDaUnUnicoNumero(600));
 
 
 
+// OK
 // Trova lo sconto
 // Crea una funzione che accetta due argomenti: il prezzo originale e la percentuale di sconto come numeri interi e restituisce il prezzo finale dopo lo sconto.
 // PS. La tua risposta dovrebbe essere arrotondata a due cifre decimali. (vedere parseFloat e toFixed)
@@ -104,6 +110,7 @@ console.log(trovaSconto(100, 75));
 
 
 
+// OK
 // Posizione nell’alfabeto
 // Dato un numero compreso tra 1 e 26 (vedere codice ASCII), restituisci quale lettera si trova in quella posizione dell'alfabeto. Restituisce "non valido" se il numero fornito non rientra in tale intervallo o non è un numero intero.
 // PS. (1) Restituisci una lettera minuscola. (2) I numeri che terminano con ".0" sono validi. (3) Una funzione che javascript ci mette a disposizione per questi casi è fromCharCode
@@ -126,7 +133,7 @@ console.log(letteraInPosizione(27.8));
 
 
 
-
+// OK
 // Calcolatrice di base
 // Crea una funzione che accetta due numeri e un operatore matematico + - / * ed eseguirà un calcolo con i numeri indicati.
 // PS. Se l'input tenta di dividere per 0, restituisce: "Impossibile dividere per 0!"
@@ -161,6 +168,7 @@ console.log(calcolatrice(4, "/"));
 
 
 
+// OK
 // Fare la somma di tutti gli elementi di un array
 // Crea una funzione che restituisce la somma di tutti i valori di un array.
 // Es.sommaElementiArray([1, 2, 4]) ➞ 7; sommaElementiArray([4, 2, 10, 2]) ➞ 18; sommaElementiArray([1]) ➞ 1
@@ -182,32 +190,216 @@ console.log(sommaElementiArray([4, 2, 10, 2]));
 console.log(sommaElementiArray([-2]));
 
 
-// NO!! (da rifare)
+
+
+// OK
 // Quante volte è vero?
-// Crea una funzione che restituisce il numero di valori uguali a true presenti in un array.
-// PS. (1) Restituisce 0 se viene fornito un array vuoto. (2) Tutti gli elementi dell'array sono di tipo bool (true o false) > if ((array[i] = false) || (array[i] = true)) <
-// Es:  quantiTrue([true, false, false, true, false]) ➞ 2; quantiTrue([false, false, false, false]) ➞ 0; quantiTrue([]) ➞ 0
+// Crea una funzione che restituisce il numero di valori uguali a true presenti in un array. Restituisce 0 se viene fornito un array vuoto. (Gli elementi sono tutti true o false).
 console.log("--> Quante volte è vero?");
 
 function quantiTrue(array) {
+  cont = 0;
   if (array.length === 0) {
     return 0;
   } else {
-    i = 0;
-    elementi_true = 0;
-    while (i < array.length) {
+    for (i = 0; i < array.length; i++) {
       if (array[i] == true) {
-        elementi_true = elementi_true + 1;
-        i++;
+        cont++;
       } else {
-        elementi_true = elementi_true;
-        i++;
+        cont = cont;
       };
-      return elementi_true;
     };
+    return cont;
+  };
+
+};
+console.log(quantiTrue([])); // 0
+console.log(quantiTrue([true, false, false, true, false])); // 2
+console.log(quantiTrue([true, true, true, true])); // 4
+console.log(quantiTrue([false, false, false])); // 0
+
+
+
+
+// OK
+// Piegare un pezzo di carta 
+// Creare una funzione che restituisca lo spessore (in metri) di un foglio di carta dopo averlo piegato n numero di volte. La carta inizia con uno spessore di 0,5 mm.
+// PS. (1) Ci sono 1000 mm in un solo metro. (2) Non arrotondare le risposte.
+// es. spessore(1) ➞ "0.001m"    // carta piegata una volta = 1mm (cioè 0.001m); spessore(4) ➞ "0.008m"  // carta piegata 4 volte = 8mm (cioè 0.008m); spessore(21) ➞ "1048.576m" // carta piegata 21 volte = 1048576mm (cioè 1048.576m)
+console.log("--> Piegare un pezzo di carta ");
+
+function spessoreTot(p) {
+
+  return Math.pow(2, p) / 2 / 1000;
+};
+
+console.log((spessoreTot(1))); //0.001m
+console.log((spessoreTot(4))); //0.008m
+console.log((spessoreTot(10))); //0.512mm
+console.log((spessoreTot(21))); //1048.576mm
+
+
+
+// NO! ritorna sempre "false"
+// Validare un'e-mail 
+// Crea una funzione che accetta una stringa, controlla se è un indirizzo email valido e restituisce true o false, a seconda della valutazione.
+// La stringa deve contenere un carattere @.
+// La stringa deve contenere un . carattere.
+// La @ deve avere almeno un carattere davanti. (ad esempio "d@ciao.com" è valido mentre "@ciao.com" non è valido.
+// Il . e la @ deve trovarsi nei posti appropriati. (ad esempio "hello.email@com" non è valido mentre "mario.rossi@email.com" è valido.
+// Se la stringa supera questi test, viene considerata un indirizzo email valido.
+
+// console.log("--> Validare un'e-mail ");
+
+// function validaEmail(mail) {
+//   if (mail == '') {
+//     console.log("il campo è vuoto, inserisci la tua email")
+//   } else {
+//     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail.value)) {
+//       console.log("Ottimo! " + mail + " è un formato valido")
+//       return (true);
+//     } else {
+//       console.log(mail + " non è un formato valido!")
+//       return (false);
+//     }
+//   };
+// };
+
+
+// console.log(validaEmail("dwwdd"));
+// console.log(validaEmail("hello2@email.com"));
+// console.log(validaEmail("@dwwdd"));
+// console.log(validaEmail("dwwd.d"));
+
+
+
+
+// OK (c'è una soluzione migliore?)
+// Sasso, carta, forbici 
+// Crea una funzione che accetta due stringhe (p1 e p2 - che rappresentano i giocatori 1 e 2) come argomenti e restituisce una stringa che indica il vincitore in una partita a Sasso, Carta, Forbici. Ogni argomento conterrà una singola stringa: "Sasso", "Carta" o "Forbici". Restituisci il vincitore secondo le seguenti regole: Il sasso batte le forbici / Le forbici battono la carta / La carta batte il sasso
+// Se p1 vince, restituisci la stringa "Il vincitore è p1". Se p2 vince, restituisci la stringa "Il vincitore è p2" e se p1 e p2 sono gli stessi, restituisci "È un pareggio".
+console.log("--> Sasso, carta, forbici");
+
+function scf(p1, p2) {
+  if ((p1 == "s" && p2 == "f") || (p1 == "f" && p2 == "c") || (p1 == "c" && p2 == "s")) {
+    return "Il vincitore è p1";
+  } else if ((p1 == "s" && p2 == "s") || (p1 == "f" && p2 == "f") || (p1 == "c" && p2 == "c")) {
+    return "È un pareggio";
+  } else {
+    return "Il vincitore è p2";
   };
 };
-console.log(quantiTrue([]));
-console.log(quantiTrue([true, false, false, true, false]));
-console.log(quantiTrue([true, true, true, true]));
-console.log(quantiTrue([false, false, false]));
+
+
+console.log(scf("s", "c")); // p2
+console.log(scf("s", "f")); // p1
+console.log(scf("f", "c")); // p1
+
+
+
+
+// Quanti giorni tra due date 
+// Crea una funzione che accetta due date e restituisce il numero di giorni tra la prima e la seconda data.".
+
+console.log("--> Quanti giorni tra due date");
+
+function getDays(data1, data2) {
+  let ms1 = new Date(data1);
+  let ms2 = new Date(data2);
+  // let ms = new Date.UTC(data2);
+  return Math.abs((ms2 - ms1) / 1000 / 60 / 60 / 24);
+}
+
+
+
+console.log(getDays(
+  ("June 14, 2019", "June 20, 2019")
+)); // 6
+
+console.log(getDays(
+  ("December 29, 2018", "January 1, 2019")
+)); // 3
+
+
+
+
+
+
+
+
+// OK
+// Ottieni la somma del budget delle persone 
+// Crea la funzione che accetta un array con oggetti e restituisce la somma dei budget delle persone.
+console.log("--> Ottieni la somma del budget delle persone ");
+
+
+function budgetTotale(persona) {
+  quota = 0;
+  for (i = 0; i < persona.length; i++) {
+    quota += persona[i].budget;
+  };
+  return quota;
+};
+
+console.log(
+  budgetTotale([
+    { name: "John", age: 21, budget: 23000 },
+    { name: "Steve", age: 32, budget: 40000 },
+    { name: "Martin", age: 16, budget: 2700 },
+  ])
+);
+
+console.log(
+  budgetTotale([
+    { name: "John", age: 21, budget: 29000 },
+    { name: "Steve", age: 32, budget: 32000 },
+    { name: "Martin", age: 16, budget: 1600 },
+  ])
+);
+
+
+// OK
+// Calcola il prezzo totale dei generi alimentari 
+// Crea una funzione che prenda un array di oggetti (alimentari) che calcoli il prezzo totale e lo restituisca come un numero. Un oggetto alimentare ha un prodotto, una quantità e un prezzo.
+console.log("--> Calcola il prezzo totale dei generi alimentari ");
+
+
+function prezzoTotaleAlimenti(alimento) {
+
+  prezzo_array = 0;
+  for (i = 0; i < alimento.length; i++) {
+    prezzo_array += alimento[i].price;
+  };
+  return prezzo_array;
+};
+
+
+
+console.log(
+  prezzoTotaleAlimenti([{ product: "milk", quantity: 1, price: 1.5 }])
+);
+console.log(
+  prezzoTotaleAlimenti([
+    { product: "milk", quantity: 1, price: 1.5 },
+    { product: "cereals", quantity: 1, price: 2.5 },
+  ])
+);
+console.log(
+  prezzoTotaleAlimenti([{ product: "milk", quantity: 3, price: 1.5 }])
+);
+console.log(
+  prezzoTotaleAlimenti([
+    { product: "milk", quantity: 1, price: 1.5 },
+    { product: "eggs", quantity: 12, price: 0.10 },
+    { product: "bread", quantity: 2, price: 1.6 },
+    { product: "cheese", quantity: 1, price: 4.5 },
+  ])
+);
+console.log(
+  prezzoTotaleAlimenti([
+    { product: "chocolate", quantity: 1, price: 0.10 },
+    { product: "lollipop", quantity: 1, price: 0.20 },
+  ])
+);
+
+
