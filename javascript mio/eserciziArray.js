@@ -13,9 +13,7 @@ console.log("\n");
 
 // Esercizio 2
 // Stampare la somma di tutti gli elementi dell’ array
-console.log(
-    "Esercizio 2 - Stampare la somma di tutti gli elementi dell’ array"
-);
+console.log("Esercizio 2 - Stampare la somma di tutti gli elementi dell’ array");
 i = 0;
 somma = 0;
 while (i < array.length) {
@@ -43,9 +41,7 @@ console.log("\n");
 
 // Esercizio 4
 // Stampare la somma dei soli elementi in posizione pari
-console.log(
-    "Esercizio 4 - Stampare la somma dei soli elementi in posizione pari"
-);
+console.log("Esercizio 4 - Stampare la somma dei soli elementi in posizione pari");
 i = 0;
 sommap = 0;
 while (i < array.length) {
@@ -77,9 +73,7 @@ console.log("\n");
 
 // Esercizio 6
 // Stampare quanti numeri positivi (compreso lo zero) ci sono nell’array
-console.log(
-    "Esercizio 6 - Stampare quanti numeri positivi (compreso lo zero) ci sono nell’array"
-);
+console.log("Esercizio 6 - Stampare quanti numeri positivi (compreso lo zero) ci sono nell’array");
 i = 0;
 
 nump = 0;
@@ -133,9 +127,7 @@ console.log("\n");
 
 // Esercizio 9
 // Inserire in un nuovo array solo gli elementi negativi
-console.log(
-    "Esercizio 9 - Inserire in un nuovo array solo gli elementi negativi"
-);
+console.log("Esercizio 9 - Inserire in un nuovo array solo gli elementi negativi");
 
 i = 0;
 numj = 0;
@@ -174,9 +166,7 @@ console.log("\n");
 // Esericizio 10
 // Creare un nuovo array dove ogni elemento del nuovo
 // è uguale al doppio di quello dato
-console.log(
-    "Esercizio 10 - Creare un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato"
-);
+console.log("Esercizio 10 - Creare un nuovo array dove ogni elemento del nuovo è uguale al doppio di quello dato");
 i = 0;
 long = array.length;
 
@@ -320,7 +310,7 @@ console.log("\n");
 // Esericizio 14
 // Creare un array3 con gli elementi (non la posizione) dispari
 // di array1 e gli elementi pari di array2
-console.log( "Esercizio 14 - Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 ");
+console.log("Esercizio 14 - Creare un array3 con gli elementi (non la posizione) dispari di array1 e gli elementi pari di array2 ");
 
 i = 0;
 
@@ -378,61 +368,46 @@ console.log("da rivedere e completare");
 
 console.log("\n");
 
-// Esercizio 16 - Verificare se array1 e array2 dati sono palindromi 
+// Esercizio 16 - Verificare se array1 e array2 dati sono palindromi
 // come ad esempio “anna”, “radar”, “emme”, “1221”, “4224”
 console.log("Esercizio 16 - Verificare se array1 e array2 dati sono palindromi come ad esempio anna, radar, emme, 1221, 4224");
- 
-let contr = 0;
 
 i = 0;
 
-while( i < array1.length)
-{
-    if(array1[i] == array1[array1.lenght - 1 - i])
-    {
+let contr = 0;
+
+while (i < array1.length) {
+    if (array1[i] == array1[array1.lenght - 1 - i]) {
         contr = 1;
-        
-    } else
-        {
-            contr = 0;
-        }
-
-    i++;
-
-}
-
-if(contr == 1 )
-{
-    console.log("l'array 1 è palindromo");
-} else
-    {
-        console.log("l'array 1 non è palindromo");
+    } else {
+        contr = 0;
     }
 
-    i = 0;
+    i++;
+}
+
+if (contr == 1) {
+    console.log("l'array 1 è palindromo");
+} else {
+    console.log("l'array 1 non è palindromo");
+}
+
+i = 0;
 
 let ver = 0;
 
-while( i < array2.length)
-{
-    if(array2[i] == array2[array2.lenght - 1 - i])
-    {
+while (i < array2.length) {
+    if (array2[i] == array2[array2.lenght - 1 - i]) {
         ver = 1;
-        
-    } else
-        {
-            ver = 0;
-        }
-
-    i++;
-
-}
-
-if(ver == 1 )
-{
-    console.log("l'array 2 è palindromo");
-} else
-    {
-        console.log("l'array 2 non è palindromo");
+    } else {
+        ver = 0;
     }
 
+    i++;
+}
+
+if (ver == 1) {
+    console.log("l'array 2 è palindromo");
+} else {
+    console.log("l'array 2 non è palindromo");
+}
