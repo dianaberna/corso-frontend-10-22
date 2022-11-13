@@ -541,24 +541,111 @@ avgMark > avgJohn
   : console.log(
       `${john.firstName}'s BMI (${john.bmi}) is higher than ${mark.firstName}'s (${mark.bmi})`
     );
-*/
+
 
 const arr = [
-  'Oleksandr',
-  'Oleksyuk',
+  "Oleksandr",
+  "Oleksyuk",
   1997,
-  ['Ela', 'Alona', 'Pietro'],
+  ["Ela", "Alona", "Pietro"],
   true,
-  'sono una stringa',
+  "sono una stringa",
 ];
 // console.log('=== ONLY STRING ===');
 // for (let i = 0; i < arr.length; i++) {
 //   if (typeof arr[i] !== 'string') continue;
 // }
-let excersiceGym = ['panca piana', 'squat', 'pressa'];
+let excersiceGym = ["panca piana", "squat", "pressa"];
 for (let excercise = 0; excercise < excersiceGym.length; excercise++) {
   console.log(`====== Starting excercie ${excersiceGym[excercise]}`);
   for (let rep = 3; rep < 16; rep += 3) {
-    console.log(`==== rep ${rep}`);
+    console.log(
+      `Exercise ${excersiceGym[excercise]}: Lifting Weight reppetition ${rep} 🏋🏼‍♀️`
+    );
   }
 }
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+console.log(dice);
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) {
+    console.log(`You rolled a ${dice} 😇`);
+  }
+}
+ 
+
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let total = [];
+const calcTip = function (bill) {
+  for (let i = 0; i < bill.length; i++) {
+    bill > 50 && bill < 300
+      ? tips.push(bill[i] * 0.15)
+      : tips.push(bill[i] * 0.2);
+  }
+};
+const caclTotal = function (bill, tip) {
+  for (let i = 0; i < bill.length; i++) {
+    total.push(bill[i] + tip[i]);
+  }
+};
+calcTip(bills);
+caclTotal(bills, tips);
+console.log(total);
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+console.log(calcAverage(total));
+*/
+
+// BUG;
+// FIXME
+
+const whiteListPrice = 0.11;
+const buyMatic = 140;
+const valueMaticHowToBuy = 1.09;
+const numCoin = (buyMatic / whiteListPrice).toFixed(2);
+console.log(`Io possiedo ${numCoin} al lancio`);
+console.log(`Ho pagato ${(buyMatic * valueMaticHowToBuy).toFixed(2)}$`);
+const valueMaticNow = 0.89;
+console.log(
+  `Il valore dei miei mutic ora é: ${buyMatic * valueMaticNow}$
+Quindi recapitolando ho perso: ${(152.6 - 126).toFixed(2)}$
+Cosa devo fare ora per recuperare?`
+);
+const launchPrice = 0.14;
+console.log(
+  `Al Lancio quindi il portafoglia varrà: ${(
+    numCoin *
+    launchPrice *
+    valueMaticNow
+  ).toFixed(2)}$
+Quindi se vendessi subito al lancio sarei in perdita di ${(
+    numCoin * launchPrice * valueMaticNow * 0.85 -
+    152.6
+  ).toFixed(2)}`
+);
+const exitPrice = 0.16;
+console.log(
+  `Se uscissi a 0.16 sarei in profitto di : ${(
+    numCoin * exitPrice * valueMaticNow * 0.85 -
+    152.6
+  ).toFixed(2)}$`
+);
+
+const obj = {
+  Address: {
+    Street: 'Main',
+    Number: 100,
+    Apartament: {
+      Floor: 3,
+      Number: 301,
+    },
+  },
+};
