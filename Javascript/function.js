@@ -153,3 +153,36 @@ function sommaArray(array) {
 console.log(sommaArray([1, 2, 4]));
 console.log(sommaArray([4, 2, 10, 2]));
 console.log(sommaArray([1]));
+
+// esercizio 11
+console.log(" ese 11");
+
+i = 0;
+subtot = 0;
+
+function budgetTotale(contenuto) {
+    let subtot = 0;
+    let i = 0;
+    for(i=0; i < contenuto.length; i++){
+        subtot += contenuto[i].budget
+    }
+    return subtot
+}
+
+
+console.log(
+    budgetTotale([
+        { name: "John", age: 21, budget: 23000 },
+        { name: "Steve", age: 32, budget: 40000 },
+        { name: "Martin", age: 16, budget: 2700 },
+    ])
+);
+
+console.log(
+    budgetTotale([
+        { name: "John", age: 21, budget: 29000 },
+        { name: "Steve", age: 32, budget: 32000 },
+        { name: "Martin", age: 16, budget: 1600 },
+    ])
+);
+
