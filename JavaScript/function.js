@@ -613,7 +613,7 @@ const valueMaticHowToBuy = 1.09;
 const numCoin = (buyMatic / whiteListPrice).toFixed(2);
 console.log(`Io possiedo ${numCoin} al lancio`);
 console.log(`Ho pagato ${(buyMatic * valueMaticHowToBuy).toFixed(2)}$`);
-const valueMaticNow = 0.89;
+const valueMaticNow = 0.95;
 console.log(
   `Il valore dei miei mutic ora é: ${buyMatic * valueMaticNow}$
 Quindi recapitolando ho perso: ${(152.6 - 126).toFixed(2)}$
