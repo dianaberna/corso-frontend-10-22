@@ -193,7 +193,7 @@ sommaElementiArray([1, 2, 4]) ➞ 7
 sommaElementiArray([4, 2, 10, 2]) ➞ 18
 sommaElementiArray([1]) ➞ 1 */
 
-
+console.log("-------------")
 i = 0;
 function sommaElementiArray(array) {
     somma = 0 /*CREO UN INDICE PER CONTARE DA ZERO */
@@ -208,19 +208,28 @@ console.log(sommaElementiArray(array))
 console.log(sommaElementiArray(array2))
 console.log(sommaElementiArray(array3))
 
-/*Crea una funzione che restituisce il numero di valori uguali a true presenti in un array.
+/* Crea una funzione che restituisce il numero di valori uguali a true presenti in un array.
 Esempi: 
 quantiTrue([true, false, false, true, false]) ➞ 2
 quantiTrue([false, false, false, false]) ➞ 0
 quantiTrue([]) ➞ 0
 PS. (1) Restituisce 0 se viene fornito un array vuoto. (2) Tutti gli elementi dell'array sono di tipo bool (true o false).*/
-/* 
-i=0;
-function quantiTrue (array)
+  
+array = []
+function quantiTrue (array) {
+    let conto = 0;
 for (let i = 0; i < array.length; i++) {
-    
-return esito }
-array = [true, false, true]
-console.log(quantiTrue(array))
+    array[i] === true ? conto++ : (conto += 0);
+}
+return j;
+}
+console.log(quantiTrue[true, true, false, false, true])
+
+/* Crea una funzione che accetta una stringa, controlla se è un indirizzo email valido e restituisce true o false, a seconda della valutazione.
+La stringa deve contenere un carattere @.
+La stringa deve contenere un . carattere.
+La @ deve avere almeno un carattere davanti. (ad esempio "d@ciao.com" è valido mentre "@ciao.com" non è valido.
+Il . e la @ deve trovarsi nei posti appropriati. (ad esempio "hello.email@com" non è valido mentre "mario.rossi@email.com" è valido.
+Se la stringa supera questi test, 
+viene considerata un indirizzo email valido.
  */
-    

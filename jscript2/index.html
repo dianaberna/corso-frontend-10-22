@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="primotitolo">Titolo 1</h1>    
+    <ul>
+        <li>Primo</li>
+        <li>Secondo</li>
+        <li>Terzi</li>
+    </ul>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima maiores, quasi ab adipisci esse recusandae perspiciatis ut numquam aperiam a officia! Aut ullam vitae iure architecto exercitationem atque sint quam?</p>
+        <p class="blue">2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, veniam. Maxime itaque unde a sequi delectus, nemo beatae officiis, quos voluptate perferendis neque laudantium laborum assumenda molestiae? Magni, voluptatum exercitationem.</p>
+        <p class="blue">3Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam provident cumque iusto quaerat consequatur dignissimos, sed qui quisquam obcaecati laudantium fugit accusantium, laboriosam, in optio voluptate vitae! Sequi, consequatur placeat?</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quasi accusamus odio, rem aliquid molestias exercitationem quam laudantium incidunt doloremque eum esse repellat qui deleniti, blanditiis similique iusto! Totam, quas.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quos dolores architecto quo pariatur molestiae nam ipsam sed sapiente, alias ex aperiam voluptas repellat minus. Officiis possimus numquam cupiditate quidem.
+    </p>
+    <p class="blue">6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis distinctio molestias aperiam vitae fugiat? Ut nisi laboriosam dolores id nemo praesentium minus quisquam, in ad culpa nesciunt impedit laudantium voluptates!</p>
+
+    <div id="contenitore">
+
+    <div id="cancellare"></div>
+
+    </div>
+
+
+    <script>
+        // Tramite ID
+        document.getElementById("primotitolo").style.backgroundColor = "yellow"
+
+        // Tramite ByTagName (LI =elenco)
+        let vociLista = document.getElementsByTagName("li")
+        for (let i=0; i < vociLista.length; i++){
+            vociLista[i].style.backgroundColor = "red"
+        }
+
+        // Seleziona tramite il nome della classe
+        let paragrafiBlu = document.getElementsByClassName("blue");
+        for (let i=0; i<paragrafiBlu.length; i++){
+            paragrafiBlu[i].style.backgroundColor = "blue"
+        }
+
+        // Seleziono il primo paragrafo tramite div > .blue
+        let sottoinsiemeParagrafiSingolo = document.querySelector("div > .blue")
+        console.log(sottoinsiemeParagrafiSingolo)
+
+        sottoinsiemeParagrafiSingolo.style.fontSize = "25px"
+
+        // Seleziono tutti i paragrafi con la classe blue -> tramite div > .blue
+        let sottoinsiemeParagrafi = document.querySelectorAll("div > .blue")
+        console.log(sottoinsiemeParagrafi)
+        for (let i=0; i<sottoinsiemeParagrafi.length; i++){
+            sottoinsiemeParagrafi[i].style.backgroundColor = "green"
+        }
+
+/*         Queste due chiamate sono identiche
+        let classeBlue = document.querySelectorAll(".blue")
+        let paragrafiBlu = document.getElementsByClassName ("blue") */
+
+        // Seleziono il DIV tramite ID -> CONTENITORE
+        let posizioneNelDom = document.getElementById("contenitore")
+        // Creo un nuovo titolo di tipo h1 con testo "ciao mondo"
+        // Creo un nodo testuale per il contenuto
+        let testoh1 = document.createTextNode("Ciao mondo")
+
+        // Creo l'elemento
+        let nuovoh1 = document.createElement("h1")
+
+        // Appendo il testo nell'elemento
+        nuovoh1.appendChild(testoh1)
+
+        // Appendo l'elemento al tag selezionato
+        posizioneNelDom.appendChild(nuovoh1)
+
+
+        let pCancellare = document.querySelectorAll
+    </script>
+</body>
+</html>
