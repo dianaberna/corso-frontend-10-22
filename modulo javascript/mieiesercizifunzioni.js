@@ -67,6 +67,16 @@ console.log(numeroZampe([2,3,5]))
 console.log(numeroZampe([1,2,3]))
 console.log(numeroZampe([5,2,8]))
 
+function numeroZampe(polli, mucche, maiali) {
+    return polli * 2 + (mucche + maiali) * 4;
+}
+console.log(numeroZampe(2, 3, 5));
+console.log(numeroZampe(1, 2, 3));
+console.log(numeroZampe(5, 2, 8));
+
+
+
+
 
 // ES. Case di fiammiferi
 console.log(`ES. Case di fiammiferi`)
@@ -159,16 +169,72 @@ console.log(quantiTrue([]))
 console.log("ES.calcolatrice di base")
 function calcolatrice(primonumero,stringa,secondonumero){
     if(stringa="+"){
-        return primonumero+secondonumero
+        return primonumero+secondonumero;
     } else if (stringa="-"){
-        return primonumero-secondonumero
+        return primonumero-secondonumero;
     }else if(stringa="*"){
-        return primonumero*secondonumero
+        return primonumero*secondonumero;
     } else if (stringa="/"){
-        return primonumero/secondonumero
+        return b==0? "Impossibile dividere per 0!" : primonumero/secondonumero;
     }
 }
 
 console.log(calcolatrice(2,"+",2))
 console.log(calcolatrice(2,"*",2))
 console.log(calcolatrice(4,"/",3))
+
+
+//ES. Validare un’e-mail
+
+/*Crea una funzione che accetta una stringa, controlla se è un indirizzo email valido e restituisce true o false, 
+a seconda della valutazione.
+-La stringa deve contenere un carattere @.
+-La stringa deve contenere un . carattere.
+La @ deve avere almeno un carattere davanti. (ad esempio "d@ciao.com" è valido mentre "@ciao.com" non è valido.
+Il . e la @ deve trovarsi nei posti appropriati. (ad esempio "hello.email@com" non è valido mentre 
+"mario.rossi@email.com" è valido.
+Se la stringa supera questi test, 
+viene considerata un indirizzo email valido.*/
+
+//ES. Sasso, carta, forbici
+
+/*Crea una funzione che accetta due stringhe (p1 e p2 ⁠— che rappresentano i giocatori 1 e 2) 
+come argomenti e restituisce una stringa che indica il vincitore in una partita a Sasso, Carta, Forbici.
+Ogni argomento conterrà una singola stringa: "Sasso", "Carta" o "Forbici". 
+Restituisci il vincitore secondo le seguenti regole:
+Il sasso batte le forbici / Le forbici battono la carta / La carta batte il sasso
+Se p1 vince, restituisci la stringa "Il vincitore è p1". Se p2 vince, restituisci la stringa "Il vincitore è p2" 
+e se p1 e p2 sono gli stessi, restituisci "È un pareggio".*/
+
+function rps(p1,p2){
+    if(p1=="sasso" && p2=="forbici"){
+        return "Il vincitore è p1"
+    }
+    if(p1=="forbici" && p2=="sasso"){
+        return "Il vincitore è p2"
+    }
+    if(p1=="forbici" && p2=="carta"){
+        return "Il vincitore è p1"
+    }
+    if(p1=="carta" && p2=="forbici"){
+        return "Il vincitore è p2"
+    }
+    if(p1=="carta" && p2=="sasso"){
+        return "Il vincitore è p1"
+    }
+    if(p1=="sasso" && p2=="carta"){
+        return "Il vincitore è p2"
+    }
+    if(p1==p2){
+        return "è un pareggio"
+    }
+}
+
+console.log(rps("sasso","carta"))
+console.log(rps("forbici","sasso"))
+console.log(rps("carta","carta"))
+
+
+
+
+
