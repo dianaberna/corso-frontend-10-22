@@ -43,6 +43,7 @@ while(n < numeroni.lenght){
 let num=0;
 let numeretto = 0;
 while(num < numeroni.lenght){	
+	numeretto= num + numeretto[i];
 	if (numeretto % 2 != 0) {
 		num++;
 		console.log("questo è un numero dispari " + numeretto);
@@ -51,8 +52,18 @@ while(num < numeroni.lenght){
 let nu =0;
 let numerello = 0;
 while(nu < numeroni.lenght){
+	//numerello= nu + numerello[i];
 	if(numerello > 0){
 		nu ++;
 		console.log("questo è un numero positivo " + numerello)
+	}
+}
+let nun =0;
+let numer = 0;
+while(nu < numeroni.lenght){
+	//numer= nun + numer[i];
+	if(numer < 0){
+		nun ++;
+		console.log("questo è un numero negativo " + numer)
 	}
 }
