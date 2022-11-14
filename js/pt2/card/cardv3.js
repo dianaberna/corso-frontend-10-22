@@ -1,67 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Card</title>
-        <style>
-            body {
-                display: flex;
-                gap: 1rem;
-            }
-            .card,
-            .card-body,
-            .card-footer {
-                display: flex;
-                width: 300px;
-                height: 400px;
-                border-radius: 10px;
-            }
-            .card {
-                padding: 1rem;
-                border: 1px solid black;
-                flex-direction: column;
-            }
-            .card-body {
-                flex-direction: column;
-            }
-            .card-body img {
-                width: 100%;
-            }
-            .card-body div {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .card-footer {
-                justify-content: space-between;
-                align-items: center;
-            }
-            .card-footer span {
-                border-radius: 10px;
-                border: 1px solid orange;
-                padding: 5px;
-                color: orange;
-                margin-right: 10px;
-            }
-            .card-footer button {
-                background-color: orange;
-                border: 0px;
-                color: white;
-                padding: 10px;
-                border-radius: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- <div class="card">
+console.log("card.js")
 
-    </div> -->
-
-        <script>
-            /*
-        <div class="card-body">
+/*
+            <div class="card-body">
                 <img src="caffe.jpg" alt="caffe">
                 <div>
                     <h1>Vanilla Latte</h1>
@@ -184,6 +124,3 @@
 
                 document.body.appendChild(card);
             }
-        </script>
-    </body>
-</html>
