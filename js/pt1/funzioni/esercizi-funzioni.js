@@ -235,8 +235,8 @@ console.log(sassoCartaForbici("Paper", "Paper"));
 console.log("quanti giorni tra due date");
 function quantiGiorni(primaData, secondaData) {
     const unGiorno = 24 * 60 * 60 * 1000;
-    return (diffDays = Math.round(
-        Math.abs((primaData - secondaData) / unGiorno)
+    return (diffDays = 
+        Math.round(Math.abs((primaData - secondaData) / unGiorno)
     ));
 }
 
