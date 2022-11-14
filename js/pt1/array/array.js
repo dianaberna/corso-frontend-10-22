@@ -180,3 +180,34 @@ let array3 = [...array] // sto creando una nuova scatola
 console.log(array3)
 let array4 = [array]
 console.log(array4)
+
+
+let matrice = [ [5, 3], [8, 2] ]; 
+/*
+
+riga 0 ->  5   3
+riga 1 ->  8   2
+
+*/
+// è un array dove ogni elemento è un array
+console.log(matrice[0][1])
+
+console.log("lunghezza ="+matrice.length)
+
+for(let i=0; i < matrice.length; i++){
+  console.log("lunghezza elemento ="+matrice[i].length)
+  for(let j=0; j < matrice[i].length; j++){
+    console.log(`elemento [${i}, ${j}] = ${matrice[i][j]}`)
+  }
+}
+
+/* 
+DA FINIRE !!!
+console.log("--")
+let n = matrice.length
+for(let i=0; i < n; i++){
+  for(let j=0; j < n; j++){
+    console.log(matrice[i + j*n])
+  }
+}
+console.log("--") */

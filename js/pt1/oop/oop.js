@@ -1,16 +1,3 @@
-// notazione ad oggetto -> non creo una vero
-let car = { // non descrivo un blocco di codice ma un vero e dato
-    type: "Fiat", 
-    model: "500", 
-    color: "white"
-};
-
-let arraycar = [ "Fiat", "500", "white" ]
-console.log(arraycar.length)
-
-console.log(arraycar[0])
-console.log(car.type)
-
 /*
     classe -> è una struttura che serve in informatica 
     per descrivere un modello reale o astratto
@@ -20,12 +7,12 @@ console.log(car.type)
 */
 // programmazione ad oggetti -> oop 
 
-class Persona {
+class Persona { // nome della classe deve avere la prima lettera maiuscola 
     // proprietà -> variabili all'interno della classe 
     name = ""
     surname = ""
     
-    constructor({ name, surname}){
+    constructor({ name, surname}){  // funzione 
         // this -> mi serve per accedere alle proprietà della classe
         this.name = name
         this.surname = surname
@@ -46,12 +33,35 @@ class Persona {
 
 // è come si creasse una copia di Persona con i nostri dati
 // creo un oggetto della mia classe Persona
-let primapersona = new Persona({name: "Diana", surname: "Bernabei"})
+// Quando farà il new richiamerà il construtture della classe così da creare fisicamente la nostra 
+// copia della classe
+let primapersona = new Persona({name: "Diana", surname: "Bernabei"})  
+
+/*
+  Persona -> copia di Persona assegnata alla variabile primapersona con proprietà
+  {  
+    name: Diana
+    surname: Bernabei
+  }
+*/
 
 console.log(primapersona.name)
 console.log(primapersona.getFullName())
 
-// esempio json 
+// notazione ad oggetto -> non creo una vero
+let car = { // non descrivo un blocco di codice ma un vero e dato
+  type: "Fiat", 
+  model: "500", 
+  color: "white"
+};
+
+let arraycar = [ "Fiat", "500", "white" ]
+console.log(arraycar.length)
+
+console.log(arraycar[0])
+console.log(car.type)   // Fiat
+
+// esempio json -> JavaScript Object Notation
 
 let esempio = {
     "squadName": "Super hero squad",
@@ -92,4 +102,17 @@ let esempio = {
   }
 
 console.log(esempio.formed)
+console.log("--> " + esempio["formed"])
+console.log(esempio.members[1].powers[0])
+console.log("--> ")
+console.log(esempio["members"][1]["powers"][0])  // sintassi che sconsiglio di utilizzaere
 console.log(esempio.members[0].name)
+
+function funzioneEsempio(numero){
+  console.log("sono nella funzione, numero = "+numero)
+  let nuovonumero = numero+1
+  return {numero, nuovonumero} // {numero: 2, numeronuovo: 3}
+}
+
+let appoggio = funzioneEsempio(2)
+console.log(appoggio.nuovonumero) 
