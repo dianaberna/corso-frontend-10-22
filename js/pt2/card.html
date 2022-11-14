@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+        .card, .card-body, .card-footer{
+            display: flex;
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+        }
+        .card{
+            padding: 1rem;
+            border: 1px solid black;
+            flex-direction: column;
+        }
+        .card-body{
+            flex-direction: column;
+        }
+        .card-body img{
+            width: 100%;
+        }
+        .card-body div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .card-footer{
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-footer span{
+            border-radius: 10px;
+            border: 1px solid orange;
+            padding: 5px;
+            color: orange;
+        }
+        .card-footer button{
+            background-color: orange;
+            border: 0px;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- 
+        <div class="card-body">
+            <img src="caffe.jpg" alt="caffe">
+            <div>
+                <h1>Vanilla Latte</h1>
+                <p>21K</p>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <div class="etichette">
+                <span>Hot</span>
+                <span>Cold</span>
+            </div>
+            <button>Aggiungi</button>
+        </div> 
+        -->
+    </div>
+
+    <script>
+        let card = document.getElementsByClassName("card")[0];
+        let cardBody = document.createElement("div");
+        cardBody.className = "card-body"
+        // cardBody.src="caffe.jpg" -> un div non può avere attributo src
+        let imgCoffe = document.createElement("img")
+        imgCoffe.src = "caffe.jpg"
+        imgCoffe.alt = "caffè"
+        console.log(imgCoffe)
+        cardBody.appendChild(imgCoffe)
+        let nuovodivbody = document.createElement("div")
+
+        let testoh1body = document.createTextNode("Vanilla Latte")
+        let h1body = document.createElement("h1")
+        h1body.appendChild(testoh1body)
+
+        let testopbody = document.createTextNode("21K")
+        let pbody = document.createElement("p")
+        pbody.appendChild(testopbody)
+
+        nuovodivbody.appendChild(h1body)
+        nuovodivbody.appendChild(pbody)
+
+        cardBody.appendChild(nuovodivbody)
+        card.appendChild(cardBody)
+    </script>
+</body>
+</html>
