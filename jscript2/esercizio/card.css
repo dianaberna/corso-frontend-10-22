@@ -6,20 +6,23 @@ body {
 .card-body,
 .card-footer {
     display: flex;
-    width: 300px;
-    height: 400px;
     border-radius: 10px;
 }
 .card {
     padding: 1rem;
     border: 1px solid black;
     flex-direction: column;
+    width: 300px;
+    height: 600px;
 }
 .card-body {
     flex-direction: column;
+    
 }
+
 .card-body img {
     width: 100%;
+    display: block;
 }
 .card-body div {
     display: flex;
