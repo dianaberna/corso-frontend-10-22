@@ -1,99 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card</title>
-    <style>
-        .card, .card-body, .card-footer{
-            display: flex;
-            width: 300px;
-            height: 400px;
-            border-radius: 10px;
-        }
-        .card{
-            padding: 1rem;
-            border: 1px solid black;
-            flex-direction: column;
-        }
-        .card-body{
-            flex-direction: column;
-        }
-        .card-body img{
-            width: 100%;
-        }
-        .card-body div{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .card-footer{
-            justify-content: space-between;
-            align-items: center;
-        }
-        .card-footer span{
-            border-radius: 10px;
-            border: 1px solid orange;
-            padding: 5px;
-            color: orange;
-        }
-        .card-footer button{
-            background-color: orange;
-            border: 0px;
-            color: white;
-            padding: 10px;
-            border-radius: 10px;
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Card</title>
+        <style>
+            body {
+                display: flex;
+                gap: 1rem;
+            }
+            .card,
+            .card-body,
+            .card-footer {
+                display: flex;
+                width: 300px;
+                height: 400px;
+                border-radius: 10px;
+            }
+            .card {
+                padding: 1rem;
+                border: 1px solid black;
+                flex-direction: column;
+            }
+            .card-body {
+                flex-direction: column;
+            }
+            .card-body img {
+                width: 100%;
+            }
+            .card-body div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .card-footer {
+                justify-content: space-between;
+                align-items: center;
+            }
+            .card-footer span {
+                border-radius: 10px;
+                border: 1px solid orange;
+                padding: 5px;
+                color: orange;
+                margin-right: 10px;
+            }
+            .card-footer button {
+                background-color: orange;
+                border: 0px;
+                color: white;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="card">
 
-    </style>
-</head>
-<body>
-    <div class="card">
-        <!-- 
+    </div> -->
+
+        <script>
+            /*
         <div class="card-body">
-            <img src="caffe.jpg" alt="caffe">
-            <div>
-                <h1>Vanilla Latte</h1>
-                <p>21K</p>
+                <img src="caffe.jpg" alt="caffe">
+                <div>
+                    <h1>Vanilla Latte</h1>
+                    <p>21K</p>
+                </div>
             </div>
-        </div>
+        */
 
-        <div class="card-footer">
-            <div class="etichette">
-                <span>Hot</span>
-                <span>Cold</span>
+            // crea elemento con del contenuto testuale al suo interno
+            function creaElemento(
+                tipo,
+                contenuto,
+                classe,
+                posizione,
+                attributi
+            ) {
+                let nuovoElemento = document.createElement(tipo);
+                if (attributi.src && attributi.alt) {
+                    nuovoElemento.src = attributi.src;
+                    nuovoElemento.alt = attributi.alt;
+                } else {
+                    let contenutoElemento = document.createTextNode(contenuto);
+                    nuovoElemento.appendChild(contenutoElemento);
+                }
+                if (classe != "") nuovoElemento.className = classe;
+                posizione.appendChild(nuovoElemento);
+            }
+
+            // creare un elemento che restituisce esclusivamente la creazione
+            function creaNodo(tipo, classe) {
+                let nuovoElemento = document.createElement(tipo);
+                nuovoElemento.className = classe;
+                return nuovoElemento;
+            }
+
+            let arrayCard = [
+                {
+                    cover: {
+                        src: "caffe.jpg",
+                        alt: "caffè",
+                    },
+                    title: "Vanilla Latte",
+                    price: "21K",
+                    etichette: ["Hot", "Cold"],
+                    buttonTitle: "Aggiungi",
+                },
+                {
+                    cover: {
+                        src: "caffe.jpg",
+                        alt: "caffè",
+                    },
+                    title: "Cappuccino",
+                    price: "10K",
+                    etichette: ["Hot", "Cold", "Altro"],
+                    buttonTitle: "Aggiungi",
+                },
+                {
+                    cover: {
+                        src: "caffe.jpg",
+                        alt: "caffè",
+                    },
+                    title: "Caffè",
+                    price: "1K",
+                    etichette: ["Hot"],
+                    buttonTitle: "Aggiungi",
+                },
+            ];
+
+            for (let i = 0; i < arrayCard.length; i++) {
+                let card = creaNodo("div", "card");
+
+                let cardBody = creaNodo("div", "card-body");
+                // cardBody.src="caffe.jpg" -> un div non può avere attributo src
+
+                creaElemento("img", "", "", cardBody, arrayCard[i].cover);
+
+                let nuovodivbody = document.createElement("div");
+
+                creaElemento("h1", arrayCard[i].title, "", nuovodivbody, "");
+                creaElemento("p", arrayCard[i].price, "", nuovodivbody, "");
+                cardBody.appendChild(nuovodivbody);
+
+                /*
+            <div class="card-footer">
+                <div class="etichette">
+                    <span>Hot</span>
+                    <span>Cold</span>
+                </div>
+                <button>Aggiungi</button>
             </div>
-            <button>Aggiungi</button>
-        </div> 
-        -->
-    </div>
+            */
 
-    <script>
-        let card = document.getElementsByClassName("card")[0];
-        let cardBody = document.createElement("div");
-        cardBody.className = "card-body"
-        // cardBody.src="caffe.jpg" -> un div non può avere attributo src
-        let imgCoffe = document.createElement("img")
-        imgCoffe.src = "caffe.jpg"
-        imgCoffe.alt = "caffè"
-        console.log(imgCoffe)
-        cardBody.appendChild(imgCoffe)
-        let nuovodivbody = document.createElement("div")
+                let divCardFooter = creaNodo("div", "card-footer");
+                let divEtichette = creaNodo("div", "etichette");
 
-        let testoh1body = document.createTextNode("Vanilla Latte")
-        let h1body = document.createElement("h1")
-        h1body.appendChild(testoh1body)
+                // creare i due span
+                for (let j = 0; j < arrayCard[i].etichette.length; j++) {
+                    creaElemento(
+                        "span",
+                        arrayCard[i].etichette[j],
+                        "",
+                        divEtichette,
+                        ""
+                    );
+                }
 
-        let testopbody = document.createTextNode("21K")
-        let pbody = document.createElement("p")
-        pbody.appendChild(testopbody)
+                divCardFooter.appendChild(divEtichette);
 
-        nuovodivbody.appendChild(h1body)
-        nuovodivbody.appendChild(pbody)
+                // creare il bottone
+                creaElemento(
+                    "button",
+                    arrayCard[i].buttonTitle,
+                    "",
+                    divCardFooter,
+                    ""
+                );
 
-        cardBody.appendChild(nuovodivbody)
-        card.appendChild(cardBody)
-    </script>
-</body>
+                card.appendChild(cardBody);
+                card.appendChild(divCardFooter);
+
+                document.body.appendChild(card);
+            }
+        </script>
+    </body>
 </html>
