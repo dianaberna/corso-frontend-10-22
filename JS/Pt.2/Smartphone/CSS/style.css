@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+/*style generale*/
+body{
+    font-family: "Work Sans", sans-serif;
+    padding:1rem;
+    margin:0;
+}
+
+:root{
+    --color-gray: #C4C4C4;
+}
+
+/*style header*/
+
+header > div{
+    display:flex; 
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:3rem;
+    
+}
+
+header h1{
+    font-size:1.5rem;
+}
+
+header button{
+    border:none;
+    background-color:black;
+    cursor:pointer;
+    padding:0.4rem, 0.75rem;
+    font-size:1.5rem;
+    color:white;
+    font-family:inherit;
+    border-radius:100%;
+}
+
+header form{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+header input{
+    width:100%;
+    border:none;
+    background-color: var(--color-gray);
+    height:3.125rem;
+    border-radius:1rem;
+    padding-left:2.5625rem;
+    font-family:inherit;
+    font-size:.875rem;
+}
+
+header form img{
+    position:absolute;
+    left: 2rem;
+}
+
+/*style sezione "last contacted"*/
+
+header .contacted__container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+}
+
+header section h2{
+    font-size:.875rem;
+    margin-top:2rem;
+    margin-bottom:1.5rem;
+}
+
+.square {
+    background-color: var(--color-gray);
+    width:3.5rem;
+    height:3.5rem;
+    position:relative;
+    border-radius:0.5rem;
+}
+
+header .square > div{
+    background-color:#333333;
+    width:1.125rem;
+    height:1.125rem;
+    border-radius:50%;
+    position:absolute;
+    bottom:-3px;
+    right:-3px;
+}
+
+/*style sezione message-preview*/
+
+main{
+    margin: -1rem;
+}
+
+main section{
+    margin-top:3rem;
+    padding: 1.5rem 1rem;
+    background-color:#F4F4F4;
+    border-radius: 1.5rem 1.5rem;
+    box-shadow: 0rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+main section > div{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items:center;
+    grid-template-rows:50%;
+    margin-top:1rem;
+}
+
+main section .square{
+    grid-row:1/span 2;
+}
+
+main section h3{
+    margin:0;
+    font-size:1rem;
+}
+
+main section .message-preview__text--gray{
+    color:#A8A8A8;
+    font-size:0.875rem;
+    text-align:right;
+}
+
+main section .message-preview__text{
+    grid-column: 2/span 2;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin:-5px 0 0 0;
+    font-size:0.875rem;
+}
+
+
+
+

@@ -1,0 +1,68 @@
+body{
+    font-family: Poppins, sans-serif;
+    display: flex; 
+    gap: 2rem;
+}
+
+.card {
+    width:300px;
+    height:fit-content;
+    border-radius:10px;
+    /* border:solid 2px black; */
+    padding: 10px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.16);
+}
+
+.cardBody{
+    width:100%;
+}
+
+.cardBody img{
+    width:100%;
+    border-radius:10px;
+}
+
+.cardTitle{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.cardTitle p {
+    font-size: 1rem;
+}
+
+.divFooter{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.divCardSpan{
+    display:flex;
+    gap:1rem;
+    width: fit-content;
+}
+
+.cardSpan{
+    padding: 3px 7px;
+    border: solid orange;
+    border-radius: 5px;
+    color:orange;
+    cursor: pointer;
+}
+
+.divFooter button{
+    border: solid orange;
+    border-radius: 5px;
+    color:orange;
+    background-color:white;
+    padding: 5px;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
