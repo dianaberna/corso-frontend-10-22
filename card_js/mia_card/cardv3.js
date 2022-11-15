@@ -1,4 +1,4 @@
-console.log("card.js")
+console.log("cardv3.js")
 
 // crea elemento con del contenuto testuale al suo interno
 function creaElemento(
@@ -12,20 +12,25 @@ function creaElemento(
     if (attributi.src && attributi.alt) {
         nuovoElemento.src = attributi.src;
         nuovoElemento.alt = attributi.alt;
-    } else {
-        let contenutoElemento = document.createTextNode(contenuto);
-        nuovoElemento.appendChild(contenutoElemento);
+    } else if(contenuto) {
+            let contenutoElemento = document.createTextNode(contenuto);
+            nuovoElemento.appendChild(contenutoElemento);   
     }
     if (classe != "") nuovoElemento.className = classe;
-    posizione.appendChild(nuovoElemento);
+    
+    if(posizione){
+        posizione.appendChild(nuovoElemento);
+    }else{
+        return nuovoElemento
+    }
 }
 
 // creare un elemento che restituisce esclusivamente la creazione
-function creaNodo(tipo, classe) {
+/* function creaNodo(tipo, classe) {
     let nuovoElemento = document.createElement(tipo);
     nuovoElemento.className = classe;
     return nuovoElemento;
-}
+} */
 
 let arrayCard = [
     {
@@ -61,9 +66,10 @@ let arrayCard = [
 ];
 
 for (let i = 0; i < arrayCard.length; i++) {
-    let card = creaNodo("div", "card");
+    let card = creaElemento("div", "", "card", "", "");
+    //let card = creaNodo("div", "card");
 
-    let cardBody = creaNodo("div", "card-body");
+    let cardBody = creaElemento("div", "", "card-body", "", "");
     // cardBody.src="caffe.jpg" -> un div non può avere attributo src
 
     creaElemento("img", "", "", cardBody, arrayCard[i].cover);
@@ -74,8 +80,8 @@ for (let i = 0; i < arrayCard.length; i++) {
     creaElemento("p", arrayCard[i].price, "", nuovodivbody, "");
     cardBody.appendChild(nuovodivbody);
 
-    let divCardFooter = creaNodo("div", "card-footer");
-    let divEtichette = creaNodo("div", "etichette");
+    let divCardFooter = creaElemento("div", "", "card-footer", "", "");
+    let divEtichette = creaElemento("div", "", "etichette", "", "");
 
     // creare i due span
     for (let j = 0; j < arrayCard[i].etichette.length; j++) {
