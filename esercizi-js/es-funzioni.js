@@ -317,7 +317,7 @@ tra la prima e la seconda data.*/
 function nGiorni(data1, data2){
   d1 = new Date(data1);
   d2 = new Date(data2);
-  giorni = Math.floor((d2-d1)/(1000*60*60*24));
+  giorni = Math.abs((d2-d1)/(1000*60*60*24));
   return giorni;
 }
 
@@ -383,13 +383,7 @@ console.log(sommaBudget([
 
 /* CALCOLA IL PREZZO TOTALE DEI GENERI ALIMENTARI
 Crea una funzione che prenda un array di oggetti (alimentari) che calcoli il prezzo totale 
-e lo restituisca come un numero. Un oggetto alimentare ha un prodotto, una quantità e un prezzo.
-
-{
- "product": "Milk",
- "quantity": 1,
- "price": 1.50
-} */
+e lo restituisca come un numero. Un oggetto alimentare ha un prodotto, una quantità e un prezzo.*/
 
 function prezzoTotale(array){
   prezzo = 0;
