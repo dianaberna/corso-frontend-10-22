@@ -80,3 +80,4 @@ paragrafoDaAggiornare.innerHTML = "Ciao mondo!!!!! <span>:)</span> ";
 
 // in react ci ritroveremo questa situazione
 // index.html -> js -> avere una parte fissa (menu) e tutto il resto della pagina "dinamico" rispetto al cambio dell'url
+

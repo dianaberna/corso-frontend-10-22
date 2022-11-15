@@ -80,15 +80,15 @@ for (let i = 0; i < arrayCard.length; i++) {
     let card = creaElemento({tipo: "div", classe: "card"});
     //let card = creaNodo("div", "card");
 
-    let cardBody = creaElemento("div", "", "card-body", "", "");
+    let cardBody = creaElemento({tipo: "div", classe: "card-body"});
     // cardBody.src="caffe.jpg" -> un div non può avere attributo src
 
-    creaElemento("img", "", "", cardBody, arrayCard[i].cover);
+    creaElemento({tipo: "img", posizione: cardBody, attributi: arrayCard[i].cover});
 
     let nuovodivbody = document.createElement("div");
 
-    creaElemento("h1", arrayCard[i].title, "", nuovodivbody, "");
-    creaElemento("p", arrayCard[i].price, "", nuovodivbody, "");
+    creaElemento({tipo: "h1", contenuto: arrayCard[i].title, posizione: nuovodivbody});
+    creaElemento({tipo: "p", contenuto: arrayCard[i].price, posizione: nuovodivbody});
     cardBody.appendChild(nuovodivbody);
 
     let divCardFooter = creaElemento("div", "", "card-footer", "", "");

@@ -52,3 +52,4 @@ cardFooter.appendChild(divEtichette)
 creaElemento("button", "", "Aggiungi", "", cardFooter)
 
 card.appendChild(cardFooter) 
+
