@@ -102,6 +102,7 @@ buttonElement.appendChild(buttonText);
 // const buttonElement = creationMyElement111('button', '', 'Aggiungi');
 // divCardButtonElement.appendChild(buttonElement);
 
+/*
 // Version 3
 const container = [
   {
@@ -483,3 +484,4 @@ for (let i = 0; i < container.length; i++) {
   );
   divCardButtonElement.appendChild(buttonElement);
 }
+*/
