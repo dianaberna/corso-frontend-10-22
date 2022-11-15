@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+
+body{
+    font-family: 'Work Sans'sans-serif;
+    padding: 100px;
+    padding-left: 20px;
+    margin: 10px;
+    margin-top: 10px;
+    background-size: 200px;
+}
+
+.searchbar{
+  background-color: gray;
+  border-radius: 2rem;
+}
+
+.flex{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.flex > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.circle{
+  background-color: red;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message{
+  background-color: gray;
+  border-radius: 3rem;
+}
+
+.square  {
+  background-color: #525252;
+  width: 4rem;
+  height: 4rem;
+}
+
+/* 
+  header{
+    padding-top: 50px;
+    padding-right: 50px;
+}
+ h1{
+   text-align: center;
+    font-size: 10px;
+    color: black;
+}
+p{
+   text-align: center;
+   position: absolute;
+   color: #525252;
+}
+
+header > div{
+ display: flex;
+}
+  
+header input{
+   position: absolute;
+    background-color: #D0D0D0;
+    border: 20px;
+    padding: absolute;
+    padding-right: 10px;
+    font-family: inherit;
+    width: 50%;
+}
+ header > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+
+ }
+ header > div > svg{
+   position: relative;
+   padding-left: 10px;
+ }
+
+header >h1 {
+    font-size: 20px;
+    color: black;
+ }
+ #para1{
+    color: #525252; 
+    text-align: left;
+ }
+ 
+ header > div > div {
+   color: #525252;
+   background-color: #D0D0D0;
+   text-align: center;
+ }
+
+
+  */
