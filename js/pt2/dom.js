@@ -49,7 +49,9 @@ const nuovocontenitore = document.getElementById("nuovocontenitore");
 // creo il testo nel paragrafo
 const testoParagrafo = document.createTextNode("ciao!!!");
 // creo il paragrafo
-const nuovoParagrafo = document.createElement("p");
+const nuovoParagrafo = document.createElement("img");  // <p></p>
+nuovoParagrafo.className = "red" // <p class="red"></p>
+nuovoParagrafo.id = "prova" // <p class="red" id="prova"></p>
 // appendere il testo al paragrafo
 nuovoParagrafo.appendChild(testoParagrafo);
 // creo il div
