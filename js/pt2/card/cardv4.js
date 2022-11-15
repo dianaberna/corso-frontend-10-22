@@ -1,23 +1,27 @@
-console.log("cardv3.js")
-
+console.log("cardv4.js")
+// DA FINIRE!!!!!
 // crea elemento con del contenuto testuale al suo interno
 function creaElemento(
-    tipo,
-    contenuto,
-    classe,
-    posizione,
-    attributi
-) {
+    {
+        tipo,
+        contenuto,
+        classe,
+        posizione,
+        attributi
+    }) {
+    console.log(classe)
     let nuovoElemento = document.createElement(tipo);
-    if (attributi.src && attributi.alt) {
-        nuovoElemento.src = attributi.src;
-        nuovoElemento.alt = attributi.alt;
-    } else if(contenuto) {
+    if(attributi){
+        if (attributi.src && attributi.alt) {
+            nuovoElemento.src = attributi.src;
+            nuovoElemento.alt = attributi.alt;
+        }
+    }
+    if(contenuto) {
             let contenutoElemento = document.createTextNode(contenuto);
             nuovoElemento.appendChild(contenutoElemento);   
     }
     if (classe != "") nuovoElemento.className = classe;
-    
     if(posizione){
         posizione.appendChild(nuovoElemento);
     }else{
@@ -62,11 +66,18 @@ let arrayCard = [
         price: "1K",
         etichette: ["Hot"],
         buttonTitle: "Aggiungi",
-    },
+    }
 ];
 
 for (let i = 0; i < arrayCard.length; i++) {
-    let card = creaElemento("div", "", "card", "", "");
+    /*
+    tipo,
+    contenuto,
+    classe,
+    posizione,
+    attributi
+    */
+    let card = creaElemento({tipo: "div", classe: "card"});
     //let card = creaNodo("div", "card");
 
     let cardBody = creaElemento("div", "", "card-body", "", "");
