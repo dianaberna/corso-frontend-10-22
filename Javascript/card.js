@@ -2,6 +2,25 @@ let card = document.createElement("div");
 card.className="card";
 document.body.appendChild(card);
 
+
+
+function creaElemento(){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let cardBody = document.createElement("div");
 cardBody.className="card-body";
 card.appendChild(cardBody);
