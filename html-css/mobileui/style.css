@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
 
+:root{
+    --color-gray: #C4C4C4;
+
+}
+
 /* Regole generali */
 
 body{
@@ -42,7 +47,7 @@ header button{
 }
 
 header input{
-    background-color: #C4C4C4;
+    background-color: var(--color-gray);
     border: 0px;
     border-radius: 16px;
     padding: 10px; /* 10px 10px 10px 10px*/
@@ -89,7 +94,7 @@ header > div > svg{
 #list .square{
     width: 3.5rem;
     height: 3.5rem;
-    background-color: #C4C4C4;
+    background-color: var(--color-gray);
     border-radius: 8px;
     position: relative;
     margin-bottom: 5px;
