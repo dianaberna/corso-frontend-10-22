@@ -485,3 +485,172 @@ for (let i = 0; i < container.length; i++) {
   divCardButtonElement.appendChild(buttonElement);
 }
 */
+
+//Versione 2
+// Version 3
+const container = [
+  {
+    immagine: {
+      src: '/assets/capuccino.png',
+      alt: 'Foto Capuccino',
+    },
+    cardTitle: {
+      h2: 'Capuccino',
+      p: '21K',
+    },
+    cardButton: {
+      span: ['Hot', 'Cold'],
+      button: 'Aggiungi',
+    },
+  },
+  {
+    immagine: {
+      src: '/assets/hot milk.png',
+      alt: 'Foto Hot Milk',
+    },
+    cardTitle: {
+      h2: 'Hot Milk',
+      p: '12K',
+    },
+    cardButton: {
+      span: ['Hot', 'Cold'],
+      button: 'Aggiungi',
+    },
+  },
+  {
+    immagine: {
+      src: '/assets/hot milk.png',
+      alt: 'Foto Hot Milk',
+    },
+    cardTitle: {
+      h2: 'Hot',
+      p: '30K',
+    },
+    cardButton: {
+      span: ['Hot', 'Cold', 'Tiepido'],
+      button: 'Aggiungi',
+    },
+  },
+];
+const creationMyElement111 = function (tag, classe, text, attribute, textAlt) {
+  let element;
+  if (tag === 'img') {
+    element = document.createElement(tag);
+    element.className = classe;
+    element.src = attribute;
+    element.alt = textAlt;
+  } else {
+    element = document.createElement(tag);
+    element.className = classe;
+  }
+  let elementText = document.createTextNode(text);
+  element.appendChild(elementText);
+  return element;
+};
+//
+
+for (let j = 0; j < container.length; j++) {
+  const divCardElement = creationMyElement111('div', 'card', '', '', '');
+  document.body.appendChild(divCardElement);
+
+  // card img
+  const imgElement = creationMyElement111(
+    'img',
+    '',
+    '',
+    container[j].immagine.src,
+    container[j].immagine.alt
+  );
+  divCardElement.appendChild(imgElement);
+  // card titolo
+  const divCardTitleElement = creationMyElement111('div', 'card__title', '');
+  divCardElement.appendChild(divCardTitleElement);
+
+  const h2Element = creationMyElement111('h2', '', container[j].cardTitle.h2);
+  divCardTitleElement.appendChild(h2Element);
+
+  const pElement = creationMyElement111('p', '', container[j].cardTitle.p);
+  divCardTitleElement.appendChild(pElement);
+
+  // card bottoni
+  const divCardButtonElement = creationMyElement111('div', 'card__button', '');
+  divCardElement.appendChild(divCardButtonElement);
+
+  const divCardSpanElement = creationMyElement111('div', '', '');
+  divCardButtonElement.appendChild(divCardSpanElement);
+
+  for (let i = 0; i < container[j].cardButton.span.length; i++) {
+    const divSpanHotElement = creationMyElement111(
+      'span',
+      '',
+      container[j].cardButton.span[i]
+    );
+    divCardSpanElement.appendChild(divSpanHotElement);
+  }
+
+  // const divSpanColdElement = creationMyElement111(
+  //   'span',
+  //   '',
+  //   container[0].cardButton.span[1]
+  // );
+  // divCardSpanElement.appendChild(divSpanColdElement);
+
+  const buttonElement = creationMyElement111(
+    'button',
+    '',
+    container[0].cardButton.button
+  );
+  divCardButtonElement.appendChild(buttonElement);
+}
+// }
+// const divCardElement = creationMyElement111('div', 'card', '', '', '');
+// document.body.appendChild(divCardElement);
+
+// // card img
+// const imgElement = creationMyElement111(
+//   'img',
+//   '',
+//   '',
+//   container[0].immagine.src,
+//   container[0].immagine.alt
+// );
+// divCardElement.appendChild(imgElement);
+// // card titolo
+// const divCardTitleElement = creationMyElement111('div', 'card__title', '');
+// divCardElement.appendChild(divCardTitleElement);
+
+// const h2Element = creationMyElement111('h2', '', container[0].cardTitle.h2);
+// divCardTitleElement.appendChild(h2Element);
+
+// const pElement = creationMyElement111('p', '', container[0].cardTitle.p);
+// divCardTitleElement.appendChild(pElement);
+
+// // card bottoni
+// const divCardButtonElement = creationMyElement111('div', 'card__button', '');
+// divCardElement.appendChild(divCardButtonElement);
+
+// const divCardSpanElement = creationMyElement111('div', '', '');
+// divCardButtonElement.appendChild(divCardSpanElement);
+
+// for (let i = 0; i < container[0].cardButton.span.length; i++) {
+//   const divSpanHotElement = creationMyElement111(
+//     'span',
+//     '',
+//     container[0].cardButton.span[i]
+//   );
+//   divCardSpanElement.appendChild(divSpanHotElement);
+// }
+
+// // const divSpanColdElement = creationMyElement111(
+// //   'span',
+// //   '',
+// //   container[0].cardButton.span[1]
+// // );
+// // divCardSpanElement.appendChild(divSpanColdElement);
+
+// const buttonElement = creationMyElement111(
+//   'button',
+//   '',
+//   container[0].cardButton.button
+// );
+// divCardButtonElement.appendChild(buttonElement);
