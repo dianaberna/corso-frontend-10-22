@@ -14,10 +14,10 @@ header > div {
 
 /*Contacts+*/
 
-#header {
+#head1 {
     justify-content: space-between;
 }
-#header > button {
+#head1 > button {
     border:0px;
     background-color: transparent;
 }
@@ -26,17 +26,17 @@ header > div {
 
 #search > input {
     border-radius: 1rem;
-    position:relative;
     width: 100%;
     padding: 10px; 
     padding-left: 2rem;
     font-size: .875rem;
     font-family: inherit;
     background-color: var(--color-gray);
+    color:black;
     
 }
-#search > img {
-    position: absolute;
+#search > svg {
+   position: absolute;
     padding: 0.8rem;
 }
 
