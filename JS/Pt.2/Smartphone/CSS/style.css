@@ -28,13 +28,10 @@ header h1{
 
 header button{
     border:none;
-    background-color:black;
+    background-color:transparent;
     cursor:pointer;
-    padding:0.4rem, 0.75rem;
-    font-size:1.5rem;
-    color:white;
-    font-family:inherit;
-    border-radius:100%;
+    padding:0;
+
 }
 
 header form{
