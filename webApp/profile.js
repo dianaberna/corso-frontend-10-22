@@ -76,4 +76,35 @@ let paragraphA = creaNodo("p", "", sectionA);
 let paragraphAText = document.createTextNode("Lorem ipsum dolor sit amet...");
 paragraphA.appendChild(paragraphAText);
 let bBreak = document.createElement("br");
-sectionA.appendChild(bBreak);
+paragraphA.appendChild(bBreak);
+
+function creaElementoD(tipo, contenuto, classe, posizione, attributi) {
+    let nuovoElemento = document.createElement(tipo);
+    if (attributi.src && attributi.alt) {
+        nuovoElemento.src = attributi.src;
+        nuovoElemento.alt = attributi.alt;
+    } else {
+        let contenutoElemento = document.createTextNode(contenuto);
+        nuovoElemento.appendChild(contenutoElemento);
+    }
+    if (classe != "") nuovoElemento.className = classe;
+    posizione.appendChild(nuovoElemento);
+}
+
+let linkRead = creaElementoD("a", "read more", "", paragraphA, "");
+
+let sectionFA2 = creaElementoD("h2", "FRIENDS", "", sectionF, "");
+let divOverflow = creaNodo("div", "overflow", sectionF);
+let divOverflowFlex = creaNodo("div", "flex", divOverflow);
+
+for (let i = 0; i < 8; i++) {
+    let circleEl = creaElementoD("div", "", "circle", divOverflowFlex, "");
+}
+
+let sectionP = creaNodo("section", "photos", pageMain);
+let sectionPH2 = creaElementoD("h2", "PHOTOS", "", sectionP, "");
+let divPhotos = creaNodo("div", "grid", sectionP);
+
+for (let i = 0; i < 12; i++) {
+    let squareEl = creaElementoD("div", "", "square", divPhotos, "");
+}
