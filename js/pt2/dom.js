@@ -4,7 +4,7 @@ document.getElementById("primotitolo").style.backgroundColor = "yellow"; // atte
 // seleziona tramite nome tag
 // non possiamo fare document.getElementsByTagName("li").style.backgroundColor perché è un array e non una singola variabile
 let vociLista = document.getElementsByTagName("li");
-
+console.log(vociLista)
 for (let i = 0; i < vociLista.length; i++) {
     vociLista[i].style.backgroundColor = "red";
 }
@@ -49,7 +49,7 @@ const nuovocontenitore = document.getElementById("nuovocontenitore");
 // creo il testo nel paragrafo
 const testoParagrafo = document.createTextNode("ciao!!!");
 // creo il paragrafo
-const nuovoParagrafo = document.createElement("img");  // <p></p>
+const nuovoParagrafo = document.createElement("p");  // <p></p>
 nuovoParagrafo.className = "red" // <p class="red"></p>
 nuovoParagrafo.id = "prova" // <p class="red" id="prova"></p>
 // appendere il testo al paragrafo

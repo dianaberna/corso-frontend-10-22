@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listener</title>
+    <script src="scriptEventi.js"></script> <!-- esegui lo script1.js prima di tutto il contenuto -->
+</head>
+<body>
+    <h5>Apri la console log per vedere cosa succede quando si cliccano questi bottoni</h1>
+    <div>
+        <button onclick="hoCliccatoIlBottone()">Cliccami</button>
+        <button id="nuovoBottone">Clicca anche me</button>
+    </div>
+    <br>
+    <h5>Eventlistener evento change del tag select</h5>
+    <label>
+        Scegli un gelato:
+        <select id="gelato" name="ice-cream">
+          <option value="">Seleziona...</option>
+          <option value="cioccolato">Cioccolato</option>
+          <option value="vaniglia">Vaniglia</option>
+        </select>
+    </label>
+    <div class="result"></div>
+    <br>
+    <h5>Eventlistener evento change del tag input text</h5>
+    <div>
+        <input type="text" id="mioInput" value="">
+        <p id="stampaQui"></p>
+        <input type="button" id="mioPulsante" value="Clicca per aggiungere 2 al numero">
+    </div>
+</body>
+</html>
