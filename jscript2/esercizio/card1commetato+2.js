@@ -1,28 +1,40 @@
 let card = document.getElementsByClassName("card")[0]
-function nodi (tipo, classe) {
-    let nuovo_elemento = document.createElement (tipo)
-    nuovo_elemento.className=classe
-        return nuovo_elemento
-}
-let card_body = nodi ("div", "card-body")
 
-function elementi (tipo, classe, source, padre, contenuto) {
+function elementi (tipo, classe, attributi, padre, contenuto) {
     let nuovo_elemento = document.createElement (tipo)
-    nuovo_elemento.className=classe
-    nuovo_elemento.src=source
-    padre.appendChild(nuovo_elemento)
-    let contenutoTesto = document.createTextNode(contenuto)
-    nuovo_elemento.appendChild(contenutoTesto)
+    if (classe) {
+        nuovo_elemento.className=classe
+    }
+    if (attributi) 
+    {
+        console.log(attributi)
+
+        if (attributi.src) {
+            nuovo_elemento.src=attributi.src
+        }
+        if (attributi.alt) {
+            nuovo_elemento.alt=attributi.alt
+        }
+    }
+    if (padre) {
+        padre.appendChild(nuovo_elemento)
+    }
+    if (contenuto) {
+        let contenutoTesto = document.createTextNode(contenuto)
+        nuovo_elemento.appendChild(contenutoTesto)
+    }
+    return nuovo_elemento
     
 }
-    elementi("img", "", "/jscript2/esercizio/assets/cappuccino.png", card_body, "")
-    let divTesti = nodi ("div", "")
+    let card_body = elementi ("div", "card-body")
+    elementi("img", "", {src:"/jscript2/esercizio/assets/cappuccino.png",alt:"cappuccino"}, card_body,"")
+    let divTesti = elementi ("div", "")
     elementi("h1", "", "", divTesti, "Vanilla latte")
     elementi("p", "", "", divTesti, "21 K")
     card_body.appendChild(divTesti)
     card.appendChild(card_body)
-    let card_footer = nodi ("div", "card-footer")
-    let etichette = nodi ("div", "etichette")
+    let card_footer = elementi ("div", "card-footer")
+    let etichette = elementi ("div", "etichette")
     elementi("span", "", "", etichette, "Hot")
     elementi("span", "", "", etichette, "Cold")
     card_footer.appendChild(etichette)
