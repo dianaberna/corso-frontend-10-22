@@ -486,7 +486,6 @@ for (let i = 0; i < container.length; i++) {
 }
 */
 
-//Versione 2
 // Version 3
 const container = [
   {
@@ -602,55 +601,3 @@ for (let j = 0; j < container.length; j++) {
   );
   divCardButtonElement.appendChild(buttonElement);
 }
-// }
-// const divCardElement = creationMyElement111('div', 'card', '', '', '');
-// document.body.appendChild(divCardElement);
-
-// // card img
-// const imgElement = creationMyElement111(
-//   'img',
-//   '',
-//   '',
-//   container[0].immagine.src,
-//   container[0].immagine.alt
-// );
-// divCardElement.appendChild(imgElement);
-// // card titolo
-// const divCardTitleElement = creationMyElement111('div', 'card__title', '');
-// divCardElement.appendChild(divCardTitleElement);
-
-// const h2Element = creationMyElement111('h2', '', container[0].cardTitle.h2);
-// divCardTitleElement.appendChild(h2Element);
-
-// const pElement = creationMyElement111('p', '', container[0].cardTitle.p);
-// divCardTitleElement.appendChild(pElement);
-
-// // card bottoni
-// const divCardButtonElement = creationMyElement111('div', 'card__button', '');
-// divCardElement.appendChild(divCardButtonElement);
-
-// const divCardSpanElement = creationMyElement111('div', '', '');
-// divCardButtonElement.appendChild(divCardSpanElement);
-
-// for (let i = 0; i < container[0].cardButton.span.length; i++) {
-//   const divSpanHotElement = creationMyElement111(
-//     'span',
-//     '',
-//     container[0].cardButton.span[i]
-//   );
-//   divCardSpanElement.appendChild(divSpanHotElement);
-// }
-
-// // const divSpanColdElement = creationMyElement111(
-// //   'span',
-// //   '',
-// //   container[0].cardButton.span[1]
-// // );
-// // divCardSpanElement.appendChild(divSpanColdElement);
-
-// const buttonElement = creationMyElement111(
-//   'button',
-//   '',
-//   container[0].cardButton.button
-// );
-// divCardButtonElement.appendChild(buttonElement);
