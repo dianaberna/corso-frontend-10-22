@@ -1,40 +1,25 @@
-console.log("cardv4.js")
+console.log("cardv4.js");
 // DA FINIRE!!!!!
 // crea elemento con del contenuto testuale al suo interno
-function creaElemento(
-    {
-        tipo,
-        contenuto,
-        classe,
-        posizione,
-        attributi
-    }) {
-    console.log(classe)
+function creaElemento({ tipo, contenuto, classe, posizione, attributi }) {
     let nuovoElemento = document.createElement(tipo);
-    if(attributi){
+    if (attributi) {
         if (attributi.src && attributi.alt) {
             nuovoElemento.src = attributi.src;
             nuovoElemento.alt = attributi.alt;
         }
     }
-    if(contenuto) {
-            let contenutoElemento = document.createTextNode(contenuto);
-            nuovoElemento.appendChild(contenutoElemento);   
+    if (contenuto) {
+        let contenutoElemento = document.createTextNode(contenuto);
+        nuovoElemento.appendChild(contenutoElemento);
     }
     if (classe != "") nuovoElemento.className = classe;
-    if(posizione){
+    if (posizione) {
         posizione.appendChild(nuovoElemento);
-    }else{
-        return nuovoElemento
+    } else {
+        return nuovoElemento;
     }
 }
-
-// creare un elemento che restituisce esclusivamente la creazione
-/* function creaNodo(tipo, classe) {
-    let nuovoElemento = document.createElement(tipo);
-    nuovoElemento.className = classe;
-    return nuovoElemento;
-} */
 
 let arrayCard = [
     {
@@ -66,55 +51,52 @@ let arrayCard = [
         price: "1K",
         etichette: ["Hot"],
         buttonTitle: "Aggiungi",
-    }
+    },
 ];
 
 for (let i = 0; i < arrayCard.length; i++) {
-    /*
-    tipo,
-    contenuto,
-    classe,
-    posizione,
-    attributi
-    */
-    let card = creaElemento({tipo: "div", classe: "card"});
-    //let card = creaNodo("div", "card");
+    let card = creaElemento({ tipo: "div", classe: "card" });
 
-    let cardBody = creaElemento("div", "", "card-body", "", "");
-    // cardBody.src="caffe.jpg" -> un div non può avere attributo src
+    let cardBody = creaElemento({ tipo: "div", classe: "card-body" });
 
-    creaElemento("img", "", "", cardBody, arrayCard[i].cover);
+    creaElemento({
+        tipo: "img",
+        posizione: cardBody,
+        attributi: arrayCard[i].cover,
+    });
 
     let nuovodivbody = document.createElement("div");
 
-    creaElemento("h1", arrayCard[i].title, "", nuovodivbody, "");
-    creaElemento("p", arrayCard[i].price, "", nuovodivbody, "");
+    creaElemento({
+        tipo: "h1",
+        contenuto: arrayCard[i].title,
+        posizione: nuovodivbody,
+    });
+    creaElemento({
+        tipo: "p",
+        contenuto: arrayCard[i].price,
+        posizione: nuovodivbody,
+    });
     cardBody.appendChild(nuovodivbody);
 
-    let divCardFooter = creaElemento("div", "", "card-footer", "", "");
-    let divEtichette = creaElemento("div", "", "etichette", "", "");
+    let divCardFooter = creaElemento({ tipo: "div", classe: "card-footer" });
+    let divEtichette = creaElemento({ tipo: "div", classe: "etichette" });
 
-    // creare i due span
     for (let j = 0; j < arrayCard[i].etichette.length; j++) {
-        creaElemento(
-            "span",
-            arrayCard[i].etichette[j],
-            "",
-            divEtichette,
-            ""
-        );
+        creaElemento({
+            tipo: "span",
+            contenuto: arrayCard[i].etichette[j],
+            posizione: divEtichette,
+        });
     }
 
     divCardFooter.appendChild(divEtichette);
 
-    // creare il bottone
-    creaElemento(
-        "button",
-        arrayCard[i].buttonTitle,
-        "",
-        divCardFooter,
-        ""
-    );
+    creaElemento({
+        tipo: "button",
+        contenuto: arrayCard[i].buttonTitle,
+        posizione: divCardFooter,
+    });
 
     card.appendChild(cardBody);
     card.appendChild(divCardFooter);
