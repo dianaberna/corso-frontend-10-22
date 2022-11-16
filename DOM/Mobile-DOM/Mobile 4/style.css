@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  background: url(/img/background.png);
+  background: url(background.png);
   height: 340px;
 }
 .container {
