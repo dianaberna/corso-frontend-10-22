@@ -13,19 +13,19 @@ card.appendChild(card_body)
 
 
 let imgCaffe=document.createElement ("img")
-imgCaffe.src="/modulojavascript/parte2 js/caffe.jpg"
+imgCaffe.src="/modulojavascript/parte2 js/esercizio CARD/caffe.jpg"
 alt="immagine caffe"
 card_body.appendChild(imgCaffe)
 
 let divTesto=document.createElement("div")
-let h1=document.createElement("h1")
-let h1text=document.createTextNode("Vanilla Latte")
-let price=document.createElement("p")
-let pricetext=document.createTextNode("21K")
 card_body.appendChild(divTesto)
+let h1=document.createElement("h1")
 divTesto.appendChild(h1)
+let h1text=document.createTextNode("Vanilla Latte")
 h1.appendChild(h1text)
+let price=document.createElement("p")
 divTesto.appendChild(price)
+let pricetext=document.createTextNode("21K")
 price.appendChild(pricetext)
 
 let card_footer=document.createElement("div")

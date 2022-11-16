@@ -16,6 +16,7 @@ header > div {
 
 #head1 {
     justify-content: space-between;
+    align-items: baseline;
 }
 #head1 > button {
     border:0px;

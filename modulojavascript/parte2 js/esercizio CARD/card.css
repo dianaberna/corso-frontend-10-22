@@ -25,7 +25,7 @@ body {
 }
 .card-body div {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 }
 .card-footer {
