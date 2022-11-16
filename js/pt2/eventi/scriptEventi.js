@@ -31,7 +31,8 @@ window.addEventListener("load", function (e) { // load = dopo la fine caricament
 
     let mioPulsante = document.getElementById("mioPulsante")
     mioPulsante.addEventListener("click", function(){
-        document.getElementById("stampaQui").innerHTML = Number(mioDato) + 2
+        mioDato = Number(mioDato) + 2
+        document.getElementById("stampaQui").innerHTML = mioDato
     })
 }) 
 
