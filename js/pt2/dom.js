@@ -4,7 +4,7 @@ document.getElementById("primotitolo").style.backgroundColor = "yellow"; // atte
 // seleziona tramite nome tag
 // non possiamo fare document.getElementsByTagName("li").style.backgroundColor perché è un array e non una singola variabile
 let vociLista = document.getElementsByTagName("li");
-
+console.log(vociLista)
 for (let i = 0; i < vociLista.length; i++) {
     vociLista[i].style.backgroundColor = "red";
 }
@@ -49,7 +49,9 @@ const nuovocontenitore = document.getElementById("nuovocontenitore");
 // creo il testo nel paragrafo
 const testoParagrafo = document.createTextNode("ciao!!!");
 // creo il paragrafo
-const nuovoParagrafo = document.createElement("p");
+const nuovoParagrafo = document.createElement("p");  // <p></p>
+nuovoParagrafo.className = "red" // <p class="red"></p>
+nuovoParagrafo.id = "prova" // <p class="red" id="prova"></p>
 // appendere il testo al paragrafo
 nuovoParagrafo.appendChild(testoParagrafo);
 // creo il div
@@ -80,3 +82,4 @@ paragrafoDaAggiornare.innerHTML = "Ciao mondo!!!!! <span>:)</span> ";
 
 // in react ci ritroveremo questa situazione
 // index.html -> js -> avere una parte fissa (menu) e tutto il resto della pagina "dinamico" rispetto al cambio dell'url
+
