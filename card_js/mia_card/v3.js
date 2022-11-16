@@ -1,15 +1,16 @@
-console.log("cardv3.js");
 
-function creaElemento(tipo, contenuto, classe, posizione, attributi) {
+function creaElemento(tipo, testo, classe, posizione, attributi) {
     let nuovoElemento = document.createElement(tipo);
     if (attributi.src && attributi.alt) {
         nuovoElemento.src = attributi.src;
         nuovoElemento.alt = attributi.alt;
-    } else if (contenuto) {
-        let contenutoElemento = document.createTextNode(contenuto);
-        nuovoElemento.appendChild(contenutoElemento);
+    } else if (testo) {
+        let TestoNuovoElemento = document.createTextNode(testo);
+        nuovoElemento.appendChild(TestoNuovoElemento);
     }
-    if (classe != "") nuovoElemento.className = classe;
+    if (classe != "") {
+        nuovoElemento.className = classe;
+    }
 
     if (posizione) {
         posizione.appendChild(nuovoElemento);
