@@ -4,19 +4,22 @@ window.addEventListener("load", function () {
     let b=Math.floor(Math.random()*256)
     let rgb= "rgb("+r+","+g+","+b+")"
     console.log(rgb)
-    document.body.style.backgroundColor = rgb
-    document.body.style.display="flex"
-    document.body.style.justifyContent="center"
-    document.body.style.alignItems="center"
-    document.body.style.alignContent="center"
-    document.body.style.height="100vh"
-    document.body.style.width="100vw"
+    sBody=document.body.style
+    sBody.backgroundColor = rgb
+    sBody.display="flex"
+    sBody.justifyContent="center"
+    sBody.alignItems="center"
+    sBody.alignContent="center"
+    sBody.height="100vh"
+    sBody.width="100vw"
     let visualizza=document.createElement("div")
     visualizza.className="colore"
-    visualizza.style.backgroundColor="white"
-    visualizza.style.color="black"
-    visualizza.style.maxWidth="300px"
-    visualizza.style.fontSize="30px"
+    sVis=visualizza.style
+    sVis.backgroundColor="white"
+    sVis.color="black"
+    sVis.maxWidth="300px"
+    sVis.fontSize="30px"
+    sVis.padding="15px"
     let testo=document.createTextNode(rgb)
     visualizza.appendChild(testo)
     document.body.appendChild(visualizza)
