@@ -1,5 +1,8 @@
-// OK, però c'è uno switch di colori ad ogni reload. 
+// Realizzare una pagina web con js che generi un colore di sfondo random, lo applica al body e lo stampa in un div con id color. (ogni volta che viene ricaricata la pagina il colore cambia)
+// PS. Per generare un numero casuale da 0 a max si può  Math.random()*max si può utilizzare la funzione 
 
+
+// OK, però c'è uno switch di colori ad ogni reload. 
 window.addEventListener("load", function (e) {
   console.log(e);
   // Bisogna assegnare un current color da cui partire la prima volta?

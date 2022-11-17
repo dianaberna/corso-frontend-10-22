@@ -1,0 +1,35 @@
+{
+  "cards": 
+      [
+          {
+              "cover": {
+                  "src": "caffe.jpg",
+                  "alt": "caffè"
+              },
+              "title": "Vanilla Latte",
+              "price": "21K",
+              "etichette": ["Hot", "Cold"],
+              "buttonTitle": "Aggiungi"
+          },
+          {
+              "cover": {
+                  "src": "caffe.jpg",
+                  "alt": "caffè"
+              },
+              "title": "Cappuccino",
+              "price": "10K",
+              "etichette": ["Hot", "Cold", "Altro"],
+              "buttonTitle": "Aggiungi"
+          },
+          {
+              "cover": {
+                  "src": "caffe.jpg",
+                  "alt": "caffè"
+              },
+              "title": "Caffè",
+              "price": "1K",
+              "etichette": ["Hot"],
+              "buttonTitle": "Aggiungi"
+          }
+      ]
+}

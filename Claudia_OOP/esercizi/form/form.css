@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  padding: 24px;
+  margin: 30px;
+  color: rgb(6, 7, 14);
+}
+
+h1 {
+  margin-bottom: 34px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+label {
+  color: rgb(78, 28, 170);
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+input {
+  background-color: rgb(235, 234, 247);
+  color: rgb(170, 163, 241);
+  margin-bottom: 10px;
+  padding: 14px;
+  font-size: 18px;
+}
+
+#submit {
+  background-color: rgb(109, 61, 198);
+  color: white;
+  margin-top: 10px;
+}
+
+label,
+input,
+#submit {
+  border-radius: 14px;
+  border: 0px;
+}
+
+p.errore {
+  color: red;
+  margin: -8px 0 20px 0;
+  font-size: 16px;
+}
+
+input.errore {
+  border: 1px solid red;
+}
