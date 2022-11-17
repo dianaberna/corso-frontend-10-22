@@ -4,21 +4,6 @@ document.body.appendChild(card);
 
 
 
-function creaElemento(){
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 let cardBody = document.createElement("div");
