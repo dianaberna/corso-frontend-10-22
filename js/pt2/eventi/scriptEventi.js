@@ -10,7 +10,8 @@ window.addEventListener("load", function (e) { // load = dopo la fine caricament
     const selectElement = document.getElementById('gelato');
     selectElement.addEventListener('change', function(event) {
         console.log(event.target.value)
-        const result = document.querySelector('.result');
+        //const result = document.querySelector('.result');
+        const result = document.getElementsByClassName("result")[0]
         result.innerHTML = `Hai selezionato ${event.target.value}`;
     });
 
