@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700;1,900&display=swap');
+
+
+body {
+    display: flex;
+    background-color: #181823;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+#line{
+   width: 70px;
+   height: 5px;
+   margin-bottom: 40px;
+  
+}
+
+form { 
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+
+}
+
+h1 {
+    font-size: 36px;
+   
+}
+
+
+
+input, textarea {
+
+    border: 2px;
+    border-radius: 5px;
+    border-color: grey;
+    border-style: solid;
+    background-color: #181823;
+    color: white;
+    height: 50px;
+    width: 580px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    
+    }
+    
+
+#submit {
+    
+   margin: auto;
+   width:175px;
+   height: 58px;
+   font-family: 'Lato', sans-serif;
+   color: white;
+   background-color: #F03A76;
+   font-size: 24px;
+   font-weight: 500;
+   border-radius: 50px;
+   border: none;
+   float: right;
+   box-shadow: 0px 10px 15px rgba(240, 58, 118, 0.18);
+   
+}
+
+form > div > div {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    justify-content: flex-end;
+
+    
+}
+
+form > div {
+    
+    margin-bottom: 2rem;
+}
+
+textarea {
+    height: 150px;
+
+}
+
+label {
+
+    margin-bottom: 10px;
+}

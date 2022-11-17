@@ -1,0 +1,13 @@
+/* selettori selmplici */
+
+p  { background-color: brown;}  
+
+.rosso { background-color: red;}
+
+#blu { background-color: blue;}
+
+/* selettori combinatori */
+
+div p { background-color: purple; }
+
+div > p { background-color: aqua; }
