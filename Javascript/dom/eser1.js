@@ -1,14 +1,14 @@
-let div = document.createElement('div');
-div.id = 'background';
-document.body.appendChild(div);
+let divConteni = document.createElement('div');
+divConteni.id = 'background';
+document.body.appendChild(divConteni);
 
 
-let red = Math.trunc(Math.random() * 255);
-let blue = Math.trunc(Math.random() * 255);
-let green = Math.trunc(Math.random() * 255);
+let red = Math.floor(Math.random() * 255);
+let blue = Math.floor(Math.random() * 255);
+let green = Math.floor(Math.random() * 255);
 let color = `rgb (${red}, ${blue}, ${green})`;
 let text = document.createTextNode(color);
-div.appendChild(text);
+divConteni.appendChild(text);
 window.addEventListener('load', function () {
   document.body.style.background = `rgb(${red}, ${blue}, ${green})`;
 });
