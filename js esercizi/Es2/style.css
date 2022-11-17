@@ -29,6 +29,21 @@ input:focus{
 }
 button{
     margin-top: 15px;
+    font-weight: 700;
+    color: #138bea;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border: 2px solid #dee8e9;
+    transition: 0.4s ease-in-out;
+}
+button:hover{
+    border: 2px solid #138bea;
+    background-color: #138bea;
+    color: #fff;
 }
 
 .aggiorna{
