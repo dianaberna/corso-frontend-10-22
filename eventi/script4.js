@@ -29,7 +29,7 @@ window.addEventListener("load", function () {
                 
             document.getElementById("visualizza").value+= document.getElementById(".").textContent
         })
-        
+     
     document.getElementById("=").addEventListener("click", function () {
 
         let valore= eval(document.getElementById("visualizza").value)
