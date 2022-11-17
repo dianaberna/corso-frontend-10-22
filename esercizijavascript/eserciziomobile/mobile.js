@@ -1,3 +1,25 @@
+function elementi (tipo, classe, src, alt, posizione, contenuto){
+    
+  let elemento = document.createElement (tipo)
+  
+ 
+   if (classe){
+      elemento.className= classe
+   }
+   if (posizione){
+      posizione.appendChild (elemento)
+   }
+   if (src && alt){
+      elemento.src= src
+      elemento.alt = alt
+   }
+    if (contenuto){
+      let testoelemento= document.createTextNode (contenuto)
+      elemento.appendChild (testoelemento)
+   }
+  
+   return elemento
+}
 
 
 
@@ -38,55 +60,44 @@ let section1 = document.createElement ("section")
 section1.className= "calendar"
 header.appendChild (section1)
 
-/*
-let i=0
-let day= 0
+//calendar
+let arrayday = [
+  {
+    dayname: "MON",
+    daynumber: "13",
+  },
+  {
+    dayname: "TUE",
+    daynumber: "14",
+  },
+  {
+    dayname: "WED",
+    daynumber: "15",
+  },
+  {
+    dayname: "THU",
+    daynumber: "16",
+  },
+  {
+    dayname: "FRI",
+    daynumber: "17",
+  },
+  {
+    dayname: "SAT",
+    daynumber: "18",
+  },
+  {
+    dayname: "SUN",
+    daynumber: "19",
+  },
+]
 
+for (let i=0; i<arrayday.length, i++ ;) {
 
+  let daydiv= elementi("div","day","","", section1 ,"",);
+  let daytitle= elementi("h2","","","",daydiv, arrayday[i].dayname)
+}
 
-*/
-
-
-// function calendar (day, number) {
-
-// let divday= document.createElement ("div")
-// divday.className = "day"
-// let dayname= document.createElement ("h2")
-// let daynametext= document.createTextNode (day)
-// let daynumber= document.createElement ("h3")
-// let daynumbertext= document.createTextNode (number)
-
-// return [divday, dayname, daynametext, daynumber, daynumbertext]
-
-// }
-
-// daynumber.appendChild (daynumbertext)
-// dayname.appendChild (daynametext)
-// divday.appendChild (dayname)
-// divday.appendChild (daynumber)
-// section1.appendChild(divday)
-
-// calendar ("mon", "13")
-
-// let divtue= document.createElement ("div")
-// divtue.className = "day"
-// section1.appendChild(divtue)
-
-// let divwed= document.createElement ("div")
-// divwed.className = "day today"
-// section1.appendChild(divwed)
-
-// let divthu= document.createElement ("div")
-// divthu.className = "day"
-// section1.appendChild(divthu)
-
-// let divfri= document.createElement ("div")
-// divfri.className = "day"
-// section1.appendChild(divfri)
-
-// let divsun= document.createElement ("div")
-// divsun.className = "day"
-// section1.appendChild(divsun)
 
 
 //main
