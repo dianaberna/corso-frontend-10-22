@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+   --primary-color:#000;
+   --secondary-color:#F03A76;
+   --third-color: #181823;
+   --title-color:#DEECF9;
+   --desc-color:#C7E0FA;
+}
+
+body{
+    background-color: var(--third-color);
+    
+}
+/* NAVBAR */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    height: 6.25rem;
+}
+#navbar h1{
+    color:var(--secondary-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+}
+#navbar ul{
+    display: flex;
+    gap: 2rem;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+
+/* CAREER */
+
+#carrer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15.6250rem;
+    padding-top: 5rem;
+
+}
+
+#carrer > h1{
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--title-color);
+    margin-bottom: 2rem;
+}
+#carrer > hr{
+    width: 4.375rem;
+    height: 0.25rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+    margin-bottom: 1.25rem;
+}
+
+#carrer > p{
+    font-weight: 400;
+    font-size: 1.125rem;
+    width: 46.81rem;
+    color: var(--desc-color);
+    line-height: 2.375rem;
+    margin-bottom: 3.125rem;
+}
+
+#carrer .card-container{
+    display: flex;
+    gap:1.875rem;
+}
+#carrer .card-container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24.31rem;
+    height: 21.06rem;
+    background-color: var(--primary-color);
+    padding: 1.875rem 1.70rem;
+    border-radius: 1rem;
+}
+
+#carrer .card-container .card h2{
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 1.875rem;
+    padding-bottom: 0.625rem;
+    color: var(--title-color);
+}
+#carrer .card-container .card p{
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--desc-color);
+    text-align: center;
+    line-height: 1.5625rem;
+}
+#carrer .container{
+    display: flex;
+    align-items: center;
+    margin: 6.25rem 0;
+    gap: 9.375rem;
+}
+
+#carrer .container .text{
+    display: flex;
+    flex-direction: column;
+    width: 35.31rem;
+}
+#carrer .container .text h1{
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--title-color);
+    line-height: 3.3125rem;
+
+}
+#carrer .container .text hr{
+    width: 4.375rem;
+    height: 0.25rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #14B8E4;
+    margin-bottom: 1.25rem;
+    margin-top: 1.875rem;
+}
+#carrer .container .text p{
+    font-weight: 400;
+    font-size: 1.125rem;
+    width: 46.81rem;
+    color: var(--desc-color);
+    line-height: 2.375rem;
+    width: 35.31rem;
+}

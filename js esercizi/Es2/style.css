@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+input{
+    width: 600px;
+    outline: none;
+    border: 2px solid #dee8e9;
+    background-color: #fff;
+    color: #0B1F39;
+    font-weight: 500;
+    padding: 13px 14px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+input:focus{
+    border-color: #138bea;
+}
+button{
+    margin-top: 15px;
+    font-weight: 700;
+    color: #138bea;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border: 2px solid #dee8e9;
+    transition: 0.4s ease-in-out;
+}
+button:hover{
+    border: 2px solid #138bea;
+    background-color: #138bea;
+    color: #fff;
+}
+
+.aggiorna{
+    margin: 2rem;
+    width: 400px; 
+    height: 400px; 
+    background-color: yellow
+}
