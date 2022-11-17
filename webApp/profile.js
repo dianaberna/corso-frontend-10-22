@@ -11,6 +11,8 @@ let follower = document.createElement("follower");
 follower.className = "follower";
 pageHeader.appendChild(follower);
 
+//provo pagina app senza funzioni
+
 let f1 = document.createElement("div");
 let f2 = document.createElement("div");
 let f3 = document.createElement("div");
@@ -47,6 +49,8 @@ follower.appendChild(f1);
 follower.appendChild(f2);
 follower.appendChild(f3);
 
+// provo funzione creaNodo
+
 function creaNodo(tipo, classe, posizione) {
     let nuovoElemento = document.createElement(tipo);
     nuovoElemento.className = classe;
@@ -78,6 +82,7 @@ paragraphA.appendChild(paragraphAText);
 let bBreak = document.createElement("br");
 paragraphA.appendChild(bBreak);
 
+// provo funzione creaElemento
 function creaElementoD(tipo, contenuto, classe, posizione, attributi) {
     let nuovoElemento = document.createElement(tipo);
     if (attributi.src && attributi.alt) {
