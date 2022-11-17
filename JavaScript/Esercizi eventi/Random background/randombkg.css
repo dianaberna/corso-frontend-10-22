@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(255,255,255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+}
+
+#color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0.8em;
+    width: fit-content;
+
+}

@@ -1,0 +1,17 @@
+body {}
+
+
+button {
+    margin-left: 10px;
+}
+
+input {
+    width: 500px;
+}
+
+#css-box {
+    margin: 2rem;
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+}
