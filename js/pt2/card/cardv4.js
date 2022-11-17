@@ -1,21 +1,22 @@
 console.log("cardv4.js");
-// DA FINIRE!!!!!
+
 // crea elemento con del contenuto testuale al suo interno
-function creaElemento({ tipo, contenuto, classe, posizione, attributi }) {
-    let nuovoElemento = document.createElement(tipo);
-    if (attributi) {
+// { tipo, contenuto, classe, posizione, attributi }
+function creaElemento(parametri) {
+    let nuovoElemento = document.createElement(parametri.tipo);
+    if (parametri.attributi) {
         if (attributi.src && attributi.alt) {
             nuovoElemento.src = attributi.src;
             nuovoElemento.alt = attributi.alt;
         }
     }
-    if (contenuto) {
+    if (parametri.contenuto) {
         let contenutoElemento = document.createTextNode(contenuto);
         nuovoElemento.appendChild(contenutoElemento);
     }
-    if (classe != "") nuovoElemento.className = classe;
-    if (posizione) {
-        posizione.appendChild(nuovoElemento);
+    if (parametri.classe != "") nuovoElemento.className = classe;
+    if (parametri.posizione) {
+        parametri.posizione.appendChild(nuovoElemento);
     } else {
         return nuovoElemento;
     }
