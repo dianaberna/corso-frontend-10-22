@@ -1,0 +1,33 @@
+#calcolatrice {
+    position: relative; 
+
+}
+
+#numeri {
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+    gap: 0.3rem;
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.3rem;
+
+
+}
+
+button {
+    width: 50px;
+}
+
+input {
+    margin-left: 15px;
+    width: 190px;
+    justify-content: space-around;
+
+
+}

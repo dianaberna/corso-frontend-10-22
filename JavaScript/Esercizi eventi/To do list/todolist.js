@@ -1,6 +1,5 @@
 //PRIMA VERSIONE
 
-/* 
 let pulsante = document.getElementById("button");
 let uList = document.getElementById("ul");
 
@@ -28,11 +27,10 @@ function toDoList() {
 }
 
 pulsante.addEventListener("click", toDoList);
- */
 
 // SECONDA VERSIONE
 
-let pulsante = document.getElementById("button");
+/* let pulsante = document.getElementById("button");
 let uList = document.getElementById("ul");
 let uList2 = document.getElementById("ul2");
 let uList3 = document.getElementById("ul3");
@@ -59,7 +57,7 @@ function toDoList() {
         function creaPulsante() {
             let buttonXAll = document.createElement("button");
             buttonXAll.id = "button-x-all";
-            let buttonXAllText = document.createTextNode("Elimina tutto");
+            let buttonXAllText = document.createTextNode("Elimina tutto"); // SISTEMARE QUA CHE ESCONO TROPPI PULSANTI
             buttonXAll.appendChild(buttonXAllText);
             uList3.appendChild(buttonXAll);
         }
@@ -67,6 +65,11 @@ function toDoList() {
         uList.removeChild(listElement);
         uList2.appendChild(listElement);
         listElement.removeChild(buttonX);
+
+    }
+    
+    function eraseAll() {
+        uList2.remove(listElement);
     }
 
     function eraseToDo() {
@@ -76,3 +79,4 @@ function toDoList() {
 }
 
 pulsante.addEventListener("click", toDoList);
+ */
