@@ -11,6 +11,10 @@
             height: 300px;
             background: yellow;
         }
+        input{
+            width: 470px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -27,13 +31,13 @@
         divAggio.className = "conteiner"
         document.body.appendChild(divAggio)
 
-        let bottone = document.getElementById("btn");
-        bottone.addEventListener("click", function () {
+        let bot = document.getElementById("btn");
+        bot.addEventListener("click", function () {
         console.log(" bottone  ok");
-            aggioSty()
+            sty()
         });
 
-        function aggioSty(){
+        function sty(){
             document.querySelector(".conteiner").style = document.querySelector("input").value;
         };
         
