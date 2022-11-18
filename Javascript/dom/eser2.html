@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 2</title>
+    <style>
+        .conteiner{
+            width: 400px;
+            height: 300px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <input type="text" value="margin: 2rem; width: 400px; height: 400px; background-color: yellow">
+    <button id="btn">Aggiorna Stile</button>
+    
+
+    <script>
+
+        let divAggio = document.createElement("div")
+        divAggio.className = "conteiner"
+        document.body.appendChild(divAggio)
+
+        let bottone = document.getElementById("btn");
+        bottone.addEventListener("click", function () {
+        console.log(" bottone  ok");
+            aggioSty()
+        });
+
+        function aggioSty(){
+            document.querySelector(".conteiner").style = document.querySelector("input").value;
+        };
+        
+    </script>
+</body>
+</html>
