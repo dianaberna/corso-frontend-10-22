@@ -1,0 +1,30 @@
+.numeri-simboli {
+margin-top: 1rem;
+}
+
+.calcolatrice {
+
+
+}
+
+#riga-1 {
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.3rem;
+    left: 25%;
+}
+#riga-2 {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
+#riga-3 {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
+#riga-4 {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
