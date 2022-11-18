@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="\assets\iconahtml.png" type="image/gif" sizes="16x16">
+  <title>Esercizio 4: gestire gli eventi con Javascript</title>
+  <style>
+    body{
+      background-color: antiquewhite;
+    }
+    #calcolatrice{
+      margin: 3.125rem 6.25rem 6.25rem 3.125rem;
+    }
+    #input{
+      margin-bottom: 1.25rem;
+      width: 18.75rem;
+      height: 1.875rem;
+      font-size: 1.125rem;
+    }
+    button{
+      width: 4.3125rem;
+      height: 2.5rem;
+      margin: .0938rem;
+      border-width: .0063rem;
+      border-radius: .3125rem;
+      font-size: 1.125rem;
+      cursor: pointer;
+    }
+    #n0, #n1, #n2, #n3, #n4, #n5,
+    #n6, #n7, #n8, #n9, #punto{
+      background-color: rgb(240,240,240);
+    }
+    #divisione, #moltiplicazione, #sottrazione, #addizione{
+      background-color: rgb(200,200,200);
+    }
+    #risultato{
+      background-color: blue;
+      color: white;
+      width: 18.75rem;
+    }
+    #cancella{
+      background-color: rgb(120,120,120);
+      color: white;
+    }
+  </style>
+  <script src="es4-eventi.js"></script>
+</head>
+<body>
+  <!-- CONTENUTO CREATO IN JS -->
+
+  <div id="calcolatrice">
+
+    <input name="input" id="input" type="text" value="" readonly/>
+
+    <table>
+      
+      <tr>
+        <td><button id="n7" value="7">7</button></td>
+        <td><button id="n8" value="8">8</button></td>
+        <td><button id="n9" value="9">9</button></td>
+        <td><button id="divisione" value="/">/</button></td>
+      </tr>
+      <tr>
+        <td><button id="n4" value="4">4</button></td>
+        <td><button id="n5" value="5">5</button></td>
+        <td><button id="n6" value="6">6</button></td>
+        <td><button id="moltiplicazione" value="*">*</button></td>
+      </tr>
+      <tr>
+        <td><button id="n1" value="1">1</button></td>
+        <td><button id="n2" value="2">2</button></td>
+        <td><button id="n3" value="3">3</button></td>
+        <td><button id="sottrazione" value="-">-</button></td>
+      </tr>
+      <tr>
+        <td><button id="n0" value="0">0</button></td>
+        <td><button id="punto" value=".">.</button></td>
+        <td><button id="cancella" value="">CANC</button></td>
+        <td><button id="addizione" value="+">+</button></td>
+      </tr>
+      
+    </table>
+
+    <button id="risultato" value="=">=</button>
+
+  </div>
+  
+
+</body>
+</html>
