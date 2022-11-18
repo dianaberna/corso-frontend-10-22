@@ -22,10 +22,17 @@
 
 
     <input type="text" value="margin: 2rem; width: 400px; height: 400px; background-color: yellow">
-    <button id="btn">Aggiorna Stile</button>
+    
     
 
     <script>
+
+        let butto = document.createElement("button");
+        butto.id = "btn";
+        butto.innerText = "Aggiorna Stile";
+        document.body.appendChild(butto);
+        butto.style.width = "200px";
+        butto.style.height = "30px"
 
         let divAggio = document.createElement("div")
         divAggio.className = "conteiner"
