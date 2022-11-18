@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.rgbDiv {
+    height: 2.5rem;
+    width: 8.75rem;
+    background-color: aliceblue;
+    border-radius: .625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+section>input {
+    background-color: #F4F4F4;
+    border-radius: 1.5rem;
+    border: none;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    height: 2.5rem;
+    padding-left: .625rem;
+    width: 25rem;
+}
+
+input[type="button"] {
+    width: fit-content;
+    border: 1px solid #A8A8A8;
+    border-radius: 1.5rem;
+}
+
+li > input[type="button"] {
+    color: red;
+    font-weight: bold;
+    margin-left: 1.25rem;
+}
