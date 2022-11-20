@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+:root {
+    --sample-gray: #C4C4C4;
+    --dot-gray: #333333;
+}
+
+html {
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* header */
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>div>input[type=text] {
+    background-color: var(--sample-gray);
+    border: none;
+    border-radius: 16px;
+    height: 30px;
+    width: 100%;
+    padding-left: 25px;
+}
+
+header:last-child {
+    position: relative;
+}
+
+header div .lente {
+    position: absolute;
+    margin-left: 5px;
+}
+
+/* Contacted section */
+
+.square {
+    background-color: var(--sample-gray);
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.dot {
+    background-color: var(--dot-gray);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+}
+
+.scrollbar {
+    display: flex;
+    overflow-y: scroll;
+    gap: 1rem;
+    height: 85px;
+    overflow-y: hidden;
+}
+
+
+.wrapper {
+    width: fit-content;
+    padding-top: 5px;
+}
+
+main > section {
+    margin-bottom: 1.875rem;
+}
+
+/* Chat section */
+
+.chat-box {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.text-box > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-box {
+    padding-left: .625rem;
+}
+
+.text-box h4,
+.text-box span {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-box span {
+    color: #A8A8A8;
+}
+
+.chat-box>.text-box>p {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background-color: #F4F4F4;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 24px 24px 0 0;
+    padding: 1.875rem .625rem;
+    margin :-0.625rem;
+}
+
+@media screen and (min-width: 801px) {
+    body {
+        margin: 0 10%;
+    }
+    .chat-box>.text-box>p {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    body {
+        margin: 0 15%;
+    }
+    .chat-box>.text-box>p {
+        width: 700px;
+    }
+}

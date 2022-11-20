@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import "./restaurant-page/style.css";
+
+:root {
+    --primary-color: #F4F4F4;
+    --buttons-color: #D0D0D0;
+    --border-color: #A8A8A8;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    padding: 20px 24px 0 24px;
+    background-color: #FCFCFC;
+}
+
+/* header, titolo e barra di ricerca */
+
+header>p,
+header>h3 {
+    margin: 0;
+}
+
+header>p {
+    font-size: small;
+}
+
+header>h3 {
+    margin-bottom: 1.25rem;
+}
+
+header>div {
+    display: flex;
+    gap: 10px;
+}
+
+header>div>input {
+    background-color: var(--primary-color);
+    border-radius: 1.5rem;
+    border: none;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    height: 2.5rem;
+    padding-left: 2.1875rem;
+    width: 100%;
+}
+
+header>div>button {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 25%;
+}
+
+header>div>.search-lens {
+    position: absolute;
+    margin: 12px;
+}
+
+/* sezione Categories con scrollbar*/
+
+main>section>div {
+    display: flex;
+    justify-content: space-between;
+    margin-top:  1.25rem;
+}
+
+main>section>div>p {
+    font-size: small;
+    color: var(--border-color);
+    text-decoration: underline;
+    margin: 0;
+}
+
+section h5 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#scrollbar {
+    overflow-x: scroll;
+    display: flex;
+    gap: 10px;
+    margin: 0 -24px 1.25rem -24px;
+}
+
+.categories-food {
+    width: fit-content;
+    display: flex;
+}
+
+.categories-food>div {
+    background-color: var(--buttons-color);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 116px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.categories-food:first-child {
+    margin-left: 24px;
+}
+
+.categories-food:last-child {
+    margin-right: 24px;
+}
+
+.categories-food>div>p {  
+    font-size: small;
+}
+
+/* sezione open restaurant */
+
+.restaurants__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.restaurants__card--img {
+    max-width: 100%;
+    width: 340px;
+    height: 180px;
+    margin-bottom: .625rem;
+}
+
+.restaurants__card--delivery {
+    display: flex;
+    gap: 10px;
+    margin-bottom: .3125rem;
+}
+
+.restaurants__card--delivery>span {
+    font-size: small;
+}
+
+.restaurant__card--transparent-block {
+    background: rgba(82, 82, 82, 0.8);
+    backdrop-filter: blur(2.5px);
+    border-radius: 8px;
+    width: 6.5625rem;
+    height: 2.5rem;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.left-transparent-block {
+    position: absolute;
+    left: 15px;
+    bottom: 100px;
+}
+
+.right-transparent-block {
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+
+.restaurants__card div:last-of-type {
+    display: flex;
+    gap: 10px;
+}
+
+.restaurants__card--tag {
+    background-color: var(--buttons-color);
+    border-radius: 5px;
+}
+
+.restaurants__card--tag>p {
+    font-size: small;
+    margin: 5px;
+}
+
+.restaurants__card:last-of-type {
+    margin-bottom: 2.5rem;
+}
+
+/* footer fixed */
+
+footer {
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid #e0e0e0;
+    height: 5.625rem;
+    background-color: #FCFCFC;
+    margin: 0 -24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#plus {
+    background-color: var(--primary-color);
+    height: 82px;
+    width: 82px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 45px;
+}
+
+#plus>svg {
+    position: absolute;
+    left: 40%;
+    bottom: 35px;
+}
+
+@media screen and (min-width: 770px) {
+    body {
+        padding: 24px 20%;
+    }    
+}
