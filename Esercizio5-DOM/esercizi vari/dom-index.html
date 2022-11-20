@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Javascript</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="funzioni-script.js"></script> -->
+    <!-- <script src="esercizi-script.js"></script> -->
+    <!-- <script src="dom-esercizi.js"></script> -->
+
+</head>
+<body>
+    
+    <h1 id="primotitolo">Esercizi DOM</h1>
+    <ul>
+        <li>primo</li>
+        <li>secondo</li>
+        <li>terzo</li>
+    </ul>
+    <div>
+        <p>1 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+        <p class=yellow>2 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+        <p class=yellow>3 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+    </div>
+
+    <div id="contenitore"> 
+
+    </div>
+
+    <div id="cancellami">
+        <p> 1 Paragrafo da cancellare in js </p>
+        <p> 2 Paragrafo da cancellare in js </p>
+    </div>
+
+    <div id="aggiornami">
+        <p> 1 Paragrafo da aggiornare </p>
+        <p> 2 Paragrafo da aggiornare </p>
+    </div>
+
+    <script>
+        //selezione tramite ID
+        document.getElementById("primotitolo").style.backgroundColor="green"; //js con id seleziono 1 elemento perchè id=1elemento univoco
+
+        //selezione tramite nome TAG (perchè è un array e non singolo elemento)
+        let vocilista = document.getElementsByTagName("li");
+        console.log(vocilista);
+        for(let i = 0; i < vocilista.length; i++){
+            vocilista[i].style.backgroundColor="red"
+        }
+
+        //selezione tramite nome CLASSE
+        let paragrafiYellow = document.getElementsByClassName("yellow");
+
+        for (let i=0; i < paragrafiYellow.length; i++){
+            paragrafiYellow[i].style.backgroundColor= "yellow";
+        }
+
+        //seleziona tramite selettori CSS: querySelector=solo primo elemento O querySelectorAll=seleziona tutti elementi
+        let sottoinsiemeParagrafiSingolo = document.querySelector("div > .yellow")
+        console.log(sottoinsiemeParagrafiSingolo)
+
+        sottoinsiemeParagrafiSingolo.style.fontSize = "25px";
+        
+        //AppendChild: creare nuovi elementi racchiusi in ()
+        let posizioneNelDom = document.getElementById("contenitore")
+
+        let testoh1 = document.createTextNode("Ciao Mondo")
+        let nuovoh1 = document.createElement("H1")
+        nuovoh1.appendChild(testoh1) //nelle () ci sta il figlio che voglio appendere al primo elemento
+        posizioneNelDom.appendChild(nuovoh1)
+
+        //cancello paragrafo interno a div "cancellami"
+        //selezione paragrafo figlio del DIV "cancellami"
+        let cancellareParagrafi = document.querySelectorAll("div#cancellami > p")
+        //rimuovo elementi
+        for (let i=0; i < cancellareParagrafi.length; i++){
+            cancellareParagrafi[i].remove();
+        }
+
+        //aggiorno contenuto di "aggiornami"
+        //seleziona tag
+        let paragrafoDaAggiornare = document.getElementById("aggiornami")
+        //aggiorno contenuuto con innerHTML
+        paragrafoDaAggiornare.innerHTML = "Ciao!!! :)))"
+
+
+    </script>
+</body>
+</html>
