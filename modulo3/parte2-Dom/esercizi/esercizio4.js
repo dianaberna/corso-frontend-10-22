@@ -31,7 +31,7 @@ let newDiv2 = document.createElement("div")
 newMainDiv.appendChild(newDiv2);
 let newButt
 let newButtText
-buttArray = [7,8,9,"/",4,5,6,"*",1,2,3,"-",0,".","=","+"];
+buttArray = ["","","<--","C",7,8,9,"/",4,5,6,"*",1,2,3,"-",0,".","=","+"];
 for (let index = 0; index < buttArray.length; index++) {
   newButt = document.createElement("button");
   { // newButt styles
@@ -45,20 +45,30 @@ for (let index = 0; index < buttArray.length; index++) {
   newDiv1.appendChild(newButt)
   newButtText = document.createTextNode(buttArray[index]);
   newButt.appendChild(newButtText);
-  if ((index+1)%4 == 0) { // newButt styles - variano in base alla posizione
+  if (((index+1)%4 == 0) && (index!=3)) { // newButt styles - variano in base alla posizione
     newButt.style.backgroundColor="lightgray"
   } else{
-    if (index == 14) {
-      newButt.style.backgroundColor="lightblue"
-      newButt.type="submit"
-    } else {
-      newButt.style.backgroundColor="rgb(230,230,230)"
+    switch (index) {
+      case 2:
+        newButt.style.backgroundColor="lightpink"
+        break;
+      case 3:
+        newButt.style.backgroundColor="orange"
+        newButt.type="submit"
+        break;
+      case 18:
+        newButt.style.backgroundColor="lightblue"
+        newButt.type="submit"
+        break;
+      default:
+        newButt.style.backgroundColor="rgb(230,230,230)"
+        break;
     }
   }
   newButt.addEventListener("click", function(){
-    //console.log(event.clicked[index])
     clicked = buttArray[index]
-    if (clicked == "=") {
+    switch (clicked) {
+      case "=":
       if (newInput.value=="") {
       } else {
         let newParagraph = document.createElement("p")
@@ -69,17 +79,27 @@ for (let index = 0; index < buttArray.length; index++) {
         newInput.value = result
         calcString = result
       }
-    } else {
-      calcString = calcString + clicked
-      newInput.value = calcString
+        break;
+      case "C":
+        calcString = newInput.value = ""
+        break;  
+      case "<--":
+        calcString = newInput.value = (newInput.value.slice(0 , newInput.value.length-1))
+        break;
+      case 7:case 8:case 9:case"/":case 4:case 5 :case 6 :case"*":case 1 :case 2 :case 3 :case"-":case 0 :case".":case"+":   
+        calcString = calcString + clicked
+        newInput.value = calcString
+        break;
+      default:
+        break;
     }
     (document.querySelectorAll("p")[10]) ? (document.querySelectorAll("p")[10]).remove():null //mi serve per mantenere la lista delle operazioni non più lunga di 10 records
   })
 }
-window.addEventListener("keypress", function(event){
-  console.log(event.key)
+window.addEventListener("keydown", function(event){
   clicked=event.key
-  if (event.key === "Enter") {
+  switch (event.key) {
+    case "Enter":
     if (newInput.value=="") {
     } else {
       let newParagraph = document.createElement("p")
@@ -90,14 +110,19 @@ window.addEventListener("keypress", function(event){
       newInput.value = result
       calcString = result
     }
-  }
-  else {
-    if (event.key === "Delete") {
+      break;
+    case "Delete":
       calcString = newInput.value = ""
-    } else {
+      break;  
+    case "Backspace":
+      calcString = newInput.value = (newInput.value.slice(0 , newInput.value.length-1))
+      break;
+    case "7":case"8":case"9":case"/":case"4":case"5":case"6":case"*":case"1":case"2":case"3":case"-":case"0":case".":case"+":   
       calcString = calcString + clicked
       newInput.value = calcString
-    }
+      break;
+    default:
+      break;
   }
   (document.querySelectorAll("p")[10]) ? (document.querySelectorAll("p")[10]).remove():null //mi serve per mantenere la lista delle operazioni non più lunga di 10 records
 })

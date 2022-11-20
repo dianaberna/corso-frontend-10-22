@@ -1,0 +1,1 @@
+//Realizzare una pagina web dove è presente un input testuale in cui è gestito ogni sua versione o stato, cioè default, evento hover, evento focus, evento keydown, evento change, stato disabilitato, stato errore, stato corretto. 
