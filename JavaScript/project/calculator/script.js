@@ -1,6 +1,6 @@
 'use strict';
 
-// ora creo il mio div ocntenitore
+// ora creo il mio div contenitore
 const container = document.createElement('div');
 container.id = 'container';
 document.body.appendChild(container);
@@ -15,7 +15,7 @@ inputDisplay.id = 'display';
 inputDisplay.value = '';
 inputDisplay.placeholder = 'Try Calc';
 containerDisplay.appendChild(inputDisplay);
-//Creo il mio ocntenitore dove ci saranno tutti i miei tasti
+//Creo il mio contenitore dove ci saranno tutti i miei tasti
 const divContainerButton = document.createElement('div');
 divContainerButton.id = 'container__button';
 container.appendChild(divContainerButton);
