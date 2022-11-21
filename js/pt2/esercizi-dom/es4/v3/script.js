@@ -17,8 +17,11 @@ window.addEventListener("load", function () {
     let result = false;
     let division = false;
     let divisionZero = false;
+    
+    // creo l'elenco "nastro"
     let tape = document.createElement("ul");
     tape.id = "tape";
+
     let input = document.createElement("input");
     input.type = "text";
     input.id = "inputText";
@@ -73,7 +76,7 @@ window.addEventListener("load", function () {
                 if (divisionZero == true) {
                     // sono nel numero subito dopo aver cliccato /
                     printResult(input.value, true);
-                    input.value = "errore!";
+                    //input.value = "errore!";
                     divisionZero = false;
                     
                 } else {

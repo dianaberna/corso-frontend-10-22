@@ -3,11 +3,11 @@ console.log("es2");
 function aggiornaStile() {
     let div = document.getElementById("modifica");
     let input = document.getElementsByTagName("input")[0];
-    console.log(input.value);
     div.style = input.value;
 }
 
 window.addEventListener("load", function () {
+    // fase creazione dom -> input testuale + bottone + div 
     let inputTestuale = document.createElement("input");
     document.body.appendChild(inputTestuale)
     let pulsante = document.createElement("button")

@@ -2,11 +2,14 @@ window.addEventListener("load", function () {
     let result = false;
     let division = false;
     let divisionZero = false;
+
+    // creazione input testuale 
     let input = document.createElement("input");
     input.type = "text";
     input.disabled = true;
     document.body.appendChild(input);
 
+    // creazione calcolatrice
     let divCalculator = document.createElement("div");
     divCalculator.id = "calculator";
 
@@ -30,10 +33,12 @@ window.addEventListener("load", function () {
             }
 
             newButton.addEventListener("click", function (e) {
+                // comprende se sto dividendo per zero
                 if (division == true && e.target.value === "0") {
                     divisionZero = true;
                 }
 
+                // comprende se sto facendo una divisione
                 if (e.target.value == "/") {
                     division = true;
                 } else {
@@ -44,7 +49,7 @@ window.addEventListener("load", function () {
                     console.log(divisionZero);
                     if (divisionZero == true) {
                         // sono nel numero subito dopo aver cliccato /
-                        input.value = "Errore!";
+                        input.value = "errore!";
                         divisionZero = false;
                     } else {
                         input.value = eval(input.value);
