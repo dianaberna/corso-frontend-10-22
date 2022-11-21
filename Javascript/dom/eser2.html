@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esercizio 2</title>
     <style>
-        .conteiner{
-            width: 400px;
-            height: 300px;
-            background: yellow;
-        }
+      
         input{
             width: 470px;
             margin-bottom: 20px;
@@ -21,11 +17,18 @@
     
 
 
-    <input type="text" value="margin: 2rem; width: 400px; height: 400px; background-color: yellow">
+    
     
     
 
     <script>
+
+        let inputTex = document.createElement("input");
+        document.body.appendChild(inputTex)
+        inpText =
+        "margin: 2rem; width: 400px; height: 400px; background-color: yellow;";
+        inputTex.value = inpText;
+
 
         let butto = document.createElement("button");
         butto.id = "btn";
@@ -35,18 +38,22 @@
         butto.style.height = "30px"
 
         let divAggio = document.createElement("div")
-        divAggio.className = "conteiner"
+        divAggio.className = "container"
         document.body.appendChild(divAggio)
+        divAggio.style.width = "400px"
+        divAggio.style.height = "300px"
+        divAggio.style.background = "yellow"
+
 
         let bot = document.getElementById("btn");
         bot.addEventListener("click", function () {
-        console.log(" bottone  ok");
-            sty()
+        // console.log(" bottone  ok");
+            divAggio.style = inputTex.value;
+
         });
 
-        function sty(){
-            document.querySelector(".conteiner").style = document.querySelector("input").value;
-        };
+        
+       
         
     </script>
 </body>
