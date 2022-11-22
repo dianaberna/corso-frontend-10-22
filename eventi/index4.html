@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventi</title>
+   <style>
+    .calcolatrice {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+height: 250px;
+width: 350px;
+
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 5; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+.div4 { grid-area: 2 / 3 / 3 / 4; }
+.div5 { grid-area: 2 / 4 / 3 / 5; }
+.div6 { grid-area: 3 / 1 / 4 / 2; }
+.div7 { grid-area: 3 / 2 / 4 / 3; }
+.div8 { grid-area: 3 / 3 / 4 / 4; }
+.div9 { grid-area: 3 / 4 / 4 / 5; }
+.div10 { grid-area: 4 / 1 / 5 / 2; }
+.div11 { grid-area: 4 / 2 / 5 / 3; }
+.div12 { grid-area: 4 / 3 / 5 / 4; }
+.div13 { grid-area: 4 / 4 / 5 / 5; }
+.div14 { grid-area: 5 / 1 / 6 / 2; }
+.div15 { grid-area: 5 / 2 / 6 / 3; }
+.div16 { grid-area: 5 / 3 / 6 / 4; }
+.div17 { grid-area: 5 / 4 / 6 / 5; }
+
+.calcolatrice > div {
+    height: 30px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.calcolatrice > div:hover {
+    cursor: pointer;
+}
+.calcolatrice .div1 {
+    width: 300PX;
+    background-color: white;
+}
+.calcolatrice > div > input {
+    width: 100%;
+    
+}
+   </style>
+    <script src="script4v2.js"></script>
+</head>
+<body>
+    <div class="calcolatrice">
+        <div class="div1"> <input type="text" id="visualizza"></div>
+        <div class="div2" id="7">7</div>
+        <div class="div3" id="8">8</div>
+        <div class="div4" id="9">9</div>
+        <div class="div5" id="/">/</div>
+        <div class="div6" id="4">4</div>
+        <div class="div7" id="5">5</div>
+        <div class="div8" id="6">6</div>
+        <div class="div9" id="*">*</div>
+        <div class="div10" id="1">1</div>
+        <div class="div11" id="2">2</div>
+        <div class="div12" id="3">3</div>
+        <div class="div13" id="-">-</div>
+        <div class="div14" id="0">0</div>
+        <div class="div15" id=".">.</div>
+        <div class="div16" id="=">=</div>
+        <div class="div17" id="+">+</div>
+        </div>
+    </div>
+</body>
+</html>
