@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es5</title>
+    <style>
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        form input{
+            display: block;
+            margin: 0.25rem 0;
+            padding: 5px;
+            border: 2px solid rgba(0, 0, 0, 0.02);
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        form input[type="submit"]{
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        form .error{
+            border: 2px solid red;
+            box-sizing: border-box;
+        }
+        form .ok{
+            border: 2px solid green;
+            box-sizing: border-box;
+        }
+        form label span{
+            display: block;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- es5 -->
+    <form id="mioForm" action="#">
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div>
+            <label for="cognome">Cognome: </label>
+            <input type="text" name="cognome" id="cognome">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password: <span>(Almeno 10 caratteri e massimo 30. Almeno un numero e un carattere tra ! * ? #)</span></label>
+            <input type="password" name="password" id="password">
+            <!-- <span id="errorePassword"></span> -->
+            <input type="button" id="mostraPassword" value="x">
+        </div>
+        <div>
+            <label for="confermaPassword">Conferma password: </label>
+            <input type="password" name="confermaPassword" id="confermaPassword">
+            <!-- <span id="erroreConfermaPassword"></span> -->
+        </div>
+        <input type="submit">
+    </form>
+
+
+
+    
+</body>
+</html>

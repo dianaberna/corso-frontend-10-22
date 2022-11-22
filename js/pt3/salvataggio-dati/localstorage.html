@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Window Object</h1>
+    <h2>The localStorage Property</h2>
+
+    <p>Saved name is:</p>
+    <p id="demo"></p>
+
+    <script>
+        // Set Item
+        localStorage.setItem("lastname", "Smith");
+        // Retrieve
+        document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
+    </script>
+</body>
+</html>
