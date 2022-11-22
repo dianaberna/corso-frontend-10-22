@@ -26,23 +26,32 @@ for (let i = 0; i < array.length; i++) {
   const input = document.createElement('input');
   input.type = 'button';
   input.value = array[i];
-  input.id = array[i];
+  array[i] === '/' || array[i] === '+' || array[i] === '-' || array[i] === '*'
+    ? (input.id = 'operator')
+    : (input.id = array[i]);
   input.addEventListener('click', function (e) {
     output = inputDisplay.value += e.target.value;
     // output += e.target.value;
-    console.log(output);
   });
   divContainerButton.appendChild(input);
 }
 // Ora che la mia calcolatrice é pronta. Devo farla calcolare :)
-console.log(inputDisplay.value);
-
 const input = document.createElement('input');
 input.type = 'button';
 input.value = '=';
-input.id = '=';
+input.id = 'equal';
 divContainerButton.appendChild(input);
 
 input.addEventListener('click', function () {
   inputDisplay.value = eval(output);
+});
+
+addEventListener('keydown', function (e) {
+  for (let index = 0; index < array.length; index++) {
+    if (e.key === String(array[index])) {
+      output = inputDisplay.value += e.key;
+    }
+  }
+  e.key === 'Enter' ? (inputDisplay.value = eval(output)) : null;
+  // output += e.target.value;
 });
