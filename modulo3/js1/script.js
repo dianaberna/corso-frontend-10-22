@@ -358,6 +358,8 @@ let somma12 = 0; //scope globale stesso nome di variabile
 console.log(somma12);
 
 //stampare la somma di 20 numeri a partire da 0
+
+console.log("---stampare la somma di 20 numeri a partire da 0---");
 let somma3 = 0;
 let i2 = 0;
 
@@ -365,5 +367,5 @@ while (i2 < 20) {
     somma3 += i2;
     i2++;
 
-    console.log(somma3);
+    // console.log(somma3);
 }
