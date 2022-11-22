@@ -14,17 +14,21 @@ const newButtText = document.createTextNode("Aggiungi");
 body.appendChild(newButt);
 newButt.appendChild(newButtText)
 let newDiv1= document.createElement("div")
-newDiv1.id="newDiv1"
+{
+  newDiv1.id="newDiv1"
 newDiv1.style.display="flex";
 newDiv1.style.flexDirection="column";
 newDiv1.style.backgroundColor="pink";
-newDiv1.style.padding="1rem";
+  newDiv1.style.padding="1rem";
+}
 let newDiv2= document.createElement("div")
-newDiv2.id="newDiv2"
-newDiv2.style.display="flex";
-newDiv2.style.flexDirection="column";
-newDiv2.style.backgroundColor="lightblue";
-newDiv2.style.padding="1rem";
+{
+  newDiv2.id="newDiv2"
+  newDiv2.style.display="flex";
+  newDiv2.style.flexDirection="column";
+  newDiv2.style.backgroundColor="lightblue";
+  newDiv2.style.padding="1rem";
+}
 body.appendChild(newMainDiv);
 newMainDiv.appendChild(newDiv1);
 newMainDiv.appendChild(newDiv2);

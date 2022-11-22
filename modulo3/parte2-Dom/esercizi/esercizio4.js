@@ -12,6 +12,7 @@ body.appendChild(newMainDiv);
 newInput = document.createElement("input")
 { // newInput styles
   newInput.type="text"
+  newInput.disabled="true"
   newInput.placeholder="_"
   newInput.style.textAlign="right"
   newInput.style.width="158px"
@@ -51,9 +52,11 @@ for (let index = 0; index < buttArray.length; index++) {
     switch (index) {
       case 2:
         newButt.style.backgroundColor="lightpink"
+        newButt.style.fontWeight="700"
         break;
       case 3:
         newButt.style.backgroundColor="orange"
+        newButt.style.fontWeight="700"
         newButt.type="submit"
         break;
       case 18:
