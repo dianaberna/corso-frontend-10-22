@@ -42,12 +42,10 @@ window.addEventListener('load', function() {
         if (posizione) {
             posizione.appendChild(nuovoElemento)
         }
-
         if (contenuto) {
             let contenutoElemento = document.createTextNode(contenuto)
             nuovoElemento.appendChild(contenutoElemento)
         }
-
         if (attributi) {
             if (attributi.type) {
                 nuovoElemento.type = attributi.type
@@ -59,13 +57,11 @@ window.addEventListener('load', function() {
                 nuovoElemento.placeholder = attributi.placeholder
             }
         }
-
         if (id) {
             nuovoElemento.id = id
         }
 
         return nuovoElemento
-
     }
 
     const formContainer = creaElemento({tipo: 'form', posizione: bodyElement});
@@ -80,19 +76,12 @@ window.addEventListener('load', function() {
 
     const buttonInvio = creaElemento({tipo: 'button', posizione: formContainer, contenuto: 'INVIA DATI'})
 
-    
-
 
     const inputNome = document.getElementById('nome')
     const inputCognome = document.getElementById('cognome')
     const inputEmail = document.getElementById('email')
     const inputPassword = document.getElementById('password')
     const inputConfermaPassword = document.getElementById('conferma-password')
-
-
-    
-
-
 
 
     buttonInvio.addEventListener('click', (e) => {
@@ -141,7 +130,7 @@ window.addEventListener('load', function() {
             inputPassword.classList.remove('success')
         }
 
-        if (inputConfermaPassword.value === inputPassword.value) {
+        if (inputConfermaPassword.value === inputPassword.value && inputConfermaPassword.value != '') {
             inputConfermaPassword.classList.add('success')
             inputConfermaPassword.classList.remove('error')
         } else {

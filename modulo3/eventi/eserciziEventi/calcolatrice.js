@@ -2,9 +2,7 @@ window.addEventListener('load', function() {
 
     const body = document.body
 
-
     function creaElementi({tipo, posizione, contenuto, value, stile, attributi, id, classe}) {
-
         let nuovoElemento = document.createElement(tipo);
         if (contenuto) {
             let contenutoElemento = document.createTextNode(contenuto)
@@ -25,7 +23,6 @@ window.addEventListener('load', function() {
 
         return nuovoElemento
     }
-
 
     let tabella = [
         7, 8, 9, '/',
@@ -68,9 +65,8 @@ window.addEventListener('load', function() {
 
             console.log(risultato);
         })
-        
-    };
 
+    };
 
     // TRAMITE TASTIERA
     inputTesto.addEventListener('change', () => {
@@ -79,29 +75,9 @@ window.addEventListener('load', function() {
 
     const calcola = document.getElementById('=')
 
-    // if (event.key === "Enter") {
-    //     inputTesto.value = risultatoFinale
-    //     console.log(risultatoFinale);
-    //     risultato = '';
-    // }
-
-  
-    inputTesto.addEventListener("keypress", function(event) {
-        if (event.key === "Enter") {
-            console.log(event);
-        //   event.preventDefault();
-            alert('funziona?')
-            // funzioneCalcola();
-
-            calcola.click()
-        }
-    });
-
     let risultatoFinale
 
     function funzioneCalcola() {
-
-        // let risultatoFinale
 
         if (risultato.includes(':')) {
             let modificaDiviso = risultato.replace(':', '/');
@@ -119,10 +95,15 @@ window.addEventListener('load', function() {
 
     calcola.addEventListener('click', funzioneCalcola)
 
+    inputTesto.addEventListener("keypress", function(event) {
 
-  
+        // non so perchè era separato quindi lo riscrivo
+        risultato = inputTesto.value
 
-
-
+        if (event.key === "Enter") {
+            alert('funziona?')
+            funzioneCalcola()
+        }
+    });
 
 })
