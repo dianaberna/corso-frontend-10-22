@@ -1,0 +1,19 @@
+nav img {
+    width: 80px;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: saddlebrown;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+

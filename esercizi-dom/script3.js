@@ -8,6 +8,11 @@
         let questText = document.createTextNode(inputText.value)
         quest.appendChild(questText)
         inputText.value=""
+        if (inputText.value){
+            return 
+        }
+    
+ 
        
         let deleteButton = document.createElement("button")
         deleteButton.className="deleteButton"
