@@ -1,0 +1,55 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.rosso {
+    color: red;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav > * {
+    flex-basis: 100%;
+    border: 1px solid black;
+}
+
+.modifica {
+    padding: 2rem;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid rgb(74, 113, 184);
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#prev, 
+#next {
+    border-radius: 50%;
+    padding: 1em;
+
+}
+
+.rettangolo {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 3rem;
+
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* GENERAL SETTINGS */
+body {
+    color: #fff;
+}
+
+p {
+    line-height: 1.8;
+    color: #C7E0FA;
+}
+
+.main-container {
+    max-width: 1110px;
+    margin-inline: auto;
+    padding: 0 3rem;
+}
+
+.darker {
+    background-color: #000;
+}
+
+.lighter {
+    background-color: #181823;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    gap: 2rem;
+}
+
+.contact-form {
+    align-items: stretch;
+}
+
+.btn {
+    background-color: #F03A76;
+    border-radius: 3em;
+    padding: 1em 3em;
+    color: #fff;
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+
+/* NAVIGATION BAR */
+nav {
+    padding: 1rem 0;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.dropdown {
+    margin-right: 0;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    color: #fff;
+}
+
+
+/* HEADER */
+header {
+    padding: 1.5rem 0;
+}
+
+.wave-container {
+    background-image: url(./images/wave.svg);
+    background-position: bottom;
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: #181823;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.color-text {
+    color: #F03A76;
+}
+
+
+/* MAIN */
+
+main {
+    padding: 2rem 0;
+}
+
+.main-text {
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 60%;
+    margin-inline: auto;
+}
+
+
+
+/* SPECIAL EXPERTISE FROM US */
+.box {
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.box h3,
+.box p {
+    margin-top: .5rem;
+}
+
+/* section */
+
+
+
+.flex-inverted {
+    flex-direction: column-reverse;
+}
+
+section .flex {
+    /* align-items: center; */
+}
+
+.text-section {
+    padding: 1.5rem 0;
+}
+
+.more-padding {
+    padding: 3rem;
+}
+
+/* .img-section {
+    padding: 5rem 0;
+} */
+
+/* contact form */
+.cta {
+    padding-bottom: 3rem;
+}
+
+.cta h2 {
+    /* margin-inline: auto; */
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+label, input, textarea {
+    /* display: block; */
+    font-family: inherit;
+    color: #fff;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    padding: 1.5rem 0 0.5rem;
+}
+
+input, textarea {
+    background-color: #181823;
+    border: 1px solid #fff;
+    outline: none;
+    padding: .7rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.right-side, .left-side {
+    /* margin-right: auto; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contact-form .btn {
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+.align-right {
+    display: inline-block;
+    margin-left: auto;
+
+}
+
+/* FOOTER */
+
+footer {
+    padding: 3rem 0;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer li, footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer h4 {
+    padding: 1rem 0;
+}
+
+footer li {
+    padding: 0.5rem 0;
+    list-style-type: none;
+    font-size: 0.8rem;
+}
+
+footer h4, footer li, footer p {
+    text-align: center;
+}
+
+.prova {
+    flex-basis: 35%;
+    /* flex: 1; */
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+.flex-inline {
+    /* display: inline-flex; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.margin {
+    margin: 1rem 0;
+}
+
+
+@media (min-width: 768px) {
+    .dropdown {
+        margin-right: 50%;
+    }
+
+    .flex {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    /* .flex-inverted {
+        flex-direction: column-reverse;
+    } */
+
+    .box img {
+        width: 60%;
+    }
+
+    .text-section {
+        padding: 1.5rem;
+        max-width: 53%;
+    }
+
+    .flex-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    footer h4, footer li, footer p {
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 760px) {
+    .flex-inline {
+        /* margin-inline: auto; */
+        /* text-align: center; */
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}

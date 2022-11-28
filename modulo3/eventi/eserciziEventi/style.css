@@ -1,0 +1,41 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 18px; */
+
+}
+
+input, button {
+    font-family: inherit;
+    display: block;
+    margin: 2.5rem auto;
+    width: 300px;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+input:hover {
+    box-shadow: 0 0 3px rgb(105, 105, 105);
+}
+
+input:focus {
+    border: 1px solid rgb(83, 145, 252);
+    box-shadow: 0 0 3px rgb(83, 145, 252);
+    outline: 1px solid rgb(83, 145, 252);
+}
+
+input:disabled {
+    background-color: rgb(241, 237, 237);
+}
+
+input.success {
+    outline: 1px solid rgb(71, 241, 193);
+}
+
+input.error {
+    outline: 1px solid rgb(255, 137, 137);
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    padding: 1rem;
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.88rem;
+    margin-top: 0.3rem;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin-top: 1.7rem;
+    margin-bottom: 2rem;
+    margin-inline: auto;
+}
+
+button {
+    width: 95%;
+    display: block;
+    margin-inline: auto;
+    padding: 1.2rem 0;
+    border: none;
+    background-color: cornflowerblue;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 3.1rem;
+}
+
+button img {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    transform: translateY(3px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label[for="name"] {
+    margin-top: 0.75rem;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #A8A8A8;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #A8A8A8;
+    margin-bottom: 0.95rem;
+    padding: 0.5rem;
+}
+
+textarea:focus, input:focus {
+    color: rgb(0, 69, 197);
+}
+
+
+
+
+
+
+span {
+    display: inline-block;
+    border: 1px solid cornflowerblue;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}

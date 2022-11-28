@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray-uncompleted: #D0D0D0;
+    --gray-complete: #525252;
+
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main-container {
+    max-width: 500px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.88rem;
+    margin-top: 1.88rem;
+}
+
+.number-of {
+    margin-bottom: 1.7rem;
+    font-size: 0.9rem;
+}
+
+.rettangolo {
+    background-color: #A8A8A8;
+    padding: 8.5rem 6rem;
+    margin-bottom: 2.2rem;
+    border-radius: 1em;
+    margin-inline: 0.5rem;
+
+
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+h3 {
+    font-size: 0.85rem;
+    margin-bottom: 2.45rem;
+}
+
+progress {
+    width: 90%;
+    -webkit-appearance: none;
+
+}
+
+
+  
+::-webkit-progress-bar {
+background-color: #a8a8a8;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #525252;
+}
+
+.onplay {
+    transform: scale(1.1);
+}
+
+.wrapper {
+    /* display: flex;
+    justify-content: space-between;
+    gap: 0.6rem; */
+    /* flex-wrap: wrap; */
+
+    position: relative;
+    overflow: hidden;
+    margin: 1rem;
+
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+
+
+    /* height: calc(50vh - 2rem); */
+    width: 100%;
+    /* display: flex; */
+    /* list-style: none; */
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.rettangolo {
+    width: 40%;
+    /* height: 100%; */
+    /* flex: 1 0 100%; */
+}
+
+
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.control-comands {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 4.2rem;
+}
+
+.control-comands p {
+    font-size: 0.88rem;
+}
+
+.uncompleted {
+    color: var(--gray-uncompleted);
+}
+
+.other-controls {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+
+.rettangolo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+.d-flex {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+ 
+/* WebKit */
+.d-flex::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
+
+.contenitore-testi-flex{
+    display: flex;
+
+}
+
+.contenitore-testo {
+    text-align: center;
+    border: 1px solid black;
+    flex: 1;
+}

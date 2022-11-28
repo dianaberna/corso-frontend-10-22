@@ -1,0 +1,70 @@
+:root {
+    --font-color: #262626;
+    --border-color: #525252;
+    --background-color: #F4F4F4;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--font-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 400;
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.main-container {
+    padding: 2rem 1rem 1rem;
+    width: 90%;
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: var(--background-color);
+    border: 2px solid #525252;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 40%;
+    border-radius: 1em;
+    margin-bottom: 2rem;
+    padding: 0 0.25rem;
+}
+
+.card img {
+    margin-top: 1.5rem;
+    width: 95%;
+}
+
+
+.card h2 {
+    margin-bottom: 1.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
