@@ -221,13 +221,13 @@ function funzioneSomma(a = 1, b = 1) {
     return a + b;
 }
 
+// non posso avere un'altra funzione con lo stesso nome 
 /* 
 function funzioneSomma(c) {
     return c + c;
 }  
 */
 
-// overloading
 
 console.log(funzioneSomma());
 console.log(funzioneSomma(2));

@@ -3,6 +3,9 @@ console.log("es3");
 function aggiungiTask() {
     let lista = document.getElementsByTagName("ul")[0];
     let inputTestuale = document.getElementById("inputTestuale");
+    if( inputTestuale.value == ""){
+        return;
+    }
     let nuovoTask = document.createElement("li");
     let testo = document.createTextNode(inputTestuale.value);
     let bottoneCancella = document.createElement("input");
@@ -11,6 +14,7 @@ function aggiungiTask() {
     bottoneCancella.addEventListener("click", function () {
         nuovoTask.remove();
     });
+    // bottoneCancella.onclick = nuovoTask.remove();
     nuovoTask.appendChild(testo);
     nuovoTask.appendChild(bottoneCancella);
     lista.appendChild(nuovoTask);

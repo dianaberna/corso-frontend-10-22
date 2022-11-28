@@ -4,6 +4,7 @@ window.addEventListener("load", function () {
     let divisionZero = false;
     let input = document.createElement("input");
     input.type = "text";
+    // gestione evento change dell'input testuale
     input.addEventListener("change", function () {
         if (input.value != "") {
             input.value = eval(input.value);
