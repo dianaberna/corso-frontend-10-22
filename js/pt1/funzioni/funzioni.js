@@ -243,3 +243,18 @@ function funzione() {
 funzione();
 funzione(7, 4);
 funzione(90, 654, 32, 4);
+
+console.log("map")
+// funzione map 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+const array1 = [1, 4, 9, 16];
+
+// simile al foreach per quello che riguarda lo scannerizzare tutto l'array
+// per ogni elemento dell'array esegue la funzione x*2 
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+//  [2, 8, 18, 32]
+
+// diverso da foreach perché ci aiuta solo a scorrere l'array -> non crea un nuovo array
+array1.forEach(valore => console.log(valore))

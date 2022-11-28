@@ -8,6 +8,7 @@ async function recuperaDati(){
     );
     let pokemonData = await pokemonResponse.json();
     console.log(pokemonData)
+    
     let divStampa = document.getElementById("pokemon");
     let nomeTitolo = document.createElement("h1");
     let nomeTesto = document.createTextNode(pokemonData.name)

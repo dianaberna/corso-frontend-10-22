@@ -10,15 +10,6 @@ function moltiplicazione(a, b) {
     return a * b;
 }
 
-/* 
-overloading 
-
-function moltiplicazione(a) {
-    return a * a;
-} 
-
-*/
-
 console.log(moltiplicazione(3));
 console.log(moltiplicazione(-3, -6));
 console.log(moltiplicazione(7, 3));
