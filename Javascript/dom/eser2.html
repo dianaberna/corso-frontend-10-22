@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 2</title>
+    <style>
+      
+        input{
+            width: 470px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    
+    
+    
+
+    <script>
+
+        let inputTex = document.createElement("input");
+        document.body.appendChild(inputTex)
+        inpText =
+        "margin: 2rem; width: 400px; height: 400px; background-color: yellow;";
+        inputTex.value = inpText;
+
+
+        let butto = document.createElement("button");
+        butto.id = "btn";
+        butto.innerText = "Aggiorna Stile";
+        document.body.appendChild(butto);
+        butto.style.width = "200px";
+        butto.style.height = "30px"
+
+        let divAggio = document.createElement("div")
+        divAggio.className = "container"
+        document.body.appendChild(divAggio)
+        divAggio.style.width = "400px"
+        divAggio.style.height = "300px"
+        divAggio.style.background = "yellow"
+
+
+        let bot = document.getElementById("btn");
+        bot.addEventListener("click", function () {
+        // console.log(" bottone  ok");
+            divAggio.style = inputTex.value;
+
+        });
+
+        
+       
+        
+    </script>
+</body>
+</html>
